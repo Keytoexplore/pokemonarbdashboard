@@ -15,16 +15,11 @@
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
     <div class="container mx-auto px-4 py-8">
-        <!-- Header -->
-        <div class="mb-8">
-            <h1 class="text-4xl font-bold mb-2">Pokemon TCG Arbitrage Tracker</h1>
-            <p class="text-gray-400">Japanese card arbitrage opportunities for SR, AR, SAR cards</p>
-            <div id="stats" class="mt-4 flex gap-4 text-sm">
-                <span class="bg-gray-800 px-3 py-1 rounded">Loading...</span>
-            </div>
-        </div>
-
-        <!-- Filters -->
+        <h1 class="text-4xl font-bold mb-2">Pokemon TCG Arbitrage Tracker</h1>
+        <p class="text-gray-400 mb-4">Japanese card arbitrage opportunities for SR, AR, SAR cards</p>
+        
+        <div id="stats" class="mb-6 flex gap-4 text-sm flex-wrap"></div>
+        
         <div class="mb-6">
             <div class="flex flex-wrap gap-4 mb-4">
                 <span class="text-gray-400 py-2">Rarity:</span>
@@ -33,28 +28,18 @@
                 <button onclick="filterByRarity('AR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="AR">Art Rare</button>
                 <button onclick="filterByRarity('SAR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SAR">Special Art Rare</button>
             </div>
-            <div id="set-filters" class="flex flex-wrap gap-4">
-                <span class="text-gray-400 py-2">Set:</span>
-                <button onclick="filterBySet('all')" class="set-filter-btn bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition active" data-set="all">All Sets</button>
-            </div>
         </div>
 
-        <!-- Cards Grid -->
         <div id="cards-container" class="grid grid-cols-1 gap-4">
-            <!-- Cards will be loaded here -->
+            <p class="text-center text-gray-500 py-12">Loading...</p>
         </div>
 
-        <!-- Last Updated -->
-        <div class="mt-8 text-center text-gray-500 text-sm">
-            <p id="last-updated">Loading data...</p>
-        </div>
+        <div id="last-updated" class="mt-8 text-center text-gray-500 text-sm"></div>
     </div>
 
     <script>
         let allOpportunities = [];
         let currentFilter = 'all';
-        let currentSet = 'all';
-        let availableSets = [];
 
         function getGradeClass(margin) {
             if (margin >= 150) return 'grade-perfect';
@@ -71,147 +56,115 @@
         }
 
         function formatPrice(price) {
-            return price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            if (typeof price !== 'number') return '$0.00';
+            return '$' + price.toFixed(2);
+        }
+
+        function safe(obj, defaultValue) {
+            return obj !== undefined && obj !== null ? obj : defaultValue;
         }
 
         function createCardHTML(opp) {
-            const gradeClass = getGradeClass(opp.marginPercent);
-            const gradeLabel = getGradeLabel(opp.marginPercent);
-            
-            // Find lowest price from each source
-            const japanTorecaPrice = opp.japanesePrices.find(p => p.source === 'japan-toreca');
-            const torecaCampPrice = opp.japanesePrices.find(p => p.source === 'torecacamp');
-            
-            const lowestPrice = opp.japanesePrices.find(p => p.isLowest);
-            
-            return `
-                <div class="card-hover bg-gray-800 rounded-xl p-6 transition-all duration-300 border border-gray-700 ${opp.isViable ? 'border-green-500/30' : 'border-red-500/30'}">
-                    <!-- Header: Grade + Name -->
-                    <div class="flex items-start justify-between mb-4">
-                        <div>
-                            <div class="${gradeClass} inline-block px-3 py-1 rounded-full text-sm font-bold mb-2">
-                                ${gradeLabel} ${opp.marginPercent > 0 ? '+' : ''}${opp.marginPercent}%
+            try {
+                const gradeClass = getGradeClass(safe(opp.marginPercent, 0));
+                const gradeLabel = getGradeLabel(safe(opp.marginPercent, 0));
+                
+                const japanPrices = safe(opp.japanesePrices, []);
+                const japanTorecaPrice = japanPrices.find(p => p && p.source === 'japan-toreca');
+                const torecaCampPrice = japanPrices.find(p => p && p.source === 'torecacamp');
+                const lowestPrice = japanPrices.find(p => p && p.isLowest) || japanPrices[0];
+                
+                const tcgplayer = safe(opp.tcgplayer, { marketPrice: 0, sellerCount: 0 });
+                
+                return `
+                    <div class="card-hover bg-gray-800 rounded-xl p-6 transition-all duration-300 border border-gray-700 ${opp.isViable ? 'border-green-500/30' : 'border-red-500/30'}">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <div class="${gradeClass} inline-block px-3 py-1 rounded-full text-sm font-bold mb-2">
+                                    ${gradeLabel} ${opp.marginPercent > 0 ? '+' : ''}${safe(opp.marginPercent, 0)}%
+                                </div>
+                                <h2 class="text-xl font-bold">${safe(opp.name, 'Unknown')}</h2>
+                                <p class="text-gray-400 text-sm">${safe(opp.set, 'Unknown')} #${safe(opp.cardNumber, 'N/A')} • ${safe(opp.rarity, 'Unknown')}</p>
                             </div>
-                            <h2 class="text-xl font-bold">${opp.name}</h2>
-                            <p class="text-gray-400 text-sm">${opp.set} #${opp.cardNumber} • ${opp.rarity === 'SR' ? 'Super Rare' : opp.rarity === 'AR' ? 'Art Rare' : 'Special Art Rare'}</p>
-                        </div>
-                    </div>
-
-                    <!-- Prices Comparison -->
-                    <div class="grid grid-cols-2 gap-4 mb-4">
-                        <!-- TCGPlayer -->
-                        <div class="bg-gray-700/50 rounded-lg p-4">
-                            <p class="text-gray-400 text-xs mb-1">TCGPlayer (Sell)</p>
-                            <p class="text-2xl font-bold text-green-400">${formatPrice(opp.tcgplayer.marketPrice)}</p>
-                            <p class="text-gray-500 text-xs mt-1">${opp.tcgplayer.sellerCount} sellers</p>
                         </div>
 
-                        <!-- Lowest Japanese -->
-                        <div class="bg-gray-700/50 rounded-lg p-4 border ${lowestPrice?.source === 'japan-toreca' ? 'border-blue-500/50' : 'border-purple-500/50'}">
-                            <p class="text-gray-400 text-xs mb-1">
-                                ${lowestPrice?.source === 'japan-toreca' ? 'Japan-Toreca' : 'TorecaCamp'}
-                                ${lowestPrice?.quality ? `• ${lowestPrice.quality}` : ''}
-                            </p>
-                            <p class="text-2xl font-bold ${lowestPrice?.inStock ? 'text-white' : 'text-gray-500'}">
-                                ¥${lowestPrice?.priceJPY.toLocaleString()}
-                            </p>
-                            <p class="text-gray-400 text-sm">≈ ${formatPrice(lowestPrice?.priceUSD || 0)}</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="bg-gray-700/50 rounded-lg p-4">
+                                <p class="text-gray-400 text-xs mb-1">TCGPlayer (Sell)</p>
+                                <p class="text-2xl font-bold text-green-400">${formatPrice(tcgplayer.marketPrice)}</p>
+                                <p class="text-gray-500 text-xs mt-1">${safe(tcgplayer.sellerCount, 0)} sellers</p>
+                            </div>
+
+                            <div class="bg-gray-700/50 rounded-lg p-4">
+                                <p class="text-gray-400 text-xs mb-1">Lowest Japan Price</p>
+                                <p class="text-2xl font-bold text-white">
+                                    ${lowestPrice ? '¥' + lowestPrice.priceJPY.toLocaleString() : 'N/A'}
+                                </p>
+                                <p class="text-gray-400 text-sm">
+                                    ≈ ${formatPrice(safe(lowestPrice?.priceUSD, 0))}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            ${japanTorecaPrice ? `
+                                <div class="bg-gray-700/30 rounded p-2">
+                                    <p class="text-gray-400 text-xs">Japan-Toreca</p>
+                                    <p class="${japanTorecaPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
+                                        ${japanTorecaPrice.quality || 'N/A'} • ¥${japanTorecaPrice.priceJPY.toLocaleString()}
+                                    </p>
+                                    <p class="text-xs ${japanTorecaPrice.inStock ? 'text-green-400' : 'text-red-400'}">
+                                        ${japanTorecaPrice.inStock ? 'In Stock' : 'Out'}
+                                    </p>
+                                </div>
+                            ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">Japan-Toreca</p><p class="text-gray-500">No data</p></div>'}
+                            
+                            ${torecaCampPrice ? `
+                                <div class="bg-gray-700/30 rounded p-2">
+                                    <p class="text-gray-400 text-xs">TorecaCamp</p>
+                                    <p class="${torecaCampPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
+                                        ¥${torecaCampPrice.priceJPY.toLocaleString()}
+                                    </p>
+                                    <p class="text-xs ${torecaCampPrice.inStock ? 'text-green-400' : 'text-red-400'}">
+                                        ${torecaCampPrice.inStock ? 'In Stock' : 'Out'}
+                                    </p>
+                                </div>
+                            ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">TorecaCamp</p><p class="text-gray-500">No data</p></div>'}
+                        </div>
+
+                        <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center text-sm">
+                            <span class="text-gray-400">Potential Profit:</span>
+                            <span class="font-bold ${opp.marginAmount > 0 ? 'text-green-400' : 'text-red-400'}">
+                                ${opp.marginAmount > 0 ? '+' : ''}${formatPrice(safe(opp.marginAmount, 0))}
+                            </span>
                         </div>
                     </div>
-
-                    <!-- All Japanese Prices -->
-                    <div class="grid grid-cols-2 gap-2 text-sm">
-                        ${japanTorecaPrice ? `
-                            <div class="bg-gray-700/30 rounded p-2 ${japanTorecaPrice.isLowest ? 'ring-1 ring-blue-500/50' : ''}">
-                                <p class="text-gray-400 text-xs">Japan-Toreca</p>
-                                <p class="${japanTorecaPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
-                                    ${japanTorecaPrice.quality || 'N/A'} • ¥${japanTorecaPrice.priceJPY.toLocaleString()}
-                                </p>
-                                <p class="text-xs ${japanTorecaPrice.inStock ? 'text-green-400' : 'text-red-400'}">
-                                    ${japanTorecaPrice.inStock ? 'In Stock' : 'Out'}
-                                </p>
-                            </div>
-                        ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">Japan-Toreca</p><p class="text-gray-500">No data</p></div>'}
-                        
-                        ${torecaCampPrice ? `
-                            <div class="bg-gray-700/30 rounded p-2 ${torecaCampPrice.isLowest ? 'ring-1 ring-purple-500/50' : ''}">
-                                <p class="text-gray-400 text-xs">TorecaCamp</p>
-                                <p class="${torecaCampPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
-                                    ¥${torecaCampPrice.priceJPY.toLocaleString()}
-                                </p>
-                                <p class="text-xs ${torecaCampPrice.inStock ? 'text-green-400' : 'text-red-400'}">
-                                    ${torecaCampPrice.inStock ? 'In Stock' : 'Out'}
-                                </p>
-                            </div>
-                        ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">TorecaCamp</p><p class="text-gray-500">No data</p></div>'}
-                    </div>
-
-                    <!-- Margin Info -->
-                    <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center text-sm">
-                        <span class="text-gray-400">Potential Profit:</span>
-                        <span class="font-bold ${opp.marginAmount > 0 ? 'text-green-400' : 'text-red-400'}">
-                            ${opp.marginAmount > 0 ? '+' : ''}${formatPrice(opp.marginAmount)}
-                        </span>
-                    </div>
-                </div>
-            `;
+                `;
+            } catch (e) {
+                console.error('Error creating card HTML:', e, opp);
+                return `<div class="bg-red-900/30 border border-red-500/50 rounded-xl p-6">Error displaying card</div>`;
+            }
         }
 
         function displayCards() {
             const container = document.getElementById('cards-container');
             let filtered = allOpportunities;
             
-            // Filter by rarity
             if (currentFilter !== 'all') {
-                filtered = filtered.filter(o => o.rarity === currentFilter);
+                filtered = filtered.filter(o => o && o.rarity === currentFilter);
             }
             
-            // Filter by set
-            if (currentSet !== 'all') {
-                filtered = filtered.filter(o => o.set === currentSet);
+            if (filtered.length === 0) {
+                container.innerHTML = '<p class="text-center text-gray-500 py-12">No cards match the selected filter</p>';
+                return;
             }
             
             container.innerHTML = filtered.map(createCardHTML).join('');
         }
 
-        function filterBySet(set) {
-            currentSet = set;
-            
-            // Update button states
-            document.querySelectorAll('.set-filter-btn').forEach(btn => {
-                if (btn.dataset.set === set) {
-                    btn.classList.add('bg-blue-600', 'active');
-                    btn.classList.remove('bg-gray-700');
-                } else {
-                    btn.classList.remove('bg-blue-600', 'active');
-                    btn.classList.add('bg-gray-700');
-                }
-            });
-            
-            displayCards();
-        }
-
-        function generateSetFilters() {
-            const setFiltersContainer = document.getElementById('set-filters');
-            
-            // Get unique sets
-            availableSets = [...new Set(allOpportunities.map(o => o.set))].sort();
-            
-            // Generate buttons
-            availableSets.forEach(set => {
-                const btn = document.createElement('button');
-                btn.className = 'set-filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition';
-                btn.dataset.set = set;
-                btn.textContent = set;
-                btn.onclick = () => filterBySet(set);
-                setFiltersContainer.appendChild(btn);
-            });
-        }
-
         function filterByRarity(rarity) {
             currentFilter = rarity;
             
-            // Update button states
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 if (btn.dataset.rarity === rarity) {
                     btn.classList.add('bg-blue-600', 'active');
@@ -227,41 +180,66 @@
 
         async function loadData() {
             try {
-                const response = await fetch('data/arbitrage-data.json');
-                if (!response.ok) throw new Error('Failed to load data');
+                console.log('Loading data...');
+                
+                // Try to load the data file
+                let response;
+                try {
+                    response = await fetch('data/arbitrage-data.json');
+                } catch (e) {
+                    console.log('Trying alternate path...');
+                    response = await fetch('/data/arbitrage-data.json');
+                }
+                
+                console.log('Response status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
                 
                 const data = await response.json();
-                allOpportunities = data.opportunities || [];
+                console.log('Data loaded:', data);
+                
+                allOpportunities = Array.isArray(data.opportunities) ? data.opportunities : [];
+                
+                if (allOpportunities.length === 0) {
+                    document.getElementById('cards-container').innerHTML = 
+                        '<p class="text-center text-gray-500 py-12">No arbitrage opportunities found</p>';
+                    return;
+                }
                 
                 // Update stats
+                const stats = safe(data.stats, { totalCards: 0, viableOpportunities: 0, avgMargin: 0 });
                 document.getElementById('stats').innerHTML = `
-                    <span class="bg-gray-800 px-3 py-1 rounded">${data.stats.totalCards} cards</span>
-                    <span class="bg-green-900/50 px-3 py-1 rounded text-green-400">${data.stats.viableOpportunities} viable</span>
-                    <span class="bg-blue-900/50 px-3 py-1 rounded text-blue-400">${data.stats.avgMargin}% avg margin</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded">${stats.totalCards} cards</span>
+                    <span class="bg-green-900/50 px-3 py-1 rounded text-green-400">${stats.viableOpportunities} viable</span>
+                    <span class="bg-blue-900/50 px-3 py-1 rounded text-blue-400">${stats.avgMargin}% avg margin</span>
                 `;
                 
                 // Update last updated
-                const date = new Date(data.lastUpdated);
-                document.getElementById('last-updated').textContent = 
-                    `Updated: ${date.toLocaleString()}`;
-                
-                // Generate set filter buttons
-                generateSetFilters();
+                if (data.lastUpdated) {
+                    const date = new Date(data.lastUpdated);
+                    document.getElementById('last-updated').textContent = 
+                        'Updated: ' + date.toLocaleString();
+                }
                 
                 displayCards();
+                console.log('Display complete, showing', allOpportunities.length, 'cards');
+                
             } catch (error) {
-                console.error('Error loading data:', error);
+                console.error('Error:', error);
                 document.getElementById('cards-container').innerHTML = `
                     <div class="text-center py-12">
                         <p class="text-red-400 text-lg mb-2">Error loading data</p>
                         <p class="text-gray-500">${error.message}</p>
+                        <button onclick="loadData()" class="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">Retry</button>
                     </div>
                 `;
             }
         }
 
-        // Load data on page load
-        loadData();
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
 </html>
