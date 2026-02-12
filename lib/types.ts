@@ -13,6 +13,21 @@ export interface TCGPlayerData {
   sellerCount: number;
 }
 
+export interface USMarketData {
+  marketPrice: number;
+  sellerCount: number;
+  listingCount: number;
+  currency: string;
+}
+
+export interface ArbitrageUSData {
+  profitAmount: number;
+  profitPercent: number;
+  japanPriceUSD: number;
+  usMarketPrice: number;
+  isViable: boolean;
+}
+
 export interface ArbitrageOpportunity {
   id: string;
   name: string;
@@ -22,6 +37,8 @@ export interface ArbitrageOpportunity {
   tcgplayer: TCGPlayerData;
   japanesePrices: JapanesePrice[];
   lowestJapanesePrice: number;
+  usPrice: USMarketData | null;
+  arbitrageUS: ArbitrageUSData | null;
   marginPercent: number;
   marginAmount: number;
   lastUpdated: string;
