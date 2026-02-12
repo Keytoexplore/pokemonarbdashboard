@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Image from 'next/image';
 import { ArbitrageOpportunity } from '@/lib/types';
 
 interface CardsWithFiltersProps {
@@ -8,25 +9,56 @@ interface CardsWithFiltersProps {
   totalCards: number;
 }
 
+// Generate TCGPlayer image URL from card data
+function getCardImageUrl(cardNumber: string, set: string): string {
+  // Try to construct image URL from set and number
+  // Format: https://images.pokemontcg.io/{set}/{number}_hires.png
+  // For Japanese sets, we might need different logic
+  return `https://images.pokemontcg.io/${set.toLowerCase()}/${cardNumber.split('/')[0]}_hires.png`;
+}
+
 export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersProps) {
   const [filterRarity, setFilterRarity] = useState<string>('all');
-  const [filterSource, setFilterSource] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<string>('price-asc');
+  const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [searchQuery, setSearchQuery] = useState('');
 
+  // Calculate arbitrage opportunities between Japanese sources
+  const cardsWithArbitrage = useMemo(() => {
+    return initialCards.map(card => {
+      const japanToreca = card.japanesePrices.find(p => p.source === 'japan-toreca');
+      const torecaCamp = card.japanesePrices.find(p => p.source === 'torecacamp');
+      
+      // Calculate arbitrage between Japanese sources
+      let arbitrage: { margin: number; cheaperSource: string; savings: number } | null = null;
+      
+      if (japanToreca?.inStock && torecaCamp?.inStock) {
+        const jtPrice = japanToreca.priceJPY;
+        const tcPrice = torecaCamp.priceJPY;
+        
+        if (jtPrice !== tcPrice) {
+          const cheaper = jtPrice < tcPrice ? 'Japan-Toreca' : 'TorecaCamp';
+          const cheaperPrice = Math.min(jtPrice, tcPrice);
+          const expensivePrice = Math.max(jtPrice, tcPrice);
+          const margin = Math.round(((expensivePrice - cheaperPrice) / cheaperPrice) * 100);
+          
+          arbitrage = {
+            margin,
+            cheaperSource: cheaper,
+            savings: expensivePrice - cheaperPrice
+          };
+        }
+      }
+      
+      return { ...card, japanToreca, torecaCamp, arbitrage };
+    });
+  }, [initialCards]);
+
   const filteredCards = useMemo(() => {
-    let cards = [...initialCards];
+    let cards = [...cardsWithArbitrage];
 
     // Filter by rarity
     if (filterRarity !== 'all') {
       cards = cards.filter(c => c.rarity === filterRarity);
-    }
-
-    // Filter by source
-    if (filterSource !== 'all') {
-      cards = cards.filter(c => 
-        c.japanesePrices.some(p => p.source === filterSource && p.inStock)
-      );
     }
 
     // Filter by search
@@ -39,17 +71,31 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
 
     // Sort
     cards.sort((a, b) => {
-      const lowestA = a.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
-      const lowestB = b.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
-      
-      if (sortBy === 'price-asc') return lowestA - lowestB;
-      if (sortBy === 'price-desc') return lowestB - lowestA;
+      if (sortBy === 'profit-desc') {
+        return (b.arbitrage?.margin || 0) - (a.arbitrage?.margin || 0);
+      }
+      if (sortBy === 'profit-asc') {
+        return (a.arbitrage?.margin || 0) - (b.arbitrage?.margin || 0);
+      }
+      if (sortBy === 'price-asc') {
+        const lowestA = a.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
+        const lowestB = b.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
+        return lowestA - lowestB;
+      }
+      if (sortBy === 'price-desc') {
+        const lowestA = a.japanesePrices.find(p => p.isLowest)?.priceJPY || 0;
+        const lowestB = b.japanesePrices.find(p => p.isLowest)?.priceJPY || 0;
+        return lowestB - lowestA;
+      }
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       return 0;
     });
 
     return cards;
-  }, [initialCards, filterRarity, filterSource, sortBy, searchQuery]);
+  }, [cardsWithArbitrage, filterRarity, sortBy, searchQuery]);
+
+  // Count arbitrage opportunities
+  const arbitrageCount = filteredCards.filter(c => c.arbitrage && c.arbitrage.margin > 5).length;
 
   return (
     <div>
@@ -65,19 +111,19 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
             <p className="text-2xl font-bold">{filteredCards.length}</p>
           </div>
           <div>
-            <p className="text-sm opacity-75">Sets</p>
-            <p className="text-2xl font-bold">M3</p>
+            <p className="text-sm opacity-75 text-emerald-400">Arbitrage Ops</p>
+            <p className="text-2xl font-bold text-emerald-400">{arbitrageCount}</p>
           </div>
           <div>
             <p className="text-sm opacity-75">Last Updated</p>
-            <p className="text-sm font-mono mt-1">{new Date().toLocaleTimeString()}</p>
+            <p className="text-sm font-mono mt-1">{new Date().toLocaleDateString()}</p>
           </div>
         </div>
       </div>
 
       {/* Filters */}
       <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Search */}
           <div>
             <label className="text-white/75 text-sm block mb-1">Search</label>
@@ -105,20 +151,6 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
             </select>
           </div>
 
-          {/* Source Filter */}
-          <div>
-            <label className="text-white/75 text-sm block mb-1">Source</label>
-            <select
-              value={filterSource}
-              onChange={(e) => setFilterSource(e.target.value)}
-              className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
-            >
-              <option value="all" className="bg-gray-900">All Sources</option>
-              <option value="japan-toreca" className="bg-gray-900">Japan-Toreca</option>
-              <option value="torecacamp" className="bg-gray-900">TorecaCamp</option>
-            </select>
-          </div>
-
           {/* Sort */}
           <div>
             <label className="text-white/75 text-sm block mb-1">Sort By</label>
@@ -127,6 +159,7 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
               onChange={(e) => setSortBy(e.target.value)}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
+              <option value="profit-desc" className="bg-gray-900">Profit % (High to Low)</option>
               <option value="price-asc" className="bg-gray-900">Price: Low to High</option>
               <option value="price-desc" className="bg-gray-900">Price: High to Low</option>
               <option value="name" className="bg-gray-900">Name</option>
@@ -139,69 +172,106 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCards.map((card) => {
           const lowest = card.japanesePrices.find(p => p.isLowest) || card.japanesePrices[0];
-          const japanToreca = card.japanesePrices.find(p => p.source === 'japan-toreca');
-          const torecaCamp = card.japanesePrices.find(p => p.source === 'torecacamp');
+          const imageUrl = getCardImageUrl(card.cardNumber, card.set);
 
           return (
-            <div key={card.id} className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:border-purple-500/50 transition">
-              {/* Header */}
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold text-white">{card.name}</h3>
-                <span className={`text-xs px-2 py-1 rounded font-bold ${
-                  card.rarity === 'SAR' ? 'bg-amber-600' : 
-                  card.rarity === 'AR' ? 'bg-cyan-600' : 'bg-violet-600'
-                }`}>
-                  {card.rarity}
-                </span>
+            <div key={card.id} className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-purple-500/50 transition hover:scale-[1.02]">
+              {/* Card Image */}
+              <div className="relative aspect-[3/4] bg-gradient-to-br from-purple-900/50 to-blue-900/50">
+                <Image
+                  src={imageUrl}
+                  alt={card.name}
+                  fill
+                  className="object-contain p-4"
+                  unoptimized
+                  onError={(e) => {
+                    // Show placeholder on error
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = `
+                      <div class="flex items-center justify-center h-full text-white/50">
+                        <div class="text-center">
+                          <div class="text-4xl mb-2">🎴</div>
+                          <p class="text-sm">${card.cardNumber}</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
+                />
               </div>
 
-              <p className="text-white/60 text-sm mb-4">
-                {card.set} #{card.cardNumber}
-              </p>
-
-              {/* Price */}
-              {lowest && (
-                <div className="mb-4">
-                  <p className="text-white/60 text-sm">Lowest Price</p>
-                  <p className="text-3xl font-bold text-emerald-400">
-                    ¥{lowest.priceJPY.toLocaleString()}
-                  </p>
-                  <p className="text-white/50 text-sm">
-                    ~${lowest.priceUSD.toFixed(2)}
-                  </p>
+              <div className="p-4 space-y-3">
+                {/* Header */}
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-lg font-bold text-white">{card.name}</h3>
+                    <p className="text-sm text-purple-200">{card.set} #{card.cardNumber}</p>
+                  </div>
+                  <span className={`text-xs px-2 py-1 rounded font-bold ${
+                    card.rarity === 'SAR' ? 'bg-amber-600' : 
+                    card.rarity === 'AR' ? 'bg-cyan-600' : 'bg-violet-600'
+                  }`}>
+                    {card.rarity}
+                  </span>
                 </div>
-              )}
 
-              {/* Links */}
-              <div className="space-y-2">
-                {japanToreca && (
-                  <a
-                    href={japanToreca.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex justify-between items-center bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg px-4 py-3 transition"
-                  >
-                    <span className="text-blue-300 text-sm">Japan-Toreca</span>
-                    <div className="text-right">
-                      <span className="text-white font-bold">¥{japanToreca.priceJPY.toLocaleString()}</span>
-                      {japanToreca.quality && (
-                        <span className="text-white/50 text-xs ml-2">({japanToreca.quality})</span>
-                      )}
-                    </div>
-                  </a>
+                {/* Lowest Price */}
+                {lowest && (
+                  <div className="bg-white/5 rounded-lg p-3">
+                    <p className="text-white/60 text-sm">Lowest Price</p>
+                    <p className="text-2xl font-bold text-emerald-400">
+                      ¥{lowest.priceJPY.toLocaleString()}
+                    </p>
+                    <p className="text-white/50 text-sm">~${lowest.priceUSD.toFixed(2)}</p>
+                  </div>
                 )}
 
-                {torecaCamp && (
-                  <a
-                    href={torecaCamp.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex justify-between items-center bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30 rounded-lg px-4 py-3 transition"
-                  >
-                    <span className="text-purple-300 text-sm">TorecaCamp</span>
-                    <span className="text-white font-bold">¥{torecaCamp.priceJPY.toLocaleString()}</span>
-                  </a>
+                {/* Arbitrage Opportunity */}
+                {card.arbitrage && card.arbitrage.margin > 5 && (
+                  <div className="bg-emerald-500/20 border border-emerald-500/50 rounded-lg p-3">
+                    <p className="text-emerald-400 text-sm font-bold">
+                      🔥 Arbitrage Opportunity!
+                    </p>
+                    <p className="text-white text-sm">
+                      Buy from {card.arbitrage.cheaperSource} for ¥{lowest?.priceJPY.toLocaleString()}
+                    </p>
+                    <p className="text-emerald-400 text-lg font-bold">
+                      Save ¥{card.arbitrage.savings} ({card.arbitrage.margin}%)
+                    </p>
+                  </div>
                 )}
+
+                {/* Links */}
+                <div className="space-y-2 pt-2">
+                  {card.japanToreca?.inStock && (
+                    <a
+                      href={card.japanToreca.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-between items-center bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg px-4 py-3 transition"
+                    >
+                      <span className="text-blue-300 text-sm">Japan-Toreca</span>
+                      <div className="text-right">
+                        <span className="text-white font-bold">¥{card.japanToreca.priceJPY.toLocaleString()}</span>
+                        {card.japanToreca.quality && (
+                          <span className="text-white/50 text-xs ml-2">({card.japanToreca.quality})</span>
+                        )}
+                      </div>
+                    </a>
+                  )}
+
+                  {card.torecaCamp?.inStock && (
+                    <a
+                      href={card.torecaCamp.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-between items-center bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30 rounded-lg px-4 py-3 transition"
+                    >
+                      <span className="text-purple-300 text-sm">TorecaCamp</span>
+                      <span className="text-white font-bold">¥{card.torecaCamp.priceJPY.toLocaleString()}</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           );
@@ -215,8 +285,8 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
           <button
             onClick={() => {
               setFilterRarity('all');
-              setFilterSource('all');
               setSearchQuery('');
+              setSortBy('profit-desc');
             }}
             className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white transition"
           >
