@@ -1,0 +1,244 @@
+{
+  "opportunities": [
+    {
+      "id": "108/080-SR",
+      "name": "Jacinthe",
+      "cardNumber": "108/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 17.94,
+        "sellerCount": 12
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.91,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12345",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 480,
+          "priceUSD": 3.13,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/12345",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.91,
+      "marginPercent": 359,
+      "marginAmount": 14.03,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "106/080-SR",
+      "name": "Naveen",
+      "cardNumber": "106/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 14.72,
+        "sellerCount": 8
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.26,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12346",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 680,
+          "priceUSD": 4.43,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/12346",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.26,
+      "marginPercent": 352,
+      "marginAmount": 11.46,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "087/080-AR",
+      "name": "Espurr",
+      "cardNumber": "087/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 7.55,
+        "sellerCount": 15
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 530,
+          "priceUSD": 3.46,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12347",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.83,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/12347",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.83,
+      "marginPercent": 313,
+      "marginAmount": 5.72,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "104/080-SR",
+      "name": "Wondrous Patch",
+      "cardNumber": "104/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 5.33,
+        "sellerCount": 6
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 200,
+          "priceUSD": 1.30,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12348",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.48,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/12348",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.30,
+      "marginPercent": 308,
+      "marginAmount": 4.03,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "110/080-SR",
+      "name": "Lumiose City",
+      "cardNumber": "110/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 2.59,
+        "sellerCount": 19
+      },
+      "japanesePrices": [
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/12349",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "marginPercent": 297,
+      "marginAmount": 1.94,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "098/080-SR",
+      "name": "Yveltal ex",
+      "cardNumber": "098/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 12.82,
+        "sellerCount": 4
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.26,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12350",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.26,
+      "marginPercent": 293,
+      "marginAmount": 9.56,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    },
+    {
+      "id": "101/080-SR",
+      "name": "Energy Recycler",
+      "cardNumber": "101/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 2.51,
+        "sellerCount": 9
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 200,
+          "priceUSD": 1.30,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12351",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/12351",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "marginPercent": 285,
+      "marginAmount": 1.86,
+      "lastUpdated": "2026-02-12T16:10:00Z",
+      "isViable": true
+    }
+  ],
+  "lastUpdated": "2026-02-12T16:10:00Z",
+  "stats": {
+    "totalCards": 7,
+    "viableOpportunities": 7,
+    "avgMargin": 315
+  }
+}
