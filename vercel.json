@@ -1,16 +1,6 @@
 {
   "version": 2,
   "name": "pokemon-arbitrage-tracker",
-  "builds": [
-    {
-      "src": "dashboard.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "data/**",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/",
@@ -22,19 +12,9 @@
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Headers": "Content-Type"
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Cache-Control": "public, max-age=3600"
       }
-    }
-  ],
-  "headers": [
-    {
-      "source": "/data/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
     }
   ]
 }
