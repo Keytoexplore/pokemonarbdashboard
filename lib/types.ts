@@ -1,16 +1,14 @@
-// Simple, focused types for Pokemon arbitrage
-
 export interface JapanesePrice {
   source: 'japan-toreca' | 'torecacamp';
   priceJPY: number;
   priceUSD: number;
-  quality?: 'A' | 'A-' | 'B' | null;
+  quality?: string;
   inStock: boolean;
-  isLowest: boolean;
   url: string;
+  isLowest: boolean;
 }
 
-export interface TCGPlayerPrice {
+export interface TCGPlayerData {
   marketPrice: number;
   sellerCount: number;
 }
@@ -21,20 +19,13 @@ export interface ArbitrageOpportunity {
   cardNumber: string;
   rarity: 'SR' | 'AR' | 'SAR';
   set: string;
-  imageUrl?: string;
-  
-  // Prices
-  tcgplayer: TCGPlayerPrice;
+  tcgplayer: TCGPlayerData;
   japanesePrices: JapanesePrice[];
-  
-  // Calculated metrics
-  lowestJapanesePrice: number; // in USD
+  lowestJapanesePrice: number;
   marginPercent: number;
   marginAmount: number;
-  
-  // Status
   lastUpdated: string;
-  isViable: boolean; // margin > 20%
+  isViable: boolean;
 }
 
 export interface DashboardData {
