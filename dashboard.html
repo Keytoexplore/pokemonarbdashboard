@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon AR Card Arbitrage Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Pokemon AR Card Arbitrage Dashboard</h1>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-xl font-semibold mb-4">Current Market Data</h2>
+            <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Cards will be dynamically loaded here -->
+            </div>
+        </div>
+        
+        <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-xl font-semibold mb-4">Last Updated</h2>
+            <p id="last-updated" class="text-gray-600"></p>
+        </div>
+    </div>
+
+    <script>
+        // Load data from JSON files
+        async function loadData() {
+            try {
+                const [currentData, priceHistory] = await Promise.all([
+                    fetch('data/current-cards.json').then(r => r.json()),
+                    fetch('data/price-history.json').then(r => r.json())
+                ]);
+
+                displayCards(currentData.cards);
+                document.getElementById('last-updated').textContent = 
+                    `Last updated: ${new Date(currentData.lastUpdated).toLocaleString()}`;
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('cards-container').innerHTML = 
+                    '<p class="text-red-500 text-center">Error loading card data</p>';
+            }
+        }
+
+        function displayCards(cards) {
+            const container = document.getElementById('cards-container');
+            
+            cards.forEach(card => {
+                const cardElement = createCardElement(card);
+                container.appendChild(cardElement);
+            });
+        }
+
+        function createCardElement(card) {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow';
+            
+            const qualityColor = getQualityColor(card.quality);
+            const availabilityClass = card.availability === 'in_stock' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
+            
+            cardDiv.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-semibold">${card.name}</h3>
+                    <span class="px-2 py-1 rounded-full text-xs font-medium ${qualityColor}">${card.quality}</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">${card.cardNumber}</p>
+                <p class="text-lg font-bold mb-2">¥${card.price.toLocaleString()}</p>
+                <div class="flex items-center justify-between">
+                    <span class="px-2 py-1 rounded-full text-xs font-medium ${availabilityClass}">
+                        ${card.availability === 'in_stock' ? 'In Stock' : 'Out of Stock'}
+                    </span>
+                    <span class="text-xs text-gray-500">${card.id.split('-')[0]}</span>
+                </div>
+            `;
+            
+            return cardDiv;
+        }
+
+        function getQualityColor(quality) {
+            const colors = {
+                'A-': 'bg-blue-100 text-blue-800',
+                'A': 'bg-green-100 text-green-800',
+                'B': 'bg-yellow-100 text-yellow-800'
+            };
+            return colors[quality] || 'bg-gray-100 text-gray-800';
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
