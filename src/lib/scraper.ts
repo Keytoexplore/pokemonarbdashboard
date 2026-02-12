@@ -52,10 +52,10 @@ export async function scrapeJapanTorecaForSet(set: string): Promise<ScrapedCard[
       const html = await page.content();
       const $ = cheerio.load(html);
       
-      $('a[href*="/products/pokemon-"]').each((_, element) => {
+      $('a[href*="/products/"]').each((_, element) => {
         const $el = $(element);
         const url = $el.attr('href');
-        if (!url || url.includes('#')) return;
+        if (!url || url.includes('#') || !url.includes('pokemon')) return;
         
         const heading = $el.find('h3').text().trim();
         if (!heading) return;
