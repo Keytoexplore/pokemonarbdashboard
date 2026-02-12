@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon TCG Arbitrage - Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Pokemon TCG Arbitrage Tracker</h1>
+        <p class="text-gray-400 mb-6">Japanese card prices - M3 Set</p>
+        
+        <div id="loading" class="text-center py-12">
+            <p class="text-gray-500">Loading cards...</p>
+        </div>
+        
+        <div id="error" class="hidden bg-red-900/30 border border-red-500/50 rounded-lg p-4 mb-4">
+            <p class="text-red-400 font-bold">Error loading data</p>
+            <p id="error-message" class="text-red-300 text-sm"></p>
+        </div>
+        
+        <div id="cards" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <script>
+        async function loadCards() {
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const errorMsg = document.getElementById('error-message');
+            const cards = document.getElementById('cards');
+            
+            try {
+                const response = await fetch('data/arbitrage-data.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                if (!data.opportunities || data.opportunities.length === 0) {
+                    throw new Error('No opportunities found in data');
+                }
+                
+                loading.classList.add('hidden');
+                cards.classList.remove('hidden');
+                
+                cards.innerHTML = data.opportunities.map(card => {
+                    const lowest = card.japanesePrices?.find(p => p.isLowest) || card.japanesePrices?.[0];
+                    const japanToreca = card.japanesePrices?.find(p => p.source === 'japan-toreca');
+                    const torecaCamp = card.japanesePrices?.find(p => p.source === 'torecacamp');
+                    
+                    return `
+                        <div class="bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-blue-500/50 transition">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">${card.name}</h3>
+                                <span class="text-xs bg-gray-700 px-2 py-1 rounded">${card.rarity}</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-3">${card.set} #${card.cardNumber}</p>
+                            
+                            <div class="space-y-2">
+                                ${lowest ? `
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-400 text-sm">Lowest Price:</span>
+                                        <span class="font-bold">¥${lowest.priceJPY.toLocaleString()}</span>
+                                    </div>
+                                ` : ''}
+                                
+                                ${japanToreca ? `
+                                    <a href="${japanToreca.url}" target="_blank" 
+                                       class="block text-sm bg-blue-900/30 hover:bg-blue-900/50 border border-blue-700/50 rounded px-3 py-2 transition">
+                                        <span class="text-blue-400">Japan-Toreca:</span> 
+                                        ¥${japanToreca.priceJPY.toLocaleString()}
+                                        ${japanToreca.quality ? `<span class="text-gray-400">(${japanToreca.quality})</span>` : ''}
+                                        <span class="${japanToreca.inStock ? 'text-green-400' : 'text-red-400'} float-right">
+                                            ${japanToreca.inStock ? '✓' : '✗'}
+                                        </span>
+                                    </a>
+                                ` : ''}
+                                
+                                ${torecaCamp ? `
+                                    <a href="${torecaCamp.url}" target="_blank"
+                                       class="block text-sm bg-purple-900/30 hover:bg-purple-900/50 border border-purple-700/50 rounded px-3 py-2 transition">
+                                        <span class="text-purple-400">TorecaCamp:</span> 
+                                        ¥${torecaCamp.priceJPY.toLocaleString()}
+                                        <span class="${torecaCamp.inStock ? 'text-green-400' : 'text-red-400'} float-right">
+                                            ${torecaCamp.inStock ? '✓' : '✗'}
+                                        </span>
+                                    </a>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+            } catch (e) {
+                loading.classList.add('hidden');
+                error.classList.remove('hidden');
+                errorMsg.textContent = e.message;
+                console.error('Dashboard error:', e);
+            }
+        }
+        
+        loadCards();
+    </script>
+</body>
+</html>

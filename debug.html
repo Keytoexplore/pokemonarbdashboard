@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Pokemon Arbitrage</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #111; color: #fff; }
+        .error { color: #f87171; }
+        .success { color: #34d399; }
+        pre { background: #1f2937; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Debug Dashboard</h1>
+    <div id="status">Loading...</div>
+    <div id="output"></div>
+
+    <script>
+        async function testLoad() {
+            const status = document.getElementById('status');
+            const output = document.getElementById('output');
+            
+            try {
+                // Try multiple paths
+                const paths = [
+                    'data/arbitrage-data.json',
+                    '/data/arbitrage-data.json',
+                    './data/arbitrage-data.json',
+                    'https://pokemonarbdashboard.vercel.app/data/arbitrage-data.json'
+                ];
+                
+                for (const path of paths) {
+                    try {
+                        status.innerHTML = `<p>Trying: <code>${path}</code>...</p>`;
+                        const response = await fetch(path);
+                        
+                        if (response.ok) {
+                            const data = await response.json();
+                            status.innerHTML = `<p class="success">✅ SUCCESS with: <code>${path}</code></p>`;
+                            output.innerHTML = `
+                                <h2>Data Loaded:</h2>
+                                <p>Total cards: ${data.opportunities?.length || 0}</p>
+                                <p>Last updated: ${data.lastUpdated}</p>
+                                <h3>First card:</h3>
+                                <pre>${JSON.stringify(data.opportunities?.[0], null, 2)}</pre>
+                            `;
+                            return;
+                        } else {
+                            status.innerHTML += `<p class="error">❌ ${path}: HTTP ${response.status}</p>`;
+                        }
+                    } catch (e) {
+                        status.innerHTML += `<p class="error">❌ ${path}: ${e.message}</p>`;
+                    }
+                }
+                
+                status.innerHTML += `<p class="error">All paths failed!</p>`;
+                
+            } catch (e) {
+                status.innerHTML = `<p class="error">Fatal error: ${e.message}</p>`;
+                console.error(e);
+            }
+        }
+        
+        testLoad();
+    </script>
+</body>
+</html>
