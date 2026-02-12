@@ -1,12 +1,12 @@
 import { CardsWithFilters } from '@/components/CardsWithFilters';
 import { DashboardData, ArbitrageOpportunity } from '@/lib/types';
-import { fetchUSPricesBatch, USPriceData } from '@/lib/pokemon-api';
+import { fetchUSPricesBatch, USPriceData, fallbackUSPrices } from '@/lib/pokemon-api';
 
 // Revalidate every 3 days
 export const revalidate = 259200;
 
 // Embedded card data with Japan prices
-const baseCardsData = {
+const baseCardsData: { opportunities: ArbitrageOpportunity[] } = {
   "opportunities": [
     {"id":"M3-104/080-SAR","name":"ワンダーパッチ","cardNumber":"104/080","rarity":"SAR","set":"M3","tcgplayer":{"marketPrice":0,"sellerCount":0},"japanesePrices":[{"source":"japan-toreca","priceJPY":450,"priceUSD":2.93,"quality":"A","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227755-a","isLowest":false},{"source":"japan-toreca","priceJPY":200,"priceUSD":1.3,"quality":"A-","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227755-a-damaged","isLowest":true}],"lowestJapanesePrice":1.3,"usPrice":null,"arbitrageUS":null,"marginPercent":0,"marginAmount":0,"lastUpdated":"2026-02-12T17:53:00Z","isViable":false},
     {"id":"M3-105/080-SAR","name":"タラゴン","cardNumber":"105/080","rarity":"SAR","set":"M3","tcgplayer":{"marketPrice":0,"sellerCount":0},"japanesePrices":[{"source":"japan-toreca","priceJPY":350,"priceUSD":2.28,"quality":"A","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227756-a","isLowest":true},{"source":"torecacamp","priceJPY":380,"priceUSD":2.48,"quality":null,"inStock":true,"url":"https://torecacamp-pokemon.com/products/rc_jt822gt7wb8w_g8qe","isLowest":false}],"lowestJapanesePrice":2.28,"usPrice":null,"arbitrageUS":null,"marginPercent":0,"marginAmount":0,"lastUpdated":"2026-02-12T17:53:00Z","isViable":false},
@@ -41,6 +41,7 @@ function calculateArbitrageUS(
 
 /**
  * Enrich card data with US prices and calculate arbitrage
+ * Uses fallback prices if API fails
  */
 async function enrichWithUSPrices(
   opportunities: ArbitrageOpportunity[]
@@ -52,12 +53,28 @@ async function enrichWithUSPrices(
     set: card.set,
   }));
 
-  // Fetch US prices
-  const usPrices = await fetchUSPricesBatch(cardsForFetch);
+  let usPrices: Map<string, USPriceData>;
+  
+  try {
+    // Fetch US prices from API with rate limiting
+    usPrices = await fetchUSPricesBatch(cardsForFetch);
+    console.log(`Successfully fetched US prices for ${usPrices.size} cards`);
+  } catch (error) {
+    console.error('Failed to fetch US prices from API, using fallbacks:', error);
+    // Use fallback prices if API fails
+    usPrices = new Map();
+    for (const card of cardsForFetch) {
+      const fallback = fallbackUSPrices[card.id];
+      if (fallback) {
+        usPrices.set(card.id, fallback);
+      }
+    }
+  }
 
   // Enrich cards with US prices and calculate arbitrage
   const enrichedCards = opportunities.map(card => {
-    const usPrice = usPrices.get(card.id) || null;
+    // Try API result first, then fallback
+    const usPrice = usPrices.get(card.id) || fallbackUSPrices[card.id] || null;
     const lowestJapanPrice = card.japanesePrices.find(p => p.isLowest);
     const japanPriceUSD = lowestJapanPrice?.priceUSD || card.lowestJapanesePrice;
 

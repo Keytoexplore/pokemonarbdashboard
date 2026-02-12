@@ -1,6 +1,9 @@
 const API_BASE_URL = 'https://www.pokemonpricetracker.com/api/v2';
 const API_KEY = 'pokeprice_free_67abf1594acce302cdbaaf1339c9234cbc402f5726e95cd7';
 
+// Cache duration: 3 days in seconds
+const CACHE_DURATION = 259200;
+
 export interface USPriceData {
   marketPrice: number;
   sellerCount: number;
@@ -9,7 +12,7 @@ export interface USPriceData {
 }
 
 /**
- * Fetch US market price for a Pokemon card
+ * Fetch US market price for a Pokemon card with ISR caching
  * @param cardNumber - Card number (e.g., "082/080")
  * @param setCode - Set code (e.g., "M3")
  * @returns USPriceData with market price information
@@ -32,7 +35,9 @@ export async function fetchUSCardPrice(
 
     const url = `${API_BASE_URL}/cards?${params.toString()}`;
     
+    // Use Next.js fetch with ISR caching - cached for 3 days
     const response = await fetch(url, {
+      next: { revalidate: CACHE_DURATION },
       headers: {
         'Accept': 'application/json',
       },
@@ -87,7 +92,8 @@ export async function fetchUSCardPrice(
 }
 
 /**
- * Fetch US prices for multiple cards in batch
+ * Fetch US prices for multiple cards in batch with rate limiting
+ * Processes one card at a time with 1 second delay to stay within API limits
  * @param cards - Array of cards with cardNumber and set
  * @returns Map of card IDs to US price data
  */
@@ -96,26 +102,33 @@ export async function fetchUSPricesBatch(
 ): Promise<Map<string, USPriceData>> {
   const results = new Map<string, USPriceData>();
   
-  // Process in batches to avoid rate limiting
-  const batchSize = 5;
-  
-  for (let i = 0; i < cards.length; i += batchSize) {
-    const batch = cards.slice(i, i + batchSize);
+  // Process sequentially with delay to respect rate limits
+  for (let i = 0; i < cards.length; i++) {
+    const card = cards[i];
     
-    const batchPromises = batch.map(async (card) => {
+    try {
       const priceData = await fetchUSCardPrice(card.cardNumber, card.set);
       if (priceData) {
         results.set(card.id, priceData);
       }
-    });
+    } catch (error) {
+      console.error(`Failed to fetch price for ${card.id}:`, error);
+    }
     
-    await Promise.all(batchPromises);
-    
-    // Small delay between batches to be respectful to the API
-    if (i + batchSize < cards.length) {
-      await new Promise(resolve => setTimeout(resolve, 500));
+    // Wait 1 second between requests to stay within API limits
+    if (i < cards.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
     }
   }
   
   return results;
 }
+
+/**
+ * Fallback US prices for when API is unavailable
+ * These are cached from previous successful fetches
+ */
+export const fallbackUSPrices: Record<string, USPriceData> = {
+  // Add fallback prices here if needed
+  // Format: 'M3-104/080-SAR': { marketPrice: 8.50, sellerCount: 12, listingCount: 15, currency: 'USD' },
+};
