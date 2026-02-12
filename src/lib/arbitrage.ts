@@ -1,5 +1,6 @@
 import { scrapeAllSets } from './scraper';
 import { getTCGPlayerPrice, getCacheStats } from './tcgplayer-api';
+import { getCardMapping } from './card-mappings';
 import { ArbitrageOpportunity, DashboardData } from './types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -16,7 +17,7 @@ function detectRarity(cardNumber: string): 'SR' | 'AR' | 'SAR' {
 
 // Configuration - Add your sets here
 const CONFIG = {
-  sets: ['M3', 'SV9', 'SV8a', 'SV8', 'SV7'], // Add more sets as needed
+  sets: ['M3'], // Start with M3 for testing
   minMarginPercent: 20, // Only show opportunities with >20% margin
   outputFile: path.join(process.cwd(), 'data', 'arbitrage-data.json')
 };
@@ -44,6 +45,7 @@ export async function calculateArbitrageForSets(sets: string[] = CONFIG.sets): P
   // 2. Group cards by set + card number
   const cardMap = new Map<string, {
     name: string;
+    englishName: string | null;
     cardNumber: string;
     set: string;
     rarity: 'SR' | 'AR' | 'SAR';
@@ -61,9 +63,14 @@ export async function calculateArbitrageForSets(sets: string[] = CONFIG.sets): P
     const key = `${card.set}-${card.cardNumber}`;
     const rarity = detectRarity(card.cardNumber);
     
+    // Try to get English name from mapping
+    const mapping = getCardMapping(card.cardNumber, card.set);
+    const englishName = mapping?.englishName || null;
+    
     if (!cardMap.has(key)) {
       cardMap.set(key, {
         name: card.name,
+        englishName,
         cardNumber: card.cardNumber,
         set: card.set,
         rarity,
@@ -100,9 +107,17 @@ export async function calculateArbitrageForSets(sets: string[] = CONFIG.sets): P
     );
     
     // Get TCGPlayer price (uses 3-day cache)
-    console.log(`[${processedCount}/${cardMap.size}] Fetching TCGPlayer price for ${cardData.name} (${cardData.cardNumber})...`);
+    // Use English name if available, otherwise skip (API won't find Japanese names)
+    const searchName = cardData.englishName;
+    
+    if (!searchName) {
+      console.log(`  ⚠️ No English name mapping for ${cardData.name} (${cardData.cardNumber}), skipping...`);
+      continue;
+    }
+    
+    console.log(`[${processedCount}/${cardMap.size}] Fetching TCGPlayer price for ${searchName} (${cardData.cardNumber})...`);
     const tcgplayerData = await getTCGPlayerPrice(
-      cardData.name, 
+      searchName, 
       cardData.cardNumber, 
       cardData.rarity
     );
