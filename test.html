@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body style="background:#111;color:#fff;padding:20px;font-family:sans-serif;">
+    <h1>Data Test</h1>
+    <div id="output">Loading...</div>
+    
+    <script>
+        fetch('data/arbitrage-data.json')
+            .then(r => {
+                document.getElementById('output').innerHTML += '<p>Status: ' + r.status + '</p>';
+                return r.json();
+            })
+            .then(data => {
+                document.getElementById('output').innerHTML += 
+                    '<p style="color:green">✓ Loaded ' + data.opportunities.length + ' cards</p>' +
+                    '<p>First: ' + data.opportunities[0].name + '</p>';
+            })
+            .catch(e => {
+                document.getElementById('output').innerHTML += 
+                    '<p style="color:red">✗ Error: ' + e.message + '</p>';
+            });
+    </script>
+</body>
+</html>
