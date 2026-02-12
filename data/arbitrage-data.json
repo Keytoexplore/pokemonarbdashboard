@@ -1,8 +1,252 @@
 {
-  "opportunities": [],
-  "lastUpdated": "2026-02-12T16:41:29.333Z",
+  "opportunities": [
+    {
+      "id": "M3-104/080-SR",
+      "name": "ワンダーパッチ",
+      "cardNumber": "104/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-104-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.93,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-105/080-SR",
+      "name": "タラゴン",
+      "cardNumber": "105/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-105-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.28,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-106/080-SR",
+      "name": "ピュール",
+      "cardNumber": "106/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 800,
+          "priceUSD": 5.20,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-106-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 5.20,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-098/080-SR",
+      "name": "イベルタルex",
+      "cardNumber": "098/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-098-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-110/080-SR",
+      "name": "ミアレシティ",
+      "cardNumber": "110/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-110-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.98,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-092/080-AR",
+      "name": "ラッタ",
+      "cardNumber": "092/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.60,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-092-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.60,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-089/080-AR",
+      "name": "チゴラス",
+      "cardNumber": "089/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-089-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-090/080-AR",
+      "name": "ドラピオン",
+      "cardNumber": "090/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-090-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-091/080-AR",
+      "name": "ニダンギル",
+      "cardNumber": "091/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.60,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-091-080",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.60,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:45:00Z",
+      "isViable": false
+    }
+  ],
+  "lastUpdated": "2026-02-12T17:45:00Z",
   "stats": {
-    "totalCards": 0,
+    "totalCards": 9,
     "viableOpportunities": 0,
     "avgMargin": 0
   }
