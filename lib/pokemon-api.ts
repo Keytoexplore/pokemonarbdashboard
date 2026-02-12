@@ -9,13 +9,32 @@ export interface USPriceData {
   sellerCount: number;
   listingCount: number;
   currency: string;
+  imageUrl?: string;
+  cardName?: string;
+}
+
+export interface CardAPIData {
+  id: string;
+  name: string;
+  number: string;
+  set: string;
+  rarity?: string;
+  imageUrl?: string;
+  marketPrice?: number;
+  price?: number;
+  sellerCount?: number;
+  sellers?: number;
+  listingCount?: number;
+  listings?: number;
+  currency?: string;
 }
 
 /**
  * Fetch US market price for a Pokemon card with ISR caching
+ * Uses Authorization header with Bearer token
  * @param cardNumber - Card number (e.g., "082/080")
  * @param setCode - Set code (e.g., "M3")
- * @returns USPriceData with market price information
+ * @returns USPriceData with market price information and image URL
  */
 export async function fetchUSCardPrice(
   cardNumber: string,
@@ -30,16 +49,19 @@ export async function fetchUSCardPrice(
     const params = new URLSearchParams({
       set: setCode,
       number: cardNum,
-      apiKey: API_KEY,
     });
 
     const url = `${API_BASE_URL}/cards?${params.toString()}`;
     
+    console.log(`Fetching US price for ${setCode} ${cardNumber} from ${url}`);
+    
     // Use Next.js fetch with ISR caching - cached for 3 days
+    // API key must be in Authorization header as Bearer token
     const response = await fetch(url, {
       next: { revalidate: CACHE_DURATION },
       headers: {
         'Accept': 'application/json',
+        'Authorization': `Bearer ${API_KEY}`,
       },
     });
 
@@ -48,42 +70,56 @@ export async function fetchUSCardPrice(
         console.log(`No US price found for ${setCode} ${cardNumber}`);
         return null;
       }
+      if (response.status === 401) {
+        console.error(`API authentication failed for ${setCode} ${cardNumber}`);
+        return null;
+      }
       throw new Error(`API error: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
+    console.log(`API response for ${setCode} ${cardNumber}:`, JSON.stringify(data).slice(0, 200));
 
-    // Handle different response structures
+    // Handle array response (list of cards)
     if (Array.isArray(data) && data.length > 0) {
-      const card = data[0];
+      const card = data[0] as CardAPIData;
       return {
         marketPrice: card.marketPrice || card.price || 0,
         sellerCount: card.sellerCount || card.sellers || 0,
         listingCount: card.listingCount || card.listings || 0,
         currency: card.currency || 'USD',
+        imageUrl: card.imageUrl,
+        cardName: card.name,
       };
     }
 
+    // Handle { card: {...} } or { data: {...} } wrapper
     if (data.card || data.data) {
-      const card = data.card || data.data;
+      const card = (data.card || data.data) as CardAPIData;
       return {
         marketPrice: card.marketPrice || card.price || 0,
         sellerCount: card.sellerCount || card.sellers || 0,
         listingCount: card.listingCount || card.listings || 0,
         currency: card.currency || 'USD',
+        imageUrl: card.imageUrl,
+        cardName: card.name,
       };
     }
 
-    // If response has direct price data
+    // If response has direct price data (single card object)
     if (data.marketPrice !== undefined || data.price !== undefined) {
+      const card = data as CardAPIData;
       return {
-        marketPrice: data.marketPrice || data.price || 0,
-        sellerCount: data.sellerCount || data.sellers || 0,
-        listingCount: data.listingCount || data.listings || 0,
-        currency: data.currency || 'USD',
+        marketPrice: card.marketPrice || card.price || 0,
+        sellerCount: card.sellerCount || card.sellers || 0,
+        listingCount: card.listingCount || card.listings || 0,
+        currency: card.currency || 'USD',
+        imageUrl: card.imageUrl,
+        cardName: card.name,
       };
     }
 
+    console.log(`No valid price data found in response for ${setCode} ${cardNumber}`);
     return null;
   } catch (error) {
     console.error(`Error fetching US price for ${setCode} ${cardNumber}:`, error);
@@ -102,6 +138,8 @@ export async function fetchUSPricesBatch(
 ): Promise<Map<string, USPriceData>> {
   const results = new Map<string, USPriceData>();
   
+  console.log(`Starting batch fetch for ${cards.length} cards`);
+  
   // Process sequentially with delay to respect rate limits
   for (let i = 0; i < cards.length; i++) {
     const card = cards[i];
@@ -110,6 +148,9 @@ export async function fetchUSPricesBatch(
       const priceData = await fetchUSCardPrice(card.cardNumber, card.set);
       if (priceData) {
         results.set(card.id, priceData);
+        console.log(`✓ Fetched US price for ${card.id}: $${priceData.marketPrice}`);
+      } else {
+        console.log(`✗ No US price data for ${card.id}`);
       }
     } catch (error) {
       console.error(`Failed to fetch price for ${card.id}:`, error);
@@ -121,7 +162,58 @@ export async function fetchUSPricesBatch(
     }
   }
   
+  console.log(`Batch fetch complete. Got prices for ${results.size}/${cards.length} cards`);
   return results;
+}
+
+/**
+ * Fetch card image URL from the API
+ * This can be used to get the proper card image
+ */
+export async function fetchCardImage(
+  cardNumber: string,
+  setCode: string
+): Promise<string | null> {
+  try {
+    const cardNum = cardNumber.split('/')[0];
+    const params = new URLSearchParams({
+      set: setCode,
+      number: cardNum,
+    });
+
+    const url = `${API_BASE_URL}/cards?${params.toString()}`;
+    
+    const response = await fetch(url, {
+      next: { revalidate: CACHE_DURATION },
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${API_KEY}`,
+      },
+    });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const data = await response.json();
+
+    if (Array.isArray(data) && data.length > 0) {
+      return data[0].imageUrl || null;
+    }
+    
+    if (data.card?.imageUrl) {
+      return data.card.imageUrl;
+    }
+    
+    if (data.data?.imageUrl) {
+      return data.data.imageUrl;
+    }
+
+    return null;
+  } catch (error) {
+    console.error(`Error fetching card image for ${setCode} ${cardNumber}:`, error);
+    return null;
+  }
 }
 
 /**
@@ -129,6 +221,5 @@ export async function fetchUSPricesBatch(
  * These are cached from previous successful fetches
  */
 export const fallbackUSPrices: Record<string, USPriceData> = {
-  // Add fallback prices here if needed
-  // Format: 'M3-104/080-SAR': { marketPrice: 8.50, sellerCount: 12, listingCount: 15, currency: 'USD' },
+  // Fallback prices will be populated after successful API calls
 };

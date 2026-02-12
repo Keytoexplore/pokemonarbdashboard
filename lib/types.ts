@@ -18,6 +18,8 @@ export interface USMarketData {
   sellerCount: number;
   listingCount: number;
   currency: string;
+  imageUrl?: string;
+  cardName?: string;
 }
 
 export interface ArbitrageUSData {
@@ -43,6 +45,7 @@ export interface ArbitrageOpportunity {
   marginAmount: number;
   lastUpdated: string;
   isViable: boolean;
+  imageUrl?: string;
 }
 
 export interface DashboardData {
