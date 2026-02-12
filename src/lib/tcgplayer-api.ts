@@ -49,26 +49,29 @@ const memoryCache = loadCache();
 
 export async function getTCGPlayerPrice(
   cardName: string, 
-  cardNumber: string,
-  rarity: 'SR' | 'AR' | 'SAR'
+  englishCardNumber: string,
+  rarity: 'SR' | 'AR' | 'SAR' | 'UR',
+  notes?: string
 ): Promise<TCGPlayerData | null> {
-  const cacheKey = `${cardName}-${cardNumber}`;
+  // Skip if no English card number (Japanese exclusive)
+  if (englishCardNumber === 'N/A') {
+    console.log(`⚠️  ${cardName} is Japanese exclusive (no English version)`);
+    return null;
+  }
+  
+  const cacheKey = `${cardName}-${englishCardNumber}`;
   const cached = memoryCache.get(cacheKey);
   
   // Return cached data if less than 3 days old
   if (cached && Date.now() - cached.timestamp < THREE_DAYS_MS) {
-    console.log(`📦 Using cached price for ${cardName} (${cardNumber})`);
+    console.log(`📦 Using cached price for ${cardName} #${englishCardNumber}`);
     return cached.data;
   }
   
   try {
-    const rarityMap = {
-      'SR': 'Super Rare',
-      'AR': 'Art Rare', 
-      'SAR': 'Special Art Rare'
-    };
+    console.log(`🌐 Fetching TCGPlayer price for ${cardName} #${englishCardNumber}...`);
     
-    console.log(`🌐 Fetching TCGPlayer price for ${cardName} (${cardNumber})...`);
+    // Search by card name only (set/cardNumber filters don't work)
     const response = await axios.get(`${BASE_URL}/cards`, {
       headers: {
         'Authorization': `Bearer ${API_KEY}`,
@@ -76,42 +79,72 @@ export async function getTCGPlayerPrice(
       },
       params: {
         search: cardName,
-        cardNumber: cardNumber,
-        rarity: rarityMap[rarity]
+        limit: 50
       }
     });
     
     if (response.data?.data?.length > 0) {
-      const card = response.data.data[0];
-      const data: TCGPlayerData = {
-        marketPrice: card.prices?.market || card.prices?.tcgplayer || 0,
-        sellerCount: card.sellerCount || 0,
-        listingCount: card.listingCount || 0
-      };
+      const cards = response.data.data;
       
-      // Save to cache
-      memoryCache.set(cacheKey, { data, timestamp: Date.now() });
-      saveCache(memoryCache);
+      // Filter results to find the exact card by card number
+      // Silver Tempest cards have /195 pattern
+      let matchedCard = cards.find((card: any) => 
+        card.cardNumber === englishCardNumber
+      );
       
-      return data;
+      // If no exact match, try to match by card number pattern (e.g., 186/195)
+      if (!matchedCard) {
+        matchedCard = cards.find((card: any) => {
+          const cardNum = card.cardNumber?.toString() || '';
+          return cardNum.includes(englishCardNumber.split('/')[0]);
+        });
+      }
+      
+      if (matchedCard) {
+        const data: TCGPlayerData = {
+          marketPrice: matchedCard.prices?.market || matchedCard.prices?.tcgplayer || 0,
+          sellerCount: matchedCard.sellerCount || 0,
+          listingCount: matchedCard.listingCount || 0
+        };
+        
+        console.log(`✅ Found ${matchedCard.name} #${matchedCard.cardNumber} - $${data.marketPrice}`);
+        
+        // Save to cache
+        memoryCache.set(cacheKey, { data, timestamp: Date.now() });
+        saveCache(memoryCache);
+        
+        return data;
+      } else {
+        console.log(`❌ No match found for ${cardName} #${englishCardNumber} in ${cards.length} results`);
+      }
     }
     
     return null;
-  } catch (error) {
-    console.error(`Error fetching TCGPlayer price for ${cardName}:`, error);
+  } catch (error: any) {
+    console.error(`Error fetching TCGPlayer price for ${cardName}:`, error.message);
     return null;
   }
 }
 
 export async function getTCGPlayerPricesBatch(
-  cards: Array<{ name: string; cardNumber: string; rarity: 'SR' | 'AR' | 'SAR' }>
+  cards: Array<{ 
+    name: string; 
+    englishCardNumber: string; 
+    rarity: 'SR' | 'AR' | 'SAR' | 'UR';
+    notes?: string;
+  }>
 ): Promise<Map<string, TCGPlayerData>> {
   const results = new Map<string, TCGPlayerData>();
   
   for (const card of cards) {
-    const data = await getTCGPlayerPrice(card.name, card.cardNumber, card.rarity);
+    const data = await getTCGPlayerPrice(
+      card.name, 
+      card.englishCardNumber, 
+      card.rarity,
+      card.notes
+    );
     if (data) {
-      results.set(card.cardNumber, data);
+      results.set(card.englishCardNumber, data);
     }
     
     // Rate limiting: 1 request per second
