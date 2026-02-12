@@ -1,10 +1,10 @@
-import { CardGrid } from '@/components/CardGrid';
+import { CardsWithFilters } from '@/components/CardsWithFilters';
 import { DashboardData } from '@/lib/types';
 
-// Revalidate every hour
-export const revalidate = 3600;
+// Revalidate every 3 days
+export const revalidate = 259200;
 
-// Embedded card data (from scraped results)
+// Embedded card data
 const cardsData: DashboardData = {
   "opportunities": [
     {"id":"M3-104/080-SAR","name":"ワンダーパッチ","cardNumber":"104/080","rarity":"SAR","set":"M3","tcgplayer":{"marketPrice":0,"sellerCount":0},"japanesePrices":[{"source":"japan-toreca","priceJPY":450,"priceUSD":2.93,"quality":"A","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227755-a","isLowest":false},{"source":"japan-toreca","priceJPY":200,"priceUSD":1.3,"quality":"A-","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227755-a-damaged","isLowest":true}],"lowestJapanesePrice":1.3,"marginPercent":0,"marginAmount":0,"lastUpdated":"2026-02-12T17:53:00Z","isViable":false},
@@ -19,21 +19,26 @@ const cardsData: DashboardData = {
     {"id":"M3-090/080-AR","name":"ドラピオン","cardNumber":"090/080","rarity":"AR","set":"M3","tcgplayer":{"marketPrice":0,"sellerCount":0},"japanesePrices":[{"source":"japan-toreca","priceJPY":250,"priceUSD":1.63,"quality":"B","inStock":true,"url":"https://shop.japan-toreca.com/products/pokemon-227741-b","isLowest":true}],"lowestJapanesePrice":1.63,"marginPercent":0,"marginAmount":0,"lastUpdated":"2026-02-12T17:53:00Z","isViable":false}
   ],
   "lastUpdated": "2026-02-12T17:53:00Z",
-  "stats": { "totalCards": 36, "viableOpportunities": 0, "avgMargin": 0 }
+  "stats": { "totalCards": 10, "viableOpportunities": 0, "avgMargin": 0 }
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-950 text-white p-8">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          Pokemon TCG Arbitrage
-        </h1>
-        <p className="text-gray-400 mb-8">
-          Japanese M3 Set • {cardsData.stats.totalCards} cards • Updated {new Date(cardsData.lastUpdated).toLocaleString()}
-        </p>
-        
-        <CardGrid cards={cardsData.opportunities} />
+    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="container mx-auto px-4 py-8">
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold text-white mb-2">
+            Pokemon TCG Arbitrage
+          </h1>
+          <p className="text-purple-200">
+            Japanese M3 Set - SAR, AR & SR Price Tracker
+          </p>
+        </div>
+
+        <CardsWithFilters 
+          initialCards={cardsData.opportunities} 
+          totalCards={cardsData.stats.totalCards} 
+        />
       </div>
     </main>
   );
