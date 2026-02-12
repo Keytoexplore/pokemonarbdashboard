@@ -2,5 +2,11 @@
   "buildCommand": "echo 'Static site, no build needed'",
   "outputDirectory": ".",
   "framework": null,
-  "version": 2
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/dashboard.html"
+    }
+  ]
 }
