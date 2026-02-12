@@ -1,118 +1,10 @@
 {
   "opportunities": [
     {
-      "id": "M3-104/080-SR",
-      "name": "ワンダーパッチ",
-      "cardNumber": "104/080",
-      "rarity": "SR",
-      "set": "M3",
-      "tcgplayer": {
-        "marketPrice": 0,
-        "sellerCount": 0
-      },
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-104-080",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 2.93,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-105/080-SR",
-      "name": "タラゴン",
-      "cardNumber": "105/080",
-      "rarity": "SR",
-      "set": "M3",
-      "tcgplayer": {
-        "marketPrice": 0,
-        "sellerCount": 0
-      },
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-105-080",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 2.28,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-106/080-SR",
-      "name": "ピュール",
-      "cardNumber": "106/080",
-      "rarity": "SR",
-      "set": "M3",
-      "tcgplayer": {
-        "marketPrice": 0,
-        "sellerCount": 0
-      },
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 800,
-          "priceUSD": 5.20,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-106-080",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 5.20,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-098/080-SR",
-      "name": "イベルタルex",
-      "cardNumber": "098/080",
-      "rarity": "SR",
-      "set": "M3",
-      "tcgplayer": {
-        "marketPrice": 0,
-        "sellerCount": 0
-      },
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-098-080",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.25,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-110/080-SR",
+      "id": "M3-110/080-SAR",
       "name": "ミアレシティ",
       "cardNumber": "110/080",
-      "rarity": "SR",
+      "rarity": "SAR",
       "set": "M3",
       "tcgplayer": {
         "marketPrice": 0,
@@ -125,14 +17,365 @@
           "priceUSD": 0.98,
           "quality": "A",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-110-080",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227761-a?_pos=5&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe?_pos=1&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe?_pos=1&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe?_pos=1&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe?_pos=1&_sid=d94cfb8a5&_ss=r",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 0.98,
+      "lowestJapanesePrice": 0.65,
       "marginPercent": 0,
       "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-094/080-AR",
+      "name": "エンニュートex",
+      "cardNumber": "094/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 300,
+          "priceUSD": 1.95,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227745-a-damaged?_pos=8&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227745-a?_pos=18&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj?_pos=15&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj?_pos=15&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj?_pos=15&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-101/080-SAR",
+      "name": "エネルギーリサイクル",
+      "cardNumber": "101/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 200,
+          "priceUSD": 1.3,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a-damaged?_pos=9&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 230,
+          "priceUSD": 1.5,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a?_pos=19&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ity0siavagys_tej5?_pos=8&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ity0siavagys_tej5?_pos=8&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ity0siavagys_tej5?_pos=8&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-102/080-SAR",
+      "name": "せいなるはい",
+      "cardNumber": "102/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227753-a-damaged?_pos=20&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227753-a?_pos=23&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfbhsr8cy3q_ldol?_pos=17&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfbhsr8cy3q_ldol?_pos=17&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfbhsr8cy3q_ldol?_pos=17&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-109/080-SAR",
+      "name": "活力の森",
+      "cardNumber": "109/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227760-a-damaged?_pos=21&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227760-a?_pos=22&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 180,
+          "priceUSD": 1.17,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh?_pos=16&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 180,
+          "priceUSD": 1.17,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh?_pos=16&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 180,
+          "priceUSD": 1.17,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh?_pos=16&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.17,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-104/080-SAR",
+      "name": "ワンダーパッチ",
+      "cardNumber": "104/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a?_pos=1&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 200,
+          "priceUSD": 1.3,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a-damaged?_pos=27&_sid=3383b0ac6&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q?_pos=4&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q?_pos=4&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q?_pos=4&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.3,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.607Z",
       "isViable": false
     },
     {
@@ -149,44 +392,62 @@
         {
           "source": "japan-toreca",
           "priceJPY": 400,
-          "priceUSD": 2.60,
+          "priceUSD": 2.6,
           "quality": "A-",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-092-080",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 2.60,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-089/080-AR",
-      "name": "チゴラス",
-      "cardNumber": "089/080",
-      "rarity": "AR",
-      "set": "M3",
-      "tcgplayer": {
-        "marketPrice": 0,
-        "sellerCount": 0
-      },
-      "japanesePrices": [
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged?_pos=1&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
         {
           "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-089-080",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a?_pos=13&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-b?_pos=26&_sid=365b02823&_ss=r",
           "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl?_pos=2&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl?_pos=2&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl?_pos=2&_sid=427dc09cc&_ss=r",
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 1.63,
       "marginPercent": 0,
       "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
       "isViable": false
     },
     {
@@ -206,14 +467,59 @@
           "priceUSD": 1.63,
           "quality": "B",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-090-080",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-b?_pos=2&_sid=365b02823&_ss=r",
           "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-a-damaged?_pos=9&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-a?_pos=15&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks?_pos=4&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks?_pos=4&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks?_pos=4&_sid=427dc09cc&_ss=r",
+          "isLowest": false
         }
       ],
       "lowestJapanesePrice": 1.63,
       "marginPercent": 0,
       "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
       "isViable": false
     },
     {
@@ -230,23 +536,1859 @@
         {
           "source": "japan-toreca",
           "priceJPY": 400,
-          "priceUSD": 2.60,
+          "priceUSD": 2.6,
           "quality": "A-",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-091-080",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227742-a-damaged?_pos=3&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227742-a?_pos=14&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227742-b?_pos=27&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv?_pos=3&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv?_pos=3&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv?_pos=3&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-089/080-AR",
+      "name": "チゴラス",
+      "cardNumber": "089/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged?_pos=4&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a?_pos=16&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-b?_pos=28&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla?_pos=13&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla?_pos=13&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla?_pos=13&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-086/080-AR",
+      "name": "ピッピ",
+      "cardNumber": "086/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 900,
+          "priceUSD": 5.85,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227737-a-damaged?_pos=5&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1400,
+          "priceUSD": 9.1,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227737-a?_pos=19&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227737-b?_pos=31&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32?_pos=14&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32?_pos=14&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32?_pos=14&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-085/080-AR",
+      "name": "デデンネ",
+      "cardNumber": "085/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227736-a-damaged?_pos=6&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 680,
+          "priceUSD": 4.42,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227736-a?_pos=20&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227736-b?_pos=32&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f?_pos=7&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f?_pos=7&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f?_pos=7&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-084/080-AR",
+      "name": "アマルルガ",
+      "cardNumber": "084/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227735-a-damaged?_pos=7&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227735-a?_pos=21&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227735-b?_pos=33&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k?_pos=1&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k?_pos=1&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k?_pos=1&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k?_pos=1&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-082/080-AR",
+      "name": "モクロー",
+      "cardNumber": "082/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227733-a-damaged?_pos=8&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227733-a?_pos=23&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227733-b?_pos=34&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz?_pos=8&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz?_pos=8&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz?_pos=8&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-088/080-AR",
+      "name": "ダイノーズ",
+      "cardNumber": "088/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227739-a-damaged?_pos=10&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227739-a?_pos=17&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227739-b?_pos=29&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct?_pos=5&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct?_pos=5&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct?_pos=5&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-087/080-AR",
+      "name": "ニャスパー",
+      "cardNumber": "087/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 530,
+          "priceUSD": 3.45,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227738-a-damaged?_pos=11&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227738-a?_pos=18&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227738-b?_pos=30&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq?_pos=6&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq?_pos=6&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq?_pos=6&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-081/080-AR",
+      "name": "コフーライ",
+      "cardNumber": "081/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227732-a-damaged?_pos=12&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227732-a?_pos=22&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227732-b?_pos=35&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx?_pos=9&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx?_pos=9&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx?_pos=9&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-083/080-AR",
+      "name": "ファイアロー",
+      "cardNumber": "083/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227734-a-damaged?_pos=24&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227734-a?_pos=25&_sid=365b02823&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227734-b?_pos=36&_sid=365b02823&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp?_pos=10&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp?_pos=10&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp?_pos=10&_sid=427dc09cc&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-105/080-SAR",
+      "name": "タラゴン",
+      "cardNumber": "105/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227756-a?_pos=2&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb?_pos=5&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb?_pos=5&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb?_pos=5&_sid=d94cfb8a5&_ss=r",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 2.60,
+      "lowestJapanesePrice": 1.82,
       "marginPercent": 0,
       "marginAmount": 0,
-      "lastUpdated": "2026-02-12T17:45:00Z",
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-096/080-AR",
+      "name": "メガピクシーex",
+      "cardNumber": "096/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227747-a-damaged?_pos=12&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.22,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227747-a?_pos=15&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb?_pos=13&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb?_pos=13&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb?_pos=13&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.82,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-093/080-AR",
+      "name": "ジュナイパーex",
+      "cardNumber": "093/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227744-a?_pos=17&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 300,
+          "priceUSD": 1.95,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227744-a-damaged?_pos=31&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl?_pos=7&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl?_pos=7&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl?_pos=7&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.82,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-108/080-SAR",
+      "name": "ユカリ",
+      "cardNumber": "108/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.22,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a?_pos=4&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a-damaged?_pos=26&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi?_pos=2&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi?_pos=2&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi?_pos=2&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.47,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-099/080-AR",
+      "name": "メガエアームドex",
+      "cardNumber": "099/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227750-a-damaged?_pos=30&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227750-a?_pos=33&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo?_pos=9&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo?_pos=9&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo?_pos=9&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.47,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-098/080-AR",
+      "name": "イベルタルex",
+      "cardNumber": "098/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged?_pos=10&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a?_pos=14&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1?_pos=11&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1?_pos=11&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1?_pos=11&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.12,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-106/080-SAR",
+      "name": "ピュール",
+      "cardNumber": "106/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 800,
+          "priceUSD": 5.2,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a?_pos=3&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a-damaged?_pos=28&_sid=3383b0ac6&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm?_pos=3&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm?_pos=3&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm?_pos=3&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-097/080-AR",
+      "name": "メガジガルデex",
+      "cardNumber": "097/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227748-a-damaged?_pos=11&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.22,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227748-a?_pos=34&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw?_pos=12&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw?_pos=12&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw?_pos=12&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.77,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-095/080-AR",
+      "name": "メガスターミーex",
+      "cardNumber": "095/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1100,
+          "priceUSD": 7.15,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227746-a?_pos=16&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1000,
+          "priceUSD": 6.5,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227746-a-damaged?_pos=32&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 980,
+          "priceUSD": 6.37,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda?_pos=14&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 980,
+          "priceUSD": 6.37,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda?_pos=14&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 980,
+          "priceUSD": 6.37,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda?_pos=14&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 6.37,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-103/080-SAR",
+      "name": "ポケパッド",
+      "cardNumber": "103/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1500,
+          "priceUSD": 9.75,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227754-a?_pos=6&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1500,
+          "priceUSD": 9.75,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227754-a-damaged?_pos=7&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1280,
+          "priceUSD": 8.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjub9bvaqs_enxt?_pos=6&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1280,
+          "priceUSD": 8.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjub9bvaqs_enxt?_pos=6&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1280,
+          "priceUSD": 8.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjub9bvaqs_enxt?_pos=6&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 8.32,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-100/080-AR",
+      "name": "ニャースex",
+      "cardNumber": "100/080",
+      "rarity": "AR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 2200,
+          "priceUSD": 14.3,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227751-a?_pos=13&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1900,
+          "priceUSD": 12.35,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227751-a-damaged?_pos=29&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er?_pos=10&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er?_pos=10&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er?_pos=10&_sid=d94cfb8a5&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 11.57,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-116/080-SAR",
+      "name": "ユカリ",
+      "cardNumber": "116/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 2100,
+          "priceUSD": 13.65,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227731-a?_pos=1&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 2500,
+          "priceUSD": 16.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227731-a-damaged?_pos=2&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": false,
+          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu?_pos=1&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu?_pos=1&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu?_pos=1&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 1780,
+          "priceUSD": 11.57,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu?_pos=1&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 11.57,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-107/080-SAR",
+      "name": "メイのはげまし",
+      "cardNumber": "107/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 3000,
+          "priceUSD": 19.5,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227758-a-damaged?_pos=24&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 3200,
+          "priceUSD": 20.8,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227758-a?_pos=25&_sid=3383b0ac6&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 2300,
+          "priceUSD": 14.95,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227758-b?_pos=35&_sid=3383b0ac6&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 2780,
+          "priceUSD": 18.07,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd?_pos=18&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 2780,
+          "priceUSD": 18.07,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd?_pos=18&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 2780,
+          "priceUSD": 18.07,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd?_pos=18&_sid=d94cfb8a5&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 14.95,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-112/080-SAR",
+      "name": "メガピクシーex",
+      "cardNumber": "112/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 3900,
+          "priceUSD": 25.35,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227727-a?_pos=5&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 4000,
+          "priceUSD": 26,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227727-a-damaged?_pos=10&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3280,
+          "priceUSD": 21.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he?_pos=3&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3280,
+          "priceUSD": 21.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he?_pos=3&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3280,
+          "priceUSD": 21.32,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he?_pos=3&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 21.32,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-113/080-SAR",
+      "name": "メガジガルデex",
+      "cardNumber": "113/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 5100,
+          "priceUSD": 33.15,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227728-a?_pos=6&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 4100,
+          "priceUSD": 26.65,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227728-a-damaged?_pos=7&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3480,
+          "priceUSD": 22.62,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw?_pos=2&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3480,
+          "priceUSD": 22.62,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw?_pos=2&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 3480,
+          "priceUSD": 22.62,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw?_pos=2&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 22.62,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-111/080-SAR",
+      "name": "メガスターミーex",
+      "cardNumber": "111/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 6300,
+          "priceUSD": 40.95,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227726-a?_pos=8&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 5700,
+          "priceUSD": 37.05,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227726-a-damaged?_pos=11&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 4280,
+          "priceUSD": 27.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv?_pos=4&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 4280,
+          "priceUSD": 27.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv?_pos=4&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 4280,
+          "priceUSD": 27.82,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv?_pos=4&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 27.82,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-114/080-SAR",
+      "name": "ニャースex",
+      "cardNumber": "114/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 14500,
+          "priceUSD": 94.25,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227729-a?_pos=3&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 13500,
+          "priceUSD": 87.75,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227729-a-damaged?_pos=4&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 9980,
+          "priceUSD": 64.87,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl?_pos=5&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 9980,
+          "priceUSD": 64.87,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl?_pos=5&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 9980,
+          "priceUSD": 64.87,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl?_pos=5&_sid=865ecde46&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 64.87,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-115/080-SAR",
+      "name": "メイのはげまし",
+      "cardNumber": "115/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 0,
+        "sellerCount": 0
+      },
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 29300,
+          "priceUSD": 190.45,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227730-a?_pos=9&_sid=25a7e7d59&_ss=r",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 17800,
+          "priceUSD": 115.7,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd?_pos=6&_sid=865ecde46&_ss=r&variant=47408880124078",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 17800,
+          "priceUSD": 115.7,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd?_pos=6&_sid=865ecde46&_ss=r&variant=47408880124078",
+          "isLowest": true
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 17800,
+          "priceUSD": 115.7,
+          "quality": null,
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd?_pos=6&_sid=865ecde46&_ss=r&variant=47408880124078",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 115.7,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T16:47:01.608Z",
       "isViable": false
     }
   ],
-  "lastUpdated": "2026-02-12T17:45:00Z",
+  "lastUpdated": "2026-02-12T16:47:01.608Z",
   "stats": {
-    "totalCards": 9,
+    "totalCards": 36,
     "viableOpportunities": 0,
     "avgMargin": 0
   }

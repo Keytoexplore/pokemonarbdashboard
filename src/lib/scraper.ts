@@ -15,7 +15,11 @@ export interface ScrapedCard {
   source: 'japan-toreca' | 'torecacamp';
 }
 
-function detectRarity(cardNumber: string): 'SR' | 'AR' | 'SAR' | null {
+function detectRarity(rarityText: string, cardNumber: string): 'SR' | 'AR' | 'SAR' | null {
+  if (rarityText === 'SAR') return 'SAR';
+  if (rarityText === 'AR') return 'AR';
+  if (rarityText === 'SR') return 'SR';
+  
   const [current, total] = cardNumber.split('/').map(Number);
   
   if (current > 100 && total === 80) return 'SAR';
@@ -143,7 +147,7 @@ export async function scrapeTorecaCampForSet(set: string): Promise<ScrapedCard[]
         if (!nameText) return;
         
         // Parse: アマルルガ AR M3 084/080
-        const match = nameText.match(/(.+?)\s+(SR|AR|SAR)(?:\s+${set})?\s*(\d+\/\d+)/);
+        const match = nameText.match(new RegExp(`(.+?)\\s+(SR|AR|SAR)(?:\\s+${set})?\\s*(\\d+/\\d+)`));
         if (!match) return;
         
         const name = match[1].trim();

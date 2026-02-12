@@ -176,16 +176,26 @@ export async function calculateArbitrageForSets(sets: string[] = CONFIG.sets): P
 }
 
 export async function generateAndSaveData(sets?: string[]): Promise<void> {
-  const data = await calculateArbitrageForSets(sets);
+  const setsToScrape = sets || CONFIG.sets;
   
+  // Scrape raw data first
+  const allJapaneseCards = await scrapeAllSets(setsToScrape);
+  
+  // Save raw scraped data
+  const rawDataPath = path.join(process.cwd(), 'data', 'scraped-raw.json');
   const dataDir = path.dirname(CONFIG.outputFile);
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
   }
+  fs.writeFileSync(rawDataPath, JSON.stringify(allJapaneseCards, null, 2));
+  console.log(`\n💾 Raw scraped data saved to: ${rawDataPath}`);
+  
+  // Continue with arbitrage calculation
+  const data = await calculateArbitrageForSets(sets);
   
   fs.writeFileSync(CONFIG.outputFile, JSON.stringify(data, null, 2));
   
-  console.log(`\n💾 Data saved to: ${CONFIG.outputFile}`);
+  console.log(`\n💾 Arbitrage data saved to: ${CONFIG.outputFile}`);
   
   if (data.opportunities.length > 0) {
     console.log(`\n🏆 Top 5 Lowest Priced Cards:`);

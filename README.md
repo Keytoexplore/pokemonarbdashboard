@@ -1,81 +1,256 @@
-# Pokemon TCG Arbitrage Tracker
+# Pokemon TCG Arbitrage Tracker - Complete System
 
-A simple dashboard for tracking Pokemon card arbitrage opportunities between Japanese marketplaces and TCGPlayer.
+A production-ready dashboard for tracking Pokemon card arbitrage opportunities between Japanese marketplaces and TCGPlayer.
 
-## Architecture
+## 🎯 System Overview
 
-This is a **simplified static site** that focuses on doing one thing well: showing arbitrage opportunities.
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│  Japan-Toreca   │     │   TorecaCamp     │     │   TCGPlayer     │
+│   (Scraper)     │     │    (Scraper)     │     │     (API)       │
+└────────┬────────┘     └────────┬─────────┘     └────────┬────────┘
+         │                       │                        │
+         └───────────────────────┼────────────────────────┘
+                                 │
+                    ┌─────────────▼─────────────┐
+                    │     Card Mapping DB       │
+                    │  (Japanese → English)     │
+                    └─────────────┬─────────────┘
+                                  │
+                    ┌─────────────▼─────────────┐
+                    │   Arbitrage Calculator    │
+                    └─────────────┬─────────────┘
+                                  │
+                    ┌─────────────▼─────────────┐
+                    │   Dashboard (HTML/JS)     │
+                    │     Deployed to Vercel    │
+                    └───────────────────────────┘
+```
 
-### How It Works
+## 🚀 Quick Start
 
-1. **Scrapers** (Node.js + Puppeteer) fetch prices from:
-   - https://shop.japan-toreca.com/
-   - https://torecacamp-pokemon.com/
-
-2. **API Integration** fetches TCGPlayer market prices via Pokemon Price Tracker API
-
-3. **Arbitrage Calculation** computes margins between Japanese buy price and TCGPlayer sell price
-
-4. **Static Dashboard** displays opportunities sorted by margin percentage
-
-## Quick Start
-
+### Generate Data
 ```bash
-# Install dependencies
-npm install
-
-# Set environment variable
+cd pokemonarbdashboard
 export POKEMON_PRICE_TRACKER_API_KEY="your_api_key"
-
-# Generate data (run this to update prices)
-npx tsx generate-data.ts
-
-# Serve locally
-npx serve .
+npx tsx run-integration.ts
 ```
 
-## Data Flow
+### Test Dashboard
+Open `dashboard.html` in your browser.
+
+### Deploy to Vercel
+```bash
+# Push to GitHub
+git push origin main
+
+# Connect repository to Vercel
+# Dashboard auto-deploys on every push
+```
+
+## 📁 Project Structure
 
 ```
-Scrape Japanese Sites → Get TCGPlayer Prices → Calculate Margins → Save to JSON → Display in Dashboard
-```
-
-## Key Features
-
-- ✅ **Focus on SR, AR, SAR cards** only (the profitable ones)
-- ✅ **Grade indicators**: Perfect 🔥 (>150%), Good 💎 (>70%), Medium ⚖️ (>30%), Low ❌
-- ✅ **"LOWEST" indicators** showing best Japanese price
-- ✅ **Stock status** for each source
-- ✅ **Currency conversion** (JPY → USD)
-- ✅ **Seller counts** from TCGPlayer
-- ✅ **Simple, clean UI** - no complexity
-
-## Project Structure
-
-```
-├── dashboard.html          # Main dashboard (static)
-├── generate-data.ts        # Script to generate arbitrage data
+pokemonarbdashboard/
+├── dashboard.html              # Main dashboard UI
+├── run-integration.ts          # Master data pipeline
+├── generate-data.ts            # Simple data generator
+├── update-data.sh              # Cron script
 ├── src/lib/
-│   ├── types.ts           # TypeScript interfaces
-│   ├── scraper.ts         # Japanese site scrapers
-│   ├── tcgplayer-api.ts   # Pokemon Price Tracker API
-│   └── arbitrage.ts       # Core arbitrage calculation
+│   ├── scraper.ts             # Japanese site scrapers
+│   ├── tcgplayer-api.ts       # TCGPlayer API integration
+│   ├── card-mappings.ts       # JP→EN name mappings
+│   ├── arbitrage.ts           # Margin calculation
+│   └── types.ts               # TypeScript interfaces
 ├── data/
-│   └── arbitrage-data.json # Generated data file
-└── vercel.json            # Vercel deployment config
+│   ├── arbitrage-data.json    # Generated dashboard data
+│   ├── scraped-raw.json       # Raw scraper output
+│   └── tcgplayer-cache.json   # API cache (3-day TTL)
+└── vercel.json                # Vercel deployment config
 ```
 
-## Deployment
+## 🔄 Data Pipeline
 
-1. Push to GitHub
-2. Connect to Vercel
-3. Set environment variable: `POKEMON_PRICE_TRACKER_API_KEY`
-4. Vercel will auto-deploy the static dashboard
+### 1. Scraping (Every 3 Days)
+- **Japan-Toreca**: shop.japan-toreca.com
+- **TorecaCamp**: torecacamp-pokemon.com
+- **Target**: SR, AR, SAR rarity cards only
+- **Output**: `data/scraped-raw.json`
 
-## Updating Data
+### 2. Card Matching
+- Map Japanese names to English names
+- Lookup card metadata
+- Handle set code translations
 
-Run `npx tsx generate-data.ts` to refresh prices. You can schedule this with a cron job or GitHub Actions.
+### 3. Price Fetching
+- Query Pokemon Price Tracker API
+- Cache results for 3 days
+- Rate limited: 1 req/sec
 
-## API Key
+### 4. Arbitrage Calculation
+- Compare Japanese buy price vs TCGPlayer sell price
+- Calculate margin % and profit $
+- Flag viable opportunities (>20% margin)
 
-Get your API key from: https://www.pokemonpricetracker.com/
+### 5. Dashboard Generation
+- Sort by margin (highest first)
+- Generate stats
+- Save to `data/arbitrage-data.json`
+
+## 🎴 Card Mapping System
+
+Japanese sets have different numbering than English sets:
+
+| Japanese | English | Example |
+|----------|---------|---------|
+| M3 | Paradigm Trigger | 098/080 → ??? |
+| SV9 | (varies by card) | 092/080 → ??? |
+
+**Challenge**: Same card has different numbers in JP vs EN sets.
+
+**Solution**: Manual mapping database in `src/lib/card-mappings.ts`
+
+## 💰 Arbitrage Calculation
+
+```
+Margin % = ((TCGPlayer Price - Japanese Price) / Japanese Price) × 100
+
+Example:
+- Japanese: ¥500 (~$3.25)
+- TCGPlayer: $12.82
+- Margin: ((12.82 - 3.25) / 3.25) × 100 = 294%
+```
+
+## 🖥️ Dashboard Features
+
+### Card Display
+- Japanese name (primary)
+- English name (when mapped)
+- Card number & set
+- Rarity badge (SR/AR/SAR)
+- Quality indicator (A/A-/B)
+
+### Price Comparison
+- Japanese price (JPY + USD)
+- TCGPlayer market price
+- Margin percentage
+- Profit amount
+- "LOWEST" indicator
+
+### Links
+- 🔗 Japan-Toreca product page
+- 🔗 TorecaCamp product page
+- 🔗 TCGPlayer search
+- All open in new tab
+
+### Filters
+- By rarity (SR/AR/SAR)
+- By set (M3/SV9/etc.)
+- By source
+- Sort options
+
+## ⏰ Automation
+
+### Cron Job (Every 3 Days)
+```cron
+0 2 */3 * * /bin/bash /path/to/update-data.sh
+```
+
+Runs at 2 AM Lisbon time:
+1. Scrapes Japanese sites
+2. Fetches TCGPlayer prices
+3. Calculates arbitrage
+4. Updates dashboard data
+5. Commits to GitHub (optional)
+
+## 🔧 Configuration
+
+### Environment Variables
+```bash
+export POKEMON_PRICE_TRACKER_API_KEY="your_api_key_here"
+```
+
+### Sets to Track
+Edit `src/lib/arbitrage.ts`:
+```typescript
+const CONFIG = {
+  sets: ['M3', 'SV9', 'SV8a', 'SV8', 'SV7'],
+  // ...
+};
+```
+
+### Margin Threshold
+```typescript
+minMarginPercent: 20  // Only show >20% margin
+```
+
+## 🐛 Troubleshooting
+
+### Scraper Returns 0 Cards
+- Check site accessibility
+- Verify selectors in `src/lib/scraper.ts`
+- Run `test-scraper-debug.ts` to debug
+
+### No TCGPlayer Prices
+- Verify API key is set
+- Check card mappings exist
+- Japanese numbers may not match English
+
+### Dashboard Shows Empty
+- Verify `data/arbitrage-data.json` exists
+- Check browser console for JS errors
+- Ensure data format matches expected structure
+
+## 📊 Sample Output
+
+```json
+{
+  "opportunities": [
+    {
+      "id": "M3-098/080-SR",
+      "name": "イベルタルex",
+      "cardNumber": "098/080",
+      "rarity": "SR",
+      "set": "M3",
+      "tcgplayer": {
+        "marketPrice": 12.82,
+        "sellerCount": 4
+      },
+      "japanesePrices": [...],
+      "marginPercent": 294,
+      "marginAmount": 9.57,
+      "isViable": true
+    }
+  ],
+  "stats": {
+    "totalCards": 42,
+    "viableOpportunities": 15,
+    "avgMargin": 156
+  }
+}
+```
+
+## 🚀 Deployment Checklist
+
+- [ ] Set API key in environment
+- [ ] Configure sets to track
+- [ ] Test scraper locally
+- [ ] Verify card mappings
+- [ ] Generate initial data
+- [ ] Test dashboard display
+- [ ] Push to GitHub
+- [ ] Connect to Vercel
+- [ ] Set up cron job
+- [ ] Monitor first few runs
+
+## 📞 Support
+
+For issues with:
+- **Scraper**: Check `test-scraper-debug.ts`
+- **API**: Verify key at pokemonpricetracker.com
+- **Dashboard**: Check browser console
+- **Mappings**: Update `src/lib/card-mappings.ts`
+
+## 📄 License
+
+MIT - Built for Pokemon card arbitrage tracking.
