@@ -7,6 +7,9 @@ import { ArbitrageOpportunity } from '@/lib/types';
 interface CardsWithFiltersProps {
   initialCards: ArbitrageOpportunity[];
   totalCards: number;
+  viableOpportunities?: number;
+  avgMargin?: number;
+  lastUpdated?: string;
 }
 
 // Generate TCGPlayer image URL from card data
@@ -17,7 +20,13 @@ function getCardImageUrl(cardNumber: string, set: string): string {
   return `https://images.pokemontcg.io/${set.toLowerCase()}/${cardNumber.split('/')[0]}_hires.png`;
 }
 
-export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersProps) {
+export function CardsWithFilters({ 
+  initialCards, 
+  totalCards,
+  viableOpportunities,
+  avgMargin,
+  lastUpdated 
+}: CardsWithFiltersProps) {
   const [filterRarity, setFilterRarity] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [searchQuery, setSearchQuery] = useState('');
@@ -101,7 +110,7 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
     <div>
       {/* Stats */}
       <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 mb-6 text-white">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
           <div>
             <p className="text-sm opacity-75">Total Cards</p>
             <p className="text-2xl font-bold">{totalCards}</p>
@@ -111,12 +120,16 @@ export function CardsWithFilters({ initialCards, totalCards }: CardsWithFiltersP
             <p className="text-2xl font-bold">{filteredCards.length}</p>
           </div>
           <div>
-            <p className="text-sm opacity-75 text-emerald-400">Arbitrage Ops</p>
-            <p className="text-2xl font-bold text-emerald-400">{arbitrageCount}</p>
+            <p className="text-sm opacity-75 text-emerald-400">JP→US Ops</p>
+            <p className="text-2xl font-bold text-emerald-400">{viableOpportunities || 0}</p>
+          </div>
+          <div>
+            <p className="text-sm opacity-75 text-amber-400">Avg Margin</p>
+            <p className="text-2xl font-bold text-amber-400">{(avgMargin || 0).toFixed(1)}%</p>
           </div>
           <div>
             <p className="text-sm opacity-75">Last Updated</p>
-            <p className="text-sm font-mono mt-1">{new Date().toLocaleDateString()}</p>
+            <p className="text-sm font-mono mt-1">{lastUpdated ? new Date(lastUpdated).toLocaleDateString() : new Date().toLocaleDateString()}</p>
           </div>
         </div>
       </div>
