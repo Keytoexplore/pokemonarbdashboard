@@ -4,7 +4,15 @@
   "routes": [
     {
       "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/dashboard",
       "dest": "/dashboard.html"
+    },
+    {
+      "src": "/debug",
+      "dest": "/debug.html"
     },
     {
       "src": "/data/(.*)",
