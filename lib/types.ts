@@ -2,7 +2,7 @@ export interface JapanesePrice {
   source: 'japan-toreca' | 'torecacamp';
   priceJPY: number;
   priceUSD: number;
-  quality?: string;
+  quality?: string | null;
   inStock: boolean;
   url: string;
   isLowest: boolean;
