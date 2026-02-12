@@ -1,28 +1,4 @@
 {
   "version": 2,
-  "name": "pokemon-arbitrage-tracker",
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/dashboard",
-      "dest": "/dashboard.html"
-    },
-    {
-      "src": "/debug",
-      "dest": "/debug.html"
-    },
-    {
-      "src": "/data/(.*)",
-      "dest": "/data/$1",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Cache-Control": "public, max-age=3600"
-      }
-    }
-  ]
+  "name": "pokemon-arbitrage-tracker"
 }
