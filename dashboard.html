@@ -3,90 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon AR Card Arbitrage Dashboard</title>
+    <title>Pokemon TCG Arbitrage Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .grade-perfect { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .grade-good { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .grade-medium { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .grade-low { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .card-hover:hover { transform: translateY(-4px); }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-900 text-white min-h-screen">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Pokemon AR Card Arbitrage Dashboard</h1>
-        
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <h2 class="text-xl font-semibold mb-4">Current Market Data</h2>
-            <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Cards will be dynamically loaded here -->
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold mb-2">Pokemon TCG Arbitrage Tracker</h1>
+            <p class="text-gray-400">Japanese card arbitrage opportunities for SR, AR, SAR cards</p>
+            <div id="stats" class="mt-4 flex gap-4 text-sm">
+                <span class="bg-gray-800 px-3 py-1 rounded">Loading...</span>
             </div>
         </div>
-        
-        <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
-            <h2 class="text-xl font-semibold mb-4">Last Updated</h2>
-            <p id="last-updated" class="text-gray-600"></p>
+
+        <!-- Filters -->
+        <div class="mb-6 flex flex-wrap gap-4">
+            <button onclick="filterByRarity('all')" class="filter-btn bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition active" data-rarity="all">All</button>
+            <button onclick="filterByRarity('SR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SR">Super Rare</button>
+            <button onclick="filterByRarity('AR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="AR">Art Rare</button>
+            <button onclick="filterByRarity('SAR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SAR">Special Art Rare</button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div id="cards-container" class="grid grid-cols-1 gap-4">
+            <!-- Cards will be loaded here -->
+        </div>
+
+        <!-- Last Updated -->
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p id="last-updated">Loading data...</p>
         </div>
     </div>
 
     <script>
-        // Load data from JSON files
+        let allOpportunities = [];
+        let currentFilter = 'all';
+
+        function getGradeClass(margin) {
+            if (margin >= 150) return 'grade-perfect';
+            if (margin >= 70) return 'grade-good';
+            if (margin >= 30) return 'grade-medium';
+            return 'grade-low';
+        }
+
+        function getGradeLabel(margin) {
+            if (margin >= 150) return 'Perfect 🔥';
+            if (margin >= 70) return 'Good 💎';
+            if (margin >= 30) return 'Medium ⚖️';
+            return 'Low ❌';
+        }
+
+        function formatPrice(price) {
+            return price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        }
+
+        function createCardHTML(opp) {
+            const gradeClass = getGradeClass(opp.marginPercent);
+            const gradeLabel = getGradeLabel(opp.marginPercent);
+            
+            // Find lowest price from each source
+            const japanTorecaPrice = opp.japanesePrices.find(p => p.source === 'japan-toreca');
+            const torecaCampPrice = opp.japanesePrices.find(p => p.source === 'torecacamp');
+            
+            const lowestPrice = opp.japanesePrices.find(p => p.isLowest);
+            
+            return `
+                <div class="card-hover bg-gray-800 rounded-xl p-6 transition-all duration-300 border border-gray-700 ${opp.isViable ? 'border-green-500/30' : 'border-red-500/30'}">
+                    <!-- Header: Grade + Name -->
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <div class="${gradeClass} inline-block px-3 py-1 rounded-full text-sm font-bold mb-2">
+                                ${gradeLabel} ${opp.marginPercent > 0 ? '+' : ''}${opp.marginPercent}%
+                            </div>
+                            <h2 class="text-xl font-bold">${opp.name}</h2>
+                            <p class="text-gray-400 text-sm">#${opp.cardNumber} • ${opp.rarity === 'SR' ? 'Super Rare' : opp.rarity === 'AR' ? 'Art Rare' : 'Special Art Rare'}</p>
+                        </div>
+                    </div>
+
+                    <!-- Prices Comparison -->
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <!-- TCGPlayer -->
+                        <div class="bg-gray-700/50 rounded-lg p-4">
+                            <p class="text-gray-400 text-xs mb-1">TCGPlayer (Sell)</p>
+                            <p class="text-2xl font-bold text-green-400">${formatPrice(opp.tcgplayer.marketPrice)}</p>
+                            <p class="text-gray-500 text-xs mt-1">${opp.tcgplayer.sellerCount} sellers</p>
+                        </div>
+
+                        <!-- Lowest Japanese -->
+                        <div class="bg-gray-700/50 rounded-lg p-4 border ${lowestPrice?.source === 'japan-toreca' ? 'border-blue-500/50' : 'border-purple-500/50'}">
+                            <p class="text-gray-400 text-xs mb-1">
+                                ${lowestPrice?.source === 'japan-toreca' ? 'Japan-Toreca' : 'TorecaCamp'}
+                                ${lowestPrice?.quality ? `• ${lowestPrice.quality}` : ''}
+                            </p>
+                            <p class="text-2xl font-bold ${lowestPrice?.inStock ? 'text-white' : 'text-gray-500'}">
+                                ¥${lowestPrice?.priceJPY.toLocaleString()}
+                            </p>
+                            <p class="text-gray-400 text-sm">≈ ${formatPrice(lowestPrice?.priceUSD || 0)}</p>
+                        </div>
+                    </div>
+
+                    <!-- All Japanese Prices -->
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        ${japanTorecaPrice ? `
+                            <div class="bg-gray-700/30 rounded p-2 ${japanTorecaPrice.isLowest ? 'ring-1 ring-blue-500/50' : ''}">
+                                <p class="text-gray-400 text-xs">Japan-Toreca</p>
+                                <p class="${japanTorecaPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
+                                    ${japanTorecaPrice.quality || 'N/A'} • ¥${japanTorecaPrice.priceJPY.toLocaleString()}
+                                </p>
+                                <p class="text-xs ${japanTorecaPrice.inStock ? 'text-green-400' : 'text-red-400'}">
+                                    ${japanTorecaPrice.inStock ? 'In Stock' : 'Out'}
+                                </p>
+                            </div>
+                        ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">Japan-Toreca</p><p class="text-gray-500">No data</p></div>'}
+                        
+                        ${torecaCampPrice ? `
+                            <div class="bg-gray-700/30 rounded p-2 ${torecaCampPrice.isLowest ? 'ring-1 ring-purple-500/50' : ''}">
+                                <p class="text-gray-400 text-xs">TorecaCamp</p>
+                                <p class="${torecaCampPrice.inStock ? 'text-white' : 'text-gray-500 line-through'}">
+                                    ¥${torecaCampPrice.priceJPY.toLocaleString()}
+                                </p>
+                                <p class="text-xs ${torecaCampPrice.inStock ? 'text-green-400' : 'text-red-400'}">
+                                    ${torecaCampPrice.inStock ? 'In Stock' : 'Out'}
+                                </p>
+                            </div>
+                        ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">TorecaCamp</p><p class="text-gray-500">No data</p></div>'}
+                    </div>
+
+                    <!-- Margin Info -->
+                    <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center text-sm">
+                        <span class="text-gray-400">Potential Profit:</span>
+                        <span class="font-bold ${opp.marginAmount > 0 ? 'text-green-400' : 'text-red-400'}">
+                            ${opp.marginAmount > 0 ? '+' : ''}${formatPrice(opp.marginAmount)}
+                        </span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function displayCards() {
+            const container = document.getElementById('cards-container');
+            const filtered = currentFilter === 'all' 
+                ? allOpportunities 
+                : allOpportunities.filter(o => o.rarity === currentFilter);
+            
+            container.innerHTML = filtered.map(createCardHTML).join('');
+        }
+
+        function filterByRarity(rarity) {
+            currentFilter = rarity;
+            
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.rarity === rarity) {
+                    btn.classList.add('bg-blue-600', 'active');
+                    btn.classList.remove('bg-gray-700');
+                } else {
+                    btn.classList.remove('bg-blue-600', 'active');
+                    btn.classList.add('bg-gray-700');
+                }
+            });
+            
+            displayCards();
+        }
+
         async function loadData() {
             try {
-                const [currentData, priceHistory] = await Promise.all([
-                    fetch('data/current-cards.json').then(r => r.json()),
-                    fetch('data/price-history.json').then(r => r.json())
-                ]);
-
-                displayCards(currentData.cards);
+                const response = await fetch('data/arbitrage-data.json');
+                if (!response.ok) throw new Error('Failed to load data');
+                
+                const data = await response.json();
+                allOpportunities = data.opportunities || [];
+                
+                // Update stats
+                document.getElementById('stats').innerHTML = `
+                    <span class="bg-gray-800 px-3 py-1 rounded">${data.stats.totalCards} cards</span>
+                    <span class="bg-green-900/50 px-3 py-1 rounded text-green-400">${data.stats.viableOpportunities} viable</span>
+                    <span class="bg-blue-900/50 px-3 py-1 rounded text-blue-400">${data.stats.avgMargin}% avg margin</span>
+                `;
+                
+                // Update last updated
+                const date = new Date(data.lastUpdated);
                 document.getElementById('last-updated').textContent = 
-                    `Last updated: ${new Date(currentData.lastUpdated).toLocaleString()}`;
+                    `Updated: ${date.toLocaleString()}`;
+                
+                displayCards();
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('cards-container').innerHTML = 
-                    '<p class="text-red-500 text-center">Error loading card data</p>';
+                document.getElementById('cards-container').innerHTML = `
+                    <div class="text-center py-12">
+                        <p class="text-red-400 text-lg mb-2">Error loading data</p>
+                        <p class="text-gray-500">${error.message}</p>
+                    </div>
+                `;
             }
         }
 
-        function displayCards(cards) {
-            const container = document.getElementById('cards-container');
-            
-            cards.forEach(card => {
-                const cardElement = createCardElement(card);
-                container.appendChild(cardElement);
-            });
-        }
-
-        function createCardElement(card) {
-            const cardDiv = document.createElement('div');
-            cardDiv.className = 'bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow';
-            
-            const qualityColor = getQualityColor(card.quality);
-            const availabilityClass = card.availability === 'in_stock' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
-            
-            cardDiv.innerHTML = `
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="font-semibold">${card.name}</h3>
-                    <span class="px-2 py-1 rounded-full text-xs font-medium ${qualityColor}">${card.quality}</span>
-                </div>
-                <p class="text-sm text-gray-600 mb-2">${card.cardNumber}</p>
-                <p class="text-lg font-bold mb-2">¥${card.price.toLocaleString()}</p>
-                <div class="flex items-center justify-between">
-                    <span class="px-2 py-1 rounded-full text-xs font-medium ${availabilityClass}">
-                        ${card.availability === 'in_stock' ? 'In Stock' : 'Out of Stock'}
-                    </span>
-                    <span class="text-xs text-gray-500">${card.id.split('-')[0]}</span>
-                </div>
-            `;
-            
-            return cardDiv;
-        }
-
-        function getQualityColor(quality) {
-            const colors = {
-                'A-': 'bg-blue-100 text-blue-800',
-                'A': 'bg-green-100 text-green-800',
-                'B': 'bg-yellow-100 text-yellow-800'
-            };
-            return colors[quality] || 'bg-gray-100 text-gray-800';
-        }
-
-        // Load data when page loads
-        document.addEventListener('DOMContentLoaded', loadData);
+        // Load data on page load
+        loadData();
     </script>
 </body>
 </html>

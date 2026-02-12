@@ -1,12 +1,20 @@
 {
-  "buildCommand": "echo 'Static site, no build needed'",
-  "outputDirectory": ".",
-  "framework": null,
   "version": 2,
-  "rewrites": [
+  "name": "pokemon-arbitrage",
+  "builds": [
     {
-      "source": "/",
-      "destination": "/dashboard.html"
+      "src": "dashboard.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/dashboard.html"
+    },
+    {
+      "src": "/data/(.*)",
+      "dest": "/data/$1"
     }
   ]
 }
