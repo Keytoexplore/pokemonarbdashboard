@@ -90,18 +90,26 @@
 
                         <div class="grid grid-cols-2 gap-4 mb-4">
                             <div class="bg-gray-700/50 rounded-lg p-4">
-                                <p class="text-gray-400 text-xs mb-1">TCGPlayer (Sell)</p>
-                                <p class="text-2xl font-bold text-green-400">${formatPrice(tcgplayer.marketPrice)}</p>
-                                <p class="text-gray-500 text-xs mt-1">${safe(tcgplayer.sellerCount, 0)} sellers</p>
-                            </div>
-
-                            <div class="bg-gray-700/50 rounded-lg p-4">
                                 <p class="text-gray-400 text-xs mb-1">Lowest Japan Price</p>
                                 <p class="text-2xl font-bold text-white">
                                     ${lowestPrice ? '¥' + lowestPrice.priceJPY.toLocaleString() : 'N/A'}
                                 </p>
                                 <p class="text-gray-400 text-sm">
                                     ≈ ${formatPrice(safe(lowestPrice?.priceUSD, 0))}
+                                </p>
+                                <p class="text-xs text-gray-500 mt-1">
+                                    ${lowestPrice?.source === 'japan-toreca' ? 'Japan-Toreca' : 'TorecaCamp'}
+                                    ${lowestPrice?.quality ? ` • ${lowestPrice.quality}` : ''}
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-700/50 rounded-lg p-4 ${tcgplayer.marketPrice > 0 ? '' : 'opacity-50'}">
+                                <p class="text-gray-400 text-xs mb-1">TCGPlayer (Sell)</p>
+                                <p class="text-2xl font-bold ${tcgplayer.marketPrice > 0 ? 'text-green-400' : 'text-gray-500'}">
+                                    ${tcgplayer.marketPrice > 0 ? formatPrice(tcgplayer.marketPrice) : 'N/A'}
+                                </p>
+                                <p class="text-gray-500 text-xs mt-1">
+                                    ${tcgplayer.marketPrice > 0 ? tcgplayer.sellerCount + ' sellers' : 'No data'}
                                 </p>
                             </div>
                         </div>
@@ -132,12 +140,14 @@
                             ` : '<div class="bg-gray-700/30 rounded p-2"><p class="text-gray-500 text-xs">TorecaCamp</p><p class="text-gray-500">No data</p></div>'}
                         </div>
 
+                        ${tcgplayer.marketPrice > 0 ? `
                         <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center text-sm">
                             <span class="text-gray-400">Potential Profit:</span>
                             <span class="font-bold ${opp.marginAmount > 0 ? 'text-green-400' : 'text-red-400'}">
                                 ${opp.marginAmount > 0 ? '+' : ''}${formatPrice(safe(opp.marginAmount, 0))}
                             </span>
                         </div>
+                        ` : ''}
                     </div>
                 `;
             } catch (e) {
