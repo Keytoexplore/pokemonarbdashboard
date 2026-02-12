@@ -1,11 +1,12 @@
 import * as cheerio from 'cheerio';
 import puppeteer from 'puppeteer';
 
-const JPY_TO_USD = 0.0065; // Approximate exchange rate
+const JPY_TO_USD = 0.0065;
 
 export interface ScrapedCard {
   name: string;
   cardNumber: string;
+  set: string;
   priceJPY: number;
   priceUSD: number;
   quality?: 'A' | 'A-' | 'B' | null;
@@ -14,20 +15,18 @@ export interface ScrapedCard {
   source: 'japan-toreca' | 'torecacamp';
 }
 
-// Helper to detect rarity from card name/number
-function detectRarity(name: string, cardNumber: string): 'SR' | 'AR' | 'SAR' | null {
-  // SAR cards typically have higher card numbers (e.g., 116/080 for SAR vs 108/080 for SR)
+function detectRarity(cardNumber: string): 'SR' | 'AR' | 'SAR' | null {
   const [current, total] = cardNumber.split('/').map(Number);
   
-  if (name.includes('SAR') || (current > 100 && total === 80)) return 'SAR';
-  if (name.includes('AR') || (current > 80 && total === 80)) return 'AR';
-  if (name.includes('SR') || (current <= 80 && total === 80)) return 'SR';
+  if (current > 100 && total === 80) return 'SAR';
+  if (current > 80 && total === 80) return 'AR';
+  if (current <= 80 && total === 80) return 'SR';
   
   return null;
 }
 
-export async function scrapeJapanToreca(): Promise<ScrapedCard[]> {
-  console.log('🔍 Scraping Japan-Toreca...');
+export async function scrapeJapanTorecaForSet(set: string): Promise<ScrapedCard[]> {
+  console.log(`🔍 Scraping Japan-Toreca for set: ${set}...`);
   
   const browser = await puppeteer.launch({ 
     headless: true,
@@ -38,11 +37,14 @@ export async function scrapeJapanToreca(): Promise<ScrapedCard[]> {
     const page = await browser.newPage();
     const cards: ScrapedCard[] = [];
     
-    // Search for SR, AR, SAR cards
+    // Search for SR, AR, SAR cards for this set
     const searchTerms = ['SR', 'AR', 'SAR'];
     
     for (const term of searchTerms) {
-      await page.goto(`https://shop.japan-toreca.com/search?q=${term}`, { 
+      const searchUrl = `https://shop.japan-toreca.com/search?q=${set}+${term}`;
+      console.log(`  Searching: ${searchUrl}`);
+      
+      await page.goto(searchUrl, { 
         waitUntil: 'networkidle2',
         timeout: 30000
       });
@@ -58,10 +60,11 @@ export async function scrapeJapanToreca(): Promise<ScrapedCard[]> {
         const heading = $el.find('h3').text().trim();
         if (!heading) return;
         
-        // Parse: 【状態A-】ラッタ AR (092/080) [M3]
+        // Parse quality
         const qualityMatch = heading.match(/【状態([AB\-]+)】/);
         const quality = qualityMatch ? qualityMatch[1] as 'A' | 'A-' | 'B' : null;
         
+        // Parse name and card number
         const nameMatch = heading.match(/】(.+?)(?:\s+(SR|AR|SAR))?\s*\((\d+\/\d+)\)/);
         if (!nameMatch) return;
         
@@ -86,6 +89,7 @@ export async function scrapeJapanToreca(): Promise<ScrapedCard[]> {
         cards.push({
           name,
           cardNumber,
+          set,
           priceJPY,
           priceUSD,
           quality,
@@ -96,15 +100,15 @@ export async function scrapeJapanToreca(): Promise<ScrapedCard[]> {
       });
     }
     
-    console.log(`✅ Found ${cards.length} cards from Japan-Toreca`);
+    console.log(`✅ Found ${cards.length} cards from Japan-Toreca for ${set}`);
     return cards;
   } finally {
     await browser.close();
   }
 }
 
-export async function scrapeTorecaCamp(): Promise<ScrapedCard[]> {
-  console.log('🔍 Scraping TorecaCamp...');
+export async function scrapeTorecaCampForSet(set: string): Promise<ScrapedCard[]> {
+  console.log(`🔍 Scraping TorecaCamp for set: ${set}...`);
   
   const browser = await puppeteer.launch({ 
     headless: true,
@@ -115,11 +119,13 @@ export async function scrapeTorecaCamp(): Promise<ScrapedCard[]> {
     const page = await browser.newPage();
     const cards: ScrapedCard[] = [];
     
-    // Search for rare cards
     const searchTerms = ['SR', 'AR', 'SAR'];
     
     for (const term of searchTerms) {
-      await page.goto(`https://torecacamp-pokemon.com/search?q=${term}`, { 
+      const searchUrl = `https://torecacamp-pokemon.com/search?q=${set}+${term}`;
+      console.log(`  Searching: ${searchUrl}`);
+      
+      await page.goto(searchUrl, { 
         waitUntil: 'networkidle2',
         timeout: 30000
       });
@@ -137,7 +143,7 @@ export async function scrapeTorecaCamp(): Promise<ScrapedCard[]> {
         if (!nameText) return;
         
         // Parse: アマルルガ AR M3 084/080
-        const match = nameText.match(/(.+?)\s+(SR|AR|SAR)(?:\s+M3)?\s*(\d+\/\d+)/);
+        const match = nameText.match(/(.+?)\s+(SR|AR|SAR)(?:\s+${set})?\s*(\d+\/\d+)/);
         if (!match) return;
         
         const name = match[1].trim();
@@ -156,9 +162,10 @@ export async function scrapeTorecaCamp(): Promise<ScrapedCard[]> {
         cards.push({
           name,
           cardNumber,
+          set,
           priceJPY,
           priceUSD,
-          quality: null, // TorecaCamp doesn't show quality in listings
+          quality: null,
           inStock,
           url: url.startsWith('http') ? url : `https://torecacamp-pokemon.com${url}`,
           source: 'torecacamp'
@@ -166,9 +173,28 @@ export async function scrapeTorecaCamp(): Promise<ScrapedCard[]> {
       });
     }
     
-    console.log(`✅ Found ${cards.length} cards from TorecaCamp`);
+    console.log(`✅ Found ${cards.length} cards from TorecaCamp for ${set}`);
     return cards;
   } finally {
     await browser.close();
   }
+}
+
+// Scrape all configured sets
+export async function scrapeAllSets(sets: string[]): Promise<ScrapedCard[]> {
+  const allCards: ScrapedCard[] = [];
+  
+  for (const set of sets) {
+    console.log(`\n🎴 Processing set: ${set}`);
+    
+    const [japanTorecaCards, torecaCampCards] = await Promise.all([
+      scrapeJapanTorecaForSet(set),
+      scrapeTorecaCampForSet(set)
+    ]);
+    
+    allCards.push(...japanTorecaCards, ...torecaCampCards);
+  }
+  
+  console.log(`\n📊 Total cards scraped: ${allCards.length}`);
+  return allCards;
 }

@@ -25,11 +25,18 @@
         </div>
 
         <!-- Filters -->
-        <div class="mb-6 flex flex-wrap gap-4">
-            <button onclick="filterByRarity('all')" class="filter-btn bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition active" data-rarity="all">All</button>
-            <button onclick="filterByRarity('SR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SR">Super Rare</button>
-            <button onclick="filterByRarity('AR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="AR">Art Rare</button>
-            <button onclick="filterByRarity('SAR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SAR">Special Art Rare</button>
+        <div class="mb-6">
+            <div class="flex flex-wrap gap-4 mb-4">
+                <span class="text-gray-400 py-2">Rarity:</span>
+                <button onclick="filterByRarity('all')" class="filter-btn bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition active" data-rarity="all">All</button>
+                <button onclick="filterByRarity('SR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SR">Super Rare</button>
+                <button onclick="filterByRarity('AR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="AR">Art Rare</button>
+                <button onclick="filterByRarity('SAR')" class="filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition" data-rarity="SAR">Special Art Rare</button>
+            </div>
+            <div id="set-filters" class="flex flex-wrap gap-4">
+                <span class="text-gray-400 py-2">Set:</span>
+                <button onclick="filterBySet('all')" class="set-filter-btn bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition active" data-set="all">All Sets</button>
+            </div>
         </div>
 
         <!-- Cards Grid -->
@@ -46,6 +53,8 @@
     <script>
         let allOpportunities = [];
         let currentFilter = 'all';
+        let currentSet = 'all';
+        let availableSets = [];
 
         function getGradeClass(margin) {
             if (margin >= 150) return 'grade-perfect';
@@ -84,7 +93,7 @@
                                 ${gradeLabel} ${opp.marginPercent > 0 ? '+' : ''}${opp.marginPercent}%
                             </div>
                             <h2 class="text-xl font-bold">${opp.name}</h2>
-                            <p class="text-gray-400 text-sm">#${opp.cardNumber} • ${opp.rarity === 'SR' ? 'Super Rare' : opp.rarity === 'AR' ? 'Art Rare' : 'Special Art Rare'}</p>
+                            <p class="text-gray-400 text-sm">${opp.set} #${opp.cardNumber} • ${opp.rarity === 'SR' ? 'Super Rare' : opp.rarity === 'AR' ? 'Art Rare' : 'Special Art Rare'}</p>
                         </div>
                     </div>
 
@@ -150,11 +159,53 @@
 
         function displayCards() {
             const container = document.getElementById('cards-container');
-            const filtered = currentFilter === 'all' 
-                ? allOpportunities 
-                : allOpportunities.filter(o => o.rarity === currentFilter);
+            let filtered = allOpportunities;
+            
+            // Filter by rarity
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(o => o.rarity === currentFilter);
+            }
+            
+            // Filter by set
+            if (currentSet !== 'all') {
+                filtered = filtered.filter(o => o.set === currentSet);
+            }
             
             container.innerHTML = filtered.map(createCardHTML).join('');
+        }
+
+        function filterBySet(set) {
+            currentSet = set;
+            
+            // Update button states
+            document.querySelectorAll('.set-filter-btn').forEach(btn => {
+                if (btn.dataset.set === set) {
+                    btn.classList.add('bg-blue-600', 'active');
+                    btn.classList.remove('bg-gray-700');
+                } else {
+                    btn.classList.remove('bg-blue-600', 'active');
+                    btn.classList.add('bg-gray-700');
+                }
+            });
+            
+            displayCards();
+        }
+
+        function generateSetFilters() {
+            const setFiltersContainer = document.getElementById('set-filters');
+            
+            // Get unique sets
+            availableSets = [...new Set(allOpportunities.map(o => o.set))].sort();
+            
+            // Generate buttons
+            availableSets.forEach(set => {
+                const btn = document.createElement('button');
+                btn.className = 'set-filter-btn bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition';
+                btn.dataset.set = set;
+                btn.textContent = set;
+                btn.onclick = () => filterBySet(set);
+                setFiltersContainer.appendChild(btn);
+            });
         }
 
         function filterByRarity(rarity) {
@@ -193,6 +244,9 @@
                 const date = new Date(data.lastUpdated);
                 document.getElementById('last-updated').textContent = 
                     `Updated: ${date.toLocaleString()}`;
+                
+                // Generate set filter buttons
+                generateSetFilters();
                 
                 displayCards();
             } catch (error) {
