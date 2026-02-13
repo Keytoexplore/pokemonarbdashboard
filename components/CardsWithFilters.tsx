@@ -336,53 +336,75 @@ export function CardsWithFilters({
                     </a>
                   )}
 
-                  {jtData.price && (
-                    <a
-                      href={jtData.price.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
-                        jtData.inStock
-                          ? 'bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30'
-                          : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
-                      }`}
-                    >
-                      <div>
-                        <span className="text-blue-300 text-sm block">Japan-Toreca</span>
-                        {!jtData.inStock && (
-                          <span className="text-red-400 text-xs">Out of Stock</span>
+                  {(() => {
+                    const anyJT = card.japanesePrices.find(p => p.source === 'japan-toreca');
+                    if (!anyJT) return null;
+                    
+                    return (
+                      <a
+                        href={anyJT.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
+                          jtData.price && jtData.inStock
+                            ? 'bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30'
+                            : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
+                        }`}
+                      >
+                        <div>
+                          <span className="text-blue-300 text-sm block">Japan-Toreca</span>
+                          {jtData.price ? (
+                            !jtData.inStock && (
+                              <span className="text-red-400 text-xs">Out of Stock (A-/B)</span>
+                            )
+                          ) : (
+                            <span className="text-orange-400 text-xs">No A-/B available</span>
+                          )}
+                        </div>
+                        {jtData.price && (
+                          <div className="text-right">
+                            <span className="text-white font-bold">¥{jtData.lowestPriceJPY.toLocaleString()}</span>
+                            <span className="text-white/50 text-xs ml-2">({jtData.price.quality})</span>
+                          </div>
                         )}
-                      </div>
-                      <div className="text-right">
-                        <span className="text-white font-bold">¥{jtData.lowestPriceJPY.toLocaleString()}</span>
-                        <span className="text-white/50 text-xs ml-2">({jtData.price.quality})</span>
-                      </div>
-                    </a>
-                  )}
+                      </a>
+                    );
+                  })()}
 
-                  {tcData.price && (
-                    <a
-                      href={tcData.price.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
-                        tcData.inStock
-                          ? 'bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30'
-                          : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
-                      }`}
-                    >
-                      <div>
-                        <span className="text-purple-300 text-sm block">TorecaCamp</span>
-                        {!tcData.inStock && (
-                          <span className="text-red-400 text-xs">Out of Stock</span>
+                  {(() => {
+                    const anyTC = card.japanesePrices.find(p => p.source === 'torecacamp');
+                    if (!anyTC) return null;
+                    
+                    return (
+                      <a
+                        href={anyTC.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
+                          tcData.price && tcData.inStock
+                            ? 'bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30'
+                            : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
+                        }`}
+                      >
+                        <div>
+                          <span className="text-purple-300 text-sm block">TorecaCamp</span>
+                          {tcData.price ? (
+                            !tcData.inStock && (
+                              <span className="text-red-400 text-xs">Out of Stock (A-/B)</span>
+                            )
+                          ) : (
+                            <span className="text-orange-400 text-xs">No A-/B available</span>
+                          )}
+                        </div>
+                        {tcData.price && (
+                          <div className="text-right">
+                            <span className="text-white font-bold">¥{tcData.lowestPriceJPY.toLocaleString()}</span>
+                            <span className="text-white/50 text-xs ml-2">({tcData.price.quality})</span>
+                          </div>
                         )}
-                      </div>
-                      <div className="text-right">
-                        <span className="text-white font-bold">¥{tcData.lowestPriceJPY.toLocaleString()}</span>
-                        <span className="text-white/50 text-xs ml-2">({tcData.price.quality})</span>
-                      </div>
-                    </a>
-                  )}
+                      </a>
+                    );
+                  })()}
                 </div>
               </div>
             </div>

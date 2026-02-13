@@ -4,10 +4,10 @@ import { ArbitrageOpportunity } from './types';
 export const baseCardsData: ArbitrageOpportunity[] = 
 [
   {
-    "id": "M3-081/080-SR",
+    "id": "M3-081/080-AR",
     "name": "Spewpa",
     "cardNumber": "081/080",
-    "rarity": "SR",
+    "rarity": "AR",
     "set": "M3",
     "japanesePrices": [
       {
@@ -331,10 +331,10 @@ export const baseCardsData: ArbitrageOpportunity[] =
     }
   },
   {
-    "id": "M3-085/080-SR",
+    "id": "M3-085/080-AR",
     "name": "Dedenne",
     "cardNumber": "085/080",
-    "rarity": "SR",
+    "rarity": "AR",
     "set": "M3",
     "japanesePrices": [
       {
@@ -922,10 +922,10 @@ export const baseCardsData: ArbitrageOpportunity[] =
     }
   },
   {
-    "id": "M3-084/080-SR",
+    "id": "M3-084/080-AR",
     "name": "Aurorus",
     "cardNumber": "084/080",
-    "rarity": "SR",
+    "rarity": "AR",
     "set": "M3",
     "japanesePrices": [
       {
@@ -1107,10 +1107,10 @@ export const baseCardsData: ArbitrageOpportunity[] =
     }
   },
   {
-    "id": "M3-082/080-SR",
+    "id": "M3-082/080-AR",
     "name": "Rowlet",
     "cardNumber": "082/080",
-    "rarity": "SR",
+    "rarity": "AR",
     "set": "M3",
     "japanesePrices": [
       {
@@ -1398,10 +1398,10 @@ export const baseCardsData: ArbitrageOpportunity[] =
     }
   },
   {
-    "id": "M3-083/080-SR",
+    "id": "M3-083/080-AR",
     "name": "Talonflame",
     "cardNumber": "083/080",
-    "rarity": "SR",
+    "rarity": "AR",
     "set": "M3",
     "japanesePrices": [
       {
