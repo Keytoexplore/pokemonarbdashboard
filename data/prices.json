@@ -2546,11 +2546,1411 @@
         "japanToreca": "https://shop.japan-toreca.com/search?q=m2a+Heliolisk%20-%20201%2F193",
         "torecaCamp": "https://torecacamp-pokemon.com/search?q=Heliolisk%20-%20201%2F193+m2a"
       }
+    },
+    {
+      "id": "M2-249-193-SAR",
+      "name": "Surfer - 249/193",
+      "cardNumber": "249/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "サーファー",
+          "cardNumber": "249/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 900,
+          "priceUSD": 5.85,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225004-a?_pos=12&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 5.85,
+      "usPrice": {
+        "marketPrice": 9.69,
+        "sellerCount": 30,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_800x800.jpg",
+        "cardName": "Surfer - 249/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665920"
+      },
+      "arbitrageUS": {
+        "profitAmount": 3.84,
+        "profitPercent": 66,
+        "isViable": true,
+        "japanPriceUSD": 5.85,
+        "usMarketPrice": 9.69
+      },
+      "marginPercent": 66,
+      "marginAmount": 3.84,
+      "lastUpdated": "2026-02-13T17:07:15.843Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-248-193-SAR",
+      "name": "Canari - 248/193",
+      "cardNumber": "248/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "カナリィ",
+          "cardNumber": "248/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 6900,
+          "priceUSD": 44.85,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225003-a?_pos=3&_sid=b7ffb2147&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "カナリィ",
+          "cardNumber": "248/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 5200,
+          "priceUSD": 33.8,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225003-a-damaged?_pos=4&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 33.8,
+      "usPrice": {
+        "marketPrice": 41.15,
+        "sellerCount": 30,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_800x800.jpg",
+        "cardName": "Canari - 248/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665919"
+      },
+      "arbitrageUS": {
+        "profitAmount": 7.35,
+        "profitPercent": 22,
+        "isViable": true,
+        "japanPriceUSD": 33.8,
+        "usMarketPrice": 41.15
+      },
+      "marginPercent": 22,
+      "marginAmount": 7.35,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-247-193-SAR",
+      "name": "Iris's Fighting Spirit - 247/193",
+      "cardNumber": "247/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "アイリスの闘志",
+          "cardNumber": "247/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3700,
+          "priceUSD": 24.05,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225002-a?_pos=19&_sid=b7ffb2147&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "アイリスの闘志",
+          "cardNumber": "247/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3100,
+          "priceUSD": 20.15,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225002-a-damaged?_pos=25&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 20.15,
+      "usPrice": {
+        "marketPrice": 29.24,
+        "sellerCount": 35,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_800x800.jpg",
+        "cardName": "Iris's Fighting Spirit - 247/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665918"
+      },
+      "arbitrageUS": {
+        "profitAmount": 9.09,
+        "profitPercent": 45,
+        "isViable": true,
+        "japanPriceUSD": 20.15,
+        "usMarketPrice": 29.24
+      },
+      "marginPercent": 45,
+      "marginAmount": 9.09,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-246-193-SAR",
+      "name": "Mega Dragonite ex - 246/193",
+      "cardNumber": "246/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガカイリューex",
+          "cardNumber": "246/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 23000,
+          "priceUSD": 149.5,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-225001-a-damaged?_pos=20&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 149.5,
+      "usPrice": {
+        "marketPrice": 189.01,
+        "sellerCount": 9,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_800x800.jpg",
+        "cardName": "Mega Dragonite ex - 246/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665917"
+      },
+      "arbitrageUS": {
+        "profitAmount": 39.51,
+        "profitPercent": 26,
+        "isViable": true,
+        "japanPriceUSD": 149.5,
+        "usMarketPrice": 189.01
+      },
+      "marginPercent": 26,
+      "marginAmount": 39.51,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-245-193-SAR",
+      "name": "Steven's Metagross ex",
+      "cardNumber": "245/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 37.72,
+        "sellerCount": 14,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_800x800.jpg",
+        "cardName": "Steven's Metagross ex",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665916"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-244-193-SAR",
+      "name": "Fezandipiti ex - 244/193",
+      "cardNumber": "244/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "キチキギスex",
+          "cardNumber": "244/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3400,
+          "priceUSD": 22.1,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224999-a?_pos=13&_sid=b7ffb2147&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "キチキギスex",
+          "cardNumber": "244/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3100,
+          "priceUSD": 20.15,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224999-a-damaged?_pos=14&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 20.15,
+      "usPrice": {
+        "marketPrice": 23.84,
+        "sellerCount": 37,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_800x800.jpg",
+        "cardName": "Fezandipiti ex - 244/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665915"
+      },
+      "arbitrageUS": {
+        "profitAmount": 3.69,
+        "profitPercent": 18,
+        "isViable": false,
+        "japanPriceUSD": 20.15,
+        "usMarketPrice": 23.84
+      },
+      "marginPercent": 18,
+      "marginAmount": 3.69,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-243-193-SAR",
+      "name": "Marnie's Grimmsnarl ex",
+      "cardNumber": "243/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 36.43,
+        "sellerCount": 26,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_800x800.jpg",
+        "cardName": "Marnie's Grimmsnarl ex",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665914"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-242-193-SAR",
+      "name": "N's Zoroark ex - 242/193",
+      "cardNumber": "242/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 75.21,
+        "sellerCount": 19,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_800x800.jpg",
+        "cardName": "N's Zoroark ex - 242/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665913"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-241-193-SAR",
+      "name": "Mega Scrafty ex - 241/193",
+      "cardNumber": "241/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガズルズキンex",
+          "cardNumber": "241/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2100,
+          "priceUSD": 13.65,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224996-a?_pos=16&_sid=b7ffb2147&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "メガズルズキンex",
+          "cardNumber": "241/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 1800,
+          "priceUSD": 11.7,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224996-a-damaged?_pos=21&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 11.7,
+      "usPrice": {
+        "marketPrice": 19.43,
+        "sellerCount": 22,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_800x800.jpg",
+        "cardName": "Mega Scrafty ex - 241/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665912"
+      },
+      "arbitrageUS": {
+        "profitAmount": 7.73,
+        "profitPercent": 66,
+        "isViable": true,
+        "japanPriceUSD": 11.7,
+        "usMarketPrice": 19.43
+      },
+      "marginPercent": 66,
+      "marginAmount": 7.73,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-240-193-SAR",
+      "name": "Mega Gengar ex - 240/193",
+      "cardNumber": "240/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 312.85,
+        "sellerCount": 15,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_800x800.jpg",
+        "cardName": "Mega Gengar ex - 240/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665911"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-239-193-SAR",
+      "name": "Mega Hawlucha ex - 239/193",
+      "cardNumber": "239/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガルチャブルex",
+          "cardNumber": "239/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2200,
+          "priceUSD": 14.3,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224994-a-damaged?_pos=22&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 14.3,
+      "usPrice": {
+        "marketPrice": 22.49,
+        "sellerCount": 31,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_800x800.jpg",
+        "cardName": "Mega Hawlucha ex - 239/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665910"
+      },
+      "arbitrageUS": {
+        "profitAmount": 8.19,
+        "profitPercent": 57,
+        "isViable": true,
+        "japanPriceUSD": 14.3,
+        "usMarketPrice": 22.49
+      },
+      "marginPercent": 57,
+      "marginAmount": 8.19,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-238-193-SAR",
+      "name": "Mega Diancie ex - 238/193",
+      "cardNumber": "238/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガディアンシーex",
+          "cardNumber": "238/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2400,
+          "priceUSD": 15.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224993-a?_pos=24&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 15.6,
+      "usPrice": {
+        "marketPrice": 24.23,
+        "sellerCount": 27,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_800x800.jpg",
+        "cardName": "Mega Diancie ex - 238/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665909"
+      },
+      "arbitrageUS": {
+        "profitAmount": 8.63,
+        "profitPercent": 55,
+        "isViable": true,
+        "japanPriceUSD": 15.6,
+        "usMarketPrice": 24.23
+      },
+      "marginPercent": 55,
+      "marginAmount": 8.63,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-237-193-SAR",
+      "name": "Team Rocket's Mewtwo ex - 237/193",
+      "cardNumber": "237/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 113.81,
+        "sellerCount": 13,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_800x800.jpg",
+        "cardName": "Team Rocket's Mewtwo ex - 237/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665908"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-236-193-SAR",
+      "name": "Iono's Bellibolt ex - 236/193",
+      "cardNumber": "236/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 61.5,
+        "sellerCount": 14,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_800x800.jpg",
+        "cardName": "Iono's Bellibolt ex - 236/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665907"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-235-193-SAR",
+      "name": "Mega Eelektross ex - 235/193",
+      "cardNumber": "235/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガシビルドンex",
+          "cardNumber": "235/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 1300,
+          "priceUSD": 8.45,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224990-a?_pos=17&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 8.45,
+      "usPrice": {
+        "marketPrice": 14.11,
+        "sellerCount": 27,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_800x800.jpg",
+        "cardName": "Mega Eelektross ex - 235/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665906"
+      },
+      "arbitrageUS": {
+        "profitAmount": 5.66,
+        "profitPercent": 67,
+        "isViable": true,
+        "japanPriceUSD": 8.45,
+        "usMarketPrice": 14.11
+      },
+      "marginPercent": 67,
+      "marginAmount": 5.66,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-234-193-SAR",
+      "name": "Pikachu ex - 234/193",
+      "cardNumber": "234/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ピカチュウex",
+          "cardNumber": "234/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 30000,
+          "priceUSD": 195,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224989-a-damaged?_pos=15&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 195,
+      "usPrice": {
+        "marketPrice": 182.8,
+        "sellerCount": 16,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_800x800.jpg",
+        "cardName": "Pikachu ex - 234/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665905"
+      },
+      "arbitrageUS": {
+        "profitAmount": -12.2,
+        "profitPercent": -6,
+        "isViable": false,
+        "japanPriceUSD": 195,
+        "usMarketPrice": 182.8
+      },
+      "marginPercent": -6,
+      "marginAmount": -12.2,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-233-193-SAR",
+      "name": "Mega Froslass ex - 233/193",
+      "cardNumber": "233/193",
+      "rarity": "SAR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "メガユキメノコex",
+          "cardNumber": "233/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3300,
+          "priceUSD": 21.45,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224988-a?_pos=18&_sid=b7ffb2147&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "メガユキメノコex",
+          "cardNumber": "233/193",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2900,
+          "priceUSD": 18.85,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224988-a-damaged?_pos=23&_sid=b7ffb2147&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 18.85,
+      "usPrice": {
+        "marketPrice": 32.32,
+        "sellerCount": 25,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_800x800.jpg",
+        "cardName": "Mega Froslass ex - 233/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665904"
+      },
+      "arbitrageUS": {
+        "profitAmount": 13.47,
+        "profitPercent": 71,
+        "isViable": true,
+        "japanPriceUSD": 18.85,
+        "usMarketPrice": 32.32
+      },
+      "marginPercent": 71,
+      "marginAmount": 13.47,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-222-193-SR",
+      "name": "Jamming Tower",
+      "cardNumber": "222/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ジャミングタワー",
+          "cardNumber": "222/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224977-a-damaged?_pos=8&_sid=6efc18304&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ジャミングタワー",
+          "cardNumber": "222/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224977-a?_pos=10&_sid=6efc18304&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 0.98,
+      "usPrice": {
+        "marketPrice": 0.43,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_800x800.jpg",
+        "cardName": "Jamming Tower",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665893"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.55,
+        "profitPercent": -56,
+        "isViable": false,
+        "japanPriceUSD": 0.98,
+        "usMarketPrice": 0.43
+      },
+      "marginPercent": -56,
+      "marginAmount": -0.55,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-221-193-SR",
+      "name": "Anthea & Concordia - 221/193",
+      "cardNumber": "221/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.6,
+        "sellerCount": 56,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_800x800.jpg",
+        "cardName": "Anthea & Concordia - 221/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665892"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-220-193-SR",
+      "name": "Black Belt's Training",
+      "cardNumber": "220/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 1.35,
+        "sellerCount": 34,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_800x800.jpg",
+        "cardName": "Black Belt's Training",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665891"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-219-193-SR",
+      "name": "Canari - 219/193",
+      "cardNumber": "219/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "カナリィ",
+          "cardNumber": "219/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 2300,
+          "priceUSD": 14.95,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224974-a?_pos=11&_sid=6efc18304&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 14.95,
+      "usPrice": {
+        "marketPrice": 14.57,
+        "sellerCount": 48,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_800x800.jpg",
+        "cardName": "Canari - 219/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665890"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.38,
+        "profitPercent": -3,
+        "isViable": false,
+        "japanPriceUSD": 14.95,
+        "usMarketPrice": 14.57
+      },
+      "marginPercent": -3,
+      "marginAmount": -0.38,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-218-193-SR",
+      "name": "Counter Gain - 218/193",
+      "cardNumber": "218/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "カウンターゲイン",
+          "cardNumber": "218/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224973-a?_pos=12&_sid=6efc18304&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.98,
+      "usPrice": {
+        "marketPrice": 0.25,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_800x800.jpg",
+        "cardName": "Counter Gain - 218/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665889"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.73,
+        "profitPercent": -74,
+        "isViable": false,
+        "japanPriceUSD": 0.98,
+        "usMarketPrice": 0.25
+      },
+      "marginPercent": -74,
+      "marginAmount": -0.73,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-217-193-SR",
+      "name": "Team Rocket's Transceiver - 217/193",
+      "cardNumber": "217/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 0.44,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_800x800.jpg",
+        "cardName": "Team Rocket's Transceiver - 217/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665888"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-216-193-SR",
+      "name": "Ultra Ball",
+      "cardNumber": "216/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ハイパーボール",
+          "cardNumber": "216/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224971-a-damaged?_pos=9&_sid=6efc18304&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ハイパーボール",
+          "cardNumber": "216/193",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224971-a?_pos=13&_sid=6efc18304&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": {
+        "marketPrice": 0.47,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_800x800.jpg",
+        "cardName": "Ultra Ball",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665887"
+      },
+      "arbitrageUS": {
+        "profitAmount": -2.78,
+        "profitPercent": -86,
+        "isViable": false,
+        "japanPriceUSD": 3.25,
+        "usMarketPrice": 0.47
+      },
+      "marginPercent": -86,
+      "marginAmount": -2.78,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-215-193-SR",
+      "name": "Glass Trumpet - 215/193",
+      "cardNumber": "215/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 0.26,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_800x800.jpg",
+        "cardName": "Glass Trumpet - 215/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665886"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-214-193-SR",
+      "name": "N's PP Up - 214/193",
+      "cardNumber": "214/193",
+      "rarity": "SR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 0.57,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_800x800.jpg",
+        "cardName": "N's PP Up - 214/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665885"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-213-193-AR",
+      "name": "Fan Rotom - 213/193",
+      "cardNumber": "213/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "スピンロトム",
+          "cardNumber": "213/193",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224968-a-damaged?_pos=21&_sid=a4ed8bd50&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 1.17,
+        "sellerCount": 135,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_800x800.jpg",
+        "cardName": "Fan Rotom - 213/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665884"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.46,
+        "profitPercent": -28,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 1.17
+      },
+      "marginPercent": -28,
+      "marginAmount": -0.46,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-212-193-AR",
+      "name": "Drakloak - 212/193",
+      "cardNumber": "212/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ドロンチ",
+          "cardNumber": "212/193",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224967-a-damaged?_pos=22&_sid=a4ed8bd50&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.93,
+      "usPrice": {
+        "marketPrice": 1.29,
+        "sellerCount": 109,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_800x800.jpg",
+        "cardName": "Drakloak - 212/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665883"
+      },
+      "arbitrageUS": {
+        "profitAmount": -1.64,
+        "profitPercent": -56,
+        "isViable": false,
+        "japanPriceUSD": 2.93,
+        "usMarketPrice": 1.29
+      },
+      "marginPercent": -56,
+      "marginAmount": -1.64,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-211-193-AR",
+      "name": "Dreepy - 211/193",
+      "cardNumber": "211/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 1.79,
+        "sellerCount": 116,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_800x800.jpg",
+        "cardName": "Dreepy - 211/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665882"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-210-193-AR",
+      "name": "N's Zekrom - 210/193",
+      "cardNumber": "210/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 7.94,
+        "sellerCount": 57,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_800x800.jpg",
+        "cardName": "N's Zekrom - 210/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665881"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-209-193-AR",
+      "name": "Galarian Obstagoon - 209/193",
+      "cardNumber": "209/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ガラルタチフサグマ",
+          "cardNumber": "209/193",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224964-a-damaged?_pos=23&_sid=a4ed8bd50&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 1.37,
+        "sellerCount": 102,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_800x800.jpg",
+        "cardName": "Galarian Obstagoon - 209/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665880"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.26,
+        "profitPercent": -16,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 1.37
+      },
+      "marginPercent": -16,
+      "marginAmount": -0.26,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-208-193-AR",
+      "name": "Cynthia's Spiritomb - 208/193",
+      "cardNumber": "208/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.49,
+        "sellerCount": 67,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_800x800.jpg",
+        "cardName": "Cynthia's Spiritomb - 208/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665879"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-207-193-AR",
+      "name": "Medicham - 207/193",
+      "cardNumber": "207/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "チャーレム",
+          "cardNumber": "207/193",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224962-a-damaged?_pos=24&_sid=a4ed8bd50&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 1.63,
+        "sellerCount": 91,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_800x800.jpg",
+        "cardName": "Medicham - 207/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665878"
+      },
+      "arbitrageUS": {
+        "profitAmount": 0,
+        "profitPercent": 0,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 1.63
+      },
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-206-193-AR",
+      "name": "Team Rocket's Dugtrio - 206/193",
+      "cardNumber": "206/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 2.81,
+        "sellerCount": 67,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_800x800.jpg",
+        "cardName": "Team Rocket's Dugtrio - 206/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665877"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-205-193-AR",
+      "name": "Team Rocket's Mimikyu - 205/193",
+      "cardNumber": "205/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 5.18,
+        "sellerCount": 40,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_800x800.jpg",
+        "cardName": "Team Rocket's Mimikyu - 205/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665876"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-204-193-AR",
+      "name": "Hop's Trevenant - 204/193",
+      "cardNumber": "204/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 1.34,
+        "sellerCount": 119,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_800x800.jpg",
+        "cardName": "Hop's Trevenant - 204/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665875"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-203-193-AR",
+      "name": "Togekiss - 203/193",
+      "cardNumber": "203/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 1.64,
+        "sellerCount": 105,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_800x800.jpg",
+        "cardName": "Togekiss - 203/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665874"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
+    },
+    {
+      "id": "M2-202-193-AR",
+      "name": "Misdreavus - 202/193",
+      "cardNumber": "202/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [
+        {
+          "name": "ムウマ",
+          "cardNumber": "202/193",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224957-a-damaged?_pos=25&_sid=a4ed8bd50&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 2.24,
+        "sellerCount": 91,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_800x800.jpg",
+        "cardName": "Misdreavus - 202/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665873"
+      },
+      "arbitrageUS": {
+        "profitAmount": 0.61,
+        "profitPercent": 37,
+        "isViable": true,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 2.24
+      },
+      "marginPercent": 37,
+      "marginAmount": 0.61,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": true
+    },
+    {
+      "id": "M2-201-193-AR",
+      "name": "Heliolisk - 201/193",
+      "cardNumber": "201/193",
+      "rarity": "AR",
+      "set": "M2",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 0.92,
+        "sellerCount": 101,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_800x800.jpg",
+        "cardName": "Heliolisk - 201/193",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/665872"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T17:07:15.845Z",
+      "isViable": false
     }
   ],
-  "lastUpdated": "2026-02-13T14:34:05.709Z",
+  "lastUpdated": "2026-02-13T17:07:15.845Z",
   "stats": {
-    "totalCards": 72,
+    "totalCards": 111,
     "viableOpportunities": 30,
     "avgMargin": 208.8
   }
