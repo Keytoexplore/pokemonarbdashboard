@@ -73,8 +73,20 @@ export function CardsWithFilters({
   lastUpdated
 }: CardsWithFiltersProps) {
   const [filterRarity, setFilterRarity] = useState<string>('all');
+  const [filterSet, setFilterSet] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Get available sets from cards
+  const availableSets = useMemo(() => {
+    const setMap = new Map<string, string>();
+    initialCards.forEach(card => {
+      if (!setMap.has(card.set)) {
+        setMap.set(card.set, card.set);
+      }
+    });
+    return Array.from(setMap.keys()).sort();
+  }, [initialCards]);
 
   // Process cards with A-/B filtering and profit calculations
   const cardsWithData = useMemo(() => {
@@ -110,6 +122,11 @@ export function CardsWithFilters({
 
   const filteredCards = useMemo(() => {
     let cards = [...cardsWithData];
+
+    // Filter by set
+    if (filterSet !== 'all') {
+      cards = cards.filter(c => c.set === filterSet);
+    }
 
     // Filter by rarity
     if (filterRarity !== 'all') {
@@ -151,8 +168,8 @@ export function CardsWithFilters({
       <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 mb-6 text-white">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
           <div>
-            <p className="text-sm opacity-75">Total Cards</p>
-            <p className="text-2xl font-bold">{totalCards}</p>
+            <p className="text-sm opacity-75">Set</p>
+            <p className="text-lg font-bold">{filterSet === 'all' ? 'All' : filterSet}</p>
           </div>
           <div>
             <p className="text-sm opacity-75">Showing</p>
@@ -160,11 +177,17 @@ export function CardsWithFilters({
           </div>
           <div>
             <p className="text-sm opacity-75 text-emerald-400">JP→US Ops</p>
-            <p className="text-2xl font-bold text-emerald-400">{viableOpportunities || 0}</p>
+            <p className="text-2xl font-bold text-emerald-400">
+              {filteredCards.filter(c => c.isViable).length}
+            </p>
           </div>
           <div>
             <p className="text-sm opacity-75 text-amber-400">Avg Margin</p>
-            <p className="text-2xl font-bold text-amber-400">{(avgMargin || 0).toFixed(1)}%</p>
+            <p className="text-2xl font-bold text-amber-400">
+              {filteredCards.length > 0 
+                ? (filteredCards.reduce((s, c) => s + c.usProfitMargin, 0) / filteredCards.length).toFixed(1)
+                : '0.0'}%
+            </p>
           </div>
           <div>
             <p className="text-sm opacity-75">Last Updated</p>
@@ -175,7 +198,21 @@ export function CardsWithFilters({
 
       {/* Filters */}
       <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <label className="text-white/75 text-sm block mb-1">Set</label>
+            <select
+              value={filterSet}
+              onChange={(e) => setFilterSet(e.target.value)}
+              className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
+            >
+              <option value="all" className="bg-gray-900">All Sets</option>
+              {availableSets.map(setCode => (
+                <option key={setCode} value={setCode} className="bg-gray-900">{setCode}</option>
+              ))}
+            </select>
+          </div>
+
           <div>
             <label className="text-white/75 text-sm block mb-1">Search</label>
             <input
@@ -418,6 +455,7 @@ export function CardsWithFilters({
           <p className="text-xl text-white/70">No cards match your filters</p>
           <button
             onClick={() => {
+              setFilterSet('all');
               setFilterRarity('all');
               setSearchQuery('');
               setSortBy('profit-desc');
