@@ -22,7 +22,7 @@ export const japaneseSetMappings: Record<string, SetMapping> = {
   },
   'M2a': {
     jpCode: 'M2a',
-    apiSetId: 'mega-dream-ex',
+    apiSetId: 'm2a',  // CONFIRMED: API uses 'm2a'
     englishName: 'Mega Dream ex',
     japaneseName: 'メガドリームex',
     releaseDate: '2025-11-28',

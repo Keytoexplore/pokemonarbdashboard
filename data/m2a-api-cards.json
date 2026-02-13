@@ -1,0 +1,3138 @@
+[
+  {
+    "id": "6970d92ea597ffe5ebbeb8c9",
+    "tcgPlayerId": "665921",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Dragonite ex - 250/193",
+    "cardNumber": "250/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Ultra Rare",
+    "cardType": null,
+    "hp": "370",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Water][Lightning][Lightning] Ryuno Glide (330)<br> Discard 2 Energy from this Pokémon."
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "aky CG Works",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665921",
+    "prices": {
+      "market": 229.83,
+      "low": 0,
+      "sellers": 16,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 229.83,
+            "listings": null,
+            "priceString": "$229.83",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665921_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665921_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665921_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665921_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665921_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.831Z",
+    "updatedAt": "2026-02-12T14:22:48.280Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 229.83,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d934a597ffe5ebbeb95c",
+    "tcgPlayerId": "665920",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Surfer - 249/193",
+    "cardNumber": "249/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "Hideki Ishikawa",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665920",
+    "prices": {
+      "market": 9.69,
+      "low": 0,
+      "sellers": 30,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 9.69,
+            "listings": null,
+            "priceString": "$9.69",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665920_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:36.337Z",
+    "updatedAt": "2026-02-12T14:22:54.649Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 9.69,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d926a597ffe5ebbeb7f4",
+    "tcgPlayerId": "665919",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Canari - 248/193",
+    "cardNumber": "248/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "Naoki Saito",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665919",
+    "prices": {
+      "market": 41.15,
+      "low": 0,
+      "sellers": 30,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 41.15,
+            "listings": null,
+            "priceString": "$41.15",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665919_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:22.878Z",
+    "updatedAt": "2026-02-12T14:22:39.042Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 41.15,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92da597ffe5ebbeb8a2",
+    "tcgPlayerId": "665918",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Iris's Fighting Spirit - 247/193",
+    "cardNumber": "247/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "Kuroimori",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665918",
+    "prices": {
+      "market": 29.24,
+      "low": 0,
+      "sellers": 35,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 29.24,
+            "listings": null,
+            "priceString": "$29.24",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665918_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:29.354Z",
+    "updatedAt": "2026-02-12T14:22:46.587Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 29.24,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8c8",
+    "tcgPlayerId": "665917",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Dragonite ex - 246/193",
+    "cardNumber": "246/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "370",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Water][Lightning][Lightning] Ryuno Glide (330)<br> Discard 2 Energy from this Pokémon."
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "DOM",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665917",
+    "prices": {
+      "market": 189.01,
+      "low": 0,
+      "sellers": 9,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 189.01,
+            "listings": null,
+            "priceString": "$189.01",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665917_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.794Z",
+    "updatedAt": "2026-02-12T14:22:48.235Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 189.01,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d934a597ffe5ebbeb957",
+    "tcgPlayerId": "665916",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Steven's Metagross ex",
+    "cardNumber": "245/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "340",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Metal][Colorless][Colorless] Metal Stomp (200)"
+    ],
+    "weakness": "Firex2",
+    "resistance": "Grass-30",
+    "retreatCost": "3",
+    "artist": "chibi",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665916",
+    "prices": {
+      "market": 37.72,
+      "low": 0,
+      "sellers": 14,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 37.72,
+            "listings": null,
+            "priceString": "$37.72",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665916_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:36.146Z",
+    "updatedAt": "2026-02-12T14:22:54.434Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 37.72,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92aa597ffe5ebbeb85a",
+    "tcgPlayerId": "665915",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Fezandipiti ex - 244/193",
+    "cardNumber": "244/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "210",
+    "stage": "Basic",
+    "attacks": [
+      "[Colorless][Colorless][Colorless] Cruel Arrow<br> This attack does 100 damage to 1 of your opponent's Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>"
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "SIE NANAHARA",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665915",
+    "prices": {
+      "market": 23.84,
+      "low": 0,
+      "sellers": 37,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 23.84,
+            "listings": null,
+            "priceString": "$23.84",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665915_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:26.669Z",
+    "updatedAt": "2026-02-12T14:22:43.478Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 23.84,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8bb",
+    "tcgPlayerId": "665914",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Marnie's Grimmsnarl ex",
+    "cardNumber": "243/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "320",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Darkness][Darkness] Shadow Bullet (180)<br> This attack also does 30 damage to 1 of your opponent's Benched Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>"
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Ligton",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665914",
+    "prices": {
+      "market": 36.43,
+      "low": 0,
+      "sellers": 26,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 36.43,
+            "listings": null,
+            "priceString": "$36.43",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665914_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.302Z",
+    "updatedAt": "2026-02-12T14:22:47.679Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 36.43,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d930a597ffe5ebbeb903",
+    "tcgPlayerId": "665913",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "N's Zoroark ex - 242/193",
+    "cardNumber": "242/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "280",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Darkness][Darkness] Night Joker<br> Choose 1 of your Benched N's Pokémon's attacks and use it as this attack."
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Raita Kazama",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665913",
+    "prices": {
+      "market": 75.21,
+      "low": 0,
+      "sellers": 19,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 75.21,
+            "listings": null,
+            "priceString": "$75.21",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665913_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:32.996Z",
+    "updatedAt": "2026-02-12T14:22:50.809Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 75.21,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8db",
+    "tcgPlayerId": "665912",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Scrafty ex - 241/193",
+    "cardNumber": "241/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "330",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Darkness][Darkness][Colorless] Outlaw Leg (160)<br> Discard a random card from your opponent's hand. Discard the top card of your opponent's deck."
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665912",
+    "prices": {
+      "market": 19.43,
+      "low": 0,
+      "sellers": 22,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 19.43,
+            "listings": null,
+            "priceString": "$19.43",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665912_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.516Z",
+    "updatedAt": "2026-02-12T14:22:49.073Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 19.43,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d3",
+    "tcgPlayerId": "665911",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Gengar ex - 240/193",
+    "cardNumber": "240/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "350",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Darkness][Darkness] Void Gale (230)<br> Move an Energy from this Pokémon to 1 of your Benched Pokémon."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Taiga Kasai",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665911",
+    "prices": {
+      "market": 312.85,
+      "low": 0,
+      "sellers": 15,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 312.85,
+            "listings": null,
+            "priceString": "$312.85",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665911_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.211Z",
+    "updatedAt": "2026-02-12T14:22:48.726Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 312.85,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d6",
+    "tcgPlayerId": "665910",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Hawlucha ex - 239/193",
+    "cardNumber": "239/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "250",
+    "stage": "Basic",
+    "attacks": [
+      "[Fighting][Fighting][Colorless] Somersault Dive (120+)<br> If a Stadium is in play, this attack does 140 more damage. Then, discard that Stadium."
+    ],
+    "weakness": "Psychicx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "AKIRA EGAWA",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665910",
+    "prices": {
+      "market": 22.49,
+      "low": 0,
+      "sellers": 31,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 22.49,
+            "listings": null,
+            "priceString": "$22.49",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665910_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.326Z",
+    "updatedAt": "2026-02-12T14:22:48.852Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 22.49,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8c5",
+    "tcgPlayerId": "665909",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Diancie ex - 238/193",
+    "cardNumber": "238/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "270",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic][Psychic] Garland Ray (120x)<br> Discard up to 2 Energy cards from this Pokémon, and this attack does 120 damage for each card you discarded in this way."
+    ],
+    "weakness": "Metalx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "DOM",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665909",
+    "prices": {
+      "market": 24.23,
+      "low": 0,
+      "sellers": 27,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 24.23,
+            "listings": null,
+            "priceString": "$24.23",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665909_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.679Z",
+    "updatedAt": "2026-02-12T14:22:48.110Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 24.23,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d935a597ffe5ebbeb981",
+    "tcgPlayerId": "665908",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Team Rocket's Mewtwo ex - 237/193",
+    "cardNumber": "237/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "280",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic][Psychic][Colorless] Erasure Ball (160+)<br> You may discard up to 2 Energy from your Benched Pokémon. This attack does 60 more damage for each card you discarded in this way."
+    ],
+    "weakness": "Darknessx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "3",
+    "artist": "Mitsuhiro Arita",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665908",
+    "prices": {
+      "market": 113.81,
+      "low": 0,
+      "sellers": 13,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 113.81,
+            "listings": null,
+            "priceString": "$113.81",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665908_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:37.722Z",
+    "updatedAt": "2026-02-12T14:22:56.264Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 113.81,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ca597ffe5ebbeb897",
+    "tcgPlayerId": "665907",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Iono's Bellibolt ex - 236/193",
+    "cardNumber": "236/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "280",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Lightning][Lightning][Lightning][Colorless] Thunderous Bolt (230)<br> During your next turn, this Pokémon can't attack."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Akira Komayama",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665907",
+    "prices": {
+      "market": 61.5,
+      "low": 0,
+      "sellers": 14,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 61.5,
+            "listings": null,
+            "priceString": "$61.50",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665907_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:28.949Z",
+    "updatedAt": "2026-02-12T14:22:46.115Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 61.5,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8cc",
+    "tcgPlayerId": "665906",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Eelektross ex - 235/193",
+    "cardNumber": "235/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "350",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Lightning][Lightning] Split Bomb<br> This attack does 60 damage to 2 of your opponent's Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>",
+      "[Lightning][Lightning][Lightning] Disaster Shock (190)<br> You may discard 2 Energy from this Pokémon and make your opponent's Active Pokémon Paralyzed."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "takuyoa",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665906",
+    "prices": {
+      "market": 14.11,
+      "low": 0,
+      "sellers": 27,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 14.11,
+            "listings": null,
+            "priceString": "$14.11",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665906_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.949Z",
+    "updatedAt": "2026-02-12T14:22:48.412Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 14.11,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d932a597ffe5ebbeb928",
+    "tcgPlayerId": "665905",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Pikachu ex - 234/193",
+    "cardNumber": "234/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "200",
+    "stage": "Basic",
+    "attacks": [
+      "[Grass][Lightning][Metal] Topaz Bolt (300)<br> Discard 3 Energy from this Pokémon."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "James Turner",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665905",
+    "prices": {
+      "market": 182.8,
+      "low": 0,
+      "sellers": 16,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 182.8,
+            "listings": null,
+            "priceString": "$182.80",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665905_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:34.361Z",
+    "updatedAt": "2026-02-12T14:22:52.409Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 182.8,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8cf",
+    "tcgPlayerId": "665904",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Froslass ex - 233/193",
+    "cardNumber": "233/193",
+    "totalSetNumber": null,
+    "rarity": "Special Art Rare",
+    "cardType": null,
+    "hp": "310",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Water] Resentful Song (50x)<br> This attack does 50 damage for each card in your opponent's hand.",
+      "[Water][Colorless][Colorless] Absolute Snow (150)<br> Your opponent's Active Pokémon is now Asleep."
+    ],
+    "weakness": "Metalx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665904",
+    "prices": {
+      "market": 32.32,
+      "low": 0,
+      "sellers": 25,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 32.32,
+            "listings": null,
+            "priceString": "$32.32",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665904_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.060Z",
+    "updatedAt": "2026-02-12T14:22:48.548Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 32.32,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8c7",
+    "tcgPlayerId": "665895",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Dragonite ex - 232/193",
+    "cardNumber": "232/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "370",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Water][Lightning][Lightning] Ryuno Glide (330)<br> Discard 2 Energy from this Pokémon."
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "aky CG Works",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665895",
+    "prices": {
+      "market": 17.66,
+      "low": 0,
+      "sellers": 33,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 17.66,
+            "listings": null,
+            "priceString": "$17.66",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665895_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665895_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665895_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665895_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665895_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.754Z",
+    "updatedAt": "2026-02-12T14:22:48.195Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 17.66,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8da",
+    "tcgPlayerId": "665903",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Scrafty ex - 231/193",
+    "cardNumber": "231/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "330",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Darkness][Darkness][Colorless] Outlaw Leg (160)<br> Discard a random card from your opponent's hand. Discard the top card of your opponent's deck."
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665903",
+    "prices": {
+      "market": 4.74,
+      "low": 0,
+      "sellers": 45,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 4.74,
+            "listings": null,
+            "priceString": "$4.74",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665903_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665903_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665903_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665903_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665903_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.479Z",
+    "updatedAt": "2026-02-12T14:22:49.027Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 4.74,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d2",
+    "tcgPlayerId": "665902",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Gengar ex - 230/193",
+    "cardNumber": "230/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "350",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Darkness][Darkness] Void Gale (230)<br> Move an Energy from this Pokémon to 1 of your Benched Pokémon."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Taiga Kasai",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665902",
+    "prices": {
+      "market": 25.69,
+      "low": 0,
+      "sellers": 18,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 25.69,
+            "listings": null,
+            "priceString": "$25.69",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665902_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665902_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665902_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665902_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665902_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.173Z",
+    "updatedAt": "2026-02-12T14:22:48.677Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 25.69,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d5",
+    "tcgPlayerId": "665901",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Hawlucha ex - 229/193",
+    "cardNumber": "229/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "250",
+    "stage": "Basic",
+    "attacks": [
+      "[Fighting][Fighting][Colorless] Somersault Dive (120+)<br> If a Stadium is in play, this attack does 140 more damage. Then, discard that Stadium."
+    ],
+    "weakness": "Psychicx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665901",
+    "prices": {
+      "market": 6.38,
+      "low": 0,
+      "sellers": 54,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 6.38,
+            "listings": null,
+            "priceString": "$6.38",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665901_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665901_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665901_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665901_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665901_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.287Z",
+    "updatedAt": "2026-02-12T14:22:48.810Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 6.38,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d8",
+    "tcgPlayerId": "665900",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Lucario ex - 228/193",
+    "cardNumber": "228/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "340",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Fighting] Aura Jab (130)<br> Attach up to 3 Basic Fighting Energy cards from your discard pile to your Benched Pokémon in any way you like.",
+      "[Fighting][Fighting] Mega Brave (270)<br> During your next turn, this Pokémon can't use Mega Brave."
+    ],
+    "weakness": "Psychicx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665900",
+    "prices": {
+      "market": 10.21,
+      "low": 0,
+      "sellers": 29,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 10.21,
+            "listings": null,
+            "priceString": "$10.21",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665900_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665900_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665900_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665900_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665900_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.404Z",
+    "updatedAt": "2026-02-12T14:22:48.940Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 10.21,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8c4",
+    "tcgPlayerId": "665899",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Diancie ex - 227/193",
+    "cardNumber": "227/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "270",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic][Psychic] Garland Ray (120x)<br> Discard up to 2 Energy cards from this Pokémon, and this attack does 120 damage for each card you discarded in this way."
+    ],
+    "weakness": "Metalx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "DOM",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665899",
+    "prices": {
+      "market": 5.69,
+      "low": 0,
+      "sellers": 38,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 5.69,
+            "listings": null,
+            "priceString": "$5.69",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665899_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665899_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665899_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665899_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665899_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.641Z",
+    "updatedAt": "2026-02-12T14:22:48.066Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 5.69,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8d1",
+    "tcgPlayerId": "665898",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Gardevoir ex - 226/193",
+    "cardNumber": "226/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "360",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Psychic] Overflowing Wishes<br> For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck.",
+      "[Psychic] Mega Symphonia (50x)<br> This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+    ],
+    "weakness": "Darknessx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "2",
+    "artist": "takuyoa",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665898",
+    "prices": {
+      "market": 7.28,
+      "low": 0,
+      "sellers": 41,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 7.28,
+            "listings": null,
+            "priceString": "$7.28",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665898_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665898_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665898_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665898_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665898_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.136Z",
+    "updatedAt": "2026-02-12T14:22:48.632Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 7.28,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8cb",
+    "tcgPlayerId": "665897",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Eelektross ex - 225/193",
+    "cardNumber": "225/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "350",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Lightning][Lightning] Split Bomb<br> This attack does 60 damage to 2 of your opponent's Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>",
+      "[Lightning][Lightning][Lightning] Disaster Shock (190)<br> You may discard 2 Energy from this Pokémon and make your opponent's Active Pokémon Paralyzed."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "takuyoa",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665897",
+    "prices": {
+      "market": 3.21,
+      "low": 0,
+      "sellers": 57,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 3.21,
+            "listings": null,
+            "priceString": "$3.21",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665897_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665897_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665897_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665897_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665897_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.907Z",
+    "updatedAt": "2026-02-12T14:22:48.368Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 3.21,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8ce",
+    "tcgPlayerId": "665896",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Froslass ex - 224/193",
+    "cardNumber": "224/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "310",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Water] Resentful Song (50x)<br> This attack does 50 damage for each card in your opponent's hand.",
+      "[Water][Colorless][Colorless] Absolute Snow (150)<br> Your opponent's Active Pokémon is now Asleep."
+    ],
+    "weakness": "Metalx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "5ban Graphics",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665896",
+    "prices": {
+      "market": 5.17,
+      "low": 0,
+      "sellers": 39,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 5.17,
+            "listings": null,
+            "priceString": "$5.17",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665896_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665896_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665896_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665896_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665896_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.022Z",
+    "updatedAt": "2026-02-12T14:22:48.502Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 5.17,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8c3",
+    "tcgPlayerId": "665894",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Mega Charizard X ex",
+    "cardNumber": "223/193",
+    "totalSetNumber": null,
+    "rarity": "Mega Attack Rare",
+    "cardType": null,
+    "hp": "360",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Fire][Fire] Inferno X (90x)<br> Discard any amount of Fire Energy from among your Pokémon, and this attack does 90 damage for each card you discarded in this way."
+    ],
+    "weakness": "Waterx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "takuyoa",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665894",
+    "prices": {
+      "market": 34.71,
+      "low": 0,
+      "sellers": 27,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 34.71,
+            "listings": null,
+            "priceString": "$34.71",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665894_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665894_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665894_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665894_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665894_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.603Z",
+    "updatedAt": "2026-02-12T14:22:48.020Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 34.71,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92da597ffe5ebbeb8a3",
+    "tcgPlayerId": "665893",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Jamming Tower",
+    "cardNumber": "222/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665893",
+    "prices": {
+      "market": 0.43,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.43,
+            "listings": null,
+            "priceString": "$0.43",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665893_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:29.391Z",
+    "updatedAt": "2026-02-12T14:22:46.629Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.43,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d925a597ffe5ebbeb7da",
+    "tcgPlayerId": "665892",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Anthea & Concordia - 221/193",
+    "cardNumber": "221/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "Sanosuke Sakuma",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665892",
+    "prices": {
+      "market": 3.6,
+      "low": 0,
+      "sellers": 56,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 3.6,
+            "listings": null,
+            "priceString": "$3.60",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665892_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:21.893Z",
+    "updatedAt": "2026-02-12T14:22:37.903Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 3.6,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d926a597ffe5ebbeb7e4",
+    "tcgPlayerId": "665891",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Black Belt's Training",
+    "cardNumber": "220/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "GOSSAN",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665891",
+    "prices": {
+      "market": 1.35,
+      "low": 0,
+      "sellers": 34,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.35,
+            "listings": null,
+            "priceString": "$1.35",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665891_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:22.273Z",
+    "updatedAt": "2026-02-12T14:22:38.334Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.35,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d926a597ffe5ebbeb7f3",
+    "tcgPlayerId": "665890",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Canari - 219/193",
+    "cardNumber": "219/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": "Naoki Saito",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665890",
+    "prices": {
+      "market": 14.57,
+      "low": 0,
+      "sellers": 48,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 14.57,
+            "listings": null,
+            "priceString": "$14.57",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665890_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:22.840Z",
+    "updatedAt": "2026-02-12T14:22:38.999Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 14.57,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d927a597ffe5ebbeb806",
+    "tcgPlayerId": "665889",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Counter Gain - 218/193",
+    "cardNumber": "218/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665889",
+    "prices": {
+      "market": 0.25,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.25,
+            "listings": null,
+            "priceString": "$0.25",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665889_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:23.557Z",
+    "updatedAt": "2026-02-12T14:22:39.824Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.25,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d936a597ffe5ebbeb995",
+    "tcgPlayerId": "665888",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Team Rocket's Transceiver - 217/193",
+    "cardNumber": "217/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665888",
+    "prices": {
+      "market": 0.44,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.44,
+            "listings": null,
+            "priceString": "$0.44",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665888_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:38.467Z",
+    "updatedAt": "2026-02-12T14:22:57.125Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.44,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d937a597ffe5ebbeb9b1",
+    "tcgPlayerId": "665887",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Ultra Ball",
+    "cardNumber": "216/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665887",
+    "prices": {
+      "market": 0.47,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.47,
+            "listings": null,
+            "priceString": "$0.47",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665887_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:39.504Z",
+    "updatedAt": "2026-02-12T14:22:58.333Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.47,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ba597ffe5ebbeb86c",
+    "tcgPlayerId": "665886",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Glass Trumpet - 215/193",
+    "cardNumber": "215/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665886",
+    "prices": {
+      "market": 0.26,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.26,
+            "listings": null,
+            "priceString": "$0.26",
+            "lastUpdated": "2026-02-13T14:30:29.722Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665886_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:27.359Z",
+    "updatedAt": "2026-02-12T14:22:44.267Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.26,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d930a597ffe5ebbeb8f1",
+    "tcgPlayerId": "665885",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "N's PP Up - 214/193",
+    "cardNumber": "214/193",
+    "totalSetNumber": null,
+    "rarity": "Super Rare",
+    "cardType": null,
+    "hp": null,
+    "stage": null,
+    "attacks": null,
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": null,
+    "artist": null,
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665885",
+    "prices": {
+      "market": 0.57,
+      "low": 0,
+      "sellers": null,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.57,
+            "listings": null,
+            "priceString": "$0.57",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665885_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:32.345Z",
+    "updatedAt": "2026-02-12T14:22:50.036Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.57,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92aa597ffe5ebbeb858",
+    "tcgPlayerId": "665884",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Fan Rotom - 213/193",
+    "cardNumber": "213/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "70",
+    "stage": "Basic",
+    "attacks": [
+      "[Colorless] Assault Landing (70)<br> If there is no Stadium in play, this attack does nothing."
+    ],
+    "weakness": "Lightningx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "1",
+    "artist": "Yukihiro Tada",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665884",
+    "prices": {
+      "market": 1.17,
+      "low": 0,
+      "sellers": 135,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.17,
+            "listings": null,
+            "priceString": "$1.17",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665884_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:26.596Z",
+    "updatedAt": "2026-02-12T14:22:43.390Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.17,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d928a597ffe5ebbeb823",
+    "tcgPlayerId": "665883",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Drakloak - 212/193",
+    "cardNumber": "212/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "90",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Fire][Psychic] Dragon Headbutt (70)"
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "Jerky",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665883",
+    "prices": {
+      "market": 1.29,
+      "low": 0,
+      "sellers": 109,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.29,
+            "listings": null,
+            "priceString": "$1.29",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665883_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:24.610Z",
+    "updatedAt": "2026-02-12T14:22:41.078Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.29,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d928a597ffe5ebbeb82a",
+    "tcgPlayerId": "665882",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Dreepy - 211/193",
+    "cardNumber": "211/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "70",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic] Petty Grudge (10)",
+      "[Fire][Psychic] Bite (40)"
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "Jerky",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665882",
+    "prices": {
+      "market": 1.79,
+      "low": 0,
+      "sellers": 116,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.79,
+            "listings": null,
+            "priceString": "$1.79",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665882_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:24.871Z",
+    "updatedAt": "2026-02-12T14:22:41.384Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.79,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d930a597ffe5ebbeb901",
+    "tcgPlayerId": "665881",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "N's Zekrom - 210/193",
+    "cardNumber": "210/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "130",
+    "stage": "Basic",
+    "attacks": [
+      "[Colorless][Colorless][Colorless] Shred (70)<br> This attack's damage isn't affected by any effects on your opponent's Active Pokémon.",
+      "[Fire][Lightning][Lightning][Colorless] Rampaging Thunder (250)<br> During your next turn, this Pokémon can't use attacks."
+    ],
+    "weakness": null,
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Bun Toujo",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665881",
+    "prices": {
+      "market": 7.94,
+      "low": 0,
+      "sellers": 57,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 7.94,
+            "listings": null,
+            "priceString": "$7.94",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665881_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:32.928Z",
+    "updatedAt": "2026-02-12T14:22:50.721Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 7.94,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ba597ffe5ebbeb866",
+    "tcgPlayerId": "665880",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Galarian Obstagoon - 209/193",
+    "cardNumber": "209/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "170",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Darkness][Colorless] Scar Shout (70x)<br> This attack does 70 damage for each damage counter on your opponent's Active Pokémon.",
+      "[Darkness][Colorless][Colorless] Punk Smash (160)<br> Discard an Energy from this Pokémon."
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "2",
+    "artist": "Dsuke",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665880",
+    "prices": {
+      "market": 1.37,
+      "low": 0,
+      "sellers": 102,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.37,
+            "listings": null,
+            "priceString": "$1.37",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665880_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:27.125Z",
+    "updatedAt": "2026-02-12T14:22:44.002Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.37,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d928a597ffe5ebbeb81b",
+    "tcgPlayerId": "665879",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Cynthia's Spiritomb - 208/193",
+    "cardNumber": "208/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "70",
+    "stage": "Basic",
+    "attacks": [
+      "[Colorless] Raging Curse (10x)<br> This attack does 10 damage for each damage counter on all of your Benched Cynthia's Pokémon. This attack's damage isn't affected by Weakness."
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "hncl",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665879",
+    "prices": {
+      "market": 3.49,
+      "low": 0,
+      "sellers": 67,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 3.49,
+            "listings": null,
+            "priceString": "$3.49",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665879_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:24.319Z",
+    "updatedAt": "2026-02-12T14:22:40.735Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 3.49,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ea597ffe5ebbeb8bf",
+    "tcgPlayerId": "665878",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Medicham - 207/193",
+    "cardNumber": "207/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "120",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Fighting] Seventh Kick (150)<br> If you don't have exactly 7 cards in your hand, this attack does nothing."
+    ],
+    "weakness": "Psychicx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "GIDORA",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665878",
+    "prices": {
+      "market": 1.63,
+      "low": 0,
+      "sellers": 91,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.63,
+            "listings": null,
+            "priceString": "$1.63",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665878_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:30.455Z",
+    "updatedAt": "2026-02-12T14:22:47.848Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.63,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d935a597ffe5ebbeb970",
+    "tcgPlayerId": "665877",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Team Rocket's Dugtrio - 206/193",
+    "cardNumber": "206/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "100",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Fighting][Colorless] Mud Shot (50)"
+    ],
+    "weakness": "Grassx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "KEIICHIRO ITO",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665877",
+    "prices": {
+      "market": 2.81,
+      "low": 0,
+      "sellers": 67,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 2.81,
+            "listings": null,
+            "priceString": "$2.81",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665877_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:37.087Z",
+    "updatedAt": "2026-02-12T14:22:55.523Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 2.81,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d935a597ffe5ebbeb985",
+    "tcgPlayerId": "665876",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Team Rocket's Mimikyu - 205/193",
+    "cardNumber": "205/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "60",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic][Colorless] Gemstone Mimicry<br> Choose 1 of your opponent's Active Tera Pokémon's attacks and use it as this attack."
+    ],
+    "weakness": "Darknessx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "0",
+    "artist": "GOSSAN",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665876",
+    "prices": {
+      "market": 5.18,
+      "low": 0,
+      "sellers": 40,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 5.18,
+            "listings": null,
+            "priceString": "$5.18",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665876_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:37.870Z",
+    "updatedAt": "2026-02-12T14:22:56.438Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 5.18,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ca597ffe5ebbeb890",
+    "tcgPlayerId": "665875",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Hop's Trevenant - 204/193",
+    "cardNumber": "204/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "140",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Colorless] Horror Revenge (30+)<br> If any of your Hop's Pokémon were Knocked Out by damage from an attack during your opponent's last turn, this attack does 100 more damage.",
+      "[Psychic][Colorless][Colorless] Corner (90)<br> During your opponent's next turn, the Defending Pokémon can't retreat."
+    ],
+    "weakness": "Darknessx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "2",
+    "artist": "matazo",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665875",
+    "prices": {
+      "market": 1.34,
+      "low": 0,
+      "sellers": 119,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.34,
+            "listings": null,
+            "priceString": "$1.34",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665875_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:28.697Z",
+    "updatedAt": "2026-02-12T14:22:45.817Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.34,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d937a597ffe5ebbeb9a6",
+    "tcgPlayerId": "665874",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Togekiss - 203/193",
+    "cardNumber": "203/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "140",
+    "stage": "Stage 2",
+    "attacks": [
+      "[Colorless][Colorless][Colorless] Speed Wing (140)"
+    ],
+    "weakness": "Metalx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "satoma",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665874",
+    "prices": {
+      "market": 1.64,
+      "low": 0,
+      "sellers": 105,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.755Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 1.64,
+            "listings": null,
+            "priceString": "$1.64",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665874_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.755Z",
+    "createdAt": "2026-01-21T13:48:39.099Z",
+    "updatedAt": "2026-02-12T14:22:57.863Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 1.64,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92fa597ffe5ebbeb8e1",
+    "tcgPlayerId": "665873",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Misdreavus - 202/193",
+    "cardNumber": "202/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "60",
+    "stage": "Basic",
+    "attacks": [
+      "[Psychic] Ascension<br> Search your deck for a card that evolves from this Pokémon and put it onto this Pokémon to evolve it. Then, shuffle your deck."
+    ],
+    "weakness": "Darknessx2",
+    "resistance": "Fighting-30",
+    "retreatCost": "1",
+    "artist": "Kazuhisa Uragami",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665873",
+    "prices": {
+      "market": 2.24,
+      "low": 0,
+      "sellers": 91,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 2.24,
+            "listings": null,
+            "priceString": "$2.24",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665873_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:31.740Z",
+    "updatedAt": "2026-02-12T14:22:49.332Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 2.24,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  },
+  {
+    "id": "6970d92ba597ffe5ebbeb877",
+    "tcgPlayerId": "665872",
+    "setId": 24499,
+    "setName": "M2a: High Class Pack: MEGA Dream ex",
+    "name": "Heliolisk - 201/193",
+    "cardNumber": "201/193",
+    "totalSetNumber": null,
+    "rarity": "Art Rare",
+    "cardType": null,
+    "hp": "120",
+    "stage": "Stage 1",
+    "attacks": [
+      "[Lightning][Colorless][Colorless] Powerful Bolt (70x)<br> Flip a coin for each Energy attached to this Pokémon. This attack does 70 damage for each heads."
+    ],
+    "weakness": "Fightingx2",
+    "resistance": null,
+    "retreatCost": "1",
+    "artist": "svlt",
+    "pokemonType": null,
+    "energyType": null,
+    "flavorText": null,
+    "tcgPlayerUrl": "https://www.tcgplayer.com/product/665872",
+    "prices": {
+      "market": 0.92,
+      "low": 0,
+      "sellers": 101,
+      "listings": 0,
+      "primaryPrinting": "Holofoil",
+      "lastUpdated": "2026-02-12T14:22:37.754Z",
+      "variants": {
+        "Holofoil": {
+          "Near Mint Holofoil - Japanese": {
+            "price": 0.92,
+            "listings": null,
+            "priceString": "$0.92",
+            "lastUpdated": "2026-02-13T14:30:29.723Z"
+          }
+        }
+      }
+    },
+    "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_800x800.jpg",
+    "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_200x200.jpg",
+    "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_400x400.jpg",
+    "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_800x800.jpg",
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/665872_in_200x200.jpg",
+    "needsDetailedScrape": false,
+    "dataCompleteness": "complete",
+    "lastScrapedAt": "2026-02-12T14:22:37.754Z",
+    "createdAt": "2026-01-21T13:48:27.777Z",
+    "updatedAt": "2026-02-12T14:22:44.742Z",
+    "variants": {
+      "Holofoil": {
+        "printing": "Holofoil",
+        "marketPrice": 0.92,
+        "lowPrice": 0,
+        "conditionUsed": "Near Mint Holofoil - Japanese"
+      }
+    },
+    "printingsAvailable": [
+      "Holofoil"
+    ]
+  }
+]
