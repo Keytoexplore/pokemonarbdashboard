@@ -11,25 +11,16 @@ export const baseCardsData: ArbitrageOpportunity[] =
     "set": "M3",
     "japanesePrices": [
       {
-        "source": "japan-toreca",
-        "priceJPY": 30,
-        "priceUSD": 0.2,
-        "quality": "A",
-        "inStock": true,
-        "url": "https://shop.japan-toreca.com/products/pokemon-227532-a",
-        "isLowest": true
-      },
-      {
         "source": "torecacamp",
         "priceJPY": 280,
         "priceUSD": 1.82,
         "quality": "A",
         "inStock": true,
         "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx",
-        "isLowest": false
+        "isLowest": true
       }
     ],
-    "lowestJapanesePrice": 0.2,
+    "lowestJapanesePrice": 1.82,
     "usPrice": {
       "marketPrice": 2.13,
       "sellerCount": 6,
@@ -41,20 +32,22 @@ export const baseCardsData: ArbitrageOpportunity[] =
       "tcgPlayerUrl": "https://www.tcgplayer.com/product/674400"
     },
     "arbitrageUS": {
-      "profitAmount": 1.93,
-      "profitPercent": 965,
-      "isViable": true,
-      "japanPriceUSD": 0.2,
+      "profitAmount": 0.31,
+      "profitPercent": 17,
+      "isViable": false,
+      "japanPriceUSD": 1.82,
       "usMarketPrice": 2.13
     },
-    "marginPercent": 965,
-    "marginAmount": 1.93,
+    "marginPercent": 17,
+    "marginAmount": 1.31,
+    "isViable": false,
     "lastUpdated": "2026-02-13T11:27:20.789Z",
     "isViable": true,
     "tcgplayer": {
       "marketPrice": 2.13,
       "sellerCount": 6
-    }
+    },
+    "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_800x800.jpg"
   },
   {
     "id": "M3-094/080-SR",

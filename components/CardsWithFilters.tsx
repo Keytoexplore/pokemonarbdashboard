@@ -12,20 +12,28 @@ interface CardsWithFiltersProps {
   lastUpdated?: string;
 }
 
-// Generate TCGPlayer image URL from card data
-function getCardImageUrl(cardNumber: string, set: string): string {
-  // Try to construct image URL from set and number
-  // Format: https://images.pokemontcg.io/{set}/{number}_hires.png
-  // For Japanese sets, we might need different logic
-  return `https://images.pokemontcg.io/${set.toLowerCase()}/${cardNumber.split('/')[0]}_hires.png`;
+// Get card image URL from US price data or fallback to PokemonTCG.io
+function getCardImageUrl(card: ArbitrageOpportunity): string {
+  // Use TCGPlayer CDN image if available
+  if (card.usPrice?.imageCdnUrl) {
+    return card.usPrice.imageCdnUrl;
+  }
+  if (card.usPrice?.imageUrl) {
+    return card.usPrice.imageUrl;
+  }
+  if (card.imageUrl) {
+    return card.imageUrl;
+  }
+  // Fallback to PokemonTCG.io
+  return `https://images.pokemontcg.io/${card.set.toLowerCase()}/${card.cardNumber.split('/')[0]}_hires.png`;
 }
 
-export function CardsWithFilters({ 
-  initialCards, 
+export function CardsWithFilters({
+  initialCards,
   totalCards,
   viableOpportunities,
   avgMargin,
-  lastUpdated 
+  lastUpdated
 }: CardsWithFiltersProps) {
   const [filterRarity, setFilterRarity] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('profit-desc');
@@ -36,20 +44,20 @@ export function CardsWithFilters({
     return initialCards.map(card => {
       const japanToreca = card.japanesePrices.find(p => p.source === 'japan-toreca');
       const torecaCamp = card.japanesePrices.find(p => p.source === 'torecacamp');
-      
+
       // Calculate arbitrage between Japanese sources
       let arbitrage: { margin: number; cheaperSource: string; savings: number } | null = null;
-      
+
       if (japanToreca?.inStock && torecaCamp?.inStock) {
         const jtPrice = japanToreca.priceJPY;
         const tcPrice = torecaCamp.priceJPY;
-        
+
         if (jtPrice !== tcPrice) {
           const cheaper = jtPrice < tcPrice ? 'Japan-Toreca' : 'TorecaCamp';
           const cheaperPrice = Math.min(jtPrice, tcPrice);
           const expensivePrice = Math.max(jtPrice, tcPrice);
           const margin = Math.round(((expensivePrice - cheaperPrice) / cheaperPrice) * 100);
-          
+
           arbitrage = {
             margin,
             cheaperSource: cheaper,
@@ -57,7 +65,7 @@ export function CardsWithFilters({
           };
         }
       }
-      
+
       return { ...card, japanToreca, torecaCamp, arbitrage };
     });
   }, [initialCards]);
@@ -72,7 +80,7 @@ export function CardsWithFilters({
 
     // Filter by search
     if (searchQuery) {
-      cards = cards.filter(c => 
+      cards = cards.filter(c =>
         c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         c.cardNumber.includes(searchQuery)
       );
@@ -185,7 +193,8 @@ export function CardsWithFilters({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCards.map((card) => {
           const lowest = card.japanesePrices.find(p => p.isLowest) || card.japanesePrices[0];
-          const imageUrl = getCardImageUrl(card.cardNumber, card.set);
+          const imageUrl = getCardImageUrl(card);
+          const tcgPlayerUrl = card.usPrice?.tcgPlayerUrl;
 
           return (
             <div key={card.id} className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-purple-500/50 transition hover:scale-[1.02]">
@@ -195,7 +204,7 @@ export function CardsWithFilters({
                   src={imageUrl}
                   alt={card.name}
                   fill
-                  className="object-contain p-4"
+                  className="object-contain p-2"
                   unoptimized
                   onError={(e) => {
                     // Show placeholder on error
@@ -221,7 +230,7 @@ export function CardsWithFilters({
                     <p className="text-sm text-purple-200">{card.set} #{card.cardNumber}</p>
                   </div>
                   <span className={`text-xs px-2 py-1 rounded font-bold ${
-                    card.rarity === 'SAR' ? 'bg-amber-600' : 
+                    card.rarity === 'SAR' ? 'bg-amber-600' :
                     card.rarity === 'AR' ? 'bg-cyan-600' : 'bg-violet-600'
                   }`}>
                     {card.rarity}
@@ -236,6 +245,19 @@ export function CardsWithFilters({
                       ¥{lowest.priceJPY.toLocaleString()}
                     </p>
                     <p className="text-white/50 text-sm">~${lowest.priceUSD.toFixed(2)}</p>
+                  </div>
+                )}
+
+                {/* US Market Info */}
+                {card.usPrice && (
+                  <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
+                    <p className="text-blue-300 text-sm">US Market (TCGPlayer)</p>
+                    <div className="flex justify-between items-center">
+                      <p className="text-xl font-bold text-white">
+                        ${card.usPrice.marketPrice.toFixed(2)}
+                      </p>
+                      <p className="text-white/50 text-xs">{card.usPrice.sellerCount} sellers</p>
+                    </div>
                   </div>
                 )}
 
@@ -256,6 +278,18 @@ export function CardsWithFilters({
 
                 {/* Links */}
                 <div className="space-y-2 pt-2">
+                  {tcgPlayerUrl && (
+                    <a
+                      href={tcgPlayerUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-between items-center bg-emerald-600/30 hover:bg-emerald-600/40 border border-emerald-500/40 rounded-lg px-4 py-3 transition"
+                    >
+                      <span className="text-emerald-300 text-sm font-semibold">📈 TCGPlayer Listings</span>
+                      <span className="text-emerald-400 text-xs">View →</span>
+                    </a>
+                  )}
+
                   {card.japanToreca?.inStock && (
                     <a
                       href={card.japanToreca.url}
