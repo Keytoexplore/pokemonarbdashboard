@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
-import { ArbitrageOpportunity } from '@/lib/types';
+import { ArbitrageOpportunity, JapanesePrice } from '@/lib/types';
 
 interface CardsWithFiltersProps {
   initialCards: ArbitrageOpportunity[];
@@ -14,18 +14,55 @@ interface CardsWithFiltersProps {
 
 // Get card image URL from US price data or fallback to PokemonTCG.io
 function getCardImageUrl(card: ArbitrageOpportunity): string {
-  // Use TCGPlayer CDN image if available
-  if (card.usPrice?.imageCdnUrl) {
-    return card.usPrice.imageCdnUrl;
-  }
-  if (card.usPrice?.imageUrl) {
-    return card.usPrice.imageUrl;
-  }
-  if (card.imageUrl) {
-    return card.imageUrl;
-  }
-  // Fallback to PokemonTCG.io
+  if (card.usPrice?.imageCdnUrl) return card.usPrice.imageCdnUrl;
+  if (card.usPrice?.imageUrl) return card.usPrice.imageUrl;
+  if (card.imageUrl) return card.imageUrl;
   return `https://images.pokemontcg.io/${card.set.toLowerCase()}/${card.cardNumber.split('/')[0]}_hires.png`;
+}
+
+// Filter prices to only include A- and B quality (skip A and C)
+function filterQualityPrices(prices: JapanesePrice[]): JapanesePrice[] {
+  return prices.filter(p => {
+    const quality = p.quality?.toUpperCase();
+    return quality === 'A-' || quality === 'B';
+  });
+}
+
+// Get lowest A-/B price (in stock or last known)
+function getLowestABPrice(prices: JapanesePrice[]): { 
+  price: JapanesePrice | null; 
+  inStock: boolean;
+  lowestPriceJPY: number;
+  lowestPriceUSD: number;
+} {
+  const filteredPrices = filterQualityPrices(prices);
+  
+  if (filteredPrices.length === 0) {
+    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0 };
+  }
+
+  // Find in-stock prices
+  const inStockPrices = filteredPrices.filter(p => p.inStock);
+  
+  if (inStockPrices.length > 0) {
+    // Return lowest in-stock A-/B price
+    const lowest = inStockPrices.reduce((min, p) => p.priceJPY < min.priceJPY ? p : min);
+    return { 
+      price: lowest, 
+      inStock: true,
+      lowestPriceJPY: lowest.priceJPY,
+      lowestPriceUSD: lowest.priceUSD
+    };
+  }
+  
+  // No in-stock, return lowest last known A-/B price
+  const lowest = filteredPrices.reduce((min, p) => p.priceJPY < min.priceJPY ? p : min);
+  return { 
+    price: lowest, 
+    inStock: false,
+    lowestPriceJPY: lowest.priceJPY,
+    lowestPriceUSD: lowest.priceUSD
+  };
 }
 
 export function CardsWithFilters({
@@ -39,39 +76,40 @@ export function CardsWithFilters({
   const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Calculate arbitrage opportunities between Japanese sources
-  const cardsWithArbitrage = useMemo(() => {
+  // Process cards with A-/B filtering and profit calculations
+  const cardsWithData = useMemo(() => {
     return initialCards.map(card => {
-      const japanToreca = card.japanesePrices.find(p => p.source === 'japan-toreca');
-      const torecaCamp = card.japanesePrices.find(p => p.source === 'torecacamp');
-
-      // Calculate arbitrage between Japanese sources
-      let arbitrage: { margin: number; cheaperSource: string; savings: number } | null = null;
-
-      if (japanToreca?.inStock && torecaCamp?.inStock) {
-        const jtPrice = japanToreca.priceJPY;
-        const tcPrice = torecaCamp.priceJPY;
-
-        if (jtPrice !== tcPrice) {
-          const cheaper = jtPrice < tcPrice ? 'Japan-Toreca' : 'TorecaCamp';
-          const cheaperPrice = Math.min(jtPrice, tcPrice);
-          const expensivePrice = Math.max(jtPrice, tcPrice);
-          const margin = Math.round(((expensivePrice - cheaperPrice) / cheaperPrice) * 100);
-
-          arbitrage = {
-            margin,
-            cheaperSource: cheaper,
-            savings: expensivePrice - cheaperPrice
-          };
-        }
+      // Get A-/B prices for each source
+      const jtPrices = card.japanesePrices.filter(p => p.source === 'japan-toreca');
+      const tcPrices = card.japanesePrices.filter(p => p.source === 'torecacamp');
+      
+      const jtData = getLowestABPrice(jtPrices);
+      const tcData = getLowestABPrice(tcPrices);
+      
+      // Overall lowest A-/B price across both sources
+      const allABPrices = filterQualityPrices(card.japanesePrices);
+      const lowestData = getLowestABPrice(allABPrices);
+      
+      // Calculate US profit margin
+      let usProfitMargin = 0;
+      if (card.usPrice && lowestData.lowestPriceUSD > 0) {
+        usProfitMargin = Math.round(
+          ((card.usPrice.marketPrice - lowestData.lowestPriceUSD) / lowestData.lowestPriceUSD) * 100
+        );
       }
 
-      return { ...card, japanToreca, torecaCamp, arbitrage };
+      return { 
+        ...card, 
+        jtData,
+        tcData,
+        lowestData,
+        usProfitMargin
+      };
     });
   }, [initialCards]);
 
   const filteredCards = useMemo(() => {
-    let cards = [...cardsWithArbitrage];
+    let cards = [...cardsWithData];
 
     // Filter by rarity
     if (filterRarity !== 'all') {
@@ -89,30 +127,23 @@ export function CardsWithFilters({
     // Sort
     cards.sort((a, b) => {
       if (sortBy === 'profit-desc') {
-        return (b.arbitrage?.margin || 0) - (a.arbitrage?.margin || 0);
+        return b.usProfitMargin - a.usProfitMargin;
       }
       if (sortBy === 'profit-asc') {
-        return (a.arbitrage?.margin || 0) - (b.arbitrage?.margin || 0);
+        return a.usProfitMargin - b.usProfitMargin;
       }
       if (sortBy === 'price-asc') {
-        const lowestA = a.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
-        const lowestB = b.japanesePrices.find(p => p.isLowest)?.priceJPY || 999999;
-        return lowestA - lowestB;
+        return a.lowestData.lowestPriceJPY - b.lowestData.lowestPriceJPY;
       }
       if (sortBy === 'price-desc') {
-        const lowestA = a.japanesePrices.find(p => p.isLowest)?.priceJPY || 0;
-        const lowestB = b.japanesePrices.find(p => p.isLowest)?.priceJPY || 0;
-        return lowestB - lowestA;
+        return b.lowestData.lowestPriceJPY - a.lowestData.lowestPriceJPY;
       }
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       return 0;
     });
 
     return cards;
-  }, [cardsWithArbitrage, filterRarity, sortBy, searchQuery]);
-
-  // Count arbitrage opportunities
-  const arbitrageCount = filteredCards.filter(c => c.arbitrage && c.arbitrage.margin > 5).length;
+  }, [cardsWithData, filterRarity, sortBy, searchQuery]);
 
   return (
     <div>
@@ -145,7 +176,6 @@ export function CardsWithFilters({
       {/* Filters */}
       <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Search */}
           <div>
             <label className="text-white/75 text-sm block mb-1">Search</label>
             <input
@@ -157,7 +187,6 @@ export function CardsWithFilters({
             />
           </div>
 
-          {/* Rarity Filter */}
           <div>
             <label className="text-white/75 text-sm block mb-1">Rarity</label>
             <select
@@ -172,7 +201,6 @@ export function CardsWithFilters({
             </select>
           </div>
 
-          {/* Sort */}
           <div>
             <label className="text-white/75 text-sm block mb-1">Sort By</label>
             <select
@@ -181,6 +209,7 @@ export function CardsWithFilters({
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
               <option value="profit-desc" className="bg-gray-900">Profit % (High to Low)</option>
+              <option value="profit-asc" className="bg-gray-900">Profit % (Low to High)</option>
               <option value="price-asc" className="bg-gray-900">Price: Low to High</option>
               <option value="price-desc" className="bg-gray-900">Price: High to Low</option>
               <option value="name" className="bg-gray-900">Name</option>
@@ -192,9 +221,9 @@ export function CardsWithFilters({
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCards.map((card) => {
-          const lowest = card.japanesePrices.find(p => p.isLowest) || card.japanesePrices[0];
           const imageUrl = getCardImageUrl(card);
           const tcgPlayerUrl = card.usPrice?.tcgPlayerUrl;
+          const { lowestData, jtData, tcData, usProfitMargin } = card;
 
           return (
             <div key={card.id} className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-purple-500/50 transition hover:scale-[1.02]">
@@ -207,7 +236,6 @@ export function CardsWithFilters({
                   className="object-contain p-2"
                   unoptimized
                   onError={(e) => {
-                    // Show placeholder on error
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
                     target.parentElement!.innerHTML = `
@@ -220,6 +248,20 @@ export function CardsWithFilters({
                     `;
                   }}
                 />
+                
+                {/* Profit Margin Badge */}
+                {card.usPrice && (
+                  <div className="absolute top-2 right-2">
+                    <div className={`px-3 py-1.5 rounded-lg font-bold text-sm shadow-lg ${
+                      usProfitMargin > 100 ? 'bg-emerald-500 text-white' :
+                      usProfitMargin > 50 ? 'bg-green-500 text-white' :
+                      usProfitMargin > 20 ? 'bg-yellow-500 text-black' :
+                      'bg-red-500 text-white'
+                    }`}>
+                      +{usProfitMargin}%
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="p-4 space-y-3">
@@ -237,42 +279,46 @@ export function CardsWithFilters({
                   </span>
                 </div>
 
-                {/* Lowest Price */}
-                {lowest && (
-                  <div className="bg-white/5 rounded-lg p-3">
-                    <p className="text-white/60 text-sm">Lowest Price</p>
-                    <p className="text-2xl font-bold text-emerald-400">
-                      ¥{lowest.priceJPY.toLocaleString()}
-                    </p>
-                    <p className="text-white/50 text-sm">~${lowest.priceUSD.toFixed(2)}</p>
-                  </div>
-                )}
+                {/* Lowest A-/B Price */}
+                <div className="bg-white/5 rounded-lg p-3">
+                  <p className="text-white/60 text-sm">Lowest A-/B Price</p>
+                  {lowestData.price ? (
+                    <>
+                      <p className="text-2xl font-bold text-emerald-400">
+                        ¥{lowestData.lowestPriceJPY.toLocaleString()}
+                      </p>
+                      <p className="text-white/50 text-sm">
+                        ~${lowestData.lowestPriceUSD.toFixed(2)}
+                        {!lowestData.inStock && (
+                          <span className="ml-2 text-red-400 font-semibold">⚠️ Out of Stock</span>
+                        )}
+                      </p>
+                      <p className="text-white/40 text-xs mt-1">Quality: {lowestData.price.quality}</p>
+                    </>
+                  ) : (
+                    <p className="text-red-400 text-sm">No A- or B quality available</p>
+                  )}
+                </div>
 
-                {/* US Market Info */}
+                {/* US Market & Profit */}
                 {card.usPrice && (
                   <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
-                    <p className="text-blue-300 text-sm">US Market (TCGPlayer)</p>
+                    <div className="flex justify-between items-start mb-2">
+                      <p className="text-blue-300 text-sm">US Market</p>
+                      <p className={`text-lg font-bold ${
+                        usProfitMargin > 50 ? 'text-emerald-400' :
+                        usProfitMargin > 20 ? 'text-yellow-400' :
+                        'text-red-400'
+                      }`}>
+                        +{usProfitMargin}%
+                      </p>
+                    </div>
                     <div className="flex justify-between items-center">
                       <p className="text-xl font-bold text-white">
                         ${card.usPrice.marketPrice.toFixed(2)}
                       </p>
                       <p className="text-white/50 text-xs">{card.usPrice.sellerCount} sellers</p>
                     </div>
-                  </div>
-                )}
-
-                {/* Arbitrage Opportunity */}
-                {card.arbitrage && card.arbitrage.margin > 5 && (
-                  <div className="bg-emerald-500/20 border border-emerald-500/50 rounded-lg p-3">
-                    <p className="text-emerald-400 text-sm font-bold">
-                      🔥 Arbitrage Opportunity!
-                    </p>
-                    <p className="text-white text-sm">
-                      Buy from {card.arbitrage.cheaperSource} for ¥{lowest?.priceJPY.toLocaleString()}
-                    </p>
-                    <p className="text-emerald-400 text-lg font-bold">
-                      Save ¥{card.arbitrage.savings} ({card.arbitrage.margin}%)
-                    </p>
                   </div>
                 )}
 
@@ -285,37 +331,56 @@ export function CardsWithFilters({
                       rel="noopener noreferrer"
                       className="flex justify-between items-center bg-emerald-600/30 hover:bg-emerald-600/40 border border-emerald-500/40 rounded-lg px-4 py-3 transition"
                     >
-                      <span className="text-emerald-300 text-sm font-semibold">📈 TCGPlayer Listings</span>
+                      <span className="text-emerald-300 text-sm font-semibold">📈 TCGPlayer</span>
                       <span className="text-emerald-400 text-xs">View →</span>
                     </a>
                   )}
 
-                  {card.japanToreca?.inStock && (
+                  {jtData.price && (
                     <a
-                      href={card.japanToreca.url}
+                      href={jtData.price.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex justify-between items-center bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg px-4 py-3 transition"
+                      className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
+                        jtData.inStock
+                          ? 'bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30'
+                          : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
+                      }`}
                     >
-                      <span className="text-blue-300 text-sm">Japan-Toreca</span>
-                      <div className="text-right">
-                        <span className="text-white font-bold">¥{card.japanToreca.priceJPY.toLocaleString()}</span>
-                        {card.japanToreca.quality && (
-                          <span className="text-white/50 text-xs ml-2">({card.japanToreca.quality})</span>
+                      <div>
+                        <span className="text-blue-300 text-sm block">Japan-Toreca</span>
+                        {!jtData.inStock && (
+                          <span className="text-red-400 text-xs">Out of Stock</span>
                         )}
+                      </div>
+                      <div className="text-right">
+                        <span className="text-white font-bold">¥{jtData.lowestPriceJPY.toLocaleString()}</span>
+                        <span className="text-white/50 text-xs ml-2">({jtData.price.quality})</span>
                       </div>
                     </a>
                   )}
 
-                  {card.torecaCamp?.inStock && (
+                  {tcData.price && (
                     <a
-                      href={card.torecaCamp.url}
+                      href={tcData.price.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex justify-between items-center bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30 rounded-lg px-4 py-3 transition"
+                      className={`flex justify-between items-center rounded-lg px-4 py-3 transition ${
+                        tcData.inStock
+                          ? 'bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30'
+                          : 'bg-gray-600/20 border border-gray-500/30 opacity-60'
+                      }`}
                     >
-                      <span className="text-purple-300 text-sm">TorecaCamp</span>
-                      <span className="text-white font-bold">¥{card.torecaCamp.priceJPY.toLocaleString()}</span>
+                      <div>
+                        <span className="text-purple-300 text-sm block">TorecaCamp</span>
+                        {!tcData.inStock && (
+                          <span className="text-red-400 text-xs">Out of Stock</span>
+                        )}
+                      </div>
+                      <div className="text-right">
+                        <span className="text-white font-bold">¥{tcData.lowestPriceJPY.toLocaleString()}</span>
+                        <span className="text-white/50 text-xs ml-2">({tcData.price.quality})</span>
+                      </div>
                     </a>
                   )}
                 </div>
