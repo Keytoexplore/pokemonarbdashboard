@@ -124,8 +124,8 @@ async function scrapeTorecaCamp(setCode, rarity) {
         const title = titleMatch ? titleMatch[1] : '';
         
         // Extract card info from title
-        // Example: "N's Zekrom AR M2a 210/193" or "N's Zekrom AR (210/193)"
-        const cardMatch = title.match(/^(.+?)\s+(AR|SR|SAR)\s+\(?(\d+\/\d+)\)?/);
+        // Format: "コマタナ AR SV11B 147/086" or "N's Zekrom AR M2a 210/193"
+        const cardMatch = title.match(/^(.+?)\s+(AR|SR|SAR)\s+(?:[A-Z0-9]+\s+)?(\d+\/\d+)/);
         if (!cardMatch) continue;
         
         const name = cardMatch[1].trim();
