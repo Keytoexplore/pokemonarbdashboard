@@ -39,10 +39,9 @@ export const baseCardsData: ArbitrageOpportunity[] =
       "usMarketPrice": 2.13
     },
     "marginPercent": 17,
-    "marginAmount": 1.31,
+    "marginAmount": 0.31,
     "isViable": false,
     "lastUpdated": "2026-02-13T11:27:20.789Z",
-    "isViable": true,
     "tcgplayer": {
       "marketPrice": 2.13,
       "sellerCount": 6
