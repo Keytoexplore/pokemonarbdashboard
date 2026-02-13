@@ -19,7 +19,37 @@ export interface USMarketData {
   listingCount: number;
   currency: string;
   imageUrl?: string;
+  imageCdnUrl?: string;
   cardName?: string;
+}
+
+// API Response types based on actual API testing
+export interface PokemonPrice {
+  market: number;
+  low: number;
+  sellers: number;
+  listings: number;
+  lastUpdated: string;
+}
+
+export interface PokemonCardAPI {
+  id: string;
+  tcgPlayerId: string;
+  setId: number;
+  setName: string;
+  name: string;
+  cardNumber: string;
+  rarity: string;
+  tcgPlayerUrl: string;
+  prices: PokemonPrice;
+  imageCdnUrl: string;
+  imageCdnUrl200: string;
+  imageCdnUrl400: string;
+  imageUrl: string;
+}
+
+export interface PokemonAPIResponse {
+  data: PokemonCardAPI[];
 }
 
 export interface ArbitrageUSData {

@@ -88,10 +88,14 @@ async function enrichWithUSPrices(
       };
     }
 
+    // Get the best image URL from API (prefer imageCdnUrl for higher quality)
+    const imageUrl = usPrice?.imageCdnUrl || usPrice?.imageUrl || card.imageUrl;
+
     return {
       ...card,
       usPrice,
       arbitrageUS,
+      imageUrl,
       // Update margin fields with US arbitrage data for sorting
       marginPercent: arbitrageUS?.profitPercent || 0,
       marginAmount: arbitrageUS?.profitAmount || 0,
