@@ -757,19 +757,19 @@
           "quality": "A",
           "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
+          "priceJPY": 250,
+          "priceUSD": 1.63,
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged",
-          "isLowest": false
+          "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 1.82,
+      "lowestJapanesePrice": 1.63,
       "usPrice": {
         "marketPrice": 4.27,
         "sellerCount": 3,
@@ -781,14 +781,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674408"
       },
       "arbitrageUS": {
-        "profitAmount": 2.45,
-        "profitPercent": 134.6,
+        "profitAmount": 2.64,
+        "profitPercent": 161.9,
         "isViable": true,
-        "japanPriceUSD": 1.82,
+        "japanPriceUSD": 1.63,
         "usMarketPrice": 4.27
       },
-      "marginPercent": 134.6,
-      "marginAmount": 2.45,
+      "marginPercent": 161.9,
+      "marginAmount": 2.64,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
