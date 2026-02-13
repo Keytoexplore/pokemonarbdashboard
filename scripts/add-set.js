@@ -119,9 +119,9 @@ async function scrapeTorecaCamp(setCode, rarity) {
         const pRes = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const pHtml = await pRes.text();
         
-        // Parse title
-        const titleMatch = pHtml.match(/<title>(.*?)<\/title>/);
-        const title = titleMatch ? titleMatch[1] : '';
+        // Parse title (handle newlines in title tag)
+        const titleMatch = pHtml.match(/<title>([\s\S]*?)<\/title>/);
+        const title = titleMatch ? titleMatch[1].trim() : '';
         
         // Extract card info from title
         // Format: "コマタナ AR SV11B 147/086" or "N's Zekrom AR M2a 210/193"
@@ -138,6 +138,7 @@ async function scrapeTorecaCamp(setCode, rarity) {
         
         const variants = JSON.parse(variantsMatch[1]);
         const target = variants.find(v => (v.title || v.public_title)?.includes('A-'))
+                    || variants.find(v => (v.title || v.public_title)?.includes('状態A'))
                     || variants.find(v => (v.title || v.public_title)?.includes('B'))
                     || variants[0];
         
