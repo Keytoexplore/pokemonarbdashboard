@@ -14,7 +14,7 @@ export const japaneseSetMappings: Record<string, SetMapping> = {
   // M Series (Mega Evolution Era)
   'M3': {
     jpCode: 'M3',
-    apiSetId: 'nihil-zero',  // Hypothesis - need to verify
+    apiSetId: 'm3',  // CONFIRMED: API uses 'm3', not 'nihil-zero'
     englishName: 'Nihil Zero',
     japaneseName: 'ムニキスゼロ',
     releaseDate: '2026-01-23',

@@ -1,133 +1,6 @@
 {
   "opportunities": [
     {
-      "id": "M3-104/080-SAR",
-      "name": "ワンダーパッチ",
-      "cardNumber": "104/080",
-      "rarity": "SAR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a",
-          "isLowest": false
-        },
-        {
-          "source": "japan-toreca",
-          "priceJPY": 200,
-          "priceUSD": 1.3,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a-damaged",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 1.3,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-105/080-SAR",
-      "name": "タラゴン",
-      "cardNumber": "105/080",
-      "rarity": "SAR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227756-a",
-          "isLowest": false
-        },
-        {
-          "source": "torecacamp",
-          "priceJPY": 280,
-          "priceUSD": 1.82,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 1.82,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-106/080-SAR",
-      "name": "ピュール",
-      "cardNumber": "106/080",
-      "rarity": "SAR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 800,
-          "priceUSD": 5.2,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 5.2,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-108/080-SAR",
-      "name": "ユカリ",
-      "cardNumber": "108/080",
-      "rarity": "SAR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 650,
-          "priceUSD": 4.23,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a",
-          "isLowest": false
-        },
-        {
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a-damaged",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
       "id": "M3-110/080-SAR",
       "name": "ミアレシティ",
       "cardNumber": "110/080",
@@ -154,46 +27,28 @@
         }
       ],
       "lowestJapanesePrice": 0.65,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-098/080-SR",
-      "name": "イベルタルex",
-      "cardNumber": "098/080",
-      "rarity": "SR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged",
-          "isLowest": true
-        },
-        {
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 3.25,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 35.12,
+        "profitPercent": 5403.1,
+        "isViable": true,
+        "japanPriceUSD": 0.65,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 5403.1,
+      "marginAmount": 35.12,
+      "lastUpdated": "2026-02-13T10:38:42.192Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
     },
     {
       "id": "M3-101/080-SR",
@@ -222,62 +77,78 @@
         }
       ],
       "lowestJapanesePrice": 0.65,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 35.12,
+        "profitPercent": 5403.1,
+        "isViable": true,
+        "japanPriceUSD": 0.65,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 5403.1,
+      "marginAmount": 35.12,
+      "lastUpdated": "2026-02-13T10:38:44.383Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
     },
     {
-      "id": "M3-092/080-AR",
-      "name": "ラッタ",
-      "cardNumber": "092/080",
-      "rarity": "AR",
+      "id": "M3-104/080-SAR",
+      "name": "ワンダーパッチ",
+      "cardNumber": "104/080",
+      "rarity": "SAR",
       "set": "M3",
       "japanesePrices": [
         {
           "source": "japan-toreca",
-          "priceJPY": 400,
-          "priceUSD": 2.6,
-          "quality": "A-",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 2.6,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
-    },
-    {
-      "id": "M3-089/080-AR",
-      "name": "チゴラス",
-      "cardNumber": "089/080",
-      "rarity": "AR",
-      "set": "M3",
-      "japanesePrices": [
+          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a",
+          "isLowest": false
+        },
         {
           "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
+          "priceJPY": 200,
+          "priceUSD": 1.3,
           "quality": "A-",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a-damaged",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 3.25,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
+      "lowestJapanesePrice": 1.3,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 34.47,
+        "profitPercent": 2651.5,
+        "isViable": true,
+        "japanPriceUSD": 1.3,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 2651.5,
+      "marginAmount": 34.47,
+      "lastUpdated": "2026-02-13T10:38:38.022Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
     },
     {
       "id": "M3-090/080-AR",
@@ -297,20 +168,309 @@
         }
       ],
       "lowestJapanesePrice": 1.63,
-      "usPrice": null,
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T11:00:00Z",
-      "isViable": false
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 34.14,
+        "profitPercent": 2094.5,
+        "isViable": true,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 2094.5,
+      "marginAmount": 34.14,
+      "lastUpdated": "2026-02-13T10:38:47.696Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-105/080-SAR",
+      "name": "タラゴン",
+      "cardNumber": "105/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227756-a",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.82,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 33.95,
+        "profitPercent": 1865.4,
+        "isViable": true,
+        "japanPriceUSD": 1.82,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 1865.4,
+      "marginAmount": 33.95,
+      "lastUpdated": "2026-02-13T10:38:39.023Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-092/080-AR",
+      "name": "ラッタ",
+      "cardNumber": "092/080",
+      "rarity": "AR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.6,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 33.17,
+        "profitPercent": 1275.8,
+        "isViable": true,
+        "japanPriceUSD": 2.6,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 1275.8,
+      "marginAmount": 33.17,
+      "lastUpdated": "2026-02-13T10:38:45.514Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-098/080-SR",
+      "name": "イベルタルex",
+      "cardNumber": "098/080",
+      "rarity": "SR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 32.52,
+        "profitPercent": 1000.6,
+        "isViable": true,
+        "japanPriceUSD": 3.25,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 1000.6,
+      "marginAmount": 32.52,
+      "lastUpdated": "2026-02-13T10:38:43.329Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-089/080-AR",
+      "name": "チゴラス",
+      "cardNumber": "089/080",
+      "rarity": "AR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 32.52,
+        "profitPercent": 1000.6,
+        "isViable": true,
+        "japanPriceUSD": 3.25,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 1000.6,
+      "marginAmount": 32.52,
+      "lastUpdated": "2026-02-13T10:38:46.587Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-108/080-SAR",
+      "name": "ユカリ",
+      "cardNumber": "108/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.23,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a",
+          "isLowest": false
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a-damaged",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 32.19,
+        "profitPercent": 899.2,
+        "isViable": true,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 899.2,
+      "marginAmount": 32.19,
+      "lastUpdated": "2026-02-13T10:38:41.087Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+    },
+    {
+      "id": "M3-106/080-SAR",
+      "name": "ピュール",
+      "cardNumber": "106/080",
+      "rarity": "SAR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 800,
+          "priceUSD": 5.2,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 5.2,
+      "usPrice": {
+        "marketPrice": 35.77,
+        "sellerCount": 5,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
+        "cardName": "Jacinthe - 116/080",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+      },
+      "arbitrageUS": {
+        "profitAmount": 30.57,
+        "profitPercent": 587.9,
+        "isViable": true,
+        "japanPriceUSD": 5.2,
+        "usMarketPrice": 35.77
+      },
+      "marginPercent": 587.9,
+      "marginAmount": 30.57,
+      "lastUpdated": "2026-02-13T10:38:40.196Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
     }
   ],
-  "lastUpdated": "2026-02-13T11:00:00Z",
+  "lastUpdated": "2026-02-13T10:38:47.696Z",
   "stats": {
     "totalCards": 10,
-    "viableOpportunities": 0,
-    "avgMargin": 0,
-    "successCount": 0,
+    "viableOpportunities": 10,
+    "avgMargin": 2218.2,
+    "successCount": 10,
     "failCount": 0
   }
 }
