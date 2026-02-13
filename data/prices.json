@@ -10641,6 +10641,18 @@
           "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itzrn8e2qths_xapc?variant=50069993316652",
           "isLowest": true
+        },
+        {
+          "name": "コマタナ",
+          "cardNumber": "147/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/search?q=sv11b+147",
+          "isLowest": false
         }
       ],
       "lowestJapanesePrice": 1.82,
@@ -10663,7 +10675,7 @@
       },
       "marginPercent": 66,
       "marginAmount": 1.2,
-      "lastUpdated": "2026-02-13T19:31:58.797Z",
+      "lastUpdated": "2026-02-13T21:05:13.311Z",
       "isViable": true
     },
     {
