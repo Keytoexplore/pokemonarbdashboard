@@ -4,7 +4,7 @@ import { ArbitrageOpportunity, JapanesePrice } from './types';
 export const baseCardsData: ArbitrageOpportunity[] = [
   {
     "id": "M3-104/080-SAR",
-    "name": "ワンダーパッチ",
+    "name": "Wondrous Patch",
     "cardNumber": "104/080",
     "rarity": "SAR",
     "set": "M3",
@@ -38,7 +38,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-105/080-SAR",
-    "name": "タラゴン",
+    "name": "Tarragon",
     "cardNumber": "105/080",
     "rarity": "SAR",
     "set": "M3",
@@ -72,7 +72,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-106/080-SAR",
-    "name": "ピュール",
+    "name": "Pyrole",
     "cardNumber": "106/080",
     "rarity": "SAR",
     "set": "M3",
@@ -97,7 +97,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-108/080-SAR",
-    "name": "ユカリ",
+    "name": "Jacinthe",
     "cardNumber": "108/080",
     "rarity": "SAR",
     "set": "M3",
@@ -131,7 +131,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-110/080-SAR",
-    "name": "ミアレシティ",
+    "name": "Lumiose City",
     "cardNumber": "110/080",
     "rarity": "SAR",
     "set": "M3",
@@ -165,7 +165,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-098/080-SR",
-    "name": "イベルタルex",
+    "name": "Yveltal ex",
     "cardNumber": "098/080",
     "rarity": "SR",
     "set": "M3",
@@ -199,7 +199,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-101/080-SR",
-    "name": "エネルギーリサイクル",
+    "name": "Energy Recycle",
     "cardNumber": "101/080",
     "rarity": "SR",
     "set": "M3",
@@ -233,7 +233,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-092/080-AR",
-    "name": "ラッタ",
+    "name": "Raticate",
     "cardNumber": "092/080",
     "rarity": "AR",
     "set": "M3",
@@ -258,7 +258,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-089/080-AR",
-    "name": "チゴラス",
+    "name": "Tyrunt",
     "cardNumber": "089/080",
     "rarity": "AR",
     "set": "M3",
@@ -283,7 +283,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "M3-090/080-AR",
-    "name": "ドラピオン",
+    "name": "Drapion",
     "cardNumber": "090/080",
     "rarity": "AR",
     "set": "M3",
@@ -309,7 +309,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   // SV10 (The Glory of Team Rocket) Sample Cards
   {
     "id": "SV10-131/098-SR",
-    "name": "ロケット団のクロバットex",
+    "name": "Team Rocket's Crobat ex",
     "cardNumber": "131/098",
     "rarity": "SR",
     "set": "SV10",
@@ -334,7 +334,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "SV10-130/098-SR",
-    "name": "ロケット団のミュウツーex",
+    "name": "Team Rocket's Mewtwo ex",
     "cardNumber": "130/098",
     "rarity": "SR",
     "set": "SV10",
@@ -359,7 +359,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "SV10-125/098-SAR",
-    "name": "ロケット団のミュウツーex SAR",
+    "name": "Team Rocket's Mewtwo ex SAR",
     "cardNumber": "125/098",
     "rarity": "SAR",
     "set": "SV10",
