@@ -1,7 +1,3 @@
-import { ArbitrageOpportunity } from './types';
-
-// Complete M3 (Nihil Zero) AR/SR/SAR card data with US prices
-export const baseCardsData: ArbitrageOpportunity[] = 
 [
   {
     "id": "M3-086/080-AR",
@@ -795,4 +791,4 @@ export const baseCardsData: ArbitrageOpportunity[] =
     "lastUpdated": "2026-02-13T11:18:13.631Z",
     "isViable": false
   }
-];
+]

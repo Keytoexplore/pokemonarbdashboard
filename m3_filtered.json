@@ -1,0 +1,1533 @@
+{
+  "AR": [
+    {
+      "id": "6978aeac94ad6b60a44b4293",
+      "tcgPlayerId": "674411",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Raticate - 092/080",
+      "cardNumber": "092/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "90",
+      "stage": null,
+      "attacks": [
+        "[Colorless] Scrape Off (20)<br> Before doing damage, discard all Pokémon Tools from your opponent's Active Pokémon.",
+        "[Colorless] Avenging Incisors (40x)<br> This attack does 40 damage for each damage counter on each of your Benched Rattata."
+      ],
+      "weakness": "Fighting x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "Minahamu",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674411",
+      "prices": {
+        "market": 2.1,
+        "low": 0,
+        "sellers": 9,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 2.1,
+              "listings": null,
+              "priceString": "$2.10",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674411_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674411_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674411_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674411_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674411_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.750Z",
+      "updatedAt": "2026-02-12T14:22:23.459Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 2.1,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeab94ad6b60a44b426f",
+      "tcgPlayerId": "674410",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Doublade - 091/080",
+      "cardNumber": "091/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "100",
+      "stage": null,
+      "attacks": [
+        "[Colorless][Colorless] Sword Weapon (60x)<br> Reveal any number of Honedge, Doublade, and Aegislash cards in your hand. This attack does 60 damage for each card you revealed in this way."
+      ],
+      "weakness": "Fire x2",
+      "resistance": "Grass -30",
+      "retreatCost": "2",
+      "artist": "Kamome Shirahama",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674410",
+      "prices": {
+        "market": 2.97,
+        "low": 0,
+        "sellers": 7,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 2.97,
+              "listings": null,
+              "priceString": "$2.97",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674410_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674410_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674410_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674410_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674410_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:15.091Z",
+      "updatedAt": "2026-02-12T14:22:21.165Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 2.97,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeab94ad6b60a44b4270",
+      "tcgPlayerId": "674409",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Drapion - 090/080",
+      "cardNumber": "090/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "140",
+      "stage": null,
+      "attacks": [
+        "[Darkness][Darkness] Wrack Down (60)",
+        "[Darkness][Darkness][Darkness] Hazard Tail (100)<br> This Pokémon also does 70 damage to itself. Your opponent's Active Pokémon is now Paralyzed and Poisoned."
+      ],
+      "weakness": "Fighting x2",
+      "resistance": null,
+      "retreatCost": "3",
+      "artist": "Nelnal",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674409",
+      "prices": {
+        "market": 1.41,
+        "low": 0,
+        "sellers": 4,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 1.41,
+              "listings": null,
+              "priceString": "$1.41",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674409_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674409_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674409_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674409_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674409_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:15.137Z",
+      "updatedAt": "2026-02-12T14:22:21.258Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 1.41,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6973f7b418475bb2678ee00d",
+      "tcgPlayerId": "674408",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Tyrunt - 089/080",
+      "cardNumber": "089/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "100",
+      "stage": null,
+      "attacks": [
+        "[Fighting][Colorless] Get Angry (20x)<br> This attack does 20 damage for each damage counter on this Pokémon."
+      ],
+      "weakness": "Grass x2",
+      "resistance": null,
+      "retreatCost": "3",
+      "artist": "Tomoki Sone",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674408",
+      "prices": {
+        "market": 4.27,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.27,
+              "listings": null,
+              "priceString": "$4.27",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674408_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674408_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674408_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674408_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674408_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-23T22:35:32.322Z",
+      "updatedAt": "2026-02-12T14:22:24.926Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.27,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeac94ad6b60a44b4292",
+      "tcgPlayerId": "674407",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Probopass - 088/080",
+      "cardNumber": "088/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "140",
+      "stage": null,
+      "attacks": [
+        "[Fighting][Fighting] Rolling Rocks (60)",
+        "[Fighting][Fighting][Fighting][Colorless] Nose Blaster (260)<br> Discard 3 Energy from this Pokémon."
+      ],
+      "weakness": "Grass x2",
+      "resistance": null,
+      "retreatCost": "3",
+      "artist": "Nurikabe",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674407",
+      "prices": {
+        "market": 1.47,
+        "low": 0,
+        "sellers": 10,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 1.47,
+              "listings": null,
+              "priceString": "$1.47",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674407_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674407_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674407_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674407_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674407_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.704Z",
+      "updatedAt": "2026-02-12T14:22:23.370Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 1.47,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeab94ad6b60a44b4273",
+      "tcgPlayerId": "674406",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Espurr - 087/080",
+      "cardNumber": "087/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "60",
+      "stage": null,
+      "attacks": [
+        "[Colorless] Nap<br> Heal 20 damage from this Pokémon.",
+        "[Psychic] Stampede (10)"
+      ],
+      "weakness": "Darkness x2",
+      "resistance": "Fighting -30",
+      "retreatCost": "1",
+      "artist": "Terada Tera",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674406",
+      "prices": {
+        "market": 6.92,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 6.92,
+              "listings": null,
+              "priceString": "$6.92",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674406_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674406_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674406_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674406_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674406_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:15.272Z",
+      "updatedAt": "2026-02-12T14:22:21.392Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 6.92,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeaa94ad6b60a44b4268",
+      "tcgPlayerId": "674405",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Clefairy - 086/080",
+      "cardNumber": "086/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "70",
+      "stage": null,
+      "attacks": [
+        "[Psychic] Follow Me<br> Switch in 1 of your opponent's Benched Pokémon to the Active Spot.",
+        "[Psychic][Psychic] Flop (30)"
+      ],
+      "weakness": "Metal x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "Natsumi Yoshida",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674405",
+      "prices": {
+        "market": 11.34,
+        "low": 0,
+        "sellers": 7,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 11.34,
+              "listings": null,
+              "priceString": "$11.34",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674405_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674405_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674405_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674405_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674405_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:14.763Z",
+      "updatedAt": "2026-02-12T14:22:20.717Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 11.34,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    }
+  ],
+  "SR": [
+    {
+      "id": "6978aeac94ad6b60a44b428c",
+      "tcgPlayerId": "674419",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Meowth ex - 100/080",
+      "cardNumber": "100/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "170",
+      "stage": null,
+      "attacks": [
+        "[Colorless][Colorless][Colorless] Tuck Tail (60)<br> Put this Pokémon and all attached cards into your hand."
+      ],
+      "weakness": "Fighting x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674419",
+      "prices": {
+        "market": 19.64,
+        "low": 0,
+        "sellers": 2,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 19.64,
+              "listings": null,
+              "priceString": "$19.64",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674419_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674419_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674419_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674419_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674419_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.437Z",
+      "updatedAt": "2026-02-12T14:22:23.019Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 19.64,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeac94ad6b60a44b4283",
+      "tcgPlayerId": "674418",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Skarmory ex - 099/080",
+      "cardNumber": "099/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "260",
+      "stage": null,
+      "attacks": [
+        "[Metal][Metal][Colorless] Sonic Ripper<br> Shuffle all Energy attached to this Pokémon into your deck, and this attack does 220 damage to 1 of your opponent's Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>"
+      ],
+      "weakness": "Lightning x2",
+      "resistance": "Fighting -30",
+      "retreatCost": "0",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674418",
+      "prices": {
+        "market": 10.86,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 10.86,
+              "listings": null,
+              "priceString": "$10.86",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674418_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674418_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674418_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674418_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674418_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.035Z",
+      "updatedAt": "2026-02-12T14:22:22.622Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 10.86,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeae94ad6b60a44b42ad",
+      "tcgPlayerId": "674417",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Yveltal ex - 098/080",
+      "cardNumber": "098/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "210",
+      "stage": null,
+      "attacks": [
+        "[Darkness][Darkness][Colorless] Death Soul<br> Knock Out all of your opponent's Pokémon with 50 HP or less remaining.",
+        "[Darkness][Darkness][Colorless] Dark Strike (210)<br> During your next turn, this Pokémon can't use Dark Strike."
+      ],
+      "weakness": "Lightning x2",
+      "resistance": "Fighting -30",
+      "retreatCost": "1",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674417",
+      "prices": {
+        "market": 12.53,
+        "low": 0,
+        "sellers": 4,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 12.53,
+              "listings": null,
+              "priceString": "$12.53",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674417_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674417_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674417_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674417_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674417_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:18.009Z",
+      "updatedAt": "2026-02-12T14:22:25.145Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 12.53,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeac94ad6b60a44b4288",
+      "tcgPlayerId": "674416",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Zygarde ex - 097/080",
+      "cardNumber": "097/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "310",
+      "stage": null,
+      "attacks": [
+        "[Fighting][Fighting][Fighting] Gaia Wave (200)<br> During your opponent's next turn, this Pokémon takes 30 less damage from attacks <em>(after applying Weakness and Resistance)</em>.",
+        "[Fighting][Fighting][Fighting][Fighting][Fighting] Nullifying Zero<br> For each of your opponent's Pokémon, flip a coin. If heads, this attack does 150 damage to that Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>"
+      ],
+      "weakness": "Grass x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "takuyoa",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674416",
+      "prices": {
+        "market": 12.38,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 12.38,
+              "listings": null,
+              "priceString": "$12.38",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674416_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674416_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674416_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674416_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674416_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.258Z",
+      "updatedAt": "2026-02-12T14:22:22.840Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 12.38,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeab94ad6b60a44b4280",
+      "tcgPlayerId": "674415",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Clefable ex - 096/080",
+      "cardNumber": "096/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "320",
+      "stage": null,
+      "attacks": [
+        "[Psychic][Psychic] Shooting Moon (120+)<br> You may discard up to 4 Energy cards from your hand. This attack does 40 more damage for each card you discarded in this way."
+      ],
+      "weakness": "Metal x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "aky CG Works",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674415",
+      "prices": {
+        "market": 11.34,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 11.34,
+              "listings": null,
+              "priceString": "$11.34",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:15.898Z",
+      "updatedAt": "2026-02-12T14:22:22.492Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 11.34,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeac94ad6b60a44b4285",
+      "tcgPlayerId": "674414",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Starmie ex - 095/080",
+      "cardNumber": "095/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "330",
+      "stage": null,
+      "attacks": [
+        "[Water] Jet Blow (120)<br> This attack also does 50 damage to 1 of your opponent's Benched Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>",
+        "[Colorless][Colorless][Colorless] Nebula Beam (210)<br> This attack's damage isn't affected by Weakness or Resistance, or by any effects on your opponent's Active Pokémon."
+      ],
+      "weakness": "Lightning x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674414",
+      "prices": {
+        "market": 18.26,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 18.26,
+              "listings": null,
+              "priceString": "$18.26",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.125Z",
+      "updatedAt": "2026-02-12T14:22:22.707Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 18.26,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aead94ad6b60a44b429a",
+      "tcgPlayerId": "674413",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Salazzle ex - 094/080",
+      "cardNumber": "094/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "260",
+      "stage": null,
+      "attacks": [
+        "[Fire] Nasty Plot<br> Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
+        "[Fire][Fire] Fatal Nail (100)<br> Your opponent's Active Pokémon is now Burned and Poisoned. Switch this Pokémon with 1 of your Benched Pokémon."
+      ],
+      "weakness": "Water x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674413",
+      "prices": {
+        "market": 4.95,
+        "low": 0,
+        "sellers": 6,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.95,
+              "listings": null,
+              "priceString": "$4.95",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:17.114Z",
+      "updatedAt": "2026-02-12T14:22:23.941Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.95,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "697c285bb80f01712e9bae05",
+      "tcgPlayerId": "674412",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Decidueye ex - 093/080",
+      "cardNumber": "093/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "320",
+      "stage": null,
+      "attacks": [
+        "[Grass][Colorless][Colorless][Colorless] Crushing Arrow (240)<br> Discard an Energy from your opponent's Active Pokémon."
+      ],
+      "weakness": "Fire x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "aky CG Works",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674412",
+      "prices": {
+        "market": 4.54,
+        "low": 0,
+        "sellers": 8,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.54,
+              "listings": null,
+              "priceString": "$4.54",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-30T03:41:15.611Z",
+      "updatedAt": "2026-02-12T14:22:20.902Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.54,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeaa94ad6b60a44b426c",
+      "tcgPlayerId": "674404",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Dedenne - 085/080",
+      "cardNumber": "085/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "70",
+      "stage": null,
+      "attacks": [
+        "[Lightning] Tail Generator<br> For each Energy attached to all of your opponent's Pokémon, you may attach a Basic Lightning Energy card from your discard pile to your Lightning Pokémon in any way you like.",
+        "[Lightning][Colorless] Thunder Shock (30)<br> Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+      ],
+      "weakness": "Fighting x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "sowsow",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674404",
+      "prices": {
+        "market": 6.96,
+        "low": 0,
+        "sellers": 5,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 6.96,
+              "listings": null,
+              "priceString": "$6.96",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674404_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674404_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674404_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674404_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674404_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:14.952Z",
+      "updatedAt": "2026-02-12T14:22:20.986Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 6.96,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6973f7b418475bb2678ee00b",
+      "tcgPlayerId": "674403",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Aurorus - 084/080",
+      "cardNumber": "084/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "170",
+      "stage": null,
+      "attacks": [
+        "[Water][Water][Colorless] Freezing Chill (150)<br> During your opponent's next turn, the Defending Pokémon can't use attacks."
+      ],
+      "weakness": "Metal x2",
+      "resistance": null,
+      "retreatCost": "3",
+      "artist": "HACCAN",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674403",
+      "prices": {
+        "market": 3.23,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 3.23,
+              "listings": null,
+              "priceString": "$3.23",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674403_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674403_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674403_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674403_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674403_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-23T22:35:32.193Z",
+      "updatedAt": "2026-02-12T14:22:20.449Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 3.23,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aead94ad6b60a44b42a3",
+      "tcgPlayerId": "674402",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Talonflame - 083/080",
+      "cardNumber": "083/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "150",
+      "stage": null,
+      "attacks": [
+        "[Fire][Fire] Fire Wing (110)"
+      ],
+      "weakness": "Lightning x2",
+      "resistance": "Fighting -30",
+      "retreatCost": "1",
+      "artist": "Shinji Kanda",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674402",
+      "prices": {
+        "market": 2.4,
+        "low": 0,
+        "sellers": 6,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 2.4,
+              "listings": null,
+              "priceString": "$2.40",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674402_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674402_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674402_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674402_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674402_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:17.517Z",
+      "updatedAt": "2026-02-12T14:22:24.622Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 2.4,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6973b6ed9b8958885ea19e65",
+      "tcgPlayerId": "674401",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Rowlet - 082/080",
+      "cardNumber": "082/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "80",
+      "stage": null,
+      "attacks": [
+        "[Grass] Find a Friend<br> Search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+        "[Colorless][Colorless][Colorless] Tackle (30)"
+      ],
+      "weakness": "Fire x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "Atsuya Uki",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674401",
+      "prices": {
+        "market": 4.39,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.39,
+              "listings": null,
+              "priceString": "$4.39",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674401_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674401_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674401_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674401_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674401_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-23T17:59:09.163Z",
+      "updatedAt": "2026-02-12T14:22:23.766Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.39,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aead94ad6b60a44b429f",
+      "tcgPlayerId": "674400",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Spewpa - 081/080",
+      "cardNumber": "081/080",
+      "totalSetNumber": null,
+      "rarity": "Art Rare",
+      "cardType": null,
+      "hp": "80",
+      "stage": null,
+      "attacks": [
+        "[Grass] Hide<br> Flip a coin. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+      ],
+      "weakness": "Fire x2",
+      "resistance": null,
+      "retreatCost": "3",
+      "artist": "Ounishi",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674400",
+      "prices": {
+        "market": 2.13,
+        "low": 0,
+        "sellers": 6,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 2.13,
+              "listings": null,
+              "priceString": "$2.13",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674400_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:17.341Z",
+      "updatedAt": "2026-02-12T14:22:24.409Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 2.13,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    }
+  ],
+  "SAR": [
+    {
+      "id": "6978aeab94ad6b60a44b4280",
+      "tcgPlayerId": "674415",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Clefable ex - 096/080",
+      "cardNumber": "096/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "320",
+      "stage": null,
+      "attacks": [
+        "[Psychic][Psychic] Shooting Moon (120+)<br> You may discard up to 4 Energy cards from your hand. This attack does 40 more damage for each card you discarded in this way."
+      ],
+      "weakness": "Metal x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "aky CG Works",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674415",
+      "prices": {
+        "market": 11.34,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 11.34,
+              "listings": null,
+              "priceString": "$11.34",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674415_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:15.898Z",
+      "updatedAt": "2026-02-12T14:22:22.492Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 11.34,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aeac94ad6b60a44b4285",
+      "tcgPlayerId": "674414",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Mega Starmie ex - 095/080",
+      "cardNumber": "095/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "330",
+      "stage": null,
+      "attacks": [
+        "[Water] Jet Blow (120)<br> This attack also does 50 damage to 1 of your opponent's Benched Pokémon. <em>(Don't apply Weakness and Resistance for Benched Pokémon.)</em>",
+        "[Colorless][Colorless][Colorless] Nebula Beam (210)<br> This attack's damage isn't affected by Weakness or Resistance, or by any effects on your opponent's Active Pokémon."
+      ],
+      "weakness": "Lightning x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674414",
+      "prices": {
+        "market": 18.26,
+        "low": 0,
+        "sellers": 3,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 18.26,
+              "listings": null,
+              "priceString": "$18.26",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674414_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:16.125Z",
+      "updatedAt": "2026-02-12T14:22:22.707Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 18.26,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "6978aead94ad6b60a44b429a",
+      "tcgPlayerId": "674413",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Salazzle ex - 094/080",
+      "cardNumber": "094/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "260",
+      "stage": null,
+      "attacks": [
+        "[Fire] Nasty Plot<br> Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
+        "[Fire][Fire] Fatal Nail (100)<br> Your opponent's Active Pokémon is now Burned and Poisoned. Switch this Pokémon with 1 of your Benched Pokémon."
+      ],
+      "weakness": "Water x2",
+      "resistance": null,
+      "retreatCost": "1",
+      "artist": "5ban Graphics",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674413",
+      "prices": {
+        "market": 4.95,
+        "low": 0,
+        "sellers": 6,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.95,
+              "listings": null,
+              "priceString": "$4.95",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674413_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-27T12:25:17.114Z",
+      "updatedAt": "2026-02-12T14:22:23.941Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.95,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    },
+    {
+      "id": "697c285bb80f01712e9bae05",
+      "tcgPlayerId": "674412",
+      "setId": 24600,
+      "setName": "M3: Nihil Zero",
+      "name": "Decidueye ex - 093/080",
+      "cardNumber": "093/080",
+      "totalSetNumber": null,
+      "rarity": "Super Rare",
+      "cardType": null,
+      "hp": "320",
+      "stage": null,
+      "attacks": [
+        "[Grass][Colorless][Colorless][Colorless] Crushing Arrow (240)<br> Discard an Energy from your opponent's Active Pokémon."
+      ],
+      "weakness": "Fire x2",
+      "resistance": null,
+      "retreatCost": "2",
+      "artist": "aky CG Works",
+      "pokemonType": null,
+      "energyType": null,
+      "flavorText": null,
+      "tcgPlayerUrl": "https://www.tcgplayer.com/product/674412",
+      "prices": {
+        "market": 4.54,
+        "low": 0,
+        "sellers": 8,
+        "listings": 0,
+        "primaryPrinting": "Holofoil",
+        "lastUpdated": "2026-02-12T14:22:20.117Z",
+        "variants": {
+          "Holofoil": {
+            "Near Mint Holofoil - Japanese": {
+              "price": 4.54,
+              "listings": null,
+              "priceString": "$4.54",
+              "lastUpdated": "2026-02-13T11:08:14.563Z"
+            }
+          }
+        }
+      },
+      "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_800x800.jpg",
+      "imageCdnUrl200": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_200x200.jpg",
+      "imageCdnUrl400": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_400x400.jpg",
+      "imageCdnUrl800": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_800x800.jpg",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674412_in_200x200.jpg",
+      "needsDetailedScrape": false,
+      "dataCompleteness": "complete",
+      "lastScrapedAt": "2026-02-12T14:22:20.117Z",
+      "createdAt": "2026-01-30T03:41:15.611Z",
+      "updatedAt": "2026-02-12T14:22:20.902Z",
+      "variants": {
+        "Holofoil": {
+          "printing": "Holofoil",
+          "marketPrice": 4.54,
+          "lowPrice": 0,
+          "conditionUsed": "Near Mint Holofoil - Japanese"
+        }
+      },
+      "printingsAvailable": [
+        "Holofoil"
+      ]
+    }
+  ]
+}
