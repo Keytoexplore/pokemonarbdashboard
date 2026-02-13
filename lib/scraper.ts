@@ -73,7 +73,7 @@ export async function scrapeJapanTorecaForSet(set: string): Promise<ScrapedCard[
         const cardNumber = nameMatch[3];
         
         // Only keep SR, AR, SAR cards
-        const detectedRarity = detectRarity(rarity || name, cardNumber);
+        const detectedRarity = detectRarity(cardNumber);
         if (!detectedRarity) return;
         
         const priceText = $el.find('.product-price, [class*="price"]').first().text();
