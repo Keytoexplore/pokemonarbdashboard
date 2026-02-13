@@ -1,106 +1,6 @@
 {
   "opportunities": [
     {
-      "id": "M3-110/080-SAR",
-      "name": "ミアレシティ",
-      "cardNumber": "110/080",
-      "rarity": "SAR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 150,
-          "priceUSD": 0.98,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227761-a",
-          "isLowest": false
-        },
-        {
-          "source": "torecacamp",
-          "priceJPY": 100,
-          "priceUSD": 0.65,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 0.65,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 35.12,
-        "profitPercent": 5403.1,
-        "isViable": true,
-        "japanPriceUSD": 0.65,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 5403.1,
-      "marginAmount": 35.12,
-      "lastUpdated": "2026-02-13T10:38:42.192Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
-    },
-    {
-      "id": "M3-101/080-SR",
-      "name": "エネルギーリサイクル",
-      "cardNumber": "101/080",
-      "rarity": "SR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 200,
-          "priceUSD": 1.3,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a",
-          "isLowest": false
-        },
-        {
-          "source": "torecacamp",
-          "priceJPY": 100,
-          "priceUSD": 0.65,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://torecacamp-pokemon.com/products/rc_ity0siavagys_tej5",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 0.65,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 35.12,
-        "profitPercent": 5403.1,
-        "isViable": true,
-        "japanPriceUSD": 0.65,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 5403.1,
-      "marginAmount": 35.12,
-      "lastUpdated": "2026-02-13T10:38:44.383Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
-    },
-    {
       "id": "M3-104/080-SAR",
       "name": "ワンダーパッチ",
       "cardNumber": "104/080",
@@ -127,69 +27,12 @@
         }
       ],
       "lowestJapanesePrice": 1.3,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 34.47,
-        "profitPercent": 2651.5,
-        "isViable": true,
-        "japanPriceUSD": 1.3,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 2651.5,
-      "marginAmount": 34.47,
-      "lastUpdated": "2026-02-13T10:38:38.022Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
-    },
-    {
-      "id": "M3-090/080-AR",
-      "name": "ドラピオン",
-      "cardNumber": "090/080",
-      "rarity": "AR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 250,
-          "priceUSD": 1.63,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227741-b",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 1.63,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 34.14,
-        "profitPercent": 2094.5,
-        "isViable": true,
-        "japanPriceUSD": 1.63,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 2094.5,
-      "marginAmount": 34.14,
-      "lastUpdated": "2026-02-13T10:38:47.696Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
     },
     {
       "id": "M3-105/080-SAR",
@@ -218,160 +61,37 @@
         }
       ],
       "lowestJapanesePrice": 1.82,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 33.95,
-        "profitPercent": 1865.4,
-        "isViable": true,
-        "japanPriceUSD": 1.82,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 1865.4,
-      "marginAmount": 33.95,
-      "lastUpdated": "2026-02-13T10:38:39.023Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
     },
     {
-      "id": "M3-092/080-AR",
-      "name": "ラッタ",
-      "cardNumber": "092/080",
-      "rarity": "AR",
+      "id": "M3-106/080-SAR",
+      "name": "ピュール",
+      "cardNumber": "106/080",
+      "rarity": "SAR",
       "set": "M3",
       "japanesePrices": [
         {
           "source": "japan-toreca",
-          "priceJPY": 400,
-          "priceUSD": 2.6,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 2.6,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 33.17,
-        "profitPercent": 1275.8,
-        "isViable": true,
-        "japanPriceUSD": 2.6,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 1275.8,
-      "marginAmount": 33.17,
-      "lastUpdated": "2026-02-13T10:38:45.514Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
-    },
-    {
-      "id": "M3-098/080-SR",
-      "name": "イベルタルex",
-      "cardNumber": "098/080",
-      "rarity": "SR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged",
-          "isLowest": true
-        },
-        {
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
+          "priceJPY": 800,
+          "priceUSD": 5.2,
           "quality": "A",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 3.25,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 32.52,
-        "profitPercent": 1000.6,
-        "isViable": true,
-        "japanPriceUSD": 3.25,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 1000.6,
-      "marginAmount": 32.52,
-      "lastUpdated": "2026-02-13T10:38:43.329Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
-    },
-    {
-      "id": "M3-089/080-AR",
-      "name": "チゴラス",
-      "cardNumber": "089/080",
-      "rarity": "AR",
-      "set": "M3",
-      "japanesePrices": [
-        {
-          "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 3.25,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 32.52,
-        "profitPercent": 1000.6,
-        "isViable": true,
-        "japanPriceUSD": 3.25,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 1000.6,
-      "marginAmount": 32.52,
-      "lastUpdated": "2026-02-13T10:38:46.587Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+      "lowestJapanesePrice": 5.2,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
     },
     {
       "id": "M3-108/080-SAR",
@@ -400,77 +120,318 @@
         }
       ],
       "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
-      },
-      "arbitrageUS": {
-        "profitAmount": 32.19,
-        "profitPercent": 899.2,
-        "isViable": true,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 35.77
-      },
-      "marginPercent": 899.2,
-      "marginAmount": 32.19,
-      "lastUpdated": "2026-02-13T10:38:41.087Z",
-      "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
     },
     {
-      "id": "M3-106/080-SAR",
-      "name": "ピュール",
-      "cardNumber": "106/080",
+      "id": "M3-110/080-SAR",
+      "name": "ミアレシティ",
+      "cardNumber": "110/080",
       "rarity": "SAR",
       "set": "M3",
       "japanesePrices": [
         {
           "source": "japan-toreca",
-          "priceJPY": 800,
-          "priceUSD": 5.2,
+          "priceJPY": 150,
+          "priceUSD": 0.98,
           "quality": "A",
           "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227761-a",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 5.2,
+      "lowestJapanesePrice": 0.65,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-098/080-SR",
+      "name": "イベルタルex",
+      "cardNumber": "098/080",
+      "rarity": "SR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged",
+          "isLowest": true
+        },
+        {
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-101/080-SR",
+      "name": "エネルギーリサイクル",
+      "cardNumber": "101/080",
+      "rarity": "SR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 200,
+          "priceUSD": 1.3,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a",
+          "isLowest": false
+        },
+        {
+          "source": "torecacamp",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ity0siavagys_tej5",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 0.65,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-092/080-AR",
+      "name": "ラッタ",
+      "cardNumber": "092/080",
+      "rarity": "AR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 400,
+          "priceUSD": 2.6,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 2.6,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-089/080-AR",
+      "name": "チゴラス",
+      "cardNumber": "089/080",
+      "rarity": "AR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "M3-090/080-AR",
+      "name": "ドラピオン",
+      "cardNumber": "090/080",
+      "rarity": "AR",
+      "set": "M3",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-b",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": null,
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-12T17:53:00Z",
+      "isViable": false
+    },
+    {
+      "id": "SV10-131/098-SR",
+      "name": "Team Rocket's Crobat ex",
+      "cardNumber": "131/098",
+      "rarity": "SR",
+      "set": "SV10",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 1200,
+          "priceUSD": 7.8,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-sv10-131",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 7.8,
       "usPrice": {
-        "marketPrice": 35.77,
-        "sellerCount": 5,
+        "marketPrice": 13.66,
+        "sellerCount": 26,
         "listingCount": 0,
         "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg",
-        "cardName": "Jacinthe - 116/080",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/674435"
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629072_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629072_in_800x800.jpg",
+        "cardName": "Team Rocket's Crobat ex - 131/098",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/629072"
       },
       "arbitrageUS": {
-        "profitAmount": 30.57,
-        "profitPercent": 587.9,
+        "profitAmount": 5.86,
+        "profitPercent": 75.1,
         "isViable": true,
-        "japanPriceUSD": 5.2,
-        "usMarketPrice": 35.77
+        "japanPriceUSD": 7.8,
+        "usMarketPrice": 13.66
       },
-      "marginPercent": 587.9,
-      "marginAmount": 30.57,
-      "lastUpdated": "2026-02-13T10:38:40.196Z",
+      "marginPercent": 75.1,
+      "marginAmount": 5.86,
+      "lastUpdated": "2026-02-13T10:50:16.476Z",
       "isViable": true,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/674435_in_800x800.jpg"
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629072_in_800x800.jpg"
+    },
+    {
+      "id": "SV10-130/098-SR",
+      "name": "Team Rocket's Mewtwo ex",
+      "cardNumber": "130/098",
+      "rarity": "SR",
+      "set": "SV10",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 2800,
+          "priceUSD": 18.2,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-sv10-130",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 18.2,
+      "usPrice": {
+        "marketPrice": 35.12,
+        "sellerCount": 32,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629071_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629071_in_800x800.jpg",
+        "cardName": "Team Rocket's Mewtwo ex - 130/098",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/629071"
+      },
+      "arbitrageUS": {
+        "profitAmount": 16.92,
+        "profitPercent": 93,
+        "isViable": true,
+        "japanPriceUSD": 18.2,
+        "usMarketPrice": 35.12
+      },
+      "marginPercent": 93,
+      "marginAmount": 16.92,
+      "lastUpdated": "2026-02-13T10:50:16.476Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629071_in_800x800.jpg"
+    },
+    {
+      "id": "SV10-125/098-SAR",
+      "name": "Team Rocket's Mewtwo ex SAR",
+      "cardNumber": "125/098",
+      "rarity": "SAR",
+      "set": "SV10",
+      "japanesePrices": [
+        {
+          "source": "japan-toreca",
+          "priceJPY": 15000,
+          "priceUSD": 97.5,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-sv10-125",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 97.5,
+      "usPrice": {
+        "marketPrice": 267.75,
+        "sellerCount": 9,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629066_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629066_in_800x800.jpg",
+        "cardName": "Team Rocket's Mewtwo ex - 125/098",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/629066"
+      },
+      "arbitrageUS": {
+        "profitAmount": 170.25,
+        "profitPercent": 174.6,
+        "isViable": true,
+        "japanPriceUSD": 97.5,
+        "usMarketPrice": 267.75
+      },
+      "marginPercent": 174.6,
+      "marginAmount": 170.25,
+      "lastUpdated": "2026-02-13T10:50:16.476Z",
+      "isViable": true,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629066_in_800x800.jpg"
     }
   ],
-  "lastUpdated": "2026-02-13T10:38:47.696Z",
+  "lastUpdated": "2026-02-13T10:50:16.476Z",
   "stats": {
-    "totalCards": 10,
-    "viableOpportunities": 10,
-    "avgMargin": 2218.2,
-    "successCount": 10,
-    "failCount": 0
+    "totalCards": 13,
+    "viableOpportunities": 3,
+    "avgMargin": 26.4
   }
 }

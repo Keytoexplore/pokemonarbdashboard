@@ -305,5 +305,81 @@ export const baseCardsData: ArbitrageOpportunity[] = [
     "marginAmount": 0,
     "lastUpdated": "2026-02-12T17:53:00Z",
     "isViable": false
+  },
+  // SV10 (Battle Partners) Sample Cards
+  {
+    "id": "SV10-131/098-SR",
+    "name": "Team Rocket's Crobat ex",
+    "cardNumber": "131/098",
+    "rarity": "SR",
+    "set": "SV10",
+    "japanesePrices": [
+      {
+        "source": "japan-toreca",
+        "priceJPY": 1200,
+        "priceUSD": 7.80,
+        "quality": "A",
+        "inStock": true,
+        "url": "https://shop.japan-toreca.com/products/pokemon-sv10-131",
+        "isLowest": true
+      }
+    ],
+    "lowestJapanesePrice": 7.80,
+    "usPrice": null,
+    "arbitrageUS": null,
+    "marginPercent": 0,
+    "marginAmount": 0,
+    "lastUpdated": "2026-02-13T11:00:00Z",
+    "isViable": false
+  },
+  {
+    "id": "SV10-130/098-SR",
+    "name": "Team Rocket's Mewtwo ex",
+    "cardNumber": "130/098",
+    "rarity": "SR",
+    "set": "SV10",
+    "japanesePrices": [
+      {
+        "source": "japan-toreca",
+        "priceJPY": 2800,
+        "priceUSD": 18.20,
+        "quality": "A",
+        "inStock": true,
+        "url": "https://shop.japan-toreca.com/products/pokemon-sv10-130",
+        "isLowest": true
+      }
+    ],
+    "lowestJapanesePrice": 18.20,
+    "usPrice": null,
+    "arbitrageUS": null,
+    "marginPercent": 0,
+    "marginAmount": 0,
+    "lastUpdated": "2026-02-13T11:00:00Z",
+    "isViable": false
+  },
+  {
+    "id": "SV10-125/098-SAR",
+    "name": "Team Rocket's Mewtwo ex SAR",
+    "cardNumber": "125/098",
+    "rarity": "SAR",
+    "set": "SV10",
+    "japanesePrices": [
+      {
+        "source": "japan-toreca",
+        "priceJPY": 15000,
+        "priceUSD": 97.50,
+        "quality": "A",
+        "inStock": true,
+        "url": "https://shop.japan-toreca.com/products/pokemon-sv10-125",
+        "isLowest": true
+      }
+    ],
+    "lowestJapanesePrice": 97.50,
+    "usPrice": null,
+    "arbitrageUS": null,
+    "marginPercent": 0,
+    "marginAmount": 0,
+    "lastUpdated": "2026-02-13T11:00:00Z",
+    "isViable": false
   }
 ];
