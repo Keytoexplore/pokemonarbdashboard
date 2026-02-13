@@ -7280,2029 +7280,6 @@
       "isViable": false
     },
     {
-      "id": "SV11B-173-086-SAR",
-      "name": "N's Plot - 173/086",
-      "cardNumber": "173/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "Nの筋書き",
-          "cardNumber": "173/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 6900,
-          "priceUSD": 44.85,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215360-a?_pos=11&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "Nの筋書き",
-          "cardNumber": "173/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 6400,
-          "priceUSD": 41.6,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215360-a-damaged?_pos=13&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "トウコ",
-          "cardNumber": "173/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 4200,
-          "priceUSD": 27.3,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215694-b?_pos=16&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 27.3,
-      "usPrice": {
-        "marketPrice": 50.32,
-        "sellerCount": 20,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636527_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636527_in_800x800.jpg",
-        "cardName": "N's Plot - 173/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636527"
-      },
-      "arbitrageUS": {
-        "profitAmount": 23.02,
-        "profitPercent": 84,
-        "isViable": true,
-        "japanPriceUSD": 27.3,
-        "usMarketPrice": 50.32
-      },
-      "marginPercent": 84,
-      "marginAmount": 23.02,
-      "lastUpdated": "2026-02-13T19:14:02.835Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-172-086-SAR",
-      "name": "Genesect ex - 172/086",
-      "cardNumber": "172/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ゲノセクトex",
-          "cardNumber": "172/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2100,
-          "priceUSD": 13.65,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215359-a?_pos=3&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ゲノセクトex",
-          "cardNumber": "172/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 1500,
-          "priceUSD": 9.75,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215359-b?_pos=8&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 9.75,
-      "usPrice": {
-        "marketPrice": 20.95,
-        "sellerCount": 31,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636526_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636526_in_800x800.jpg",
-        "cardName": "Genesect ex - 172/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636526"
-      },
-      "arbitrageUS": {
-        "profitAmount": 11.2,
-        "profitPercent": 115,
-        "isViable": true,
-        "japanPriceUSD": 9.75,
-        "usMarketPrice": 20.95
-      },
-      "marginPercent": 115,
-      "marginAmount": 11.2,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-171-086-SAR",
-      "name": "Excadrill ex - 171/086",
-      "cardNumber": "171/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "171/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 800,
-          "priceUSD": 5.2,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215358-a?_pos=4&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "171/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 600,
-          "priceUSD": 3.9,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215358-b?_pos=9&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "171/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 750,
-          "priceUSD": 4.88,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215358-a-damaged?_pos=15&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 3.9,
-      "usPrice": {
-        "marketPrice": 11.89,
-        "sellerCount": 38,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636525_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636525_in_800x800.jpg",
-        "cardName": "Excadrill ex - 171/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636525"
-      },
-      "arbitrageUS": {
-        "profitAmount": 7.99,
-        "profitPercent": 205,
-        "isViable": true,
-        "japanPriceUSD": 3.9,
-        "usMarketPrice": 11.89
-      },
-      "marginPercent": 205,
-      "marginAmount": 7.99,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-170-086-SAR",
-      "name": "Meloetta ex - 170/086",
-      "cardNumber": "170/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "メロエッタex",
-          "cardNumber": "170/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2400,
-          "priceUSD": 15.6,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215357-a?_pos=5&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "メロエッタex",
-          "cardNumber": "170/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2300,
-          "priceUSD": 14.95,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215357-a-damaged?_pos=6&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 14.95,
-      "usPrice": {
-        "marketPrice": 22.07,
-        "sellerCount": 33,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636524_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636524_in_800x800.jpg",
-        "cardName": "Meloetta ex - 170/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636524"
-      },
-      "arbitrageUS": {
-        "profitAmount": 7.12,
-        "profitPercent": 48,
-        "isViable": true,
-        "japanPriceUSD": 14.95,
-        "usMarketPrice": 22.07
-      },
-      "marginPercent": 48,
-      "marginAmount": 7.12,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-169-086-SAR",
-      "name": "Zekrom ex - 169/086",
-      "cardNumber": "169/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ゼクロムex",
-          "cardNumber": "169/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 23000,
-          "priceUSD": 149.5,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215356-a?_pos=1&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ゼクロムex",
-          "cardNumber": "169/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 21000,
-          "priceUSD": 136.5,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215356-a-damaged?_pos=14&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ケルディオex",
-          "cardNumber": "169/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 1700,
-          "priceUSD": 11.05,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215690-b?_pos=19&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 11.05,
-      "usPrice": {
-        "marketPrice": 139.92,
-        "sellerCount": 16,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636523_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636523_in_800x800.jpg",
-        "cardName": "Zekrom ex - 169/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636523"
-      },
-      "arbitrageUS": {
-        "profitAmount": 128.87,
-        "profitPercent": 1166,
-        "isViable": true,
-        "japanPriceUSD": 11.05,
-        "usMarketPrice": 139.92
-      },
-      "marginPercent": 1166,
-      "marginAmount": 128.87,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-168-086-SAR",
-      "name": "Kyurem ex - 168/086",
-      "cardNumber": "168/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "キュレムex",
-          "cardNumber": "168/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 3700,
-          "priceUSD": 24.05,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215355-a-damaged?_pos=2&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "キュレムex",
-          "cardNumber": "168/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2800,
-          "priceUSD": 18.2,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215355-b?_pos=7&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "キュレムex",
-          "cardNumber": "168/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 4000,
-          "priceUSD": 26,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215355-a?_pos=12&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 18.2,
-      "usPrice": {
-        "marketPrice": 35.63,
-        "sellerCount": 17,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636522_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636522_in_800x800.jpg",
-        "cardName": "Kyurem ex - 168/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636522"
-      },
-      "arbitrageUS": {
-        "profitAmount": 17.43,
-        "profitPercent": 96,
-        "isViable": true,
-        "japanPriceUSD": 18.2,
-        "usMarketPrice": 35.63
-      },
-      "marginPercent": 96,
-      "marginAmount": 17.43,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-167-086-SAR",
-      "name": "Serperior ex - 167/086",
-      "cardNumber": "167/086",
-      "rarity": "SAR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ジャローダex",
-          "cardNumber": "167/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 1800,
-          "priceUSD": 11.7,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215354-b?_pos=10&_sid=d901449cd&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "ジャローダex",
-          "cardNumber": "167/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2600,
-          "priceUSD": 16.9,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215354-a?_pos=17&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ジャローダex",
-          "cardNumber": "167/086",
-          "rarity": "SAR",
-          "source": "japan-toreca",
-          "priceJPY": 2400,
-          "priceUSD": 15.6,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215354-a-damaged?_pos=18&_sid=d901449cd&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 11.7,
-      "usPrice": {
-        "marketPrice": 25.76,
-        "sellerCount": 22,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636521_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636521_in_800x800.jpg",
-        "cardName": "Serperior ex - 167/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636521"
-      },
-      "arbitrageUS": {
-        "profitAmount": 14.06,
-        "profitPercent": 120,
-        "isViable": true,
-        "japanPriceUSD": 11.7,
-        "usMarketPrice": 25.76
-      },
-      "marginPercent": 120,
-      "marginAmount": 14.06,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-166-086-SR",
-      "name": "Fennel - 166/086",
-      "cardNumber": "166/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "マコモ",
-          "cardNumber": "166/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215353-a?_pos=3&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "マコモ",
-          "cardNumber": "166/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215353-a-damaged?_pos=4&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "トウコ",
-          "cardNumber": "166/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 2200,
-          "priceUSD": 14.3,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215687-b?_pos=24&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 2.28,
-      "usPrice": {
-        "marketPrice": 1.24,
-        "sellerCount": 63,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636520_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636520_in_800x800.jpg",
-        "cardName": "Fennel - 166/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636520"
-      },
-      "arbitrageUS": {
-        "profitAmount": -1.04,
-        "profitPercent": -46,
-        "isViable": false,
-        "japanPriceUSD": 2.28,
-        "usMarketPrice": 1.24
-      },
-      "marginPercent": -46,
-      "marginAmount": -1.04,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-165-086-SR",
-      "name": "N's Plot - 165/086",
-      "cardNumber": "165/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "Nの筋書き",
-          "cardNumber": "165/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215352-b?_pos=1&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "Nの筋書き",
-          "cardNumber": "165/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 900,
-          "priceUSD": 5.85,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215352-a?_pos=5&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "Nの筋書き",
-          "cardNumber": "165/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 850,
-          "priceUSD": 5.53,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215352-a-damaged?_pos=8&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 4.55,
-      "usPrice": {
-        "marketPrice": 4.43,
-        "sellerCount": 75,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636519_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636519_in_800x800.jpg",
-        "cardName": "N's Plot - 165/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636519"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.12,
-        "profitPercent": -3,
-        "isViable": false,
-        "japanPriceUSD": 4.55,
-        "usMarketPrice": 4.43
-      },
-      "marginPercent": -3,
-      "marginAmount": -0.12,
-      "lastUpdated": "2026-02-13T19:14:02.836Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-164-086-SR",
-      "name": "Genesect ex - 164/086",
-      "cardNumber": "164/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ゲノセクトex",
-          "cardNumber": "164/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215351-b?_pos=18&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "ゲノセクトex",
-          "cardNumber": "164/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 600,
-          "priceUSD": 3.9,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215351-a?_pos=20&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 2.28,
-      "usPrice": {
-        "marketPrice": 1.02,
-        "sellerCount": 62,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636518_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636518_in_800x800.jpg",
-        "cardName": "Genesect ex - 164/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636518"
-      },
-      "arbitrageUS": {
-        "profitAmount": -1.26,
-        "profitPercent": -55,
-        "isViable": false,
-        "japanPriceUSD": 2.28,
-        "usMarketPrice": 1.02
-      },
-      "marginPercent": -55,
-      "marginAmount": -1.26,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-163-086-SR",
-      "name": "Excadrill ex - 163/086",
-      "cardNumber": "163/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "163/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215350-a?_pos=11&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "163/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 250,
-          "priceUSD": 1.63,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215350-b?_pos=17&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "ドリュウズex",
-          "cardNumber": "163/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215350-a-damaged?_pos=22&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 1.63,
-      "usPrice": {
-        "marketPrice": 0.82,
-        "sellerCount": 0,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636517_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636517_in_800x800.jpg",
-        "cardName": "Excadrill ex - 163/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636517"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.81,
-        "profitPercent": -50,
-        "isViable": false,
-        "japanPriceUSD": 1.63,
-        "usMarketPrice": 0.82
-      },
-      "marginPercent": -50,
-      "marginAmount": -0.81,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-162-086-SR",
-      "name": "Meloetta ex - 162/086",
-      "cardNumber": "162/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "メロエッタex",
-          "cardNumber": "162/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 150,
-          "priceUSD": 0.98,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215349-b?_pos=16&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "メロエッタex",
-          "cardNumber": "162/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215349-a?_pos=21&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "メロエッタex",
-          "cardNumber": "162/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 300,
-          "priceUSD": 1.95,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215349-a-damaged?_pos=23&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 0.98,
-      "usPrice": {
-        "marketPrice": 1.27,
-        "sellerCount": 56,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636516_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636516_in_800x800.jpg",
-        "cardName": "Meloetta ex - 162/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636516"
-      },
-      "arbitrageUS": {
-        "profitAmount": 0.29,
-        "profitPercent": 30,
-        "isViable": true,
-        "japanPriceUSD": 0.98,
-        "usMarketPrice": 1.27
-      },
-      "marginPercent": 30,
-      "marginAmount": 0.29,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-161-086-SR",
-      "name": "Zekrom ex - 161/086",
-      "cardNumber": "161/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ゼクロムex",
-          "cardNumber": "161/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215348-b?_pos=2&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        },
-        {
-          "name": "ゼクロムex",
-          "cardNumber": "161/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215348-a?_pos=7&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ゼクロムex",
-          "cardNumber": "161/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 650,
-          "priceUSD": 4.22,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215348-a-damaged?_pos=9&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 2.38,
-        "sellerCount": 55,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636515_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636515_in_800x800.jpg",
-        "cardName": "Zekrom ex - 161/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636515"
-      },
-      "arbitrageUS": {
-        "profitAmount": -1.2,
-        "profitPercent": -34,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 2.38
-      },
-      "marginPercent": -34,
-      "marginAmount": -1.2,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-160-086-SR",
-      "name": "Kyurem ex - 160/086",
-      "cardNumber": "160/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "キュレムex",
-          "cardNumber": "160/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215347-a?_pos=6&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "キュレムex",
-          "cardNumber": "160/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 350,
-          "priceUSD": 2.28,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215347-a-damaged?_pos=10&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "レシラムex",
-          "cardNumber": "160/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215681-b?_pos=14&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "キュレムex",
-          "cardNumber": "160/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 250,
-          "priceUSD": 1.63,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215347-b?_pos=15&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 1.63,
-      "usPrice": {
-        "marketPrice": 1.22,
-        "sellerCount": 72,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636514_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636514_in_800x800.jpg",
-        "cardName": "Kyurem ex - 160/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636514"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.41,
-        "profitPercent": -25,
-        "isViable": false,
-        "japanPriceUSD": 1.63,
-        "usMarketPrice": 1.22
-      },
-      "marginPercent": -25,
-      "marginAmount": -0.41,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-159-086-SR",
-      "name": "Serperior ex - 159/086",
-      "cardNumber": "159/086",
-      "rarity": "SR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ジャローダex",
-          "cardNumber": "159/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215346-a?_pos=12&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ジャローダex",
-          "cardNumber": "159/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 450,
-          "priceUSD": 2.93,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215346-a-damaged?_pos=13&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ジャローダex",
-          "cardNumber": "159/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 300,
-          "priceUSD": 1.95,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215346-b?_pos=19&_sid=1f7934bbc&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "エルフーンex",
-          "cardNumber": "159/086",
-          "rarity": "SR",
-          "source": "japan-toreca",
-          "priceJPY": 250,
-          "priceUSD": 1.63,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215680-b?_pos=25&_sid=1f7934bbc&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 1.63,
-      "usPrice": {
-        "marketPrice": 1.08,
-        "sellerCount": 61,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636513_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636513_in_800x800.jpg",
-        "cardName": "Serperior ex - 159/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636513"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.55,
-        "profitPercent": -34,
-        "isViable": false,
-        "japanPriceUSD": 1.63,
-        "usMarketPrice": 1.08
-      },
-      "marginPercent": -34,
-      "marginAmount": -0.55,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-158-086-AR",
-      "name": "Cinccino - 158/086",
-      "cardNumber": "158/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 7.19,
-        "sellerCount": 27,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636512_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636512_in_800x800.jpg",
-        "cardName": "Cinccino - 158/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636512"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-157-086-AR",
-      "name": "Minccino - 157/086",
-      "cardNumber": "157/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "チラーミィ",
-          "cardNumber": "157/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "B",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215344-b?_pos=3&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 6.27,
-        "sellerCount": 19,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636511_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636511_in_800x800.jpg",
-        "cardName": "Minccino - 157/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636511"
-      },
-      "arbitrageUS": {
-        "profitAmount": 2.69,
-        "profitPercent": 75,
-        "isViable": true,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 6.27
-      },
-      "marginPercent": 75,
-      "marginAmount": 2.69,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-156-086-AR",
-      "name": "Audino - 156/086",
-      "cardNumber": "156/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "タブンネ",
-          "cardNumber": "156/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215343-a?_pos=15&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 4.55,
-      "usPrice": {
-        "marketPrice": 5.79,
-        "sellerCount": 33,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636510_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636510_in_800x800.jpg",
-        "cardName": "Audino - 156/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636510"
-      },
-      "arbitrageUS": {
-        "profitAmount": 1.24,
-        "profitPercent": 27,
-        "isViable": true,
-        "japanPriceUSD": 4.55,
-        "usMarketPrice": 5.79
-      },
-      "marginPercent": 27,
-      "marginAmount": 1.24,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-155-086-AR",
-      "name": "Unfezant - 155/086",
-      "cardNumber": "155/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 4.3,
-        "sellerCount": 40,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636509_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636509_in_800x800.jpg",
-        "cardName": "Unfezant - 155/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636509"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-154-086-AR",
-      "name": "Tranquill - 154/086",
-      "cardNumber": "154/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 2.95,
-        "sellerCount": 60,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636508_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636508_in_800x800.jpg",
-        "cardName": "Tranquill - 154/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636508"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-153-086-AR",
-      "name": "Pidove - 153/086",
-      "cardNumber": "153/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "マメパト",
-          "cardNumber": "153/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 600,
-          "priceUSD": 3.9,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215340-a?_pos=14&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.9,
-      "usPrice": {
-        "marketPrice": 7.95,
-        "sellerCount": 34,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636507_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636507_in_800x800.jpg",
-        "cardName": "Pidove - 153/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636507"
-      },
-      "arbitrageUS": {
-        "profitAmount": 4.05,
-        "profitPercent": 104,
-        "isViable": true,
-        "japanPriceUSD": 3.9,
-        "usMarketPrice": 7.95
-      },
-      "marginPercent": 104,
-      "marginAmount": 4.05,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-152-086-AR",
-      "name": "Haxorus - 152/086",
-      "cardNumber": "152/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 8.87,
-        "sellerCount": 44,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636506_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636506_in_800x800.jpg",
-        "cardName": "Haxorus - 152/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636506"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-151-086-AR",
-      "name": "Fraxure - 151/086",
-      "cardNumber": "151/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "オノンド",
-          "cardNumber": "151/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 600,
-          "priceUSD": 3.9,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215338-a?_pos=13&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.9,
-      "usPrice": {
-        "marketPrice": 5.74,
-        "sellerCount": 42,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636505_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636505_in_800x800.jpg",
-        "cardName": "Fraxure - 151/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636505"
-      },
-      "arbitrageUS": {
-        "profitAmount": 1.84,
-        "profitPercent": 47,
-        "isViable": true,
-        "japanPriceUSD": 3.9,
-        "usMarketPrice": 5.74
-      },
-      "marginPercent": 47,
-      "marginAmount": 1.84,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-150-086-AR",
-      "name": "Axew - 150/086",
-      "cardNumber": "150/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "キバゴ",
-          "cardNumber": "150/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 700,
-          "priceUSD": 4.55,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215337-a?_pos=7&_sid=e6253c355&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "キバゴ",
-          "cardNumber": "150/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 650,
-          "priceUSD": 4.22,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215337-a-damaged?_pos=12&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 4.22,
-      "usPrice": {
-        "marketPrice": 6.69,
-        "sellerCount": 28,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636504_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636504_in_800x800.jpg",
-        "cardName": "Axew - 150/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636504"
-      },
-      "arbitrageUS": {
-        "profitAmount": 2.47,
-        "profitPercent": 59,
-        "isViable": true,
-        "japanPriceUSD": 4.22,
-        "usMarketPrice": 6.69
-      },
-      "marginPercent": 59,
-      "marginAmount": 2.47,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-149-086-AR",
-      "name": "Cobalion - 149/086",
-      "cardNumber": "149/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 6.34,
-        "sellerCount": 14,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636503_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636503_in_800x800.jpg",
-        "cardName": "Cobalion - 149/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636503"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-148-086-AR",
-      "name": "Bisharp - 148/086",
-      "cardNumber": "148/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 4.13,
-        "sellerCount": 44,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636502_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636502_in_800x800.jpg",
-        "cardName": "Bisharp - 148/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636502"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-147-086-AR",
-      "name": "Pawniard - 147/086",
-      "cardNumber": "147/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.02,
-        "sellerCount": 33,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636501_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636501_in_800x800.jpg",
-        "cardName": "Pawniard - 147/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636501"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-146-086-AR",
-      "name": "Escavalier - 146/086",
-      "cardNumber": "146/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.8,
-        "sellerCount": 41,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636500_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636500_in_800x800.jpg",
-        "cardName": "Escavalier - 146/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636500"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-145-086-AR",
-      "name": "Mandibuzz - 145/086",
-      "cardNumber": "145/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.32,
-        "sellerCount": 25,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636499_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636499_in_800x800.jpg",
-        "cardName": "Mandibuzz - 145/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636499"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-144-086-AR",
-      "name": "Vullaby - 144/086",
-      "cardNumber": "144/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.63,
-        "sellerCount": 31,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636498_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636498_in_800x800.jpg",
-        "cardName": "Vullaby - 144/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636498"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-143-086-AR",
-      "name": "Krookodile - 143/086",
-      "cardNumber": "143/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 6.44,
-        "sellerCount": 28,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636497_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636497_in_800x800.jpg",
-        "cardName": "Krookodile - 143/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636497"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-142-086-AR",
-      "name": "Krokorok - 142/086",
-      "cardNumber": "142/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.86,
-        "sellerCount": 39,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636496_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636496_in_800x800.jpg",
-        "cardName": "Krokorok - 142/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636496"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-141-086-AR",
-      "name": "Sandile - 141/086",
-      "cardNumber": "141/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 5.35,
-        "sellerCount": 34,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636495_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636495_in_800x800.jpg",
-        "cardName": "Sandile - 141/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636495"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-140-086-AR",
-      "name": "Scolipede - 140/086",
-      "cardNumber": "140/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 6.75,
-        "sellerCount": 36,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636494_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636494_in_800x800.jpg",
-        "cardName": "Scolipede - 140/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636494"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-139-086-AR",
-      "name": "Whirlipede - 139/086",
-      "cardNumber": "139/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.57,
-        "sellerCount": 40,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636493_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636493_in_800x800.jpg",
-        "cardName": "Whirlipede - 139/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636493"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-138-086-AR",
-      "name": "Venipede - 138/086",
-      "cardNumber": "138/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "フシデ",
-          "cardNumber": "138/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 600,
-          "priceUSD": 3.9,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215325-a?_pos=9&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.9,
-      "usPrice": {
-        "marketPrice": 4.27,
-        "sellerCount": 37,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636492_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636492_in_800x800.jpg",
-        "cardName": "Venipede - 138/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636492"
-      },
-      "arbitrageUS": {
-        "profitAmount": 0.37,
-        "profitPercent": 9,
-        "isViable": false,
-        "japanPriceUSD": 3.9,
-        "usMarketPrice": 4.27
-      },
-      "marginPercent": 9,
-      "marginAmount": 0.37,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-137-086-AR",
-      "name": "Landorus - 137/086",
-      "cardNumber": "137/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.95,
-        "sellerCount": 57,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636491_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636491_in_800x800.jpg",
-        "cardName": "Landorus - 137/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636491"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-136-086-AR",
-      "name": "Crustle - 136/086",
-      "cardNumber": "136/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.06,
-        "sellerCount": 47,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636490_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636490_in_800x800.jpg",
-        "cardName": "Crustle - 136/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636490"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-135-086-AR",
-      "name": "Dwebble - 135/086",
-      "cardNumber": "135/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 10.79,
-        "sellerCount": 25,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636489_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636489_in_800x800.jpg",
-        "cardName": "Dwebble - 135/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636489"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-134-086-AR",
-      "name": "Throh - 134/086",
-      "cardNumber": "134/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ナゲキ",
-          "cardNumber": "134/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215321-a?_pos=8&_sid=e6253c355&_ss=r",
-          "isLowest": false
-        },
-        {
-          "name": "ナゲキ",
-          "cardNumber": "134/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 500,
-          "priceUSD": 3.25,
-          "quality": "A-",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215321-a-damaged?_pos=10&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.25,
-      "usPrice": {
-        "marketPrice": 2.87,
-        "sellerCount": 41,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636488_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636488_in_800x800.jpg",
-        "cardName": "Throh - 134/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636488"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.38,
-        "profitPercent": -12,
-        "isViable": false,
-        "japanPriceUSD": 3.25,
-        "usMarketPrice": 2.87
-      },
-      "marginPercent": -12,
-      "marginAmount": -0.38,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-133-086-AR",
-      "name": "Conkeldurr - 133/086",
-      "cardNumber": "133/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 4.99,
-        "sellerCount": 33,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636487_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636487_in_800x800.jpg",
-        "cardName": "Conkeldurr - 133/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636487"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-132-086-AR",
-      "name": "Gurdurr - 132/086",
-      "cardNumber": "132/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.03,
-        "sellerCount": 33,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636486_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636486_in_800x800.jpg",
-        "cardName": "Gurdurr - 132/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636486"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-131-086-AR",
-      "name": "Timburr - 131/086",
-      "cardNumber": "131/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 4.12,
-        "sellerCount": 42,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636485_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636485_in_800x800.jpg",
-        "cardName": "Timburr - 131/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636485"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-130-086-AR",
-      "name": "Drilbur - 130/086",
-      "cardNumber": "130/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 2.38,
-        "sellerCount": 49,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636484_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636484_in_800x800.jpg",
-        "cardName": "Drilbur - 130/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636484"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-129-086-AR",
-      "name": "Golurk - 129/086",
-      "cardNumber": "129/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 4.17,
-        "sellerCount": 48,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636483_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636483_in_800x800.jpg",
-        "cardName": "Golurk - 129/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636483"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-128-086-AR",
-      "name": "Golett - 128/086",
-      "cardNumber": "128/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "ゴビット",
-          "cardNumber": "128/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215315-a?_pos=16&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 3.55,
-        "sellerCount": 38,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636482_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636482_in_800x800.jpg",
-        "cardName": "Golett - 128/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636482"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.03,
-        "profitPercent": -1,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 3.55
-      },
-      "marginPercent": -1,
-      "marginAmount": -0.03,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-127-086-AR",
-      "name": "Beheeyem - 127/086",
-      "cardNumber": "127/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "オーベム",
-          "cardNumber": "127/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215314-a?_pos=17&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 2.75,
-        "sellerCount": 35,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636481_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636481_in_800x800.jpg",
-        "cardName": "Beheeyem - 127/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636481"
-      },
-      "arbitrageUS": {
-        "profitAmount": -0.83,
-        "profitPercent": -23,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 2.75
-      },
-      "marginPercent": -23,
-      "marginAmount": -0.83,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
-      "id": "SV11B-126-086-AR",
-      "name": "Elgyem - 126/086",
-      "cardNumber": "126/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [
-        {
-          "name": "リグレー",
-          "cardNumber": "126/086",
-          "rarity": "AR",
-          "source": "japan-toreca",
-          "priceJPY": 550,
-          "priceUSD": 3.58,
-          "quality": "A",
-          "inStock": true,
-          "url": "https://shop.japan-toreca.com/products/pokemon-215313-a?_pos=18&_sid=e6253c355&_ss=r",
-          "isLowest": true
-        }
-      ],
-      "lowestJapanesePrice": 3.58,
-      "usPrice": {
-        "marketPrice": 4.36,
-        "sellerCount": 44,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636480_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636480_in_800x800.jpg",
-        "cardName": "Elgyem - 126/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636480"
-      },
-      "arbitrageUS": {
-        "profitAmount": 0.78,
-        "profitPercent": 22,
-        "isViable": true,
-        "japanPriceUSD": 3.58,
-        "usMarketPrice": 4.36
-      },
-      "marginPercent": 22,
-      "marginAmount": 0.78,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": true
-    },
-    {
-      "id": "SV11B-125-086-AR",
-      "name": "Reuniclus - 125/086",
-      "cardNumber": "125/086",
-      "rarity": "AR",
-      "set": "SV11B",
-      "japanesePrices": [],
-      "lowestJapanesePrice": 0,
-      "usPrice": {
-        "marketPrice": 3.26,
-        "sellerCount": 59,
-        "listingCount": 0,
-        "currency": "USD",
-        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636479_in_200x200.jpg",
-        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636479_in_800x800.jpg",
-        "cardName": "Reuniclus - 125/086",
-        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636479"
-      },
-      "arbitrageUS": null,
-      "marginPercent": 0,
-      "marginAmount": 0,
-      "lastUpdated": "2026-02-13T19:14:02.837Z",
-      "isViable": false
-    },
-    {
       "id": "SV11W-173-086-SAR",
       "name": "Hilda - 173/086",
       "cardNumber": "173/086",
@@ -11281,9 +9258,2051 @@
       "marginAmount": 0,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
+    },
+    {
+      "id": "SV11B-173-086-SAR",
+      "name": "N's Plot - 173/086",
+      "cardNumber": "173/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "Nの筋書き",
+          "cardNumber": "173/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 6900,
+          "priceUSD": 44.85,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215360-a?_pos=11&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "Nの筋書き",
+          "cardNumber": "173/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 6400,
+          "priceUSD": 41.6,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215360-a-damaged?_pos=13&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "トウコ",
+          "cardNumber": "173/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 4200,
+          "priceUSD": 27.3,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215694-b?_pos=16&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 27.3,
+      "usPrice": {
+        "marketPrice": 50.32,
+        "sellerCount": 20,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636527_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636527_in_800x800.jpg",
+        "cardName": "N's Plot - 173/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636527"
+      },
+      "arbitrageUS": {
+        "profitAmount": 23.02,
+        "profitPercent": 84,
+        "isViable": true,
+        "japanPriceUSD": 27.3,
+        "usMarketPrice": 50.32
+      },
+      "marginPercent": 84,
+      "marginAmount": 23.02,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-172-086-SAR",
+      "name": "Genesect ex - 172/086",
+      "cardNumber": "172/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ゲノセクトex",
+          "cardNumber": "172/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2100,
+          "priceUSD": 13.65,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215359-a?_pos=3&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ゲノセクトex",
+          "cardNumber": "172/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 1500,
+          "priceUSD": 9.75,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215359-b?_pos=8&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 9.75,
+      "usPrice": {
+        "marketPrice": 20.95,
+        "sellerCount": 31,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636526_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636526_in_800x800.jpg",
+        "cardName": "Genesect ex - 172/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636526"
+      },
+      "arbitrageUS": {
+        "profitAmount": 11.2,
+        "profitPercent": 115,
+        "isViable": true,
+        "japanPriceUSD": 9.75,
+        "usMarketPrice": 20.95
+      },
+      "marginPercent": 115,
+      "marginAmount": 11.2,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-171-086-SAR",
+      "name": "Excadrill ex - 171/086",
+      "cardNumber": "171/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "171/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 800,
+          "priceUSD": 5.2,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215358-a?_pos=4&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "171/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215358-b?_pos=9&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "171/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 750,
+          "priceUSD": 4.88,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215358-a-damaged?_pos=15&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.9,
+      "usPrice": {
+        "marketPrice": 11.89,
+        "sellerCount": 38,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636525_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636525_in_800x800.jpg",
+        "cardName": "Excadrill ex - 171/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636525"
+      },
+      "arbitrageUS": {
+        "profitAmount": 7.99,
+        "profitPercent": 205,
+        "isViable": true,
+        "japanPriceUSD": 3.9,
+        "usMarketPrice": 11.89
+      },
+      "marginPercent": 205,
+      "marginAmount": 7.99,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-170-086-SAR",
+      "name": "Meloetta ex - 170/086",
+      "cardNumber": "170/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "メロエッタex",
+          "cardNumber": "170/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2400,
+          "priceUSD": 15.6,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215357-a?_pos=5&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "メロエッタex",
+          "cardNumber": "170/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2300,
+          "priceUSD": 14.95,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215357-a-damaged?_pos=6&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 14.95,
+      "usPrice": {
+        "marketPrice": 22.07,
+        "sellerCount": 33,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636524_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636524_in_800x800.jpg",
+        "cardName": "Meloetta ex - 170/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636524"
+      },
+      "arbitrageUS": {
+        "profitAmount": 7.12,
+        "profitPercent": 48,
+        "isViable": true,
+        "japanPriceUSD": 14.95,
+        "usMarketPrice": 22.07
+      },
+      "marginPercent": 48,
+      "marginAmount": 7.12,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-169-086-SAR",
+      "name": "Zekrom ex - 169/086",
+      "cardNumber": "169/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ゼクロムex",
+          "cardNumber": "169/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 23000,
+          "priceUSD": 149.5,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215356-a?_pos=1&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ゼクロムex",
+          "cardNumber": "169/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 21000,
+          "priceUSD": 136.5,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215356-a-damaged?_pos=14&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ケルディオex",
+          "cardNumber": "169/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 1700,
+          "priceUSD": 11.05,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215690-b?_pos=19&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 11.05,
+      "usPrice": {
+        "marketPrice": 139.92,
+        "sellerCount": 16,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636523_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636523_in_800x800.jpg",
+        "cardName": "Zekrom ex - 169/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636523"
+      },
+      "arbitrageUS": {
+        "profitAmount": 128.87,
+        "profitPercent": 1166,
+        "isViable": true,
+        "japanPriceUSD": 11.05,
+        "usMarketPrice": 139.92
+      },
+      "marginPercent": 1166,
+      "marginAmount": 128.87,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-168-086-SAR",
+      "name": "Kyurem ex - 168/086",
+      "cardNumber": "168/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "キュレムex",
+          "cardNumber": "168/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 3700,
+          "priceUSD": 24.05,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215355-a-damaged?_pos=2&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "キュレムex",
+          "cardNumber": "168/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2800,
+          "priceUSD": 18.2,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215355-b?_pos=7&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "キュレムex",
+          "cardNumber": "168/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 4000,
+          "priceUSD": 26,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215355-a?_pos=12&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 18.2,
+      "usPrice": {
+        "marketPrice": 35.63,
+        "sellerCount": 17,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636522_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636522_in_800x800.jpg",
+        "cardName": "Kyurem ex - 168/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636522"
+      },
+      "arbitrageUS": {
+        "profitAmount": 17.43,
+        "profitPercent": 96,
+        "isViable": true,
+        "japanPriceUSD": 18.2,
+        "usMarketPrice": 35.63
+      },
+      "marginPercent": 96,
+      "marginAmount": 17.43,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-167-086-SAR",
+      "name": "Serperior ex - 167/086",
+      "cardNumber": "167/086",
+      "rarity": "SAR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ジャローダex",
+          "cardNumber": "167/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 1800,
+          "priceUSD": 11.7,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215354-b?_pos=10&_sid=d1182fc51&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ジャローダex",
+          "cardNumber": "167/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2600,
+          "priceUSD": 16.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215354-a?_pos=17&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ジャローダex",
+          "cardNumber": "167/086",
+          "rarity": "SAR",
+          "source": "japan-toreca",
+          "priceJPY": 2400,
+          "priceUSD": 15.6,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215354-a-damaged?_pos=18&_sid=d1182fc51&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 11.7,
+      "usPrice": {
+        "marketPrice": 25.76,
+        "sellerCount": 22,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636521_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636521_in_800x800.jpg",
+        "cardName": "Serperior ex - 167/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636521"
+      },
+      "arbitrageUS": {
+        "profitAmount": 14.06,
+        "profitPercent": 120,
+        "isViable": true,
+        "japanPriceUSD": 11.7,
+        "usMarketPrice": 25.76
+      },
+      "marginPercent": 120,
+      "marginAmount": 14.06,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-166-086-SR",
+      "name": "Fennel - 166/086",
+      "cardNumber": "166/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "マコモ",
+          "cardNumber": "166/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215353-a?_pos=3&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "マコモ",
+          "cardNumber": "166/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215353-a-damaged?_pos=4&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "トウコ",
+          "cardNumber": "166/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 2200,
+          "priceUSD": 14.3,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215687-b?_pos=24&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 2.28,
+      "usPrice": {
+        "marketPrice": 1.24,
+        "sellerCount": 63,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636520_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636520_in_800x800.jpg",
+        "cardName": "Fennel - 166/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636520"
+      },
+      "arbitrageUS": {
+        "profitAmount": -1.04,
+        "profitPercent": -46,
+        "isViable": false,
+        "japanPriceUSD": 2.28,
+        "usMarketPrice": 1.24
+      },
+      "marginPercent": -46,
+      "marginAmount": -1.04,
+      "lastUpdated": "2026-02-13T19:28:46.803Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-165-086-SR",
+      "name": "N's Plot - 165/086",
+      "cardNumber": "165/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "Nの筋書き",
+          "cardNumber": "165/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215352-b?_pos=1&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "Nの筋書き",
+          "cardNumber": "165/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 900,
+          "priceUSD": 5.85,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215352-a?_pos=5&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "Nの筋書き",
+          "cardNumber": "165/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 850,
+          "priceUSD": 5.53,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215352-a-damaged?_pos=8&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 4.55,
+      "usPrice": {
+        "marketPrice": 4.43,
+        "sellerCount": 75,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636519_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636519_in_800x800.jpg",
+        "cardName": "N's Plot - 165/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636519"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.12,
+        "profitPercent": -3,
+        "isViable": false,
+        "japanPriceUSD": 4.55,
+        "usMarketPrice": 4.43
+      },
+      "marginPercent": -3,
+      "marginAmount": -0.12,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-164-086-SR",
+      "name": "Genesect ex - 164/086",
+      "cardNumber": "164/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ゲノセクトex",
+          "cardNumber": "164/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215351-b?_pos=18&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ゲノセクトex",
+          "cardNumber": "164/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215351-a?_pos=20&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 2.28,
+      "usPrice": {
+        "marketPrice": 1.02,
+        "sellerCount": 62,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636518_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636518_in_800x800.jpg",
+        "cardName": "Genesect ex - 164/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636518"
+      },
+      "arbitrageUS": {
+        "profitAmount": -1.26,
+        "profitPercent": -55,
+        "isViable": false,
+        "japanPriceUSD": 2.28,
+        "usMarketPrice": 1.02
+      },
+      "marginPercent": -55,
+      "marginAmount": -1.26,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-163-086-SR",
+      "name": "Excadrill ex - 163/086",
+      "cardNumber": "163/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "163/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215350-a?_pos=11&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "163/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215350-b?_pos=17&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ドリュウズex",
+          "cardNumber": "163/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215350-a-damaged?_pos=22&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 0.82,
+        "sellerCount": 0,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636517_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636517_in_800x800.jpg",
+        "cardName": "Excadrill ex - 163/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636517"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.81,
+        "profitPercent": -50,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 0.82
+      },
+      "marginPercent": -50,
+      "marginAmount": -0.81,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-162-086-SR",
+      "name": "Meloetta ex - 162/086",
+      "cardNumber": "162/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "メロエッタex",
+          "cardNumber": "162/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 150,
+          "priceUSD": 0.98,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215349-b?_pos=16&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "メロエッタex",
+          "cardNumber": "162/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215349-a?_pos=21&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "メロエッタex",
+          "cardNumber": "162/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 300,
+          "priceUSD": 1.95,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215349-a-damaged?_pos=23&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 0.98,
+      "usPrice": {
+        "marketPrice": 1.27,
+        "sellerCount": 56,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636516_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636516_in_800x800.jpg",
+        "cardName": "Meloetta ex - 162/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636516"
+      },
+      "arbitrageUS": {
+        "profitAmount": 0.29,
+        "profitPercent": 30,
+        "isViable": true,
+        "japanPriceUSD": 0.98,
+        "usMarketPrice": 1.27
+      },
+      "marginPercent": 30,
+      "marginAmount": 0.29,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-161-086-SR",
+      "name": "Zekrom ex - 161/086",
+      "cardNumber": "161/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ゼクロムex",
+          "cardNumber": "161/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215348-b?_pos=2&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        },
+        {
+          "name": "ゼクロムex",
+          "cardNumber": "161/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215348-a?_pos=7&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ゼクロムex",
+          "cardNumber": "161/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.22,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215348-a-damaged?_pos=9&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 2.38,
+        "sellerCount": 55,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636515_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636515_in_800x800.jpg",
+        "cardName": "Zekrom ex - 161/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636515"
+      },
+      "arbitrageUS": {
+        "profitAmount": -1.2,
+        "profitPercent": -34,
+        "isViable": false,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 2.38
+      },
+      "marginPercent": -34,
+      "marginAmount": -1.2,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-160-086-SR",
+      "name": "Kyurem ex - 160/086",
+      "cardNumber": "160/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "キュレムex",
+          "cardNumber": "160/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215347-a?_pos=6&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "キュレムex",
+          "cardNumber": "160/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 350,
+          "priceUSD": 2.28,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215347-a-damaged?_pos=10&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "レシラムex",
+          "cardNumber": "160/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215681-b?_pos=14&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "キュレムex",
+          "cardNumber": "160/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215347-b?_pos=15&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 1.22,
+        "sellerCount": 72,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636514_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636514_in_800x800.jpg",
+        "cardName": "Kyurem ex - 160/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636514"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.41,
+        "profitPercent": -25,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 1.22
+      },
+      "marginPercent": -25,
+      "marginAmount": -0.41,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-159-086-SR",
+      "name": "Serperior ex - 159/086",
+      "cardNumber": "159/086",
+      "rarity": "SR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ジャローダex",
+          "cardNumber": "159/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215346-a?_pos=12&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ジャローダex",
+          "cardNumber": "159/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 450,
+          "priceUSD": 2.93,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215346-a-damaged?_pos=13&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ジャローダex",
+          "cardNumber": "159/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 300,
+          "priceUSD": 1.95,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215346-b?_pos=19&_sid=3c92850a3&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "エルフーンex",
+          "cardNumber": "159/086",
+          "rarity": "SR",
+          "source": "japan-toreca",
+          "priceJPY": 250,
+          "priceUSD": 1.63,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215680-b?_pos=25&_sid=3c92850a3&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.63,
+      "usPrice": {
+        "marketPrice": 1.08,
+        "sellerCount": 61,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636513_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636513_in_800x800.jpg",
+        "cardName": "Serperior ex - 159/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636513"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.55,
+        "profitPercent": -34,
+        "isViable": false,
+        "japanPriceUSD": 1.63,
+        "usMarketPrice": 1.08
+      },
+      "marginPercent": -34,
+      "marginAmount": -0.55,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-158-086-AR",
+      "name": "Cinccino - 158/086",
+      "cardNumber": "158/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 7.19,
+        "sellerCount": 27,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636512_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636512_in_800x800.jpg",
+        "cardName": "Cinccino - 158/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636512"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-157-086-AR",
+      "name": "Minccino - 157/086",
+      "cardNumber": "157/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "チラーミィ",
+          "cardNumber": "157/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215344-b?_pos=3&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 6.27,
+        "sellerCount": 19,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636511_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636511_in_800x800.jpg",
+        "cardName": "Minccino - 157/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636511"
+      },
+      "arbitrageUS": {
+        "profitAmount": 2.69,
+        "profitPercent": 75,
+        "isViable": true,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 6.27
+      },
+      "marginPercent": 75,
+      "marginAmount": 2.69,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-156-086-AR",
+      "name": "Audino - 156/086",
+      "cardNumber": "156/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "タブンネ",
+          "cardNumber": "156/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215343-a?_pos=15&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 4.55,
+      "usPrice": {
+        "marketPrice": 5.79,
+        "sellerCount": 33,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636510_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636510_in_800x800.jpg",
+        "cardName": "Audino - 156/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636510"
+      },
+      "arbitrageUS": {
+        "profitAmount": 1.24,
+        "profitPercent": 27,
+        "isViable": true,
+        "japanPriceUSD": 4.55,
+        "usMarketPrice": 5.79
+      },
+      "marginPercent": 27,
+      "marginAmount": 1.24,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-155-086-AR",
+      "name": "Unfezant - 155/086",
+      "cardNumber": "155/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 4.3,
+        "sellerCount": 40,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636509_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636509_in_800x800.jpg",
+        "cardName": "Unfezant - 155/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636509"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-154-086-AR",
+      "name": "Tranquill - 154/086",
+      "cardNumber": "154/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 2.95,
+        "sellerCount": 60,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636508_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636508_in_800x800.jpg",
+        "cardName": "Tranquill - 154/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636508"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-153-086-AR",
+      "name": "Pidove - 153/086",
+      "cardNumber": "153/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "マメパト",
+          "cardNumber": "153/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215340-a?_pos=14&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.9,
+      "usPrice": {
+        "marketPrice": 7.95,
+        "sellerCount": 34,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636507_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636507_in_800x800.jpg",
+        "cardName": "Pidove - 153/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636507"
+      },
+      "arbitrageUS": {
+        "profitAmount": 4.05,
+        "profitPercent": 104,
+        "isViable": true,
+        "japanPriceUSD": 3.9,
+        "usMarketPrice": 7.95
+      },
+      "marginPercent": 104,
+      "marginAmount": 4.05,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-152-086-AR",
+      "name": "Haxorus - 152/086",
+      "cardNumber": "152/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 8.87,
+        "sellerCount": 44,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636506_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636506_in_800x800.jpg",
+        "cardName": "Haxorus - 152/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636506"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-151-086-AR",
+      "name": "Fraxure - 151/086",
+      "cardNumber": "151/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "オノンド",
+          "cardNumber": "151/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215338-a?_pos=13&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.9,
+      "usPrice": {
+        "marketPrice": 5.74,
+        "sellerCount": 42,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636505_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636505_in_800x800.jpg",
+        "cardName": "Fraxure - 151/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636505"
+      },
+      "arbitrageUS": {
+        "profitAmount": 1.84,
+        "profitPercent": 47,
+        "isViable": true,
+        "japanPriceUSD": 3.9,
+        "usMarketPrice": 5.74
+      },
+      "marginPercent": 47,
+      "marginAmount": 1.84,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-150-086-AR",
+      "name": "Axew - 150/086",
+      "cardNumber": "150/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "キバゴ",
+          "cardNumber": "150/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 700,
+          "priceUSD": 4.55,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215337-a?_pos=7&_sid=9177ca2ce&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "キバゴ",
+          "cardNumber": "150/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 650,
+          "priceUSD": 4.22,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215337-a-damaged?_pos=12&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 4.22,
+      "usPrice": {
+        "marketPrice": 6.69,
+        "sellerCount": 28,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636504_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636504_in_800x800.jpg",
+        "cardName": "Axew - 150/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636504"
+      },
+      "arbitrageUS": {
+        "profitAmount": 2.47,
+        "profitPercent": 59,
+        "isViable": true,
+        "japanPriceUSD": 4.22,
+        "usMarketPrice": 6.69
+      },
+      "marginPercent": 59,
+      "marginAmount": 2.47,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-149-086-AR",
+      "name": "Cobalion - 149/086",
+      "cardNumber": "149/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 6.34,
+        "sellerCount": 14,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636503_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636503_in_800x800.jpg",
+        "cardName": "Cobalion - 149/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636503"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-148-086-AR",
+      "name": "Bisharp - 148/086",
+      "cardNumber": "148/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 4.13,
+        "sellerCount": 44,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636502_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636502_in_800x800.jpg",
+        "cardName": "Bisharp - 148/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636502"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-147-086-AR",
+      "name": "Pawniard - 147/086",
+      "cardNumber": "147/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "コマタナ",
+          "cardNumber": "147/086",
+          "rarity": "AR",
+          "source": "torecacamp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itzrn8e2qths_xapc?variant=50069993316652",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 1.82,
+      "usPrice": {
+        "marketPrice": 3.02,
+        "sellerCount": 33,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636501_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636501_in_800x800.jpg",
+        "cardName": "Pawniard - 147/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636501"
+      },
+      "arbitrageUS": {
+        "profitAmount": 1.2,
+        "profitPercent": 66,
+        "isViable": true,
+        "japanPriceUSD": 1.82,
+        "usMarketPrice": 3.02
+      },
+      "marginPercent": 66,
+      "marginAmount": 1.2,
+      "lastUpdated": "2026-02-13T19:31:58.797Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-146-086-AR",
+      "name": "Escavalier - 146/086",
+      "cardNumber": "146/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.8,
+        "sellerCount": 41,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636500_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636500_in_800x800.jpg",
+        "cardName": "Escavalier - 146/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636500"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-145-086-AR",
+      "name": "Mandibuzz - 145/086",
+      "cardNumber": "145/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.32,
+        "sellerCount": 25,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636499_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636499_in_800x800.jpg",
+        "cardName": "Mandibuzz - 145/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636499"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-144-086-AR",
+      "name": "Vullaby - 144/086",
+      "cardNumber": "144/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.63,
+        "sellerCount": 31,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636498_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636498_in_800x800.jpg",
+        "cardName": "Vullaby - 144/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636498"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-143-086-AR",
+      "name": "Krookodile - 143/086",
+      "cardNumber": "143/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 6.44,
+        "sellerCount": 28,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636497_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636497_in_800x800.jpg",
+        "cardName": "Krookodile - 143/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636497"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-142-086-AR",
+      "name": "Krokorok - 142/086",
+      "cardNumber": "142/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.86,
+        "sellerCount": 39,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636496_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636496_in_800x800.jpg",
+        "cardName": "Krokorok - 142/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636496"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-141-086-AR",
+      "name": "Sandile - 141/086",
+      "cardNumber": "141/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 5.35,
+        "sellerCount": 34,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636495_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636495_in_800x800.jpg",
+        "cardName": "Sandile - 141/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636495"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-140-086-AR",
+      "name": "Scolipede - 140/086",
+      "cardNumber": "140/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 6.75,
+        "sellerCount": 36,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636494_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636494_in_800x800.jpg",
+        "cardName": "Scolipede - 140/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636494"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-139-086-AR",
+      "name": "Whirlipede - 139/086",
+      "cardNumber": "139/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.57,
+        "sellerCount": 40,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636493_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636493_in_800x800.jpg",
+        "cardName": "Whirlipede - 139/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636493"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-138-086-AR",
+      "name": "Venipede - 138/086",
+      "cardNumber": "138/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "フシデ",
+          "cardNumber": "138/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 600,
+          "priceUSD": 3.9,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215325-a?_pos=9&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.9,
+      "usPrice": {
+        "marketPrice": 4.27,
+        "sellerCount": 37,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636492_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636492_in_800x800.jpg",
+        "cardName": "Venipede - 138/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636492"
+      },
+      "arbitrageUS": {
+        "profitAmount": 0.37,
+        "profitPercent": 9,
+        "isViable": false,
+        "japanPriceUSD": 3.9,
+        "usMarketPrice": 4.27
+      },
+      "marginPercent": 9,
+      "marginAmount": 0.37,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-137-086-AR",
+      "name": "Landorus - 137/086",
+      "cardNumber": "137/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.95,
+        "sellerCount": 57,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636491_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636491_in_800x800.jpg",
+        "cardName": "Landorus - 137/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636491"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-136-086-AR",
+      "name": "Crustle - 136/086",
+      "cardNumber": "136/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.06,
+        "sellerCount": 47,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636490_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636490_in_800x800.jpg",
+        "cardName": "Crustle - 136/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636490"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-135-086-AR",
+      "name": "Dwebble - 135/086",
+      "cardNumber": "135/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 10.79,
+        "sellerCount": 25,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636489_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636489_in_800x800.jpg",
+        "cardName": "Dwebble - 135/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636489"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-134-086-AR",
+      "name": "Throh - 134/086",
+      "cardNumber": "134/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ナゲキ",
+          "cardNumber": "134/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215321-a?_pos=8&_sid=9177ca2ce&_ss=r",
+          "isLowest": false
+        },
+        {
+          "name": "ナゲキ",
+          "cardNumber": "134/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 500,
+          "priceUSD": 3.25,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215321-a-damaged?_pos=10&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.25,
+      "usPrice": {
+        "marketPrice": 2.87,
+        "sellerCount": 41,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636488_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636488_in_800x800.jpg",
+        "cardName": "Throh - 134/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636488"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.38,
+        "profitPercent": -12,
+        "isViable": false,
+        "japanPriceUSD": 3.25,
+        "usMarketPrice": 2.87
+      },
+      "marginPercent": -12,
+      "marginAmount": -0.38,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-133-086-AR",
+      "name": "Conkeldurr - 133/086",
+      "cardNumber": "133/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 4.99,
+        "sellerCount": 33,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636487_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636487_in_800x800.jpg",
+        "cardName": "Conkeldurr - 133/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636487"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-132-086-AR",
+      "name": "Gurdurr - 132/086",
+      "cardNumber": "132/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.03,
+        "sellerCount": 33,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636486_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636486_in_800x800.jpg",
+        "cardName": "Gurdurr - 132/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636486"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-131-086-AR",
+      "name": "Timburr - 131/086",
+      "cardNumber": "131/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 4.12,
+        "sellerCount": 42,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636485_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636485_in_800x800.jpg",
+        "cardName": "Timburr - 131/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636485"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-130-086-AR",
+      "name": "Drilbur - 130/086",
+      "cardNumber": "130/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 2.38,
+        "sellerCount": 49,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636484_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636484_in_800x800.jpg",
+        "cardName": "Drilbur - 130/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636484"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-129-086-AR",
+      "name": "Golurk - 129/086",
+      "cardNumber": "129/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 4.17,
+        "sellerCount": 48,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636483_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636483_in_800x800.jpg",
+        "cardName": "Golurk - 129/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636483"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-128-086-AR",
+      "name": "Golett - 128/086",
+      "cardNumber": "128/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "ゴビット",
+          "cardNumber": "128/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215315-a?_pos=16&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 3.55,
+        "sellerCount": 38,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636482_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636482_in_800x800.jpg",
+        "cardName": "Golett - 128/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636482"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.03,
+        "profitPercent": -1,
+        "isViable": false,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 3.55
+      },
+      "marginPercent": -1,
+      "marginAmount": -0.03,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-127-086-AR",
+      "name": "Beheeyem - 127/086",
+      "cardNumber": "127/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "オーベム",
+          "cardNumber": "127/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215314-a?_pos=17&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 2.75,
+        "sellerCount": 35,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636481_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636481_in_800x800.jpg",
+        "cardName": "Beheeyem - 127/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636481"
+      },
+      "arbitrageUS": {
+        "profitAmount": -0.83,
+        "profitPercent": -23,
+        "isViable": false,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 2.75
+      },
+      "marginPercent": -23,
+      "marginAmount": -0.83,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
+    },
+    {
+      "id": "SV11B-126-086-AR",
+      "name": "Elgyem - 126/086",
+      "cardNumber": "126/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [
+        {
+          "name": "リグレー",
+          "cardNumber": "126/086",
+          "rarity": "AR",
+          "source": "japan-toreca",
+          "priceJPY": 550,
+          "priceUSD": 3.58,
+          "quality": "A",
+          "inStock": true,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215313-a?_pos=18&_sid=9177ca2ce&_ss=r",
+          "isLowest": true
+        }
+      ],
+      "lowestJapanesePrice": 3.58,
+      "usPrice": {
+        "marketPrice": 4.36,
+        "sellerCount": 44,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636480_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636480_in_800x800.jpg",
+        "cardName": "Elgyem - 126/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636480"
+      },
+      "arbitrageUS": {
+        "profitAmount": 0.78,
+        "profitPercent": 22,
+        "isViable": true,
+        "japanPriceUSD": 3.58,
+        "usMarketPrice": 4.36
+      },
+      "marginPercent": 22,
+      "marginAmount": 0.78,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": true
+    },
+    {
+      "id": "SV11B-125-086-AR",
+      "name": "Reuniclus - 125/086",
+      "cardNumber": "125/086",
+      "rarity": "AR",
+      "set": "SV11B",
+      "japanesePrices": [],
+      "lowestJapanesePrice": 0,
+      "usPrice": {
+        "marketPrice": 3.26,
+        "sellerCount": 59,
+        "listingCount": 0,
+        "currency": "USD",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636479_in_200x200.jpg",
+        "imageCdnUrl": "https://tcgplayer-cdn.tcgplayer.com/product/636479_in_800x800.jpg",
+        "cardName": "Reuniclus - 125/086",
+        "tcgPlayerUrl": "https://www.tcgplayer.com/product/636479"
+      },
+      "arbitrageUS": null,
+      "marginPercent": 0,
+      "marginAmount": 0,
+      "lastUpdated": "2026-02-13T19:28:46.804Z",
+      "isViable": false
     }
   ],
-  "lastUpdated": "2026-02-13T19:16:47.775Z",
+  "lastUpdated": "2026-02-13T19:28:46.804Z",
   "stats": {
     "totalCards": 267,
     "viableOpportunities": 30,
