@@ -349,42 +349,48 @@ if (cache[url] && Date.now() - cache[url].timestamp < 86400000) {
 }
 ```
 
-## Quick Reference: Set Addition Checklist
+## Universal Set Addition (One Command)
+
+```bash
+# Add ANY set with one command
+node scripts/add-set.js M2a
+
+# Or
+node scripts/add-set.js SV9
+
+# Or  
+node scripts/add-set.js SV10
+```
+
+**This script:**
+1. ✅ Fetches cards from PokemonPriceTracker API
+2. ✅ Scrapes TorecaCamp by set+rarity (m2a ar, m2a sr, m2a sar)
+3. ✅ Scrapes Japan-Toreca by set+rarity
+4. ✅ Matches prices by card number
+5. ✅ Calculates arbitrage margins
+6. ✅ Adds to dashboard automatically
+
+**Takes ~5-10 minutes** (respects rate limits)
+
+---
+
+## Manual Checklist (if needed)
 
 ```markdown
 ## Before You Start
-- [ ] Find PokemonPriceTracker set ID
-- [ ] Determine AR/SR/SAR number ranges
-- [ ] Count expected cards
+- [ ] Confirm set code works: node scripts/test-api.ts <SET>
 
-## Scraping
-- [ ] Japan-Toreca: Search AR/SR/SAR
-- [ ] TorecaCamp: Search set name
-- [ ] Verify all cards found
-- [ ] Check prices look realistic
-
-## Code Changes
-- [ ] Add set mapping
-- [ ] Add card data to prices.json
-- [ ] Update dashboard filters (if needed)
-
-## API Fetch
-- [ ] Fetch US prices
-- [ ] Verify rate limits not hit
-- [ ] Check for API errors
-
-## Testing
-- [ ] Build passes
-- [ ] Dashboard shows new set
-- [ ] Filters work
-- [ ] Stats correct
-- [ ] Links work
+## One-Command Addition
+- [ ] Run: node scripts/add-set.js <SET_CODE>
+- [ ] Review output for errors
+- [ ] Check data/prices.json
 
 ## Deploy
-- [ ] Commit changes
-- [ ] Push to GitHub
-- [ ] Verify Vercel build
-- [ ] Test live dashboard
+- [ ] npm run build
+- [ ] git add data/prices.json
+- [ ] git commit -m "feat: Add <SET>"
+- [ ] git push
+- [ ] Verify dashboard
 ```
 
 ## Example: Adding M2a Cards

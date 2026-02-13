@@ -227,15 +227,33 @@ git commit -m "update: Refresh Japanese prices"
 git push origin main
 ```
 
-## Adding New Cards
+## Adding New Sets (Universal)
 
-To add a new set (e.g., M4):
+Works with **ANY** Japanese set:
 
-1. **Add set mapping** to `lib/set-mappings.ts`
-2. **Add card definitions** to `lib/card-data.ts` (with Japan-Toreca and TorecaCamp URLs)
-3. **Run scraper** to get fresh prices
-4. **Run US updater** to get TCGPlayer prices
-5. **Commit and deploy**
+```bash
+# One command adds entire set
+node scripts/add-set.js M2a
+
+# Or
+node scripts/add-set.js SV9
+node scripts/add-set.js SV10
+node scripts/add-set.js M3
+```
+
+**What it does:**
+1. Fetches AR/SR/SAR cards from PokemonPriceTracker API
+2. Scrapes TorecaCamp: `m2a ar`, `m2a sr`, `m2a sar`
+3. Scrapes Japan-Toreca: `m2a ar`, `m2a sr`, `m2a sar`
+4. Matches prices by card number
+5. Calculates arbitrage margins
+6. Adds to dashboard
+
+**Time**: ~5-10 minutes per set
+
+**Supported sets**: M3, M2a, SV1-10, S12, and more (see `lib/set-mappings.ts`)
+
+---
 
 ## API Reference
 
