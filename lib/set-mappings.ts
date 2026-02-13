@@ -12,6 +12,20 @@ export interface SetMapping {
 
 export const japaneseSetMappings: Record<string, SetMapping> = {
   // M Series (Mega Evolution Era)
+  'M1L': {
+    jpCode: 'M1L',
+    apiSetId: 'm1l',
+    englishName: 'Magma Lava',
+    japaneseName: 'マグマラバ',
+    releaseDate: '2025-07-18',
+  },
+  'M1S': {
+    jpCode: 'M1S',
+    apiSetId: 'm1s',
+    englishName: 'Magma Storm',
+    japaneseName: 'マグマストーム',
+    releaseDate: '2025-07-18',
+  },
   'M3': {
     jpCode: 'M3',
     apiSetId: 'm3',  // CONFIRMED: API uses 'm3', not 'nihil-zero'
@@ -147,6 +161,20 @@ export const japaneseSetMappings: Record<string, SetMapping> = {
     japaneseName: 'ロケット団の栄光',
     releaseDate: '2025',
     englishEquivalent: 'Destined Rivals',
+  },
+  'SV11B': {
+    jpCode: 'SV11B',
+    apiSetId: 'sv11b',
+    englishName: 'SV11 Blue',
+    japaneseName: 'SV11 青',
+    releaseDate: '2025',
+  },
+  'SV11W': {
+    jpCode: 'SV11W',
+    apiSetId: 'sv11w',
+    englishName: 'SV11 White',
+    japaneseName: 'SV11 白',
+    releaseDate: '2025',
   },
   'SV9a': {
     jpCode: 'SV9a',

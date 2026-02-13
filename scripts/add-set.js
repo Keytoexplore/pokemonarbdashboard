@@ -29,9 +29,13 @@ const mappings = require('../lib/set-mappings.ts');
 // Get API set ID
 function getApiSetId(jpCode) {
   const map = {
+    'M1L': 'm1l',
+    'M1S': 'm1s',
     'M3': 'm3',
     'M2a': 'm2a',
     'M2': 'm2',
+    'SV11B': 'sv11b',
+    'SV11W': 'sv11w',
     'SV9': 'sv9',
     'SV10': 'sv10',
     'SV8a': 'terastal-festival-ex',
