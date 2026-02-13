@@ -1,0 +1,749 @@
+{
+  "scrape_date": "2026-02-13",
+  "exchange_rate_jpy_to_usd": 0.0065,
+  "cards": [
+    {
+      "card_id": "M3-081/080-SR",
+      "num": "081",
+      "name": "Spewpa",
+      "rarity": "SR",
+      "note": "Card list shows SR, but appears as AR on TorecaCamp",
+      "torecacamp": {
+        "name": "コフーライ AR M3 081/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 62,
+        "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx"
+      },
+      "japan_toreca": {
+        "name": "コフーライ C (008/080) [M3]",
+        "price_jpy": 30,
+        "price_usd": 0.20,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 1,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227532-a"
+      }
+    },
+    {
+      "card_id": "M3-082/080-SR",
+      "num": "082",
+      "name": "Rowlet",
+      "rarity": "SR",
+      "note": "Card list shows SR, but appears as AR on TorecaCamp",
+      "torecacamp": {
+        "name": "モクロー AR M3 082/080",
+        "price_jpy_min": 380,
+        "price_jpy_max": 480,
+        "price_usd_min": 2.47,
+        "price_usd_max": 3.12,
+        "in_stock": true,
+        "stock_count": 681,
+        "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz"
+      },
+      "japan_toreca": {
+        "name": "モクロー AR (082/080) [M3]",
+        "price_jpy": 500,
+        "price_usd": 3.25,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 20,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227733-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-083/080-SR",
+      "num": "083",
+      "name": "Talonflame",
+      "rarity": "SR",
+      "note": "Card list shows SR, but appears as AR on TorecaCamp",
+      "torecacamp": {
+        "name": "ファイアロー AR M3 083/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 73,
+        "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-084/080-SR",
+      "num": "084",
+      "name": "Aurorus",
+      "rarity": "SR",
+      "note": "Card list shows SR, but appears as AR on TorecaCamp",
+      "torecacamp": {
+        "name": "アマルルガ AR M3 084/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 83,
+        "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k"
+      },
+      "japan_toreca": {
+        "name": "アマルルガ AR (084/080) [M3]",
+        "price_jpy": 250,
+        "price_usd": 1.63,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 75,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227735-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-085/080-SR",
+      "num": "085",
+      "name": "Dedenne",
+      "rarity": "SR",
+      "note": "Card list shows SR, but appears as AR on TorecaCamp",
+      "torecacamp": {
+        "name": "デデンネ AR M3 085/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 580,
+        "price_usd_min": 1.82,
+        "price_usd_max": 3.77,
+        "in_stock": true,
+        "stock_count": 445,
+        "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f"
+      },
+      "japan_toreca": {
+        "name": "デデンネ AR (085/080) [M3]",
+        "price_jpy": 600,
+        "price_usd": 3.90,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 13,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227736-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-086/080-AR",
+      "num": "086",
+      "name": "Clefairy",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ピッピ AR M3 086/080",
+        "price_jpy_min": 580,
+        "price_jpy_max": 980,
+        "price_usd_min": 3.77,
+        "price_usd_max": 6.37,
+        "in_stock": true,
+        "stock_count": 2,
+        "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32"
+      },
+      "japan_toreca": {
+        "name": "ピッピ AR (086/080) [M3]",
+        "price_jpy": 900,
+        "price_usd": 5.85,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 14,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227737-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-087/080-AR",
+      "num": "087",
+      "name": "Espurr",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ニャスパー AR M3 087/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 50,
+        "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-088/080-AR",
+      "num": "088",
+      "name": "Probopass",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ダイノーズ AR M3 088/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 96,
+        "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-089/080-AR",
+      "num": "089",
+      "name": "Tyrunt",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "チゴラス AR M3 089/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 69,
+        "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla"
+      },
+      "japan_toreca": {
+        "name": "チゴラス AR (089/080) [M3]",
+        "price_jpy": 500,
+        "price_usd": 3.25,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 47,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-090/080-AR",
+      "num": "090",
+      "name": "Drapion",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ドラピオン AR M3 090/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 63,
+        "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks"
+      },
+      "japan_toreca": {
+        "name": "ドラピオン AR (090/080) [M3]",
+        "price_jpy": 250,
+        "price_usd": 1.63,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 47,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227741-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-091/080-AR",
+      "num": "091",
+      "name": "Doublade",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ニダンギル AR M3 091/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 88,
+        "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv"
+      },
+      "japan_toreca": {
+        "name": "ニダンギル AR (091/080) [M3]",
+        "price_jpy": 400,
+        "price_usd": 2.60,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 19,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227742-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-092/080-AR",
+      "num": "092",
+      "name": "Raticate",
+      "rarity": "AR",
+      "torecacamp": {
+        "name": "ラッタ AR M3 092/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 380,
+        "price_usd_min": 1.82,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 87,
+        "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl"
+      },
+      "japan_toreca": {
+        "name": "ラッタ AR (092/080) [M3]",
+        "price_jpy": 400,
+        "price_usd": 2.60,
+        "condition": "A-",
+        "in_stock": true,
+        "stock_count": 34,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged"
+      }
+    },
+    {
+      "card_id": "M3-093/080-SR",
+      "num": "093",
+      "name": "Decidueye ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "ジュナイパーex SR M3 093/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 480,
+        "price_usd_min": 1.82,
+        "price_usd_max": 3.12,
+        "in_stock": true,
+        "stock_count": 253,
+        "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-094/080-SR",
+      "num": "094",
+      "name": "Salazzle ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "エンニュートex SR M3 094/080",
+        "price_jpy_min": 100,
+        "price_jpy_max": 380,
+        "price_usd_min": 0.65,
+        "price_usd_max": 2.47,
+        "in_stock": true,
+        "stock_count": 57,
+        "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-095/080-SR",
+      "num": "095",
+      "name": "Mega Starmie ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "メガスターミーex SR M3 095/080",
+        "price_jpy_min": 980,
+        "price_jpy_max": 1480,
+        "price_usd_min": 6.37,
+        "price_usd_max": 9.62,
+        "in_stock": true,
+        "stock_count": 138,
+        "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-096/080-SR",
+      "num": "096",
+      "name": "Mega Clefable ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "メガピクシーex SR M3 096/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 580,
+        "price_usd_min": 1.82,
+        "price_usd_max": 3.77,
+        "in_stock": true,
+        "stock_count": 62,
+        "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-097/080-SR",
+      "num": "097",
+      "name": "Mega Zygarde ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "メガジガルデex SR M3 097/080",
+        "price_jpy_min": 580,
+        "price_jpy_max": 780,
+        "price_usd_min": 3.77,
+        "price_usd_max": 5.07,
+        "in_stock": true,
+        "stock_count": 71,
+        "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-098/080-SR",
+      "num": "098",
+      "name": "Yveltal ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "イベルタルex SR M3 098/080",
+        "price_jpy_min": 480,
+        "price_jpy_max": 680,
+        "price_usd_min": 3.12,
+        "price_usd_max": 4.42,
+        "in_stock": true,
+        "stock_count": 74,
+        "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-099/080-SR",
+      "num": "099",
+      "name": "Mega Skarmory ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "メガエアームドex SR M3 099/080",
+        "price_jpy_min": 380,
+        "price_jpy_max": 580,
+        "price_usd_min": 2.47,
+        "price_usd_max": 3.77,
+        "in_stock": true,
+        "stock_count": 47,
+        "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-100/080-SR",
+      "num": "100",
+      "name": "Meowth ex",
+      "rarity": "SR",
+      "torecacamp": {
+        "name": "ニャースex SR M3 100/080",
+        "price_jpy_min": 1780,
+        "price_jpy_max": 2280,
+        "price_usd_min": 11.57,
+        "price_usd_max": 14.82,
+        "in_stock": false,
+        "stock_count": 0,
+        "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-104/080-SAR",
+      "num": "104",
+      "name": "Wondrous Patch",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ワンダーパッチ SR M3 104/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 480,
+        "price_usd_min": 1.82,
+        "price_usd_max": 3.12,
+        "in_stock": true,
+        "stock_count": 133,
+        "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q"
+      },
+      "japan_toreca": {
+        "name": "ワンダーパッチ SR (104/080) [M3]",
+        "price_jpy": 350,
+        "price_usd": 2.28,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 7,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227755-a"
+      }
+    },
+    {
+      "card_id": "M3-105/080-SAR",
+      "num": "105",
+      "name": "Tarragon",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "タラゴン SR M3 105/080",
+        "price_jpy_min": 280,
+        "price_jpy_max": 480,
+        "price_usd_min": 1.82,
+        "price_usd_max": 3.12,
+        "in_stock": true,
+        "stock_count": 186,
+        "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb"
+      },
+      "japan_toreca": {
+        "name": "タラゴン SR (105/080) [M3]",
+        "price_jpy": 450,
+        "price_usd": 2.93,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 2,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227756-a"
+      }
+    },
+    {
+      "card_id": "M3-106/080-SAR",
+      "num": "106",
+      "name": "Naveen",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ピュール SR M3 106/080",
+        "price_jpy_min": 580,
+        "price_jpy_max": 780,
+        "price_usd_min": 3.77,
+        "price_usd_max": 5.07,
+        "in_stock": true,
+        "stock_count": 169,
+        "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm"
+      },
+      "japan_toreca": {
+        "name": "ピュール SR (106/080) [M3]",
+        "price_jpy": 550,
+        "price_usd": 3.58,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 4,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227757-a"
+      }
+    },
+    {
+      "card_id": "M3-107/080-SAR",
+      "num": "107",
+      "name": "Rosa's Encouragement",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "メイのはげまし SR M3 107/080",
+        "price_jpy_min": 2780,
+        "price_jpy_max": 3280,
+        "price_usd_min": 18.07,
+        "price_usd_max": 21.32,
+        "in_stock": true,
+        "stock_count": 86,
+        "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-108/080-SAR",
+      "num": "108",
+      "name": "Jacinthe",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ユカリ SR M3 108/080",
+        "price_jpy_min": 380,
+        "price_jpy_max": 580,
+        "price_usd_min": 2.47,
+        "price_usd_max": 3.77,
+        "in_stock": true,
+        "stock_count": 114,
+        "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi"
+      },
+      "japan_toreca": {
+        "name": "ユカリ SR (108/080) [M3]",
+        "price_jpy": 450,
+        "price_usd": 2.93,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 5,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227759-a"
+      }
+    },
+    {
+      "card_id": "M3-109/080-SAR",
+      "num": "109",
+      "name": "Forest of Vitality",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "活力の森 SR M3 109/080",
+        "price_jpy_min": 180,
+        "price_jpy_max": 280,
+        "price_usd_min": 1.17,
+        "price_usd_max": 1.82,
+        "in_stock": true,
+        "stock_count": 169,
+        "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-110/080-SAR",
+      "num": "110",
+      "name": "Lumiose City",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ミアレシティ SR M3 110/080",
+        "price_jpy_min": 100,
+        "price_jpy_max": 180,
+        "price_usd_min": 0.65,
+        "price_usd_max": 1.17,
+        "in_stock": true,
+        "stock_count": 459,
+        "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe"
+      },
+      "japan_toreca": {
+        "name": "ミアレシティ SR (110/080) [M3]",
+        "price_jpy": 250,
+        "price_usd": 1.63,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 4,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227761-a"
+      }
+    },
+    {
+      "card_id": "M3-111/080-SAR",
+      "num": "111",
+      "name": "Mega Starmie ex",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "メガスターミーex SAR M3 111/080",
+        "price_jpy_min": 4280,
+        "price_jpy_max": 5780,
+        "price_usd_min": 27.82,
+        "price_usd_max": 37.57,
+        "in_stock": true,
+        "stock_count": 40,
+        "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-112/080-SAR",
+      "num": "112",
+      "name": "Mega Clefable ex",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "メガピクシーex SAR M3 112/080",
+        "price_jpy_min": 3280,
+        "price_jpy_max": 3780,
+        "price_usd_min": 21.32,
+        "price_usd_max": 24.57,
+        "in_stock": true,
+        "stock_count": 38,
+        "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-113/080-SAR",
+      "num": "113",
+      "name": "Mega Zygarde ex",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "メガジガルデex SAR M3 113/080",
+        "price_jpy_min": 3480,
+        "price_jpy_max": 4480,
+        "price_usd_min": 22.62,
+        "price_usd_max": 29.12,
+        "in_stock": true,
+        "stock_count": 148,
+        "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-114/080-SAR",
+      "num": "114",
+      "name": "Meowth ex",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ニャースex SAR M3 114/080",
+        "price_jpy_min": 9980,
+        "price_jpy_max": 12800,
+        "price_usd_min": 64.87,
+        "price_usd_max": 83.20,
+        "in_stock": true,
+        "stock_count": 15,
+        "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl"
+      },
+      "japan_toreca": {
+        "status": "not_found_in_search"
+      }
+    },
+    {
+      "card_id": "M3-115/080-SAR",
+      "num": "115",
+      "name": "Rosa's Encouragement",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "メイのはげまし SAR M3 115/080",
+        "price_jpy_min": 17800,
+        "price_jpy_max": 24800,
+        "price_usd_min": 115.70,
+        "price_usd_max": 161.20,
+        "in_stock": true,
+        "stock_count": 55,
+        "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd"
+      },
+      "japan_toreca": {
+        "name": "メイのはげまし SAR (115/080) [M3]",
+        "price_jpy": 24000,
+        "price_usd": 156.00,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 7,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227730-a"
+      }
+    },
+    {
+      "card_id": "M3-116/080-SAR",
+      "num": "116",
+      "name": "Jacinthe",
+      "rarity": "SAR",
+      "torecacamp": {
+        "name": "ユカリ SAR M3 116/080",
+        "price_jpy_min": 1480,
+        "price_jpy_max": 2280,
+        "price_usd_min": 9.62,
+        "price_usd_max": 14.82,
+        "in_stock": true,
+        "stock_count": 183,
+        "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu"
+      },
+      "japan_toreca": {
+        "name": "ユカリ SAR (116/080) [M3]",
+        "price_jpy": 1700,
+        "price_usd": 11.05,
+        "condition": "A",
+        "in_stock": true,
+        "stock_count": 2,
+        "url": "https://shop.japan-toreca.com/products/pokemon-227731-a"
+      }
+    }
+  ],
+  "summary": {
+    "total_cards": 33,
+    "ar_cards": 7,
+    "sr_cards": 13,
+    "sar_cards": 13,
+    "torecacamp_found": 33,
+    "japan_toreca_found": 15,
+    "notes": [
+      "Cards 081-085 are listed as SR in the card list but appear as AR on TorecaCamp website",
+      "Japan-Toreca has fewer M3 cards available compared to TorecaCamp",
+      "TorecaCamp prices are shown as ranges (min-max)",
+      "Japan-Toreca shows single prices with condition grades (A, A-, B)",
+      "Some cards were not found in Japan-Toreca search results"
+    ]
+  }
+}
