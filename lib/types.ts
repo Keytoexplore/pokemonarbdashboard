@@ -8,6 +8,16 @@ export interface JapanesePrice {
   isLowest: boolean;
 }
 
+export interface LastKnownPrice {
+  priceJPY: number;
+  priceUSD: number;
+  quality: string;
+  date: string;
+  inStock: boolean;
+  source: 'japan-toreca' | 'torecacamp';
+  url: string;
+}
+
 export interface TCGPlayerData {
   marketPrice: number;
   sellerCount: number;
@@ -59,6 +69,7 @@ export interface ArbitrageUSData {
   japanPriceUSD: number;
   usMarketPrice: number;
   isViable: boolean;
+  isPotential?: boolean; // True if based on last known price
 }
 
 export interface ArbitrageOpportunity {
@@ -77,6 +88,7 @@ export interface ArbitrageOpportunity {
   lastUpdated: string;
   isViable: boolean;
   imageUrl?: string;
+  lastKnownPrice?: LastKnownPrice | null; // Last known price when all JP sources are out of stock
 }
 
 export interface DashboardData {

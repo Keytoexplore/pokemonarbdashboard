@@ -307,16 +307,23 @@ async function main() {
       p.cardNumber === apiCard.cardNumber && p.rarity === rarity
     );
     
-    // Find lowest
+    // Find lowest in-stock price
     const inStock = matchingPrices.filter(p => p.inStock);
     const lowest = inStock.length > 0 
       ? inStock.reduce((m, p) => p.priceUSD < m.priceUSD ? p : m)
       : matchingPrices[0];
     
-    const japanPriceUSD = lowest ? lowest.priceUSD : 0;
+    // Calculate lastKnownPrice for out-of-stock items
+    let lastKnownPrice = 0;
+    if (inStock.length === 0 && matchingPrices.length > 0) {
+      // All out of stock - use the lowest price as lastKnownPrice
+      lastKnownPrice = matchingPrices.reduce((m, p) => p.priceUSD < m.priceUSD ? p : m).priceUSD;
+    }
+    
+    const japanPriceUSD = lowest ? lowest.priceUSD : lastKnownPrice;
     const usPrice = apiCard.prices?.market || 0;
     
-    // Calculate arbitrage
+    // Calculate arbitrage (use lastKnownPrice if current price unavailable)
     let marginPercent = 0;
     let marginAmount = 0;
     let isViable = false;
@@ -333,7 +340,7 @@ async function main() {
       cardNumber: apiCard.cardNumber,
       rarity,
       set: setCode,
-      japanesePrices: matchingPrices.map(p => ({...p, isLowest: p === lowest})),
+      japanesePrices: matchingPrices.map(p => ({...p, isLowest: p === lowest, lastKnownPrice: !p.inStock ? p.priceUSD : undefined})),
       lowestJapanesePrice: japanPriceUSD,
       usPrice: {
         marketPrice: usPrice,
@@ -355,7 +362,8 @@ async function main() {
       marginPercent,
       marginAmount,
       lastUpdated: new Date().toISOString(),
-      isViable
+      isViable,
+      lastKnownPrice: lastKnownPrice > 0 ? lastKnownPrice : undefined
     };
   });
   
