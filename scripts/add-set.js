@@ -172,28 +172,59 @@ async function scrapeTorecaCamp(setCode, rarity) {
 // Step 3: Scrape Japan-Toreca by set + rarity
 async function scrapeJapanToreca(setCode, rarity) {
   const rarityTerm = rarity === 'AR' ? 'ar' : rarity === 'SR' ? 'sr' : 'sar';
-  const searchUrl = `https://shop.japan-toreca.com/search?q=${setCode.toLowerCase()}+${rarityTerm}`;
+  const baseSearchUrl = `https://shop.japan-toreca.com/search?q=${setCode.toLowerCase()}+${rarityTerm}`;
   
   console.log(`\n🔍 Japan-Toreca: ${setCode} ${rarity}...`);
   
   try {
-    const res = await fetch(searchUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-    const html = await res.text();
+    // Collect products from all pages
+    const allProductUrls = [];
+    let page = 1;
+    let hasMorePages = true;
     
-    if (html.includes('検索結果が見つかりません')) {
-      console.log('  ✗ No results');
-      return [];
+    while (hasMorePages && page <= 10) { // Limit to 10 pages max
+      const pageUrl = page === 1 ? baseSearchUrl : `${baseSearchUrl}&page=${page}`;
+      console.log(`  📄 Fetching page ${page}...`);
+      
+      const res = await fetch(pageUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+      const html = await res.text();
+      
+      if (html.includes('検索結果が見つかりません') || html.includes('検索結果はありません')) {
+        console.log('  ✗ No results');
+        return [];
+      }
+      
+      const productMatches = [...html.matchAll(/href="(\/products\/pokemon-\d+[^"]*)"/g)];
+      const pageUrls = [...new Set(productMatches.map(m => 'https://shop.japan-toreca.com' + m[1]))];
+      
+      if (pageUrls.length === 0) {
+        hasMorePages = false;
+      } else {
+        allProductUrls.push(...pageUrls);
+        
+        // Check if there's a next page link
+        const hasNextPage = html.includes('pagination__next') || 
+                           html.includes('rel="next"') ||
+                           html.match(/page=\d+/) && page < 10;
+        
+        if (!hasNextPage || pageUrls.length < 5) {
+          hasMorePages = false;
+        } else {
+          page++;
+          await delay(1000);
+        }
+      }
     }
     
-    const productMatches = [...html.matchAll(/href="(\/products\/pokemon-\d+[^"]*)"/g)];
-    const uniqueUrls = [...new Set(productMatches.map(m => 'https://shop.japan-toreca.com' + m[1]))];
-    
-    console.log(`  Found ${uniqueUrls.length} products`);
+    // Remove duplicates
+    const uniqueUrls = [...new Set(allProductUrls)];
+    console.log(`  Found ${uniqueUrls.length} products across ${page} page(s)`);
     
     const results = [];
     
-    for (const url of uniqueUrls.slice(0, 25)) {
-      await delay(800);
+    // Process all products (up to 50 to avoid timeouts)
+    for (const url of uniqueUrls.slice(0, 50)) {
+      await delay(600);
       
       try {
         const pRes = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
@@ -230,6 +261,7 @@ async function scrapeJapanToreca(setCode, rarity) {
       } catch (e) {}
     }
     
+    console.log(`  ✓ Scraped ${results.length} prices`);
     return results;
   } catch (e) {
     console.log(`  ✗ Error: ${e.message}`);
