@@ -97,56 +97,86 @@ async function fetchSetFromApi(setCode) {
 async function scrapeTorecaCamp(setCode, rarity) {
   const rarityTerm = rarity === 'AR' ? 'ar' : rarity === 'SR' ? 'sr' : 'sar';
   const searchUrl = `https://torecacamp-pokemon.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=${setCode.toLowerCase()}+${rarityTerm}`;
-  
+
   console.log(`\n🔍 TorecaCamp: ${setCode} ${rarity}...`);
-  
+
   try {
     const res = await fetch(searchUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
     const html = await res.text();
-    
+
     // Extract product URLs
     const productMatches = [...html.matchAll(/href="(\/products\/rc_[^"?]*)/g)];
     const uniqueUrls = [...new Set(productMatches.map(m => 'https://torecacamp-pokemon.com' + m[1]))];
-    
+
     console.log(`  Found ${uniqueUrls.length} products`);
-    
+
     const results = [];
-    
+
     for (const url of uniqueUrls.slice(0, 25)) { // Limit to 25 per rarity
       await delay(800);
-      
+
       try {
         const pRes = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const pHtml = await pRes.text();
-        
+
         // Parse title (handle newlines in title tag)
         const titleMatch = pHtml.match(/<title>([\s\S]*?)<\/title>/);
         const title = titleMatch ? titleMatch[1].trim() : '';
-        
+
         // Extract card info from title
         // Format: "コマタナ AR SV11B 147/086" or "N's Zekrom AR M2a 210/193"
         const cardMatch = title.match(/^(.+?)\s+(AR|SR|SAR)\s+(?:[A-Z0-9]+\s+)?(\d+\/\d+)/);
         if (!cardMatch) continue;
-        
+
         const name = cardMatch[1].trim();
         const cardRarity = cardMatch[2];
         const cardNumber = cardMatch[3];
-        
-        // Get variants
+
+        // Get variants - IMPROVED STOCK DETECTION
         const variantsMatch = pHtml.match(/variants":\s*(\[.*?\])[,;]/);
         if (!variantsMatch) continue;
-        
+
         const variants = JSON.parse(variantsMatch[1]);
+
+        // Check for sold out indicators in the page HTML
+        const hasSoldOutText = pHtml.includes('売り切れ') ||
+                              pHtml.includes('売切れ') ||
+                              pHtml.includes('Sold Out') ||
+                              pHtml.includes('sold out');
+
+        // Check for "在庫なし" (out of stock) in page
+        const hasNoStockText = pHtml.includes('在庫なし') ||
+                               pHtml.includes('在庫数: 0');
+
         const target = variants.find(v => (v.title || v.public_title)?.includes('A-'))
                     || variants.find(v => (v.title || v.public_title)?.includes('状態A'))
                     || variants.find(v => (v.title || v.public_title)?.includes('B'))
                     || variants[0];
-        
+
         if (!target) continue;
-        
+
         const priceJPY = Math.round(target.price / 100);
         const quality = (target.title || target.public_title)?.match(/([AB\-]+)/)?.[1] || 'A';
-        
+
+        // IMPROVED STOCK CHECK: Use multiple signals
+        // 1. Check variant.available field
+        let inStock = target.available !== false && target.available !== 'false';
+
+        // 2. Check inventory_quantity if available
+        if (target.inventory_quantity !== undefined) {
+          inStock = inStock && target.inventory_quantity > 0;
+        }
+
+        // 3. Check HTML for sold out text (backup check)
+        if (hasSoldOutText || hasNoStockText) {
+          inStock = false;
+        }
+
+        // 4. Fallback: if no price is shown, it's out of stock
+        if (!priceJPY || priceJPY === 0) {
+          inStock = false;
+        }
+
         results.push({
           name,
           cardNumber,
@@ -155,13 +185,13 @@ async function scrapeTorecaCamp(setCode, rarity) {
           priceJPY,
           priceUSD: Math.round(priceJPY * JPY_TO_USD * 100) / 100,
           quality,
-          inStock: target.available !== false,
+          inStock,
           url: url + (quality !== 'A' ? `?variant=${target.id}` : '')
         });
-        
+
       } catch (e) {}
     }
-    
+
     return results;
   } catch (e) {
     console.log(`  ✗ Error: ${e.message}`);
