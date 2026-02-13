@@ -21,6 +21,7 @@ export interface USMarketData {
   imageUrl?: string;
   imageCdnUrl?: string;
   cardName?: string;
+  tcgPlayerUrl?: string;
 }
 
 // API Response types based on actual API testing
