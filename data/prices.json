@@ -9,11 +9,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itpqrm9yul95_4ycx?variant=47405017628846",
           "isLowest": true
         }
       ],
@@ -38,7 +38,7 @@
       "marginPercent": 17,
       "marginAmount": 0.31,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M3-094/080-SR",
@@ -49,15 +49,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itcjpqgidreg_gghj?variant=47404908085422",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 0.65,
+      "lowestJapanesePrice": 1.82,
       "usPrice": {
         "marketPrice": 4.95,
         "sellerCount": 6,
@@ -69,14 +69,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674413"
       },
       "arbitrageUS": {
-        "profitAmount": 4.3,
-        "profitPercent": 661.5,
+        "profitAmount": 3.13,
+        "profitPercent": 172,
         "isViable": true,
-        "japanPriceUSD": 0.65,
+        "japanPriceUSD": 1.82,
         "usMarketPrice": 4.95
       },
-      "marginPercent": 661.5,
-      "marginAmount": 4.3,
+      "marginPercent": 172,
+      "marginAmount": 3.13,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -89,12 +89,12 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 580,
-          "priceUSD": 3.77,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi",
-          "isLowest": true
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itfnx7g34mis_ajbi?variant=47404253773998",
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
@@ -103,7 +103,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227759-a",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 2.93,
@@ -138,15 +138,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 580,
-          "priceUSD": 3.77,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb?variant=47404173295790",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 1.82,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 11.34,
         "sellerCount": 3,
@@ -158,14 +158,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674415"
       },
       "arbitrageUS": {
-        "profitAmount": 9.52,
-        "profitPercent": 523.1,
+        "profitAmount": 8.22,
+        "profitPercent": 263,
         "isViable": true,
-        "japanPriceUSD": 1.82,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 11.34
       },
-      "marginPercent": 523.1,
-      "marginAmount": 9.52,
+      "marginPercent": 263,
+      "marginAmount": 8.22,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -178,15 +178,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 580,
-          "priceUSD": 3.77,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo?variant=47404253151406",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 2.47,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 10.86,
         "sellerCount": 3,
@@ -198,14 +198,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674418"
       },
       "arbitrageUS": {
-        "profitAmount": 8.39,
-        "profitPercent": 339.7,
+        "profitAmount": 7.74,
+        "profitPercent": 248,
         "isViable": true,
-        "japanPriceUSD": 2.47,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 10.86
       },
-      "marginPercent": 339.7,
-      "marginAmount": 8.39,
+      "marginPercent": 248,
+      "marginAmount": 7.74,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -227,11 +227,11 @@
         },
         {
           "source": "torecacamp",
-          "priceJPY": 780,
-          "priceUSD": 5.07,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm",
+          "priceJPY": 680,
+          "priceUSD": 4.42,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm?variant=47404923453614",
           "isLowest": false
         }
       ],
@@ -267,15 +267,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 680,
-          "priceUSD": 4.42,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1",
+          "priceJPY": 580,
+          "priceUSD": 3.77,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwcqnr9jjnx_xuy1?variant=47404322062510",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 3.12,
+      "lowestJapanesePrice": 3.77,
       "usPrice": {
         "marketPrice": 12.53,
         "sellerCount": 4,
@@ -287,14 +287,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674417"
       },
       "arbitrageUS": {
-        "profitAmount": 9.41,
-        "profitPercent": 301.6,
+        "profitAmount": 8.76,
+        "profitPercent": 232,
         "isViable": true,
-        "japanPriceUSD": 3.12,
+        "japanPriceUSD": 3.77,
         "usMarketPrice": 12.53
       },
-      "marginPercent": 301.6,
-      "marginAmount": 9.41,
+      "marginPercent": 232,
+      "marginAmount": 8.76,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -307,11 +307,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 580,
-          "priceUSD": 3.77,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f",
+          "priceJPY": 480,
+          "priceUSD": 3.12,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f?variant=47404173623470",
           "isLowest": true
         },
         {
@@ -324,7 +324,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 6.96,
         "sellerCount": 5,
@@ -336,14 +336,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674404"
       },
       "arbitrageUS": {
-        "profitAmount": 3.71,
-        "profitPercent": 114,
+        "profitAmount": 3.84,
+        "profitPercent": 123,
         "isViable": true,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 6.96
       },
-      "marginPercent": 114,
-      "marginAmount": 3.71,
+      "marginPercent": 123,
+      "marginAmount": 3.84,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -356,11 +356,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itihdctn98qk_wnsq?variant=47405045448878",
           "isLowest": true
         }
       ],
@@ -377,12 +377,12 @@
       },
       "arbitrageUS": {
         "profitAmount": 5.1,
-        "profitPercent": 280.2,
+        "profitPercent": 280,
         "isViable": true,
         "japanPriceUSD": 1.82,
         "usMarketPrice": 6.92
       },
-      "marginPercent": 280.2,
+      "marginPercent": 280,
       "marginAmount": 5.1,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
@@ -396,12 +396,12 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 2280,
-          "priceUSD": 14.82,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu",
-          "isLowest": true
+          "priceJPY": 1980,
+          "priceUSD": 12.87,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu?variant=47404905070766",
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
@@ -410,7 +410,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227731-a",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 11.05,
@@ -445,11 +445,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 180,
-          "priceUSD": 1.17,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe",
+          "priceJPY": 100,
+          "priceUSD": 0.65,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it822gt7wb8w_g8qe?variant=47405012025518",
           "isLowest": true
         },
         {
@@ -462,7 +462,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 0.65,
       "usPrice": {
         "marketPrice": 2.23,
         "sellerCount": 19,
@@ -474,14 +474,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674429"
       },
       "arbitrageUS": {
-        "profitAmount": 0.6,
-        "profitPercent": 37,
+        "profitAmount": 1.58,
+        "profitPercent": 243,
         "isViable": true,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 0.65,
         "usMarketPrice": 2.23
       },
-      "marginPercent": 37,
-      "marginAmount": 0.6,
+      "marginPercent": 243,
+      "marginAmount": 1.58,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -494,15 +494,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 780,
-          "priceUSD": 5.07,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw",
+          "priceJPY": 680,
+          "priceUSD": 4.42,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itimtrmvlfyg_e7fw?variant=47404909232302",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 3.77,
+      "lowestJapanesePrice": 4.42,
       "usPrice": {
         "marketPrice": 12.38,
         "sellerCount": 3,
@@ -514,14 +514,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674416"
       },
       "arbitrageUS": {
-        "profitAmount": 8.61,
-        "profitPercent": 228.4,
+        "profitAmount": 7.96,
+        "profitPercent": 180,
         "isViable": true,
-        "japanPriceUSD": 3.77,
+        "japanPriceUSD": 4.42,
         "usMarketPrice": 12.38
       },
-      "marginPercent": 228.4,
-      "marginAmount": 8.61,
+      "marginPercent": 180,
+      "marginAmount": 7.96,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -534,11 +534,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 980,
-          "priceUSD": 6.37,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32",
+          "priceJPY": 880,
+          "priceUSD": 5.72,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32?variant=47404261081262",
           "isLowest": true
         },
         {
@@ -551,7 +551,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 5.85,
+      "lowestJapanesePrice": 5.72,
       "usPrice": {
         "marketPrice": 11.34,
         "sellerCount": 7,
@@ -563,14 +563,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674405"
       },
       "arbitrageUS": {
-        "profitAmount": 5.49,
-        "profitPercent": 94,
+        "profitAmount": 5.62,
+        "profitPercent": 98,
         "isViable": true,
-        "japanPriceUSD": 5.85,
+        "japanPriceUSD": 5.72,
         "usMarketPrice": 11.34
       },
-      "marginPercent": 94,
-      "marginAmount": 5.49,
+      "marginPercent": 98,
+      "marginAmount": 5.62,
       "lastUpdated": "2026-02-13T11:27:20.788Z",
       "isViable": true
     },
@@ -583,15 +583,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 1480,
-          "priceUSD": 9.62,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda",
+          "priceJPY": 1280,
+          "priceUSD": 8.32,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda?variant=47404322652334",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 6.37,
+      "lowestJapanesePrice": 8.32,
       "usPrice": {
         "marketPrice": 18.26,
         "sellerCount": 3,
@@ -603,14 +603,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674414"
       },
       "arbitrageUS": {
-        "profitAmount": 11.89,
-        "profitPercent": 186.7,
+        "profitAmount": 9.94,
+        "profitPercent": 119,
         "isViable": true,
-        "japanPriceUSD": 6.37,
+        "japanPriceUSD": 8.32,
         "usMarketPrice": 18.26
       },
-      "marginPercent": 186.7,
-      "marginAmount": 11.89,
+      "marginPercent": 119,
+      "marginAmount": 9.94,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -623,12 +623,12 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 480,
-          "priceUSD": 3.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q",
-          "isLowest": true
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q?variant=47404176015534",
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
@@ -637,7 +637,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227755-a",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 2.28,
@@ -672,15 +672,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 480,
-          "priceUSD": 3.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itkqzbmlp2oi_buxl?variant=47404907004078",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 1.82,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 4.54,
         "sellerCount": 8,
@@ -692,14 +692,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674412"
       },
       "arbitrageUS": {
-        "profitAmount": 2.72,
-        "profitPercent": 149.5,
+        "profitAmount": 2.07,
+        "profitPercent": 84,
         "isViable": true,
-        "japanPriceUSD": 1.82,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 4.54
       },
-      "marginPercent": 149.5,
-      "marginAmount": 2.72,
+      "marginPercent": 84,
+      "marginAmount": 2.07,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -712,15 +712,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 4480,
-          "priceUSD": 29.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw",
+          "priceJPY": 3980,
+          "priceUSD": 25.87,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7w9hn9b3uk_77xw?variant=47404175589550",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 22.62,
+      "lowestJapanesePrice": 25.87,
       "usPrice": {
         "marketPrice": 53.61,
         "sellerCount": 4,
@@ -732,14 +732,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674432"
       },
       "arbitrageUS": {
-        "profitAmount": 30.99,
-        "profitPercent": 137,
+        "profitAmount": 27.74,
+        "profitPercent": 107,
         "isViable": true,
-        "japanPriceUSD": 22.62,
+        "japanPriceUSD": 25.87,
         "usMarketPrice": 53.61
       },
-      "marginPercent": 137,
-      "marginAmount": 30.99,
+      "marginPercent": 107,
+      "marginAmount": 27.74,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -752,11 +752,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla?variant=47405049151662",
           "isLowest": false
         },
         {
@@ -801,11 +801,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 480,
-          "priceUSD": 3.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb?variant=47404325208238",
           "isLowest": true
         },
         {
@@ -818,7 +818,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 3.85,
         "sellerCount": 3,
@@ -830,14 +830,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674424"
       },
       "arbitrageUS": {
-        "profitAmount": 0.92,
-        "profitPercent": 31,
+        "profitAmount": 1.38,
+        "profitPercent": 56,
         "isViable": true,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 3.85
       },
-      "marginPercent": 31,
-      "marginAmount": 0.92,
+      "marginPercent": 56,
+      "marginAmount": 1.38,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -859,11 +859,11 @@
         },
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k?variant=47405038043310",
           "isLowest": false
         }
       ],
@@ -899,15 +899,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 5780,
-          "priceUSD": 37.57,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv",
+          "priceJPY": 5280,
+          "priceUSD": 34.32,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itajtxdz0tr6_u7pv?variant=47404329009326",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 27.82,
+      "lowestJapanesePrice": 34.32,
       "usPrice": {
         "marketPrice": 52.74,
         "sellerCount": 4,
@@ -919,14 +919,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674430"
       },
       "arbitrageUS": {
-        "profitAmount": 24.92,
-        "profitPercent": 89.6,
+        "profitAmount": 18.42,
+        "profitPercent": 54,
         "isViable": true,
-        "japanPriceUSD": 27.82,
+        "japanPriceUSD": 34.32,
         "usMarketPrice": 52.74
       },
-      "marginPercent": 89.6,
-      "marginAmount": 24.92,
+      "marginPercent": 54,
+      "marginAmount": 18.42,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -939,15 +939,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 3780,
-          "priceUSD": 24.57,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he",
+          "priceJPY": 3480,
+          "priceUSD": 22.62,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he?variant=47404894453934",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 21.32,
+      "lowestJapanesePrice": 22.62,
       "usPrice": {
         "marketPrice": 39.93,
         "sellerCount": 4,
@@ -959,14 +959,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674431"
       },
       "arbitrageUS": {
-        "profitAmount": 18.61,
-        "profitPercent": 87.3,
+        "profitAmount": 17.31,
+        "profitPercent": 77,
         "isViable": true,
-        "japanPriceUSD": 21.32,
+        "japanPriceUSD": 22.62,
         "usMarketPrice": 39.93
       },
-      "marginPercent": 87.3,
-      "marginAmount": 18.61,
+      "marginPercent": 77,
+      "marginAmount": 17.31,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -979,11 +979,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 280,
-          "priceUSD": 1.82,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh",
+          "priceJPY": 180,
+          "priceUSD": 1.17,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it3sp44g22qk_rmzh?variant=47407997780142",
           "isLowest": true
         }
       ],
@@ -1000,12 +1000,12 @@
       },
       "arbitrageUS": {
         "profitAmount": 1,
-        "profitPercent": 85.5,
+        "profitPercent": 85,
         "isViable": true,
         "japanPriceUSD": 1.17,
         "usMarketPrice": 2.17
       },
-      "marginPercent": 85.5,
+      "marginPercent": 85,
       "marginAmount": 1,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
@@ -1019,11 +1019,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 480,
-          "priceUSD": 3.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz",
+          "priceJPY": 380,
+          "priceUSD": 2.47,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itnwe13e8nps_pjoz?variant=47404172214446",
           "isLowest": true
         },
         {
@@ -1036,7 +1036,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 4.39,
         "sellerCount": 3,
@@ -1048,14 +1048,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674401"
       },
       "arbitrageUS": {
-        "profitAmount": 1.14,
-        "profitPercent": 35,
+        "profitAmount": 1.92,
+        "profitPercent": 78,
         "isViable": true,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 4.39
       },
-      "marginPercent": 35,
-      "marginAmount": 1.14,
+      "marginPercent": 78,
+      "marginAmount": 1.92,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -1068,15 +1068,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 3280,
-          "priceUSD": 21.32,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd",
+          "priceJPY": 2980,
+          "priceUSD": 19.37,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itd89l9img6c_jlsd?variant=47404323209390",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 18.07,
+      "lowestJapanesePrice": 19.37,
       "usPrice": {
         "marketPrice": 31.7,
         "sellerCount": 3,
@@ -1088,14 +1088,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674426"
       },
       "arbitrageUS": {
-        "profitAmount": 13.63,
-        "profitPercent": 75.4,
+        "profitAmount": 12.33,
+        "profitPercent": 64,
         "isViable": true,
-        "japanPriceUSD": 18.07,
+        "japanPriceUSD": 19.37,
         "usMarketPrice": 31.7
       },
-      "marginPercent": 75.4,
-      "marginAmount": 13.63,
+      "marginPercent": 64,
+      "marginAmount": 12.33,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -1108,15 +1108,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 2280,
-          "priceUSD": 14.82,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er",
+          "priceJPY": 1980,
+          "priceUSD": 12.87,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er?variant=47404910706862",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 11.57,
+      "lowestJapanesePrice": 12.87,
       "usPrice": {
         "marketPrice": 19.64,
         "sellerCount": 2,
@@ -1128,14 +1128,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674419"
       },
       "arbitrageUS": {
-        "profitAmount": 8.07,
-        "profitPercent": 69.7,
+        "profitAmount": 6.77,
+        "profitPercent": 53,
         "isViable": true,
-        "japanPriceUSD": 11.57,
+        "japanPriceUSD": 12.87,
         "usMarketPrice": 19.64
       },
-      "marginPercent": 69.7,
-      "marginAmount": 8.07,
+      "marginPercent": 53,
+      "marginAmount": 6.77,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -1148,11 +1148,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 24800,
-          "priceUSD": 161.2,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd",
+          "priceJPY": 22800,
+          "priceUSD": 148.2,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it7jmnf6ouve_lktd?variant=47404175818926",
           "isLowest": true
         },
         {
@@ -1165,7 +1165,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 156,
+      "lowestJapanesePrice": 148.2,
       "usPrice": {
         "marketPrice": 194.99,
         "sellerCount": 2,
@@ -1177,14 +1177,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674434"
       },
       "arbitrageUS": {
-        "profitAmount": 38.99,
-        "profitPercent": 25,
+        "profitAmount": 46.79,
+        "profitPercent": 32,
         "isViable": true,
-        "japanPriceUSD": 156,
+        "japanPriceUSD": 148.2,
         "usMarketPrice": 194.99
       },
-      "marginPercent": 25,
-      "marginAmount": 38.99,
+      "marginPercent": 32,
+      "marginAmount": 46.79,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -1197,12 +1197,12 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv",
-          "isLowest": true
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it0eox4aim2d_nrcv?variant=47405065273518",
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
@@ -1211,7 +1211,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227742-a-damaged",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 1.63,
@@ -1246,15 +1246,15 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 12800,
-          "priceUSD": 83.2,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl",
+          "priceJPY": 11800,
+          "priceUSD": 76.7,
+          "quality": "A-",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ithq3asa4cho_t9gl?variant=47404260032686",
           "isLowest": true
         }
       ],
-      "lowestJapanesePrice": 64.87,
+      "lowestJapanesePrice": 76.7,
       "usPrice": {
         "marketPrice": 95.84,
         "sellerCount": 4,
@@ -1266,14 +1266,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/674433"
       },
       "arbitrageUS": {
-        "profitAmount": 30.97,
-        "profitPercent": 47.7,
+        "profitAmount": 19.14,
+        "profitPercent": 25,
         "isViable": true,
-        "japanPriceUSD": 64.87,
+        "japanPriceUSD": 76.7,
         "usMarketPrice": 95.84
       },
-      "marginPercent": 47.7,
-      "marginAmount": 30.97,
+      "marginPercent": 25,
+      "marginAmount": 19.14,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
     },
@@ -1286,11 +1286,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_itvzqxrqrcm0_z5wp?variant=47405034963118",
           "isLowest": true
         }
       ],
@@ -1307,12 +1307,12 @@
       },
       "arbitrageUS": {
         "profitAmount": 0.58,
-        "profitPercent": 31.9,
+        "profitPercent": 32,
         "isViable": true,
         "japanPriceUSD": 1.82,
         "usMarketPrice": 2.4
       },
-      "marginPercent": 31.9,
+      "marginPercent": 32,
       "marginAmount": 0.58,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": true
@@ -1326,12 +1326,12 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl",
-          "isLowest": true
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_iti6bmtmyoz4_bnfl?variant=47405058261166",
+          "isLowest": false
         },
         {
           "source": "japan-toreca",
@@ -1340,7 +1340,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 1.63,
@@ -1384,11 +1384,11 @@
         },
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_ittrojocl9hk_5xks?variant=47405050364078",
           "isLowest": false
         }
       ],
@@ -1424,11 +1424,11 @@
       "japanesePrices": [
         {
           "source": "torecacamp",
-          "priceJPY": 380,
-          "priceUSD": 2.47,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct",
+          "priceJPY": 280,
+          "priceUSD": 1.82,
+          "quality": "B",
+          "inStock": true,
+          "url": "https://torecacamp-pokemon.com/products/rc_it86r6w7rx6o_adct?variant=47404172869806",
           "isLowest": true
         }
       ],
@@ -1445,18 +1445,18 @@
       },
       "arbitrageUS": {
         "profitAmount": -0.35,
-        "profitPercent": -19.2,
+        "profitPercent": -19,
         "isViable": false,
         "japanPriceUSD": 1.82,
         "usMarketPrice": 1.47
       },
-      "marginPercent": -19.2,
+      "marginPercent": -19,
       "marginAmount": -0.35,
       "lastUpdated": "2026-02-13T11:27:20.789Z",
       "isViable": false
     }
   ],
-  "lastUpdated": "2026-02-13T13:45:00.526Z",
+  "lastUpdated": "2026-02-13T14:05:27.392Z",
   "stats": {
     "totalCards": 33,
     "viableOpportunities": 30,
