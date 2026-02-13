@@ -306,10 +306,10 @@ export const baseCardsData: ArbitrageOpportunity[] = [
     "lastUpdated": "2026-02-12T17:53:00Z",
     "isViable": false
   },
-  // SV10 (Battle Partners) Sample Cards
+  // SV10 (The Glory of Team Rocket) Sample Cards
   {
     "id": "SV10-131/098-SR",
-    "name": "Team Rocket's Crobat ex",
+    "name": "ロケット団のクロバットex",
     "cardNumber": "131/098",
     "rarity": "SR",
     "set": "SV10",
@@ -334,7 +334,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "SV10-130/098-SR",
-    "name": "Team Rocket's Mewtwo ex",
+    "name": "ロケット団のミュウツーex",
     "cardNumber": "130/098",
     "rarity": "SR",
     "set": "SV10",
@@ -359,7 +359,7 @@ export const baseCardsData: ArbitrageOpportunity[] = [
   },
   {
     "id": "SV10-125/098-SAR",
-    "name": "Team Rocket's Mewtwo ex SAR",
+    "name": "ロケット団のミュウツーex SAR",
     "cardNumber": "125/098",
     "rarity": "SAR",
     "set": "SV10",

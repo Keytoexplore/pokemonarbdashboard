@@ -142,11 +142,11 @@ export const japaneseSetMappings: Record<string, SetMapping> = {
   },
   'SV10': {
     jpCode: 'SV10',
-    apiSetId: 'sv10',  // battle-partners in English
-    englishName: 'Battle Partners',
-    japaneseName: 'バトルパートナーズ',
+    apiSetId: 'sv10',  // glory-of-team-rocket in English
+    englishName: 'The Glory of Team Rocket',
+    japaneseName: 'ロケット団の栄光',
     releaseDate: '2025',
-    englishEquivalent: 'Journey Together',
+    englishEquivalent: 'Destined Rivals',
   },
   'SV9a': {
     jpCode: 'SV9a',
