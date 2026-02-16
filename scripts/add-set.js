@@ -96,23 +96,52 @@ async function fetchSetFromApi(setCode) {
 // Step 2: Scrape TorecaCamp by set + rarity
 async function scrapeTorecaCamp(setCode, rarity) {
   const rarityTerm = rarity === 'AR' ? 'ar' : rarity === 'SR' ? 'sr' : 'sar';
-  const searchUrl = `https://torecacamp-pokemon.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=${setCode.toLowerCase()}+${rarityTerm}`;
+  const baseUrl = `https://torecacamp-pokemon.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=${setCode.toLowerCase()}+${rarityTerm}`;
 
   console.log(`\n🔍 TorecaCamp: ${setCode} ${rarity}...`);
 
   try {
-    const res = await fetch(searchUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-    const html = await res.text();
+    // Collect products from all pages
+    const allUrls = [];
+    let page = 1;
+    let hasMore = true;
+    
+    while (hasMore && page <= 5) { // Check up to 5 pages
+      const searchUrl = page === 1 ? baseUrl : `${baseUrl}&page=${page}`;
+      const res = await fetch(searchUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+      const html = await res.text();
+      
+      // Check for no results
+      if (html.includes('検索結果が見つかりません') || html.includes('No results')) {
+        hasMore = false;
+        break;
+      }
 
-    // Extract product URLs
-    const productMatches = [...html.matchAll(/href="(\/products\/rc_[^"?]*)/g)];
-    const uniqueUrls = [...new Set(productMatches.map(m => 'https://torecacamp-pokemon.com' + m[1]))];
+      const productMatches = [...html.matchAll(/href="(\/products\/rc_[^"?]*)/g)];
+      const pageUrls = [...new Set(productMatches.map(m => 'https://torecacamp-pokemon.com' + m[1]))];
+      
+      if (pageUrls.length === 0) {
+        hasMore = false;
+      } else {
+        allUrls.push(...pageUrls);
+        
+        // Check if there's a next page
+        const hasNextPage = html.includes('pagination__next') || html.includes('rel="next"');
+        if (!hasNextPage || pageUrls.length < 8) {
+          hasMore = false;
+        } else {
+          page++;
+          await delay(800);
+        }
+      }
+    }
 
-    console.log(`  Found ${uniqueUrls.length} products`);
+    const uniqueUrls = [...new Set(allUrls)];
+    console.log(`  Found ${uniqueUrls.length} products across ${page} page(s)`);
 
     const results = [];
 
-    for (const url of uniqueUrls.slice(0, 25)) { // Limit to 25 per rarity
+    for (const url of uniqueUrls.slice(0, 50)) { // Process up to 50 per rarity
       await delay(800);
 
       try {
