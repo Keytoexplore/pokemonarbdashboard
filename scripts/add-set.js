@@ -139,21 +139,17 @@ async function scrapeTorecaCamp(setCode, rarity) {
           continue;
         }
 
+        // Skip PSA10/graded cards - we only want raw cards
+        if (title.includes('PSA10') || title.includes('PSA 10') || title.includes('BGS') || title.includes('CGC')) {
+          console.log(`    ⚠️ Skipping graded card: ${title.substring(0, 50)}`);
+          continue;
+        }
+
         // Get variants - IMPROVED STOCK DETECTION
         const variantsMatch = pHtml.match(/variants":\s*(\[.*?\])[,;]/);
         if (!variantsMatch) continue;
 
         const variants = JSON.parse(variantsMatch[1]);
-
-        // Check for sold out indicators in the page HTML
-        const hasSoldOutText = pHtml.includes('売り切れ') ||
-                              pHtml.includes('売切れ') ||
-                              pHtml.includes('Sold Out') ||
-                              pHtml.includes('sold out');
-
-        // Check for "在庫なし" (out of stock) in page
-        const hasNoStockText = pHtml.includes('在庫なし') ||
-                               pHtml.includes('在庫数: 0');
 
         const target = variants.find(v => (v.title || v.public_title)?.includes('A-'))
                     || variants.find(v => (v.title || v.public_title)?.includes('状態A'))
@@ -165,7 +161,7 @@ async function scrapeTorecaCamp(setCode, rarity) {
         const priceJPY = Math.round(target.price / 100);
         const quality = (target.title || target.public_title)?.match(/([AB\-]+)/)?.[1] || 'A';
 
-        // IMPROVED STOCK CHECK: Use multiple signals
+        // IMPROVED STOCK CHECK: Use actual UI state, not text search
         // 1. Check variant.available field
         let inStock = target.available !== false && target.available !== 'false';
 
@@ -174,9 +170,10 @@ async function scrapeTorecaCamp(setCode, rarity) {
           inStock = inStock && target.inventory_quantity > 0;
         }
 
-        // 3. Check HTML for sold out text (backup check)
-        if (hasSoldOutText || hasNoStockText) {
-          inStock = false;
+        // 3. Check if add-to-cart button is disabled (most reliable)
+        const addToCartButton = pHtml.match(/<button[^>]*type="submit"[^>]*data-action="add-to-cart"[^>]*>/);
+        if (addToCartButton) {
+          inStock = !addToCartButton[0].includes('disabled');
         }
 
         // 4. Fallback: if no price is shown, it's out of stock

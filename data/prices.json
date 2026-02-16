@@ -2607,7 +2607,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-225003-a?_pos=3&_sid=b7ffb2147&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "カナリィ",
@@ -2619,10 +2619,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-225003-a-damaged?_pos=4&_sid=b7ffb2147&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 33.8,
+      "lowestJapanesePrice": 44.85,
       "usPrice": {
         "marketPrice": 41.15,
         "sellerCount": 30,
@@ -2634,16 +2634,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/665919"
       },
       "arbitrageUS": {
-        "profitAmount": 7.35,
-        "profitPercent": 22,
-        "isViable": true,
-        "japanPriceUSD": 33.8,
+        "profitAmount": -3.7,
+        "profitPercent": -8,
+        "isViable": false,
+        "japanPriceUSD": 44.85,
         "usMarketPrice": 41.15
       },
-      "marginPercent": 22,
-      "marginAmount": 7.35,
+      "marginPercent": -8,
+      "marginAmount": -3.7,
       "lastUpdated": "2026-02-13T17:07:15.845Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M2-247-193-SAR",
@@ -2662,7 +2662,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-225002-a?_pos=19&_sid=b7ffb2147&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "アイリスの闘志",
@@ -2674,10 +2674,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-225002-a-damaged?_pos=25&_sid=b7ffb2147&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 20.15,
+      "lowestJapanesePrice": 24.05,
       "usPrice": {
         "marketPrice": 29.24,
         "sellerCount": 35,
@@ -2689,14 +2689,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/665918"
       },
       "arbitrageUS": {
-        "profitAmount": 9.09,
-        "profitPercent": 45,
+        "profitAmount": 5.19,
+        "profitPercent": 22,
         "isViable": true,
-        "japanPriceUSD": 20.15,
+        "japanPriceUSD": 24.05,
         "usMarketPrice": 29.24
       },
-      "marginPercent": 45,
-      "marginAmount": 9.09,
+      "marginPercent": 22,
+      "marginAmount": 5.19,
       "lastUpdated": "2026-02-13T17:07:15.845Z",
       "isViable": true
     },
@@ -2784,7 +2784,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224999-a?_pos=13&_sid=b7ffb2147&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "キチキギスex",
@@ -2796,10 +2796,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224999-a-damaged?_pos=14&_sid=b7ffb2147&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 20.15,
+      "lowestJapanesePrice": 22.1,
       "usPrice": {
         "marketPrice": 23.84,
         "sellerCount": 37,
@@ -2811,14 +2811,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/665915"
       },
       "arbitrageUS": {
-        "profitAmount": 3.69,
-        "profitPercent": 18,
+        "profitAmount": 1.74,
+        "profitPercent": 8,
         "isViable": false,
-        "japanPriceUSD": 20.15,
+        "japanPriceUSD": 22.1,
         "usMarketPrice": 23.84
       },
-      "marginPercent": 18,
-      "marginAmount": 3.69,
+      "marginPercent": 8,
+      "marginAmount": 1.74,
       "lastUpdated": "2026-02-13T17:07:15.845Z",
       "isViable": false
     },
@@ -2887,7 +2887,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224996-a?_pos=16&_sid=b7ffb2147&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガズルズキンex",
@@ -2899,10 +2899,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224996-a-damaged?_pos=21&_sid=b7ffb2147&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 11.7,
+      "lowestJapanesePrice": 13.65,
       "usPrice": {
         "marketPrice": 19.43,
         "sellerCount": 22,
@@ -2914,14 +2914,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/665912"
       },
       "arbitrageUS": {
-        "profitAmount": 7.73,
-        "profitPercent": 66,
+        "profitAmount": 5.78,
+        "profitPercent": 42,
         "isViable": true,
-        "japanPriceUSD": 11.7,
+        "japanPriceUSD": 13.65,
         "usMarketPrice": 19.43
       },
-      "marginPercent": 66,
-      "marginAmount": 7.73,
+      "marginPercent": 42,
+      "marginAmount": 5.78,
       "lastUpdated": "2026-02-13T17:07:15.845Z",
       "isViable": true
     },
@@ -3186,7 +3186,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224988-a?_pos=18&_sid=b7ffb2147&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガユキメノコex",
@@ -3198,10 +3198,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224988-a-damaged?_pos=23&_sid=b7ffb2147&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 18.85,
+      "lowestJapanesePrice": 21.45,
       "usPrice": {
         "marketPrice": 32.32,
         "sellerCount": 25,
@@ -3213,14 +3213,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/665904"
       },
       "arbitrageUS": {
-        "profitAmount": 13.47,
-        "profitPercent": 71,
+        "profitAmount": 10.87,
+        "profitPercent": 51,
         "isViable": true,
-        "japanPriceUSD": 18.85,
+        "japanPriceUSD": 21.45,
         "usMarketPrice": 32.32
       },
-      "marginPercent": 71,
-      "marginAmount": 13.47,
+      "marginPercent": 51,
+      "marginAmount": 10.87,
       "lastUpdated": "2026-02-13T17:07:15.845Z",
       "isViable": true
     },
@@ -3253,7 +3253,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-224977-a?_pos=10&_sid=6efc18304&_ss=r",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 0.98,
@@ -3964,7 +3964,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221343-a?_pos=7&_sid=ae62049a2&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "リーリエの決心",
@@ -3988,10 +3988,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221343-b?_pos=15&_sid=ae62049a2&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 156,
+      "lowestJapanesePrice": 286,
       "usPrice": {
         "marketPrice": 145.64,
         "sellerCount": 29,
@@ -4003,14 +4003,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647200"
       },
       "arbitrageUS": {
-        "profitAmount": -10.36,
-        "profitPercent": -7,
+        "profitAmount": -140.36,
+        "profitPercent": -49,
         "isViable": false,
-        "japanPriceUSD": 156,
+        "japanPriceUSD": 286,
         "usMarketPrice": 145.64
       },
-      "marginPercent": -7,
-      "marginAmount": -10.36,
+      "marginPercent": -49,
+      "marginAmount": -140.36,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4031,7 +4031,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221342-a?_pos=1&_sid=ae62049a2&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "マチスの取引",
@@ -4043,7 +4043,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221342-b?_pos=9&_sid=ae62049a2&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "マチスの取引",
@@ -4058,7 +4058,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 7.13,
         "sellerCount": 43,
@@ -4070,14 +4070,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647199"
       },
       "arbitrageUS": {
-        "profitAmount": 4.85,
-        "profitPercent": 213,
+        "profitAmount": 3.55,
+        "profitPercent": 99,
         "isViable": true,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 7.13
       },
-      "marginPercent": 213,
-      "marginAmount": 4.85,
+      "marginPercent": 99,
+      "marginAmount": 3.55,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": true
     },
@@ -4098,7 +4098,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220953-a?_pos=2&_sid=ae62049a2&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガアブソルex",
@@ -4122,10 +4122,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220953-b?_pos=11&_sid=ae62049a2&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 13,
+      "lowestJapanesePrice": 22.1,
       "usPrice": {
         "marketPrice": 29.68,
         "sellerCount": 27,
@@ -4137,14 +4137,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647198"
       },
       "arbitrageUS": {
-        "profitAmount": 16.68,
-        "profitPercent": 128,
+        "profitAmount": 7.58,
+        "profitPercent": 34,
         "isViable": true,
-        "japanPriceUSD": 13,
+        "japanPriceUSD": 22.1,
         "usMarketPrice": 29.68
       },
-      "marginPercent": 128,
-      "marginAmount": 16.68,
+      "marginPercent": 34,
+      "marginAmount": 7.58,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": true
     },
@@ -4165,7 +4165,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220952-a?_pos=3&_sid=ae62049a2&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガルカリオex",
@@ -4189,10 +4189,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220952-b?_pos=12&_sid=ae62049a2&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 54.6,
+      "lowestJapanesePrice": 65,
       "usPrice": {
         "marketPrice": 60.99,
         "sellerCount": 32,
@@ -4204,14 +4204,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647197"
       },
       "arbitrageUS": {
-        "profitAmount": 6.39,
-        "profitPercent": 12,
+        "profitAmount": -4.01,
+        "profitPercent": -6,
         "isViable": false,
-        "japanPriceUSD": 54.6,
+        "japanPriceUSD": 65,
         "usMarketPrice": 60.99
       },
-      "marginPercent": 12,
-      "marginAmount": 6.39,
+      "marginPercent": -6,
+      "marginAmount": -4.01,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4232,7 +4232,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220951-a-damaged?_pos=6&_sid=ae62049a2&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガフシギバナex",
@@ -4244,7 +4244,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220951-b?_pos=13&_sid=ae62049a2&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "メガフシギバナex",
@@ -4259,7 +4259,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 29.25,
+      "lowestJapanesePrice": 37.05,
       "usPrice": {
         "marketPrice": 56.96,
         "sellerCount": 26,
@@ -4271,14 +4271,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647196"
       },
       "arbitrageUS": {
-        "profitAmount": 27.71,
-        "profitPercent": 95,
+        "profitAmount": 19.91,
+        "profitPercent": 54,
         "isViable": true,
-        "japanPriceUSD": 29.25,
+        "japanPriceUSD": 37.05,
         "usMarketPrice": 56.96
       },
-      "marginPercent": 95,
-      "marginAmount": 27.71,
+      "marginPercent": 54,
+      "marginAmount": 19.91,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": true
     },
@@ -4299,7 +4299,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220950-a?_pos=19&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "リーリエの決心",
@@ -4311,10 +4311,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220950-a-damaged?_pos=20&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 65,
+      "lowestJapanesePrice": 71.5,
       "usPrice": {
         "marketPrice": 28.13,
         "sellerCount": 50,
@@ -4326,14 +4326,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647195"
       },
       "arbitrageUS": {
-        "profitAmount": -36.87,
-        "profitPercent": -57,
+        "profitAmount": -43.37,
+        "profitPercent": -61,
         "isViable": false,
-        "japanPriceUSD": 65,
+        "japanPriceUSD": 71.5,
         "usMarketPrice": 28.13
       },
-      "marginPercent": -57,
-      "marginAmount": -36.87,
+      "marginPercent": -61,
+      "marginAmount": -43.37,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4354,7 +4354,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220949-a?_pos=4&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "マチスの取引",
@@ -4366,10 +4366,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220949-b?_pos=25&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 0.98,
+      "lowestJapanesePrice": 2.28,
       "usPrice": {
         "marketPrice": 1.55,
         "sellerCount": 66,
@@ -4381,16 +4381,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647194"
       },
       "arbitrageUS": {
-        "profitAmount": 0.57,
-        "profitPercent": 58,
-        "isViable": true,
-        "japanPriceUSD": 0.98,
+        "profitAmount": -0.73,
+        "profitPercent": -32,
+        "isViable": false,
+        "japanPriceUSD": 2.28,
         "usMarketPrice": 1.55
       },
-      "marginPercent": 58,
-      "marginAmount": 0.57,
+      "marginPercent": -32,
+      "marginAmount": -0.73,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1L-084-063-SR",
@@ -4409,7 +4409,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220948-a?_pos=1&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ふうせん",
@@ -4421,7 +4421,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220948-b?_pos=21&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ふうせん",
@@ -4436,7 +4436,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.3,
+      "lowestJapanesePrice": 2.28,
       "usPrice": {
         "marketPrice": 0.57,
         "sellerCount": 0,
@@ -4448,14 +4448,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647193"
       },
       "arbitrageUS": {
-        "profitAmount": -0.73,
-        "profitPercent": -56,
+        "profitAmount": -1.71,
+        "profitPercent": -75,
         "isViable": false,
-        "japanPriceUSD": 1.3,
+        "japanPriceUSD": 2.28,
         "usMarketPrice": 0.57
       },
-      "marginPercent": -56,
-      "marginAmount": -0.73,
+      "marginPercent": -75,
+      "marginAmount": -1.71,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4476,7 +4476,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220947-a?_pos=2&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "夜のタンカ",
@@ -4488,10 +4488,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220947-b?_pos=23&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.53,
         "sellerCount": 0,
@@ -4503,14 +4503,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647192"
       },
       "arbitrageUS": {
-        "profitAmount": -1.75,
-        "profitPercent": -77,
+        "profitAmount": -3.05,
+        "profitPercent": -85,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.53
       },
-      "marginPercent": -77,
-      "marginAmount": -1.75,
+      "marginPercent": -85,
+      "marginAmount": -3.05,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4531,7 +4531,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220946-a?_pos=3&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ファイトゴング",
@@ -4555,10 +4555,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220946-b?_pos=24&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.46,
         "sellerCount": 0,
@@ -4570,14 +4570,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647191"
       },
       "arbitrageUS": {
-        "profitAmount": -1.82,
-        "profitPercent": -80,
+        "profitAmount": -3.12,
+        "profitPercent": -87,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.46
       },
-      "marginPercent": -80,
-      "marginAmount": -1.82,
+      "marginPercent": -87,
+      "marginAmount": -3.12,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4598,7 +4598,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220945-a?_pos=9&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "パワープロテイン",
@@ -4610,10 +4610,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220945-a-damaged?_pos=16&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.39,
         "sellerCount": 0,
@@ -4625,14 +4625,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647190"
       },
       "arbitrageUS": {
-        "profitAmount": -2.86,
-        "profitPercent": -88,
+        "profitAmount": -3.19,
+        "profitPercent": -89,
         "isViable": false,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.39
       },
-      "marginPercent": -88,
-      "marginAmount": -2.86,
+      "marginPercent": -89,
+      "marginAmount": -3.19,
       "lastUpdated": "2026-02-13T19:08:25.195Z",
       "isViable": false
     },
@@ -4830,7 +4830,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220941-a?_pos=11&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガバクーダex",
@@ -4842,10 +4842,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220941-a-damaged?_pos=15&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 2.5,
         "sellerCount": 72,
@@ -4857,14 +4857,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647186"
       },
       "arbitrageUS": {
-        "profitAmount": 0.22,
-        "profitPercent": 10,
+        "profitAmount": -0.43,
+        "profitPercent": -15,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 2.5
       },
-      "marginPercent": 10,
-      "marginAmount": 0.22,
+      "marginPercent": -15,
+      "marginAmount": -0.43,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
       "isViable": false
     },
@@ -4885,7 +4885,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220940-a?_pos=17&_sid=0469a6561&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガフシギバナex",
@@ -4897,10 +4897,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220940-a-damaged?_pos=18&_sid=0469a6561&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 5.85,
+      "lowestJapanesePrice": 7.15,
       "usPrice": {
         "marketPrice": 8.2,
         "sellerCount": 60,
@@ -4912,16 +4912,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647185"
       },
       "arbitrageUS": {
-        "profitAmount": 2.35,
-        "profitPercent": 40,
-        "isViable": true,
-        "japanPriceUSD": 5.85,
+        "profitAmount": 1.05,
+        "profitPercent": 15,
+        "isViable": false,
+        "japanPriceUSD": 7.15,
         "usMarketPrice": 8.2
       },
-      "marginPercent": 40,
-      "marginAmount": 2.35,
+      "marginPercent": 15,
+      "marginAmount": 1.05,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1L-075-063-AR",
@@ -4995,7 +4995,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220938-a?_pos=11&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "オニスズメ",
@@ -5007,10 +5007,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220938-a-damaged?_pos=16&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.95,
         "sellerCount": 118,
@@ -5022,14 +5022,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647183"
       },
       "arbitrageUS": {
-        "profitAmount": 0.32,
-        "profitPercent": 20,
+        "profitAmount": -0.98,
+        "profitPercent": -33,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.95
       },
-      "marginPercent": 20,
-      "marginAmount": 0.32,
+      "marginPercent": -33,
+      "marginAmount": -0.98,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
       "isViable": false
     },
@@ -5160,7 +5160,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220935-a?_pos=5&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ミカルゲ",
@@ -5172,10 +5172,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220935-a-damaged?_pos=9&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 1.4,
         "sellerCount": 120,
@@ -5187,14 +5187,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647180"
       },
       "arbitrageUS": {
-        "profitAmount": -2.18,
-        "profitPercent": -61,
+        "profitAmount": -2.5,
+        "profitPercent": -64,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 1.4
       },
-      "marginPercent": -61,
-      "marginAmount": -2.18,
+      "marginPercent": -64,
+      "marginAmount": -2.5,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
       "isViable": false
     },
@@ -5215,7 +5215,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220934-a?_pos=21&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "キョジオーン",
@@ -5227,10 +5227,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220934-a-damaged?_pos=23&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.87,
         "sellerCount": 121,
@@ -5242,14 +5242,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647179"
       },
       "arbitrageUS": {
-        "profitAmount": -2.06,
-        "profitPercent": -70,
+        "profitAmount": -2.71,
+        "profitPercent": -76,
         "isViable": false,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.87
       },
-      "marginPercent": -70,
-      "marginAmount": -2.06,
+      "marginPercent": -76,
+      "marginAmount": -2.71,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
       "isViable": false
     },
@@ -5337,7 +5337,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220932-a?_pos=1&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "リオル",
@@ -5361,10 +5361,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220932-b?_pos=25&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 2.89,
         "sellerCount": 95,
@@ -5376,16 +5376,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647177"
       },
       "arbitrageUS": {
-        "profitAmount": 0.94,
-        "profitPercent": 48,
-        "isViable": true,
-        "japanPriceUSD": 1.95,
+        "profitAmount": -0.69,
+        "profitPercent": -19,
+        "isViable": false,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 2.89
       },
-      "marginPercent": 48,
-      "marginAmount": 0.94,
+      "marginPercent": -19,
+      "marginAmount": -0.69,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1L-067-063-AR",
@@ -5404,7 +5404,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220931-a?_pos=2&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロコン",
@@ -5416,10 +5416,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220931-a-damaged?_pos=4&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 4.07,
         "sellerCount": 77,
@@ -5431,14 +5431,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647176"
       },
       "arbitrageUS": {
-        "profitAmount": 0.49,
-        "profitPercent": 14,
+        "profitAmount": 0.17,
+        "profitPercent": 4,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 4.07
       },
-      "marginPercent": 14,
-      "marginAmount": 0.49,
+      "marginPercent": 4,
+      "marginAmount": 0.17,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
       "isViable": false
     },
@@ -5502,7 +5502,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220929-a?_pos=13&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "フシギソウ",
@@ -5514,10 +5514,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220929-a-damaged?_pos=18&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 4.22,
+      "lowestJapanesePrice": 5.2,
       "usPrice": {
         "marketPrice": 5.91,
         "sellerCount": 90,
@@ -5529,16 +5529,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647174"
       },
       "arbitrageUS": {
-        "profitAmount": 1.69,
-        "profitPercent": 40,
-        "isViable": true,
-        "japanPriceUSD": 4.22,
+        "profitAmount": 0.71,
+        "profitPercent": 14,
+        "isViable": false,
+        "japanPriceUSD": 5.2,
         "usMarketPrice": 5.91
       },
-      "marginPercent": 40,
-      "marginAmount": 1.69,
+      "marginPercent": 14,
+      "marginAmount": 0.71,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1L-064-063-AR",
@@ -5557,7 +5557,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220928-a?_pos=14&_sid=5f79bb8e7&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "フシギダネ",
@@ -5569,10 +5569,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-220928-a-damaged?_pos=19&_sid=5f79bb8e7&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 5.85,
+      "lowestJapanesePrice": 7.15,
       "usPrice": {
         "marketPrice": 8.4,
         "sellerCount": 87,
@@ -5584,16 +5584,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647173"
       },
       "arbitrageUS": {
-        "profitAmount": 2.55,
-        "profitPercent": 44,
-        "isViable": true,
-        "japanPriceUSD": 5.85,
+        "profitAmount": 1.25,
+        "profitPercent": 17,
+        "isViable": false,
+        "japanPriceUSD": 7.15,
         "usMarketPrice": 8.4
       },
-      "marginPercent": 44,
-      "marginAmount": 2.55,
+      "marginPercent": 17,
+      "marginAmount": 1.25,
       "lastUpdated": "2026-02-13T19:08:25.196Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1S-091-063-SAR",
@@ -5612,7 +5612,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221346-a?_pos=2&_sid=abb00ccae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ミツルの思いやり",
@@ -5636,10 +5636,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221346-b?_pos=11&_sid=abb00ccae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 9.75,
+      "lowestJapanesePrice": 11.7,
       "usPrice": {
         "marketPrice": 9.68,
         "sellerCount": 34,
@@ -5651,14 +5651,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647223"
       },
       "arbitrageUS": {
-        "profitAmount": -0.07,
-        "profitPercent": -1,
+        "profitAmount": -2.02,
+        "profitPercent": -17,
         "isViable": false,
-        "japanPriceUSD": 9.75,
+        "japanPriceUSD": 11.7,
         "usMarketPrice": 9.68
       },
-      "marginPercent": -1,
-      "marginAmount": -0.07,
+      "marginPercent": -17,
+      "marginAmount": -2.02,
       "lastUpdated": "2026-02-13T19:11:11.239Z",
       "isViable": false
     },
@@ -5679,7 +5679,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221345-a?_pos=7&_sid=abb00ccae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "アセロラのいたずら",
@@ -5703,10 +5703,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221345-b?_pos=14&_sid=abb00ccae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 27.3,
+      "lowestJapanesePrice": 59.8,
       "usPrice": {
         "marketPrice": 32.5,
         "sellerCount": 32,
@@ -5718,14 +5718,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647237"
       },
       "arbitrageUS": {
-        "profitAmount": 5.2,
-        "profitPercent": 19,
+        "profitAmount": -27.3,
+        "profitPercent": -46,
         "isViable": false,
-        "japanPriceUSD": 27.3,
+        "japanPriceUSD": 59.8,
         "usMarketPrice": 32.5
       },
-      "marginPercent": 19,
-      "marginAmount": 5.2,
+      "marginPercent": -46,
+      "marginAmount": -27.3,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -5746,7 +5746,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221042-a?_pos=1&_sid=abb00ccae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガガルーラex",
@@ -5770,10 +5770,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221042-b?_pos=10&_sid=abb00ccae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 16.9,
+      "lowestJapanesePrice": 33.8,
       "usPrice": {
         "marketPrice": 29.89,
         "sellerCount": 33,
@@ -5785,16 +5785,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647240"
       },
       "arbitrageUS": {
-        "profitAmount": 12.99,
-        "profitPercent": 77,
-        "isViable": true,
-        "japanPriceUSD": 16.9,
+        "profitAmount": -3.91,
+        "profitPercent": -12,
+        "isViable": false,
+        "japanPriceUSD": 33.8,
         "usMarketPrice": 29.89
       },
-      "marginPercent": 77,
-      "marginAmount": 12.99,
+      "marginPercent": -12,
+      "marginAmount": -3.91,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1S-088-063-SAR",
@@ -5813,7 +5813,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221041-a?_pos=4&_sid=abb00ccae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガラティアスex",
@@ -5837,10 +5837,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221041-b?_pos=12&_sid=abb00ccae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 26,
+      "lowestJapanesePrice": 37.05,
       "usPrice": {
         "marketPrice": 45.27,
         "sellerCount": 33,
@@ -5852,14 +5852,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647217"
       },
       "arbitrageUS": {
-        "profitAmount": 19.27,
-        "profitPercent": 74,
+        "profitAmount": 8.22,
+        "profitPercent": 22,
         "isViable": true,
-        "japanPriceUSD": 26,
+        "japanPriceUSD": 37.05,
         "usMarketPrice": 45.27
       },
-      "marginPercent": 74,
-      "marginAmount": 19.27,
+      "marginPercent": 22,
+      "marginAmount": 8.22,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": true
     },
@@ -5880,7 +5880,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221040-a?_pos=5&_sid=abb00ccae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガサーナイトex",
@@ -5892,7 +5892,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221040-b?_pos=13&_sid=abb00ccae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "メガサーナイトex",
@@ -5907,7 +5907,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 78,
+      "lowestJapanesePrice": 117,
       "usPrice": {
         "marketPrice": 122.04,
         "sellerCount": 21,
@@ -5919,16 +5919,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647206"
       },
       "arbitrageUS": {
-        "profitAmount": 44.04,
-        "profitPercent": 56,
-        "isViable": true,
-        "japanPriceUSD": 78,
+        "profitAmount": 5.04,
+        "profitPercent": 4,
+        "isViable": false,
+        "japanPriceUSD": 117,
         "usMarketPrice": 122.04
       },
-      "marginPercent": 56,
-      "marginAmount": 44.04,
+      "marginPercent": 4,
+      "marginAmount": 5.04,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1S-086-063-SR",
@@ -5947,7 +5947,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221039-a?_pos=6&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ミステリーガーデン",
@@ -5971,10 +5971,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221039-b?_pos=25&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 0.98,
+      "lowestJapanesePrice": 2.28,
       "usPrice": {
         "marketPrice": 0.49,
         "sellerCount": 0,
@@ -5986,14 +5986,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647225"
       },
       "arbitrageUS": {
-        "profitAmount": -0.49,
-        "profitPercent": -50,
+        "profitAmount": -1.79,
+        "profitPercent": -79,
         "isViable": false,
-        "japanPriceUSD": 0.98,
+        "japanPriceUSD": 2.28,
         "usMarketPrice": 0.49
       },
-      "marginPercent": -50,
-      "marginAmount": -0.49,
+      "marginPercent": -79,
+      "marginAmount": -1.79,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6112,7 +6112,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221036-a?_pos=1&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガシグナル",
@@ -6124,7 +6124,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221036-b?_pos=21&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "メガシグナル",
@@ -6139,7 +6139,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.3,
+      "lowestJapanesePrice": 2.28,
       "usPrice": {
         "marketPrice": 0.44,
         "sellerCount": 0,
@@ -6151,14 +6151,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647220"
       },
       "arbitrageUS": {
-        "profitAmount": -0.86,
-        "profitPercent": -66,
+        "profitAmount": -1.84,
+        "profitPercent": -81,
         "isViable": false,
-        "japanPriceUSD": 1.3,
+        "japanPriceUSD": 2.28,
         "usMarketPrice": 0.44
       },
-      "marginPercent": -66,
-      "marginAmount": -0.86,
+      "marginPercent": -81,
+      "marginAmount": -1.84,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6179,7 +6179,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221035-a?_pos=2&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ふしぎなアメ",
@@ -6203,10 +6203,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221035-b?_pos=23&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.62,
         "sellerCount": 0,
@@ -6218,14 +6218,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647202"
       },
       "arbitrageUS": {
-        "profitAmount": -1.66,
-        "profitPercent": -73,
+        "profitAmount": -2.96,
+        "profitPercent": -83,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.62
       },
-      "marginPercent": -73,
-      "marginAmount": -1.66,
+      "marginPercent": -83,
+      "marginAmount": -2.96,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6246,7 +6246,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221034-a?_pos=18&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "なかよしポフィン",
@@ -6258,10 +6258,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221034-a-damaged?_pos=19&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 0.67,
         "sellerCount": 0,
@@ -6273,14 +6273,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647203"
       },
       "arbitrageUS": {
-        "profitAmount": -2.91,
-        "profitPercent": -81,
+        "profitAmount": -3.23,
+        "profitPercent": -83,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 0.67
       },
-      "marginPercent": -81,
-      "marginAmount": -2.91,
+      "marginPercent": -83,
+      "marginAmount": -3.23,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6301,7 +6301,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221033-a?_pos=3&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガガルーラex",
@@ -6325,10 +6325,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221033-b?_pos=24&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 4.55,
       "usPrice": {
         "marketPrice": 4.61,
         "sellerCount": 75,
@@ -6340,16 +6340,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647239"
       },
       "arbitrageUS": {
-        "profitAmount": 1.68,
-        "profitPercent": 57,
-        "isViable": true,
-        "japanPriceUSD": 2.93,
+        "profitAmount": 0.06,
+        "profitPercent": 1,
+        "isViable": false,
+        "japanPriceUSD": 4.55,
         "usMarketPrice": 4.61
       },
-      "marginPercent": 57,
-      "marginAmount": 1.68,
+      "marginPercent": 1,
+      "marginAmount": 0.06,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1S-079-063-SR",
@@ -6368,7 +6368,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221032-a?_pos=7&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガラティアスex",
@@ -6380,10 +6380,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221032-a-damaged?_pos=11&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.9,
+      "lowestJapanesePrice": 4.55,
       "usPrice": {
         "marketPrice": 4.77,
         "sellerCount": 71,
@@ -6395,16 +6395,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647216"
       },
       "arbitrageUS": {
-        "profitAmount": 0.87,
-        "profitPercent": 22,
-        "isViable": true,
-        "japanPriceUSD": 3.9,
+        "profitAmount": 0.22,
+        "profitPercent": 5,
+        "isViable": false,
+        "japanPriceUSD": 4.55,
         "usMarketPrice": 4.77
       },
-      "marginPercent": 22,
-      "marginAmount": 0.87,
+      "marginPercent": 5,
+      "marginAmount": 0.22,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "M1S-078-063-SR",
@@ -6423,7 +6423,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221031-a?_pos=8&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガサーナイトex",
@@ -6435,10 +6435,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221031-a-damaged?_pos=12&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 5.53,
+      "lowestJapanesePrice": 6.5,
       "usPrice": {
         "marketPrice": 5.22,
         "sellerCount": 86,
@@ -6450,14 +6450,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647205"
       },
       "arbitrageUS": {
-        "profitAmount": -0.31,
-        "profitPercent": -6,
+        "profitAmount": -1.28,
+        "profitPercent": -20,
         "isViable": false,
-        "japanPriceUSD": 5.53,
+        "japanPriceUSD": 6.5,
         "usMarketPrice": 5.22
       },
-      "marginPercent": -6,
-      "marginAmount": -0.31,
+      "marginPercent": -20,
+      "marginAmount": -1.28,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6478,7 +6478,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221030-a?_pos=9&_sid=865e744ae&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メガライボルトex",
@@ -6490,10 +6490,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221030-a-damaged?_pos=13&_sid=865e744ae&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 1.93,
         "sellerCount": 93,
@@ -6505,14 +6505,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647251"
       },
       "arbitrageUS": {
-        "profitAmount": -1.65,
-        "profitPercent": -46,
+        "profitAmount": -1.97,
+        "profitPercent": -51,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 1.93
       },
-      "marginPercent": -46,
-      "marginAmount": -1.65,
+      "marginPercent": -51,
+      "marginAmount": -1.97,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6576,7 +6576,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221028-a?_pos=4&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ヌイコグマ",
@@ -6588,10 +6588,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221028-a-damaged?_pos=12&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 2.29,
         "sellerCount": 105,
@@ -6603,14 +6603,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647292"
       },
       "arbitrageUS": {
-        "profitAmount": -0.64,
-        "profitPercent": -22,
+        "profitAmount": -1.29,
+        "profitPercent": -36,
         "isViable": false,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 2.29
       },
-      "marginPercent": -22,
-      "marginAmount": -0.64,
+      "marginPercent": -36,
+      "marginAmount": -1.29,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6698,7 +6698,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221026-a?_pos=6&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ハカドッグ",
@@ -6710,10 +6710,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221026-a-damaged?_pos=13&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.28,
         "sellerCount": 134,
@@ -6725,14 +6725,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647288"
       },
       "arbitrageUS": {
-        "profitAmount": -0.35,
-        "profitPercent": -21,
+        "profitAmount": -1.65,
+        "profitPercent": -56,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.28
       },
-      "marginPercent": -21,
-      "marginAmount": -0.35,
+      "marginPercent": -56,
+      "marginAmount": -1.65,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6753,7 +6753,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221025-a?_pos=1&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ヌケニン",
@@ -6765,10 +6765,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221025-a-damaged?_pos=3&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.59,
         "sellerCount": 121,
@@ -6780,14 +6780,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647230"
       },
       "arbitrageUS": {
-        "profitAmount": -0.04,
-        "profitPercent": -2,
+        "profitAmount": -1.34,
+        "profitPercent": -46,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.59
       },
-      "marginPercent": -2,
-      "marginAmount": -0.04,
+      "marginPercent": -46,
+      "marginAmount": -1.34,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6851,7 +6851,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221023-a?_pos=7&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "エリキテル",
@@ -6863,10 +6863,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221023-a-damaged?_pos=14&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.87,
         "sellerCount": 139,
@@ -6878,14 +6878,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647282"
       },
       "arbitrageUS": {
-        "profitAmount": 0.24,
-        "profitPercent": 15,
+        "profitAmount": -1.06,
+        "profitPercent": -36,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.87
       },
-      "marginPercent": 15,
-      "marginAmount": 0.24,
+      "marginPercent": -36,
+      "marginAmount": -1.06,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6906,7 +6906,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221022-a?_pos=18&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "インテレオン",
@@ -6918,10 +6918,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221022-a-damaged?_pos=19&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.2,
         "sellerCount": 158,
@@ -6933,14 +6933,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647211"
       },
       "arbitrageUS": {
-        "profitAmount": -0.43,
-        "profitPercent": -26,
+        "profitAmount": -1.73,
+        "profitPercent": -59,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.2
       },
-      "marginPercent": -26,
-      "marginAmount": -0.43,
+      "marginPercent": -59,
+      "marginAmount": -1.73,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -6961,7 +6961,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221021-a?_pos=8&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ブロスター",
@@ -6973,10 +6973,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221021-a-damaged?_pos=15&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.23,
         "sellerCount": 139,
@@ -6988,14 +6988,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647274"
       },
       "arbitrageUS": {
-        "profitAmount": -0.4,
-        "profitPercent": -25,
+        "profitAmount": -1.7,
+        "profitPercent": -58,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.23
       },
-      "marginPercent": -25,
-      "marginAmount": -0.4,
+      "marginPercent": -58,
+      "marginAmount": -1.7,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -7016,7 +7016,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221020-a?_pos=9&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ユキカブリ",
@@ -7028,10 +7028,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221020-a-damaged?_pos=16&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.15,
         "sellerCount": 117,
@@ -7043,14 +7043,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647246"
       },
       "arbitrageUS": {
-        "profitAmount": -0.48,
-        "profitPercent": -29,
+        "profitAmount": -1.78,
+        "profitPercent": -61,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.15
       },
-      "marginPercent": -29,
-      "marginAmount": -0.48,
+      "marginPercent": -61,
+      "marginAmount": -1.78,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -7071,7 +7071,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221019-a?_pos=20&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "シシコ",
@@ -7083,10 +7083,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221019-a-damaged?_pos=22&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.66,
         "sellerCount": 135,
@@ -7098,14 +7098,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647264"
       },
       "arbitrageUS": {
-        "profitAmount": 0.03,
-        "profitPercent": 2,
+        "profitAmount": -1.27,
+        "profitPercent": -43,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.66
       },
-      "marginPercent": 2,
-      "marginAmount": 0.03,
+      "marginPercent": -43,
+      "marginAmount": -1.27,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -7150,7 +7150,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221018-a?_pos=10&_sid=87843c99f&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "テッカニン",
@@ -7162,10 +7162,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-221018-a-damaged?_pos=11&_sid=87843c99f&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.68,
         "sellerCount": 126,
@@ -7177,14 +7177,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/647228"
       },
       "arbitrageUS": {
-        "profitAmount": 0.05,
-        "profitPercent": 3,
+        "profitAmount": -1.25,
+        "profitPercent": -43,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.68
       },
-      "marginPercent": 3,
-      "marginAmount": 0.05,
+      "marginPercent": -43,
+      "marginAmount": -1.25,
       "lastUpdated": "2026-02-13T19:11:11.240Z",
       "isViable": false
     },
@@ -7296,7 +7296,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215694-a?_pos=1&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "トウコ",
@@ -7308,7 +7308,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215694-b?_pos=8&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "トウコ",
@@ -7323,7 +7323,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 27.3,
+      "lowestJapanesePrice": 57.85,
       "usPrice": {
         "marketPrice": 48.84,
         "sellerCount": 36,
@@ -7335,16 +7335,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636726"
       },
       "arbitrageUS": {
-        "profitAmount": 21.54,
-        "profitPercent": 79,
-        "isViable": true,
-        "japanPriceUSD": 27.3,
+        "profitAmount": -9.01,
+        "profitPercent": -16,
+        "isViable": false,
+        "japanPriceUSD": 57.85,
         "usMarketPrice": 48.84
       },
-      "marginPercent": 79,
-      "marginAmount": 21.54,
+      "marginPercent": -16,
+      "marginAmount": -9.01,
       "lastUpdated": "2026-02-13T19:16:47.774Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV11W-172-086-SAR",
@@ -7363,7 +7363,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215693-a?_pos=7&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "バッフロンex",
@@ -7375,10 +7375,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215693-a-damaged?_pos=12&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 6.5,
+      "lowestJapanesePrice": 7.15,
       "usPrice": {
         "marketPrice": 10.65,
         "sellerCount": 26,
@@ -7390,14 +7390,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636725"
       },
       "arbitrageUS": {
-        "profitAmount": 4.15,
-        "profitPercent": 64,
+        "profitAmount": 3.5,
+        "profitPercent": 49,
         "isViable": true,
-        "japanPriceUSD": 6.5,
+        "japanPriceUSD": 7.15,
         "usMarketPrice": 10.65
       },
-      "marginPercent": 64,
-      "marginAmount": 4.15,
+      "marginPercent": 49,
+      "marginAmount": 3.5,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -7418,7 +7418,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215692-a?_pos=4&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "サザンドラex",
@@ -7430,10 +7430,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215692-a-damaged?_pos=13&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 24.05,
+      "lowestJapanesePrice": 27.3,
       "usPrice": {
         "marketPrice": 39.4,
         "sellerCount": 8,
@@ -7445,14 +7445,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636724"
       },
       "arbitrageUS": {
-        "profitAmount": 15.35,
-        "profitPercent": 64,
+        "profitAmount": 12.1,
+        "profitPercent": 44,
         "isViable": true,
-        "japanPriceUSD": 24.05,
+        "japanPriceUSD": 27.3,
         "usMarketPrice": 39.4
       },
-      "marginPercent": 64,
-      "marginAmount": 15.35,
+      "marginPercent": 44,
+      "marginAmount": 12.1,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -7473,7 +7473,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215691-a?_pos=5&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ブルンゲルex",
@@ -7485,10 +7485,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215691-a-damaged?_pos=14&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 14.95,
+      "lowestJapanesePrice": 15.6,
       "usPrice": {
         "marketPrice": 16.15,
         "sellerCount": 18,
@@ -7500,14 +7500,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636723"
       },
       "arbitrageUS": {
-        "profitAmount": 1.2,
-        "profitPercent": 8,
+        "profitAmount": 0.55,
+        "profitPercent": 4,
         "isViable": false,
-        "japanPriceUSD": 14.95,
+        "japanPriceUSD": 15.6,
         "usMarketPrice": 16.15
       },
-      "marginPercent": 8,
-      "marginAmount": 1.2,
+      "marginPercent": 4,
+      "marginAmount": 0.55,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -7528,7 +7528,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215690-a?_pos=6&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ケルディオex",
@@ -7540,7 +7540,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215690-b?_pos=10&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ケルディオex",
@@ -7555,7 +7555,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 11.05,
+      "lowestJapanesePrice": 15.6,
       "usPrice": {
         "marketPrice": 25.71,
         "sellerCount": 19,
@@ -7567,14 +7567,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636722"
       },
       "arbitrageUS": {
-        "profitAmount": 14.66,
-        "profitPercent": 133,
+        "profitAmount": 10.11,
+        "profitPercent": 65,
         "isViable": true,
-        "japanPriceUSD": 11.05,
+        "japanPriceUSD": 15.6,
         "usMarketPrice": 25.71
       },
-      "marginPercent": 133,
-      "marginAmount": 14.66,
+      "marginPercent": 65,
+      "marginAmount": 10.11,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -7595,7 +7595,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215689-a?_pos=2&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "レシラムex",
@@ -7607,10 +7607,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215689-a-damaged?_pos=3&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 149.5,
+      "lowestJapanesePrice": 162.5,
       "usPrice": {
         "marketPrice": 132.26,
         "sellerCount": 13,
@@ -7622,14 +7622,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636721"
       },
       "arbitrageUS": {
-        "profitAmount": -17.24,
-        "profitPercent": -12,
+        "profitAmount": -30.24,
+        "profitPercent": -19,
         "isViable": false,
-        "japanPriceUSD": 149.5,
+        "japanPriceUSD": 162.5,
         "usMarketPrice": 132.26
       },
-      "marginPercent": -12,
-      "marginAmount": -17.24,
+      "marginPercent": -19,
+      "marginAmount": -30.24,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -7650,7 +7650,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215688-a?_pos=11&_sid=4c6067172&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "エルフーンex",
@@ -7662,10 +7662,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215688-a-damaged?_pos=15&_sid=4c6067172&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 8.45,
+      "lowestJapanesePrice": 9.75,
       "usPrice": {
         "marketPrice": 17.75,
         "sellerCount": 27,
@@ -7677,14 +7677,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636720"
       },
       "arbitrageUS": {
-        "profitAmount": 9.3,
-        "profitPercent": 110,
+        "profitAmount": 8,
+        "profitPercent": 82,
         "isViable": true,
-        "japanPriceUSD": 8.45,
+        "japanPriceUSD": 9.75,
         "usMarketPrice": 17.75
       },
-      "marginPercent": 110,
-      "marginAmount": 9.3,
+      "marginPercent": 82,
+      "marginAmount": 8,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -7772,7 +7772,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215686-a?_pos=1&_sid=2ba34dedb&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "クラウン",
@@ -7784,10 +7784,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215686-a-damaged?_pos=15&_sid=2ba34dedb&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.3,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 0.82,
         "sellerCount": 0,
@@ -7799,14 +7799,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636718"
       },
       "arbitrageUS": {
-        "profitAmount": -0.48,
-        "profitPercent": -37,
+        "profitAmount": -2.11,
+        "profitPercent": -72,
         "isViable": false,
-        "japanPriceUSD": 1.3,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 0.82
       },
-      "marginPercent": -37,
-      "marginAmount": -0.48,
+      "marginPercent": -72,
+      "marginAmount": -2.11,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -7894,7 +7894,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215684-a?_pos=5&_sid=2ba34dedb&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "サザンドラex",
@@ -7918,10 +7918,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215684-b?_pos=17&_sid=2ba34dedb&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 0.94,
         "sellerCount": 72,
@@ -7933,14 +7933,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636716"
       },
       "arbitrageUS": {
-        "profitAmount": -1.01,
-        "profitPercent": -52,
+        "profitAmount": -2.64,
+        "profitPercent": -74,
         "isViable": false,
-        "japanPriceUSD": 1.95,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 0.94
       },
-      "marginPercent": -52,
-      "marginAmount": -1.01,
+      "marginPercent": -74,
+      "marginAmount": -2.64,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -7961,7 +7961,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215683-a?_pos=7&_sid=2ba34dedb&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ブルンゲルex",
@@ -7985,10 +7985,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215683-b?_pos=18&_sid=2ba34dedb&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 4.55,
       "usPrice": {
         "marketPrice": 0.8,
         "sellerCount": 0,
@@ -8000,14 +8000,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636715"
       },
       "arbitrageUS": {
-        "profitAmount": -2.78,
-        "profitPercent": -78,
+        "profitAmount": -3.75,
+        "profitPercent": -82,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 4.55,
         "usMarketPrice": 0.8
       },
-      "marginPercent": -78,
-      "marginAmount": -2.78,
+      "marginPercent": -82,
+      "marginAmount": -3.75,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -8028,7 +8028,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215682-a?_pos=8&_sid=2ba34dedb&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ケルディオex",
@@ -8040,10 +8040,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215682-a-damaged?_pos=22&_sid=2ba34dedb&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.3,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.2,
         "sellerCount": 62,
@@ -8055,14 +8055,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636714"
       },
       "arbitrageUS": {
-        "profitAmount": -0.1,
-        "profitPercent": -8,
+        "profitAmount": -1.73,
+        "profitPercent": -59,
         "isViable": false,
-        "japanPriceUSD": 1.3,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.2
       },
-      "marginPercent": -8,
-      "marginAmount": -0.1,
+      "marginPercent": -59,
+      "marginAmount": -1.73,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -8150,7 +8150,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215680-a?_pos=6&_sid=2ba34dedb&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "エルフーンex",
@@ -8174,10 +8174,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215680-b?_pos=16&_sid=2ba34dedb&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 0.84,
         "sellerCount": 0,
@@ -8189,14 +8189,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636712"
       },
       "arbitrageUS": {
-        "profitAmount": -0.79,
-        "profitPercent": -48,
+        "profitAmount": -2.09,
+        "profitPercent": -71,
         "isViable": false,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 0.84
       },
-      "marginPercent": -48,
-      "marginAmount": -0.79,
+      "marginPercent": -71,
+      "marginAmount": -2.09,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -8682,7 +8682,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215663-a?_pos=3&_sid=3701405f3&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "モノズ",
@@ -8694,10 +8694,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215663-a-damaged?_pos=7&_sid=3701405f3&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 5.66,
         "sellerCount": 29,
@@ -8709,14 +8709,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636695"
       },
       "arbitrageUS": {
-        "profitAmount": 2.41,
-        "profitPercent": 74,
+        "profitAmount": 2.08,
+        "profitPercent": 58,
         "isViable": true,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 5.66
       },
-      "marginPercent": 74,
-      "marginAmount": 2.41,
+      "marginPercent": 58,
+      "marginAmount": 2.08,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -8773,7 +8773,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215661-a-damaged?_pos=9&_sid=3701405f3&_ss=r",
-          "isLowest": false
+          "isLowest": true
         }
       ],
       "lowestJapanesePrice": 9.75,
@@ -8888,7 +8888,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215657-a?_pos=12&_sid=3701405f3&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ズルッグ",
@@ -8900,10 +8900,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215657-a-damaged?_pos=25&_sid=3701405f3&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 5.63,
         "sellerCount": 34,
@@ -8915,14 +8915,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636689"
       },
       "arbitrageUS": {
-        "profitAmount": 2.38,
-        "profitPercent": 73,
+        "profitAmount": 2.05,
+        "profitPercent": 57,
         "isViable": true,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 5.63
       },
-      "marginPercent": 73,
-      "marginAmount": 2.38,
+      "marginPercent": 57,
+      "marginAmount": 2.05,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": true
     },
@@ -9197,7 +9197,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215647-a?_pos=14&_sid=3701405f3&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ガントル",
@@ -9209,10 +9209,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215647-a-damaged?_pos=24&_sid=3701405f3&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 3.16,
         "sellerCount": 48,
@@ -9224,14 +9224,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636679"
       },
       "arbitrageUS": {
-        "profitAmount": -0.42,
-        "profitPercent": -12,
+        "profitAmount": -0.74,
+        "profitPercent": -19,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 3.16
       },
-      "marginPercent": -12,
-      "marginAmount": -0.42,
+      "marginPercent": -19,
+      "marginAmount": -0.74,
       "lastUpdated": "2026-02-13T19:16:47.775Z",
       "isViable": false
     },
@@ -9276,7 +9276,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214469-a?_pos=8&_sid=551ec9411&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロケット団のサカキ",
@@ -9288,10 +9288,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214469-a-damaged?_pos=11&_sid=551ec9411&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 16.9,
+      "lowestJapanesePrice": 20.15,
       "usPrice": {
         "marketPrice": 19.93,
         "sellerCount": 33,
@@ -9303,14 +9303,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629070"
       },
       "arbitrageUS": {
-        "profitAmount": 3.03,
-        "profitPercent": 18,
+        "profitAmount": -0.22,
+        "profitPercent": -1,
         "isViable": false,
-        "japanPriceUSD": 16.9,
+        "japanPriceUSD": 20.15,
         "usMarketPrice": 19.93
       },
-      "marginPercent": 18,
-      "marginAmount": 3.03,
+      "marginPercent": -1,
+      "marginAmount": -0.22,
       "lastUpdated": "2026-02-13T23:27:59.098Z",
       "isViable": false
     },
@@ -9411,7 +9411,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214467-a?_pos=4&_sid=551ec9411&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロケット団のクロバットex",
@@ -9435,10 +9435,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214467-b?_pos=19&_sid=551ec9411&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 22.75,
+      "lowestJapanesePrice": 46.8,
       "usPrice": {
         "marketPrice": 42.02,
         "sellerCount": 16,
@@ -9450,16 +9450,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629068"
       },
       "arbitrageUS": {
-        "profitAmount": 19.27,
-        "profitPercent": 85,
-        "isViable": true,
-        "japanPriceUSD": 22.75,
+        "profitAmount": -4.78,
+        "profitPercent": -10,
+        "isViable": false,
+        "japanPriceUSD": 46.8,
         "usMarketPrice": 42.02
       },
-      "marginPercent": 85,
-      "marginAmount": 19.27,
+      "marginPercent": -10,
+      "marginAmount": -4.78,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-126-098-SAR",
@@ -9491,7 +9491,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214466-a?_pos=2&_sid=551ec9411&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロケット団のニドキングex",
@@ -9503,10 +9503,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214466-a-damaged?_pos=18&_sid=551ec9411&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 44.85,
+      "lowestJapanesePrice": 64.35,
       "usPrice": {
         "marketPrice": 58.26,
         "sellerCount": 17,
@@ -9518,16 +9518,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629067"
       },
       "arbitrageUS": {
-        "profitAmount": 13.41,
-        "profitPercent": 30,
-        "isViable": true,
-        "japanPriceUSD": 44.85,
+        "profitAmount": -6.09,
+        "profitPercent": -9,
+        "isViable": false,
+        "japanPriceUSD": 64.35,
         "usMarketPrice": 58.26
       },
-      "marginPercent": 30,
-      "marginAmount": 13.41,
+      "marginPercent": -9,
+      "marginAmount": -6.09,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-125-098-SAR",
@@ -9611,9 +9611,9 @@
           "priceJPY": 14800,
           "priceUSD": 96.2,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_iteg146xougc_dtmf?variant=47038597726382",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 96.2
         },
         {
@@ -9638,7 +9638,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214464-b?_pos=13&_sid=551ec9411&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ロケット団のファイヤーex",
@@ -9653,7 +9653,7 @@
           "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 78,
+      "lowestJapanesePrice": 96.2,
       "usPrice": {
         "marketPrice": 88.96,
         "sellerCount": 31,
@@ -9665,14 +9665,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629065"
       },
       "arbitrageUS": {
-        "profitAmount": 10.96,
-        "profitPercent": 14,
+        "profitAmount": -7.24,
+        "profitPercent": -8,
         "isViable": false,
-        "japanPriceUSD": 78,
+        "japanPriceUSD": 96.2,
         "usMarketPrice": 88.96
       },
-      "marginPercent": 14,
-      "marginAmount": 10.96,
+      "marginPercent": -8,
+      "marginAmount": -7.24,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -9691,9 +9691,9 @@
           "priceJPY": 1480,
           "priceUSD": 9.62,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_ithf25c6cmxm_qtt3?variant=47038682955950",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 9.62
         },
         {
@@ -9730,10 +9730,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214463-b?_pos=28&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 7.15,
+      "lowestJapanesePrice": 9.62,
       "usPrice": {
         "marketPrice": 3.85,
         "sellerCount": 58,
@@ -9745,14 +9745,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629064"
       },
       "arbitrageUS": {
-        "profitAmount": -3.3,
-        "profitPercent": -46,
+        "profitAmount": -5.77,
+        "profitPercent": -60,
         "isViable": false,
-        "japanPriceUSD": 7.15,
+        "japanPriceUSD": 9.62,
         "usMarketPrice": 3.85
       },
-      "marginPercent": -46,
-      "marginAmount": -3.3,
+      "marginPercent": -60,
+      "marginAmount": -5.77,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -9851,7 +9851,7 @@
           "priceJPY": 1780,
           "priceUSD": 11.57,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_iterbgoq2qvu_i9l8?variant=47038678401198",
           "isLowest": false,
           "lastKnownPrice": 11.57
@@ -9931,9 +9931,9 @@
           "priceJPY": 1480,
           "priceUSD": 9.62,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itt85kcsuzuf_l3zm?variant=47038676697262",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 9.62
         },
         {
@@ -9958,10 +9958,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214460-a-damaged?_pos=13&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 7.8,
+      "lowestJapanesePrice": 9.62,
       "usPrice": {
         "marketPrice": 2.8,
         "sellerCount": 49,
@@ -9973,14 +9973,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629061"
       },
       "arbitrageUS": {
-        "profitAmount": -5,
-        "profitPercent": -64,
+        "profitAmount": -6.82,
+        "profitPercent": -71,
         "isViable": false,
-        "japanPriceUSD": 7.8,
+        "japanPriceUSD": 9.62,
         "usMarketPrice": 2.8
       },
-      "marginPercent": -64,
-      "marginAmount": -5,
+      "marginPercent": -71,
+      "marginAmount": -6.82,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -9999,9 +9999,9 @@
           "priceJPY": 1480,
           "priceUSD": 9.62,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itlul42yq94i_7pde?variant=47038673748142",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 9.62
         },
         {
@@ -10026,10 +10026,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214459-a-damaged?_pos=12&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 9.1,
+      "lowestJapanesePrice": 9.62,
       "usPrice": {
         "marketPrice": 2.92,
         "sellerCount": 51,
@@ -10041,14 +10041,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629060"
       },
       "arbitrageUS": {
-        "profitAmount": -6.18,
-        "profitPercent": -68,
+        "profitAmount": -6.7,
+        "profitPercent": -70,
         "isViable": false,
-        "japanPriceUSD": 9.1,
+        "japanPriceUSD": 9.62,
         "usMarketPrice": 2.92
       },
-      "marginPercent": -68,
-      "marginAmount": -6.18,
+      "marginPercent": -70,
+      "marginAmount": -6.7,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -10067,7 +10067,7 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itkt1soqzzk8_u3e9?variant=47038656413870",
           "isLowest": false,
           "lastKnownPrice": 3.77
@@ -10147,9 +10147,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itmkn7v716oj_9l9f?variant=47038655168686",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -10186,10 +10186,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214457-b?_pos=33&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 3.83,
         "sellerCount": 71,
@@ -10201,14 +10201,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629058"
       },
       "arbitrageUS": {
-        "profitAmount": 0.9,
-        "profitPercent": 31,
+        "profitAmount": 1.36,
+        "profitPercent": 55,
         "isViable": true,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 3.83
       },
-      "marginPercent": 31,
-      "marginAmount": 0.9,
+      "marginPercent": 55,
+      "marginAmount": 1.36,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10227,9 +10227,9 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it5zcedpbj20_yq2t?variant=47038653759662",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.12
         },
         {
@@ -10266,10 +10266,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214456-b?_pos=31&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 5.03,
         "sellerCount": 38,
@@ -10281,14 +10281,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629057"
       },
       "arbitrageUS": {
-        "profitAmount": 3.08,
-        "profitPercent": 158,
+        "profitAmount": 1.91,
+        "profitPercent": 61,
         "isViable": true,
-        "japanPriceUSD": 1.95,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 5.03
       },
-      "marginPercent": 158,
-      "marginAmount": 3.08,
+      "marginPercent": 61,
+      "marginAmount": 1.91,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10307,9 +10307,9 @@
           "priceJPY": 280,
           "priceUSD": 1.82,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it30knhth76a_ysz7?variant=47038652350638",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 1.82
         },
         {
@@ -10346,10 +10346,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214455-b?_pos=25&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.63,
+      "lowestJapanesePrice": 1.82,
       "usPrice": {
         "marketPrice": 4.63,
         "sellerCount": 24,
@@ -10361,14 +10361,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629056"
       },
       "arbitrageUS": {
-        "profitAmount": 3,
-        "profitPercent": 184,
+        "profitAmount": 2.81,
+        "profitPercent": 154,
         "isViable": true,
-        "japanPriceUSD": 1.63,
+        "japanPriceUSD": 1.82,
         "usMarketPrice": 4.63
       },
-      "marginPercent": 184,
-      "marginAmount": 3,
+      "marginPercent": 154,
+      "marginAmount": 2.81,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10389,7 +10389,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214454-a?_pos=16&_sid=3770ee685&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロケット団のミュウツーex",
@@ -10401,10 +10401,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214454-a-damaged?_pos=32&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 18.85,
+      "lowestJapanesePrice": 20.15,
       "usPrice": {
         "marketPrice": 14.56,
         "sellerCount": 33,
@@ -10416,14 +10416,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629055"
       },
       "arbitrageUS": {
-        "profitAmount": -4.29,
-        "profitPercent": -23,
+        "profitAmount": -5.59,
+        "profitPercent": -28,
         "isViable": false,
-        "japanPriceUSD": 18.85,
+        "japanPriceUSD": 20.15,
         "usMarketPrice": 14.56
       },
-      "marginPercent": -23,
-      "marginAmount": -4.29,
+      "marginPercent": -28,
+      "marginAmount": -5.59,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -10442,9 +10442,9 @@
           "priceJPY": 280,
           "priceUSD": 1.82,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it7n32ablt5g_czcl?variant=47038639964334",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 1.82
         },
         {
@@ -10481,10 +10481,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214453-b?_pos=26&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 1.82,
       "usPrice": {
         "marketPrice": 3.01,
         "sellerCount": 36,
@@ -10496,14 +10496,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629054"
       },
       "arbitrageUS": {
-        "profitAmount": 1.06,
-        "profitPercent": 54,
+        "profitAmount": 1.19,
+        "profitPercent": 65,
         "isViable": true,
-        "japanPriceUSD": 1.95,
+        "japanPriceUSD": 1.82,
         "usMarketPrice": 3.01
       },
-      "marginPercent": 54,
-      "marginAmount": 1.06,
+      "marginPercent": 65,
+      "marginAmount": 1.19,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10537,7 +10537,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214452-a?_pos=17&_sid=3770ee685&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ロケット団のファイヤーex",
@@ -10549,10 +10549,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214452-a-damaged?_pos=20&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 5.2,
       "usPrice": {
         "marketPrice": 7.9,
         "sellerCount": 37,
@@ -10564,14 +10564,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629053"
       },
       "arbitrageUS": {
-        "profitAmount": 4.32,
-        "profitPercent": 121,
+        "profitAmount": 2.7,
+        "profitPercent": 52,
         "isViable": true,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 5.2,
         "usMarketPrice": 7.9
       },
-      "marginPercent": 121,
-      "marginAmount": 4.32,
+      "marginPercent": 52,
+      "marginAmount": 2.7,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10590,9 +10590,9 @@
           "priceJPY": 280,
           "priceUSD": 1.82,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itdkwl41nsxo_5bnx?variant=47038630232238",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 1.82
         },
         {
@@ -10629,10 +10629,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214451-b?_pos=24&_sid=3770ee685&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 1.82,
       "usPrice": {
         "marketPrice": 3.56,
         "sellerCount": 45,
@@ -10644,14 +10644,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629052"
       },
       "arbitrageUS": {
-        "profitAmount": 1.61,
-        "profitPercent": 83,
+        "profitAmount": 1.74,
+        "profitPercent": 96,
         "isViable": true,
-        "japanPriceUSD": 1.95,
+        "japanPriceUSD": 1.82,
         "usMarketPrice": 3.56
       },
-      "marginPercent": 83,
-      "marginAmount": 1.61,
+      "marginPercent": 96,
+      "marginAmount": 1.74,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": true
     },
@@ -10670,9 +10670,9 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itewxhg966x4_rgg6",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.77
         },
         {
@@ -10709,10 +10709,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214450-b?_pos=31&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 3.77,
       "usPrice": {
         "marketPrice": 3.61,
         "sellerCount": 102,
@@ -10724,16 +10724,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629051"
       },
       "arbitrageUS": {
-        "profitAmount": 1.33,
-        "profitPercent": 58,
-        "isViable": true,
-        "japanPriceUSD": 2.28,
+        "profitAmount": -0.16,
+        "profitPercent": -4,
+        "isViable": false,
+        "japanPriceUSD": 3.77,
         "usMarketPrice": 3.61
       },
-      "marginPercent": 58,
-      "marginAmount": 1.33,
+      "marginPercent": -4,
+      "marginAmount": -0.16,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-109-098-AR",
@@ -10743,19 +10743,6 @@
       "set": "SV10",
       "japanesePrices": [
         {
-          "name": "PSA10)ロケット団のニャース",
-          "cardNumber": "109/098",
-          "rarity": "AR",
-          "source": "torecacamp",
-          "priceJPY": 7980,
-          "priceUSD": 51.87,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itt46vhfsgge_b2jc",
-          "isLowest": false,
-          "lastKnownPrice": 51.87
-        },
-        {
           "name": "ロケット団のニャース",
           "cardNumber": "109/098",
           "rarity": "AR",
@@ -10763,9 +10750,9 @@
           "priceJPY": 1280,
           "priceUSD": 8.32,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itr3mvpin1si_uda6?variant=47038545952942",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 8.32
         },
         {
@@ -10802,10 +10789,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214449-b?_pos=35&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 5.2,
+      "lowestJapanesePrice": 8.32,
       "usPrice": {
         "marketPrice": 9.6,
         "sellerCount": 83,
@@ -10817,16 +10804,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629050"
       },
       "arbitrageUS": {
-        "profitAmount": 4.4,
-        "profitPercent": 85,
-        "isViable": true,
-        "japanPriceUSD": 5.2,
+        "profitAmount": 1.28,
+        "profitPercent": 15,
+        "isViable": false,
+        "japanPriceUSD": 8.32,
         "usMarketPrice": 9.6
       },
-      "marginPercent": 85,
-      "marginAmount": 4.4,
+      "marginPercent": 15,
+      "marginAmount": 1.28,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-108-098-AR",
@@ -10843,9 +10830,9 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it0kjl38ffij_hd4k",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.77
         },
         {
@@ -10882,10 +10869,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214448-b?_pos=34&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.3,
+      "lowestJapanesePrice": 3.77,
       "usPrice": {
         "marketPrice": 2.47,
         "sellerCount": 125,
@@ -10897,16 +10884,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629049"
       },
       "arbitrageUS": {
-        "profitAmount": 1.17,
-        "profitPercent": 90,
-        "isViable": true,
-        "japanPriceUSD": 1.3,
+        "profitAmount": -1.3,
+        "profitPercent": -34,
+        "isViable": false,
+        "japanPriceUSD": 3.77,
         "usMarketPrice": 2.47
       },
-      "marginPercent": 90,
-      "marginAmount": 1.17,
+      "marginPercent": -34,
+      "marginAmount": -1.3,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-107-098-AR",
@@ -10923,7 +10910,7 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itlw10ymhjo8_kp0e",
           "isLowest": false,
           "lastKnownPrice": 3.12
@@ -11003,7 +10990,7 @@
           "priceJPY": 880,
           "priceUSD": 5.72,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itbvkujwgoc8_77v7",
           "isLowest": false,
           "lastKnownPrice": 5.72
@@ -11083,9 +11070,9 @@
           "priceJPY": 880,
           "priceUSD": 5.72,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itgeegocmnzb_3zel",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 5.72
         },
         {
@@ -11122,10 +11109,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214445-b?_pos=37&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 5.72,
       "usPrice": {
         "marketPrice": 2.61,
         "sellerCount": 98,
@@ -11137,14 +11124,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629046"
       },
       "arbitrageUS": {
-        "profitAmount": 0.33,
-        "profitPercent": 14,
+        "profitAmount": -3.11,
+        "profitPercent": -54,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 5.72,
         "usMarketPrice": 2.61
       },
-      "marginPercent": 14,
-      "marginAmount": 0.33,
+      "marginPercent": -54,
+      "marginAmount": -3.11,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -11163,7 +11150,7 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itgt354vmjum_lpw1",
           "isLowest": false,
           "lastKnownPrice": 3.12
@@ -11243,7 +11230,7 @@
           "priceJPY": 980,
           "priceUSD": 6.37,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itdgs8wch34w_jqsj",
           "isLowest": false,
           "lastKnownPrice": 6.37
@@ -11323,9 +11310,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itbu5uov4nz2_a2mk",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -11362,10 +11349,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214442-b?_pos=33&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 1.95,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 1.78,
         "sellerCount": 113,
@@ -11377,14 +11364,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629043"
       },
       "arbitrageUS": {
-        "profitAmount": -0.17,
-        "profitPercent": -9,
+        "profitAmount": -0.69,
+        "profitPercent": -28,
         "isViable": false,
-        "japanPriceUSD": 1.95,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 1.78
       },
-      "marginPercent": -9,
-      "marginAmount": -0.17,
+      "marginPercent": -28,
+      "marginAmount": -0.69,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -11403,9 +11390,9 @@
           "priceJPY": 680,
           "priceUSD": 4.42,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itiajxakplea_lzk7",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 4.42
         },
         {
@@ -11442,7 +11429,7 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214441-b?_pos=32&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "バシャーモ",
@@ -11452,13 +11439,13 @@
           "priceJPY": 680,
           "priceUSD": 4.42,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itiajxakplea_lzk7",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 4.42
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 4.42,
       "usPrice": {
         "marketPrice": 3.51,
         "sellerCount": 113,
@@ -11470,16 +11457,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629042"
       },
       "arbitrageUS": {
-        "profitAmount": 1.23,
-        "profitPercent": 54,
-        "isViable": true,
-        "japanPriceUSD": 2.28,
+        "profitAmount": -0.91,
+        "profitPercent": -21,
+        "isViable": false,
+        "japanPriceUSD": 4.42,
         "usMarketPrice": 3.51
       },
-      "marginPercent": 54,
-      "marginAmount": 1.23,
+      "marginPercent": -21,
+      "marginAmount": -0.91,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
-      "isViable": true
+      "isViable": false
     },
     {
       "id": "SV10-100-098-AR",
@@ -11496,7 +11483,7 @@
           "priceJPY": 980,
           "priceUSD": 6.37,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itqgsabwjaw8_cvq0",
           "isLowest": false,
           "lastKnownPrice": 6.37
@@ -11576,9 +11563,9 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itwga8v218pa_7ax8",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.77
         },
         {
@@ -11615,10 +11602,10 @@
           "quality": "B",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-214439-b?_pos=36&_sid=8a828a637&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.77,
       "usPrice": {
         "marketPrice": 2.18,
         "sellerCount": 133,
@@ -11630,14 +11617,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/629040"
       },
       "arbitrageUS": {
-        "profitAmount": -1.4,
-        "profitPercent": -39,
+        "profitAmount": -1.59,
+        "profitPercent": -42,
         "isViable": false,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.77,
         "usMarketPrice": 2.18
       },
-      "marginPercent": -39,
-      "marginAmount": -1.4,
+      "marginPercent": -42,
+      "marginAmount": -1.59,
       "lastUpdated": "2026-02-13T23:27:59.099Z",
       "isViable": false
     },
@@ -11656,9 +11643,9 @@
           "priceJPY": 6480,
           "priceUSD": 42.12,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it93tgcugorz_hecj?variant=46976363102382",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 42.12
         },
         {
@@ -11675,19 +11662,6 @@
           "lastKnownPrice": 32.37
         },
         {
-          "name": "PSA10)Nの筋書き",
-          "cardNumber": "173/086",
-          "rarity": "SAR",
-          "source": "torecacamp",
-          "priceJPY": 24800,
-          "priceUSD": 161.2,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_iteupqg7gma4_gfgn",
-          "isLowest": false,
-          "lastKnownPrice": 161.2
-        },
-        {
           "name": "Nの筋書き",
           "cardNumber": "173/086",
           "rarity": "SAR",
@@ -11697,7 +11671,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215360-a?_pos=1&_sid=de0893e00&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "Nの筋書き",
@@ -11713,7 +11687,7 @@
           "lastKnownPrice": 41.6
         }
       ],
-      "lowestJapanesePrice": 48.1,
+      "lowestJapanesePrice": 42.12,
       "usPrice": {
         "marketPrice": 50.32,
         "sellerCount": 20,
@@ -11725,14 +11699,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636527"
       },
       "arbitrageUS": {
-        "profitAmount": 2.22,
-        "profitPercent": 5,
+        "profitAmount": 8.2,
+        "profitPercent": 19,
         "isViable": false,
-        "japanPriceUSD": 48.1,
+        "japanPriceUSD": 42.12,
         "usMarketPrice": 50.32
       },
-      "marginPercent": 5,
-      "marginAmount": 2.22,
+      "marginPercent": 19,
+      "marginAmount": 8.2,
       "lastUpdated": "2026-02-16T10:29:21.747Z",
       "isViable": false
     },
@@ -11743,19 +11717,6 @@
       "rarity": "SAR",
       "set": "SV11B",
       "japanesePrices": [
-        {
-          "name": "PSA10)ゲノセクトex",
-          "cardNumber": "172/086",
-          "rarity": "SAR",
-          "source": "torecacamp",
-          "priceJPY": 7980,
-          "priceUSD": 51.87,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itnkxzunlkbs_ux3h",
-          "isLowest": false,
-          "lastKnownPrice": 51.87
-        },
         {
           "name": "ゲノセクトex",
           "cardNumber": "172/086",
@@ -11930,7 +11891,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215357-a?_pos=6&_sid=de0893e00&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "メロエッタex",
@@ -11942,10 +11903,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215357-a-damaged?_pos=7&_sid=de0893e00&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 14.95,
+      "lowestJapanesePrice": 15.6,
       "usPrice": {
         "marketPrice": 21.84,
         "sellerCount": 33,
@@ -11957,14 +11918,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636524"
       },
       "arbitrageUS": {
-        "profitAmount": 6.89,
-        "profitPercent": 46,
+        "profitAmount": 6.24,
+        "profitPercent": 40,
         "isViable": true,
-        "japanPriceUSD": 14.95,
+        "japanPriceUSD": 15.6,
         "usMarketPrice": 21.84
       },
-      "marginPercent": 46,
-      "marginAmount": 6.89,
+      "marginPercent": 40,
+      "marginAmount": 6.24,
       "lastUpdated": "2026-02-16T10:29:21.747Z",
       "isViable": true
     },
@@ -11983,23 +11944,10 @@
           "priceJPY": 17800,
           "priceUSD": 115.7,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itanmywvg19w_qklx?variant=46976355041454",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 115.7
-        },
-        {
-          "name": "PSA10)ゼクロムex",
-          "cardNumber": "169/086",
-          "rarity": "SAR",
-          "source": "torecacamp",
-          "priceJPY": 29800,
-          "priceUSD": 193.7,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_it1rnc9uj5s2_n6kf",
-          "isLowest": false,
-          "lastKnownPrice": 193.7
         },
         {
           "name": "ゼクロムex",
@@ -12011,7 +11959,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215356-a?_pos=2&_sid=de0893e00&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ゼクロムex",
@@ -12027,7 +11975,7 @@
           "lastKnownPrice": 136.5
         }
       ],
-      "lowestJapanesePrice": 149.5,
+      "lowestJapanesePrice": 115.7,
       "usPrice": {
         "marketPrice": 139.92,
         "sellerCount": 16,
@@ -12039,16 +11987,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636523"
       },
       "arbitrageUS": {
-        "profitAmount": -9.58,
-        "profitPercent": -6,
-        "isViable": false,
-        "japanPriceUSD": 149.5,
+        "profitAmount": 24.22,
+        "profitPercent": 21,
+        "isViable": true,
+        "japanPriceUSD": 115.7,
         "usMarketPrice": 139.92
       },
-      "marginPercent": -6,
-      "marginAmount": -9.58,
+      "marginPercent": 21,
+      "marginAmount": 24.22,
       "lastUpdated": "2026-02-16T10:29:21.747Z",
-      "isViable": false
+      "isViable": true
     },
     {
       "id": "SV11B-168-086-SAR",
@@ -12057,19 +12005,6 @@
       "rarity": "SAR",
       "set": "SV11B",
       "japanesePrices": [
-        {
-          "name": "PSA10)キュレムex",
-          "cardNumber": "168/086",
-          "rarity": "SAR",
-          "source": "torecacamp",
-          "priceJPY": 8980,
-          "priceUSD": 58.37,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itw78zt7sxns_whaz",
-          "isLowest": false,
-          "lastKnownPrice": 58.37
-        },
         {
           "name": "キュレムex",
           "cardNumber": "168/086",
@@ -12160,23 +12095,10 @@
           "priceJPY": 2780,
           "priceUSD": 18.07,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it3i3r1n4hnp_6xme?variant=46976303431854",
           "isLowest": true,
           "lastKnownPrice": 18.07
-        },
-        {
-          "name": "PSA10)ジャローダex",
-          "cardNumber": "167/086",
-          "rarity": "SAR",
-          "source": "torecacamp",
-          "priceJPY": 7980,
-          "priceUSD": 51.87,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_itkv7knc75fg_szwp",
-          "isLowest": false,
-          "lastKnownPrice": 51.87
         },
         {
           "name": "ジャローダex",
@@ -12257,9 +12179,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it12k9wykgls_nlor?variant=46976382632110",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -12284,10 +12206,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215353-a-damaged?_pos=4&_sid=826b85193&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 1.18,
         "sellerCount": 63,
@@ -12299,14 +12221,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636520"
       },
       "arbitrageUS": {
-        "profitAmount": -1.1,
-        "profitPercent": -48,
+        "profitAmount": -1.29,
+        "profitPercent": -52,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 1.18
       },
-      "marginPercent": -48,
-      "marginAmount": -1.1,
+      "marginPercent": -52,
+      "marginAmount": -1.29,
       "lastUpdated": "2026-02-16T10:29:21.747Z",
       "isViable": false
     },
@@ -12325,23 +12247,10 @@
           "priceJPY": 880,
           "priceUSD": 5.72,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it6gzv1ql5xp_pu05?variant=46976381026478",
           "isLowest": false,
           "lastKnownPrice": 5.72
-        },
-        {
-          "name": "PSA10)Nの筋書き",
-          "cardNumber": "165/086",
-          "rarity": "SR",
-          "source": "torecacamp",
-          "priceJPY": 8480,
-          "priceUSD": 55.12,
-          "quality": "A",
-          "inStock": false,
-          "url": "https://torecacamp-pokemon.com/products/rc_ithwb6os4vfi_qrmq",
-          "isLowest": false,
-          "lastKnownPrice": 55.12
         },
         {
           "name": "Nの筋書き",
@@ -12418,7 +12327,7 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itdolx1gj94w_jhnx?variant=46976379289774",
           "isLowest": true,
           "lastKnownPrice": 2.47
@@ -12489,9 +12398,9 @@
           "priceJPY": 280,
           "priceUSD": 1.82,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it4qlrvpm0zu_vden?variant=46976377290926",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 1.82
         },
         {
@@ -12504,7 +12413,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215350-a?_pos=11&_sid=826b85193&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ドリュウズex",
@@ -12533,7 +12442,7 @@
           "lastKnownPrice": 2.28
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 1.82,
       "usPrice": {
         "marketPrice": 0.8,
         "sellerCount": 0,
@@ -12545,14 +12454,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636517"
       },
       "arbitrageUS": {
-        "profitAmount": -2.13,
-        "profitPercent": -73,
+        "profitAmount": -1.02,
+        "profitPercent": -56,
         "isViable": false,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 1.82,
         "usMarketPrice": 0.8
       },
-      "marginPercent": -73,
-      "marginAmount": -2.13,
+      "marginPercent": -56,
+      "marginAmount": -1.02,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": false
     },
@@ -12571,7 +12480,7 @@
           "priceJPY": 280,
           "priceUSD": 1.82,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itrmilr9spqm_ncof?variant=46976374374574",
           "isLowest": true,
           "lastKnownPrice": 1.82
@@ -12655,7 +12564,7 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A-",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_ita1x7fvneeo_whgc?variant=46976371949742",
           "isLowest": false,
           "lastKnownPrice": 3.77
@@ -12750,7 +12659,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215347-a?_pos=6&_sid=826b85193&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "キュレムex",
@@ -12762,7 +12671,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215347-a-damaged?_pos=10&_sid=826b85193&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "キュレムex",
@@ -12778,7 +12687,7 @@
           "lastKnownPrice": 1.63
         }
       ],
-      "lowestJapanesePrice": 2.28,
+      "lowestJapanesePrice": 2.93,
       "usPrice": {
         "marketPrice": 1.21,
         "sellerCount": 72,
@@ -12790,14 +12699,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636514"
       },
       "arbitrageUS": {
-        "profitAmount": -1.07,
-        "profitPercent": -47,
+        "profitAmount": -1.72,
+        "profitPercent": -59,
         "isViable": false,
-        "japanPriceUSD": 2.28,
+        "japanPriceUSD": 2.93,
         "usMarketPrice": 1.21
       },
-      "marginPercent": -47,
-      "marginAmount": -1.07,
+      "marginPercent": -59,
+      "marginAmount": -1.72,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": false
     },
@@ -12831,7 +12740,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215346-a?_pos=12&_sid=826b85193&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "ジャローダex",
@@ -12843,7 +12752,7 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215346-a-damaged?_pos=13&_sid=826b85193&_ss=r",
-          "isLowest": true
+          "isLowest": false
         },
         {
           "name": "ジャローダex",
@@ -12859,7 +12768,7 @@
           "lastKnownPrice": 1.95
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 3.58,
       "usPrice": {
         "marketPrice": 1.09,
         "sellerCount": 61,
@@ -12871,14 +12780,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636513"
       },
       "arbitrageUS": {
-        "profitAmount": -1.84,
-        "profitPercent": -63,
+        "profitAmount": -2.49,
+        "profitPercent": -70,
         "isViable": false,
-        "japanPriceUSD": 2.93,
+        "japanPriceUSD": 3.58,
         "usMarketPrice": 1.09
       },
-      "marginPercent": -63,
-      "marginAmount": -1.84,
+      "marginPercent": -70,
+      "marginAmount": -2.49,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": false
     },
@@ -12964,9 +12873,9 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itmt8entx23o_hxsb",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.77
         },
         {
@@ -12991,10 +12900,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215343-a-damaged?_pos=44&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.9,
+      "lowestJapanesePrice": 3.77,
       "usPrice": {
         "marketPrice": 5.79,
         "sellerCount": 33,
@@ -13006,14 +12915,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636510"
       },
       "arbitrageUS": {
-        "profitAmount": 1.89,
-        "profitPercent": 48,
+        "profitAmount": 2.02,
+        "profitPercent": 54,
         "isViable": true,
-        "japanPriceUSD": 3.9,
+        "japanPriceUSD": 3.77,
         "usMarketPrice": 5.79
       },
-      "marginPercent": 48,
-      "marginAmount": 1.89,
+      "marginPercent": 54,
+      "marginAmount": 2.02,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13082,7 +12991,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215340-a?_pos=14&_sid=b1cfe0207&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "マメパト",
@@ -13094,10 +13003,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215340-a-damaged?_pos=37&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.9,
       "usPrice": {
         "marketPrice": 8.02,
         "sellerCount": 34,
@@ -13109,14 +13018,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636507"
       },
       "arbitrageUS": {
-        "profitAmount": 4.44,
-        "profitPercent": 124,
+        "profitAmount": 4.12,
+        "profitPercent": 106,
         "isViable": true,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.9,
         "usMarketPrice": 8.02
       },
-      "marginPercent": 124,
-      "marginAmount": 4.44,
+      "marginPercent": 106,
+      "marginAmount": 4.12,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13178,9 +13087,9 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_ittgs58t0tpy_xjju",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.12
         },
         {
@@ -13205,10 +13114,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215338-a-damaged?_pos=34&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 5.68,
         "sellerCount": 42,
@@ -13220,14 +13129,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636505"
       },
       "arbitrageUS": {
-        "profitAmount": 2.1,
-        "profitPercent": 59,
+        "profitAmount": 2.56,
+        "profitPercent": 82,
         "isViable": true,
-        "japanPriceUSD": 3.58,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 5.68
       },
-      "marginPercent": 59,
-      "marginAmount": 2.1,
+      "marginPercent": 82,
+      "marginAmount": 2.56,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13248,7 +13157,7 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215337-a?_pos=7&_sid=b1cfe0207&_ss=r",
-          "isLowest": false
+          "isLowest": true
         },
         {
           "name": "キバゴ",
@@ -13260,10 +13169,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215337-a-damaged?_pos=12&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 4.22,
+      "lowestJapanesePrice": 4.55,
       "usPrice": {
         "marketPrice": 6.68,
         "sellerCount": 28,
@@ -13275,14 +13184,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636504"
       },
       "arbitrageUS": {
-        "profitAmount": 2.46,
-        "profitPercent": 58,
+        "profitAmount": 2.13,
+        "profitPercent": 47,
         "isViable": true,
-        "japanPriceUSD": 4.22,
+        "japanPriceUSD": 4.55,
         "usMarketPrice": 6.68
       },
-      "marginPercent": 58,
-      "marginAmount": 2.46,
+      "marginPercent": 47,
+      "marginAmount": 2.13,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13301,9 +13210,9 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itssld48syeq_3wng",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.12
         },
         {
@@ -13316,10 +13225,10 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215336-a?_pos=47&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 4.55,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 6.42,
         "sellerCount": 14,
@@ -13331,14 +13240,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636503"
       },
       "arbitrageUS": {
-        "profitAmount": 1.87,
-        "profitPercent": 41,
+        "profitAmount": 3.3,
+        "profitPercent": 106,
         "isViable": true,
-        "japanPriceUSD": 4.55,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 6.42
       },
-      "marginPercent": 41,
-      "marginAmount": 1.87,
+      "marginPercent": 106,
+      "marginAmount": 3.3,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13357,9 +13266,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itvyse9rd0by_or13",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -13372,10 +13281,10 @@
           "quality": "A",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215335-a?_pos=48&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 4.19,
         "sellerCount": 44,
@@ -13387,16 +13296,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636502"
       },
       "arbitrageUS": {
-        "profitAmount": 0.61,
-        "profitPercent": 17,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
+        "profitAmount": 1.72,
+        "profitPercent": 70,
+        "isViable": true,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 4.19
       },
-      "marginPercent": 17,
-      "marginAmount": 0.61,
+      "marginPercent": 70,
+      "marginAmount": 1.72,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
-      "isViable": false
+      "isViable": true
     },
     {
       "id": "SV11B-147-086-AR",
@@ -13528,7 +13437,7 @@
           "priceJPY": 580,
           "priceUSD": 3.77,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itn2vxtmnxo2_55x0",
           "isLowest": true,
           "lastKnownPrice": 3.77
@@ -13640,7 +13549,7 @@
           "priceJPY": 980,
           "priceUSD": 6.37,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it86xhlwyx1c_okkh",
           "isLowest": true,
           "lastKnownPrice": 6.37
@@ -13685,9 +13594,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it2wbkxhcq0e_m7kw",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -13700,10 +13609,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215326-a-damaged?_pos=36&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.6,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 3.6,
         "sellerCount": 40,
@@ -13715,14 +13624,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636493"
       },
       "arbitrageUS": {
-        "profitAmount": 1,
-        "profitPercent": 38,
+        "profitAmount": 1.13,
+        "profitPercent": 46,
         "isViable": true,
-        "japanPriceUSD": 2.6,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 3.6
       },
-      "marginPercent": 38,
-      "marginAmount": 1,
+      "marginPercent": 46,
+      "marginAmount": 1.13,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -13741,9 +13650,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it0y8893sus7_x9zh",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -13768,10 +13677,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215325-a-damaged?_pos=28&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 4.29,
         "sellerCount": 37,
@@ -13783,16 +13692,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636492"
       },
       "arbitrageUS": {
-        "profitAmount": 0.71,
-        "profitPercent": 20,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
+        "profitAmount": 1.82,
+        "profitPercent": 74,
+        "isViable": true,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 4.29
       },
-      "marginPercent": 20,
-      "marginAmount": 0.71,
+      "marginPercent": 74,
+      "marginAmount": 1.82,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
-      "isViable": false
+      "isViable": true
     },
     {
       "id": "SV11B-137-086-AR",
@@ -13833,7 +13742,7 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itszttygygss_5qrw",
           "isLowest": true,
           "lastKnownPrice": 2.47
@@ -13902,9 +13811,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_its72fkylt8g_f0om",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -13929,10 +13838,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215321-a-damaged?_pos=10&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 2.86,
         "sellerCount": 41,
@@ -13944,14 +13853,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636488"
       },
       "arbitrageUS": {
-        "profitAmount": -0.39,
-        "profitPercent": -12,
+        "profitAmount": 0.39,
+        "profitPercent": 16,
         "isViable": false,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 2.86
       },
-      "marginPercent": -12,
-      "marginAmount": -0.39,
+      "marginPercent": 16,
+      "marginAmount": 0.39,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": false
     },
@@ -14066,9 +13975,9 @@
           "priceJPY": 480,
           "priceUSD": 3.12,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_it8amoys41hm_u7qs",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 3.12
         },
         {
@@ -14093,10 +14002,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215316-a-damaged?_pos=30&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.58,
+      "lowestJapanesePrice": 3.12,
       "usPrice": {
         "marketPrice": 4.11,
         "sellerCount": 48,
@@ -14108,16 +14017,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636483"
       },
       "arbitrageUS": {
-        "profitAmount": 0.53,
-        "profitPercent": 15,
-        "isViable": false,
-        "japanPriceUSD": 3.58,
+        "profitAmount": 0.99,
+        "profitPercent": 32,
+        "isViable": true,
+        "japanPriceUSD": 3.12,
         "usMarketPrice": 4.11
       },
-      "marginPercent": 15,
-      "marginAmount": 0.53,
+      "marginPercent": 32,
+      "marginAmount": 0.99,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
-      "isViable": false
+      "isViable": true
     },
     {
       "id": "SV11B-128-086-AR",
@@ -14134,9 +14043,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itmkdswr98my_ofg6",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -14161,10 +14070,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215315-a-damaged?_pos=29&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 2.93,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 3.51,
         "sellerCount": 38,
@@ -14176,16 +14085,16 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636482"
       },
       "arbitrageUS": {
-        "profitAmount": 0.58,
-        "profitPercent": 20,
-        "isViable": false,
-        "japanPriceUSD": 2.93,
+        "profitAmount": 1.04,
+        "profitPercent": 42,
+        "isViable": true,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 3.51
       },
-      "marginPercent": 20,
-      "marginAmount": 0.58,
+      "marginPercent": 42,
+      "marginAmount": 1.04,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
-      "isViable": false
+      "isViable": true
     },
     {
       "id": "SV11B-127-086-AR",
@@ -14202,9 +14111,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_itdvsbj5t5a8_ksqj",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -14229,10 +14138,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215314-a-damaged?_pos=31&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 2.76,
         "sellerCount": 35,
@@ -14244,14 +14153,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636481"
       },
       "arbitrageUS": {
-        "profitAmount": -0.49,
-        "profitPercent": -15,
+        "profitAmount": 0.29,
+        "profitPercent": 12,
         "isViable": false,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 2.76
       },
-      "marginPercent": -15,
-      "marginAmount": -0.49,
+      "marginPercent": 12,
+      "marginAmount": 0.29,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": false
     },
@@ -14270,9 +14179,9 @@
           "priceJPY": 380,
           "priceUSD": 2.47,
           "quality": "A",
-          "inStock": false,
+          "inStock": true,
           "url": "https://torecacamp-pokemon.com/products/rc_ityixqnv0z2u_8g1z",
-          "isLowest": false,
+          "isLowest": true,
           "lastKnownPrice": 2.47
         },
         {
@@ -14297,10 +14206,10 @@
           "quality": "A-",
           "inStock": true,
           "url": "https://shop.japan-toreca.com/products/pokemon-215313-a-damaged?_pos=45&_sid=b1cfe0207&_ss=r",
-          "isLowest": true
+          "isLowest": false
         }
       ],
-      "lowestJapanesePrice": 3.25,
+      "lowestJapanesePrice": 2.47,
       "usPrice": {
         "marketPrice": 4.36,
         "sellerCount": 44,
@@ -14312,14 +14221,14 @@
         "tcgPlayerUrl": "https://www.tcgplayer.com/product/636480"
       },
       "arbitrageUS": {
-        "profitAmount": 1.11,
-        "profitPercent": 34,
+        "profitAmount": 1.89,
+        "profitPercent": 77,
         "isViable": true,
-        "japanPriceUSD": 3.25,
+        "japanPriceUSD": 2.47,
         "usMarketPrice": 4.36
       },
-      "marginPercent": 34,
-      "marginAmount": 1.11,
+      "marginPercent": 77,
+      "marginAmount": 1.89,
       "lastUpdated": "2026-02-16T10:29:21.748Z",
       "isViable": true
     },
@@ -14348,10 +14257,10 @@
       "isViable": false
     }
   ],
-  "lastUpdated": "2026-02-16T10:29:21.748Z",
+  "lastUpdated": "2026-02-16T11:39:23.288Z",
   "stats": {
     "totalCards": 298,
-    "viableOpportunities": 99,
+    "viableOpportunities": 87,
     "avgMargin": 208.8
   }
 }

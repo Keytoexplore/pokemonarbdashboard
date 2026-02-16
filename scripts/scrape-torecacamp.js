@@ -35,15 +35,9 @@ function extractVariants(html) {
   const variantsMatch = html.match(/variants":\s*(\[.*?\])[,;]/);
   if (!variantsMatch) return null;
 
-  // Check for sold out indicators in the page HTML (backup detection)
-  const hasSoldOutText = html.includes('売り切れ') ||
-                        html.includes('売切れ') ||
-                        html.includes('Sold Out') ||
-                        html.includes('sold out');
-
-  // Check for "在庫なし" (out of stock)
-  const hasNoStockText = html.includes('在庫なし') ||
-                         html.includes('在庫数: 0');
+  // Check if add-to-cart button is disabled (most reliable indicator)
+  const addToCartButton = html.match(/<button[^>]*type="submit"[^>]*data-action="add-to-cart"[^>]*>/);
+  const isButtonDisabled = addToCartButton ? addToCartButton[0].includes('disabled') : false;
 
   try {
     const variants = JSON.parse(variantsMatch[1]);
@@ -57,9 +51,9 @@ function extractVariants(html) {
         inStock = inStock && v.inventory_quantity > 0;
       }
 
-      // 3. Check HTML for sold out text
-      if (hasSoldOutText || hasNoStockText) {
-        inStock = false;
+      // 3. Use add-to-cart button state as tiebreaker
+      if (addToCartButton) {
+        inStock = !isButtonDisabled;
       }
 
       // 4. Fallback: if no price or price is 0, it's out of stock
