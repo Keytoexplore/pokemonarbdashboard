@@ -125,12 +125,19 @@ async function scrapeTorecaCamp(setCode, rarity) {
 
         // Extract card info from title
         // Format: "コマタナ AR SV11B 147/086" or "N's Zekrom AR M2a 210/193"
-        const cardMatch = title.match(/^(.+?)\s+(AR|SR|SAR)\s+(?:[A-Z0-9]+\s+)?(\d+\/\d+)/);
+        const cardMatch = title.match(/^(.+?)\s+(AR|SR|SAR)\s+([A-Z0-9]+)\s+(\d+\/\d+)/);
         if (!cardMatch) continue;
 
         const name = cardMatch[1].trim();
         const cardRarity = cardMatch[2];
-        const cardNumber = cardMatch[3];
+        const cardSet = cardMatch[3].toUpperCase();
+        const cardNumber = cardMatch[4];
+
+        // CRITICAL: Validate set code matches to prevent cross-contamination
+        if (cardSet !== setCode.toUpperCase()) {
+          console.log(`    ⚠️ Skipping ${name} - wrong set: ${cardSet} (expected ${setCode.toUpperCase()})`);
+          continue;
+        }
 
         // Get variants - IMPROVED STOCK DETECTION
         const variantsMatch = pHtml.match(/variants":\s*(\[.*?\])[,;]/);
@@ -203,40 +210,40 @@ async function scrapeTorecaCamp(setCode, rarity) {
 async function scrapeJapanToreca(setCode, rarity) {
   const rarityTerm = rarity === 'AR' ? 'ar' : rarity === 'SR' ? 'sr' : 'sar';
   const baseSearchUrl = `https://shop.japan-toreca.com/search?q=${setCode.toLowerCase()}+${rarityTerm}`;
-  
+
   console.log(`\n🔍 Japan-Toreca: ${setCode} ${rarity}...`);
-  
+
   try {
     // Collect products from all pages
     const allProductUrls = [];
     let page = 1;
     let hasMorePages = true;
-    
+
     while (hasMorePages && page <= 10) { // Limit to 10 pages max
       const pageUrl = page === 1 ? baseSearchUrl : `${baseSearchUrl}&page=${page}`;
       console.log(`  📄 Fetching page ${page}...`);
-      
+
       const res = await fetch(pageUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
       const html = await res.text();
-      
+
       if (html.includes('検索結果が見つかりません') || html.includes('検索結果はありません')) {
         console.log('  ✗ No results');
         return [];
       }
-      
+
       const productMatches = [...html.matchAll(/href="(\/products\/pokemon-\d+[^"]*)"/g)];
       const pageUrls = [...new Set(productMatches.map(m => 'https://shop.japan-toreca.com' + m[1]))];
-      
+
       if (pageUrls.length === 0) {
         hasMorePages = false;
       } else {
         allProductUrls.push(...pageUrls);
-        
+
         // Check if there's a next page link
-        const hasNextPage = html.includes('pagination__next') || 
+        const hasNextPage = html.includes('pagination__next') ||
                            html.includes('rel="next"') ||
                            html.match(/page=\d+/) && page < 10;
-        
+
         if (!hasNextPage || pageUrls.length < 5) {
           hasMorePages = false;
         } else {
@@ -245,37 +252,94 @@ async function scrapeJapanToreca(setCode, rarity) {
         }
       }
     }
-    
+
     // Remove duplicates
     const uniqueUrls = [...new Set(allProductUrls)];
     console.log(`  Found ${uniqueUrls.length} products across ${page} page(s)`);
-    
+
     const results = [];
-    
+
     // Process all products (up to 50 to avoid timeouts)
     for (const url of uniqueUrls.slice(0, 50)) {
       await delay(600);
-      
+
       try {
         const pRes = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const pHtml = await pRes.text();
-        
+
         const headingMatch = pHtml.match(/<h1[^>]*>(.*?)<\/h1>/);
         const heading = headingMatch ? headingMatch[1] : '';
-        
+
         const cardMatch = heading.match(/】\s*(.+?)\s+(AR|SR|SAR)\s*\((\d+\/\d+)\)/);
         if (!cardMatch) continue;
-        
+
         const name = cardMatch[1].trim();
         const cardRarity = cardMatch[2];
         const cardNumber = cardMatch[3];
+
+        // CRITICAL: Validate this is the correct card to prevent cross-contamination
+        // Parse set code from heading - Japan-Toreca format: "【状態A】Name RAR (number/set) [SETCODE]の通販..."
+        const headingSetMatch = heading.match(/\[([A-Z0-9]+)\]の通販/);
+        const headingSetCode = headingSetMatch ? headingSetMatch[1].toUpperCase() : null;
         
+        if (headingSetCode && headingSetCode !== setCode.toUpperCase()) {
+          console.log(`    ⚠️ Skipping ${name} - wrong set in heading: ${headingSetCode} (expected ${setCode.toUpperCase()})`);
+          continue;
+        }
+
         const priceMatch = pHtml.match(/<span[^>]*class="[^"]*price[^"]*"[^>]*>\s*¥\s*([\d,]+)/i);
         if (!priceMatch) continue;
-        
+
         const priceJPY = parseInt(priceMatch[1].replace(/,/g, ''));
         const qualityMatch = heading.match(/【状態([AB\-]+)】/);
-        
+
+        // IMPROVED STOCK DETECTION for Japan-Toreca
+        // Priority 1: Check inventory count - this is the most reliable indicator
+        // Look for patterns like "在庫数: 3" in the product info section
+        const inventoryMatch = pHtml.match(/在庫数[:\s]*([\d]+)/);
+        const inventoryCount = inventoryMatch ? parseInt(inventoryMatch[1]) : null;
+
+        // Priority 2: Check for explicit out-of-stock indicators in visible content
+        // Look for these patterns in specific contexts (not just anywhere in the HTML)
+        const hasExplicitNoStock = pHtml.includes('在庫数: 0') ||
+                                   pHtml.includes('在庫数: 売り切れ') ||
+                                   pHtml.match(/在庫.*?(売り切れ|売切れ)/);
+
+        // Priority 3: Check if "カートに追加" (Add to Cart) button is present and not disabled
+        // Look for the actual button element
+        const hasAddToCartButton = pHtml.includes('data-add-to-cart-text="カートに追加"') ||
+                                   pHtml.match(/<button[^>]*name="add"[^>]*>.*カートに追加/);
+        const isButtonDisabled = pHtml.match(/<button[^>]*name="add"[^>]*disabled[^>]*>/);
+
+        // Priority 4: Check for positive stock indicators
+        const hasInStockMessage = pHtml.includes('在庫あり') ||
+                                  pHtml.match(/([\d]+)点在庫/); // Pattern like "3点在庫"
+
+        // Determine stock status based on priority
+        let inStock = true;
+
+        // If inventory is explicitly 0, it's definitely out of stock
+        if (inventoryCount === 0 || hasExplicitNoStock) {
+          inStock = false;
+        }
+        // If we have positive inventory count, it's in stock
+        else if (inventoryCount !== null && inventoryCount > 0) {
+          inStock = true;
+        }
+        // If button is disabled, it's out of stock
+        else if (isButtonDisabled) {
+          inStock = false;
+        }
+        // If no add to cart button AND no in stock message, likely out of stock
+        else if (!hasAddToCartButton && !hasInStockMessage) {
+          inStock = false;
+        }
+
+        // Fallback: if no price is displayed, it's likely out of stock
+        if (!priceJPY || priceJPY === 0) {
+          inStock = false;
+        }
+
         results.push({
           name,
           cardNumber,
@@ -284,13 +348,13 @@ async function scrapeJapanToreca(setCode, rarity) {
           priceJPY,
           priceUSD: Math.round(priceJPY * JPY_TO_USD * 100) / 100,
           quality: qualityMatch ? qualityMatch[1] : 'A',
-          inStock: !pHtml.includes('売り切れ'),
+          inStock,
           url
         });
-        
+
       } catch (e) {}
     }
-    
+
     console.log(`  ✓ Scraped ${results.length} prices`);
     return results;
   } catch (e) {

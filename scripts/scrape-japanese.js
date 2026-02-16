@@ -61,13 +61,45 @@ async function scrapeWithPuppeteer(browser, url, source) {
     if (!priceJPY || priceJPY < 10) {
       return null;
     }
-    
-    // Check stock
-    const inStock = !bodyText.includes('売り切れ') && 
-                   !bodyText.includes('在庫数: 0') && 
-                   !bodyText.includes('在庫数: 売り切れ') &&
-                   !bodyText.includes('Sold Out') &&
-                   !bodyText.includes('sold out');
+
+    // IMPROVED STOCK DETECTION
+    // Check for sold out indicators
+    const hasSoldOutText = bodyText.includes('売り切れ') ||
+                          bodyText.includes('売切れ') ||
+                          bodyText.includes('Sold Out') ||
+                          bodyText.includes('sold out');
+
+    // Check inventory count patterns
+    const inventoryMatch = bodyText.match(/在庫数[:\s]*([\d]+)/);
+    const inventoryCount = inventoryMatch ? parseInt(inventoryMatch[1]) : null;
+
+    // Check for "在庫なし" (out of stock)
+    const hasNoStockText = bodyText.includes('在庫なし') ||
+                           bodyText.includes('在庫数: 0') ||
+                           bodyText.includes('在庫数: 売り切れ');
+
+    // Check for in-stock indicators
+    const hasInStockMessage = bodyText.includes('在庫あり') ||
+                              (inventoryCount !== null && inventoryCount > 0);
+
+    // Check for add to cart button
+    const hasAddToCartButton = bodyText.includes('カートに追加');
+
+    // Determine stock status
+    let inStock = true;
+
+    // Priority 1: If inventory is explicitly 0 or has explicit no-stock text
+    if (inventoryCount === 0 || hasNoStockText) {
+      inStock = false;
+    }
+    // Priority 2: If we have positive inventory count, it's in stock
+    else if (inventoryCount !== null && inventoryCount > 0) {
+      inStock = true;
+    }
+    // Priority 3: If no add to cart button AND no in-stock message, likely out of stock
+    else if (!hasAddToCartButton && !hasInStockMessage) {
+      inStock = false;
+    }
     
     // Extract quality
     const qualityMatch = bodyText.match(/【状態([A\-]+)】/) || 

@@ -34,15 +34,47 @@ function extractVariants(html) {
   // Find variants JSON array in page
   const variantsMatch = html.match(/variants":\s*(\[.*?\])[,;]/);
   if (!variantsMatch) return null;
-  
+
+  // Check for sold out indicators in the page HTML (backup detection)
+  const hasSoldOutText = html.includes('売り切れ') ||
+                        html.includes('売切れ') ||
+                        html.includes('Sold Out') ||
+                        html.includes('sold out');
+
+  // Check for "在庫なし" (out of stock)
+  const hasNoStockText = html.includes('在庫なし') ||
+                         html.includes('在庫数: 0');
+
   try {
     const variants = JSON.parse(variantsMatch[1]);
-    return variants.map(v => ({
-      variantId: v.id.toString(),
-      title: v.public_title || v.title,
-      price: Math.round(v.price / 100), // Convert cents to yen
-      inStock: v.inventory_quantity > 0 || v.available !== false
-    })).filter(v => {
+    return variants.map(v => {
+      // IMPROVED STOCK DETECTION
+      // 1. Check available field
+      let inStock = v.available !== false && v.available !== 'false';
+
+      // 2. Check inventory_quantity if available
+      if (v.inventory_quantity !== undefined) {
+        inStock = inStock && v.inventory_quantity > 0;
+      }
+
+      // 3. Check HTML for sold out text
+      if (hasSoldOutText || hasNoStockText) {
+        inStock = false;
+      }
+
+      // 4. Fallback: if no price or price is 0, it's out of stock
+      const price = Math.round(v.price / 100);
+      if (!price || price === 0) {
+        inStock = false;
+      }
+
+      return {
+        variantId: v.id.toString(),
+        title: v.public_title || v.title,
+        price, // Convert cents to yen
+        inStock
+      };
+    }).filter(v => {
       // Only keep A, A-, B variants
       const quality = v.title.match(/([AB\-]+)/);
       return quality && ['A', 'A-', 'B'].includes(quality[1]);
