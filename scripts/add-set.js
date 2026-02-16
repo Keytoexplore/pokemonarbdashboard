@@ -180,9 +180,10 @@ async function scrapeTorecaCamp(setCode, rarity) {
 
         const variants = JSON.parse(variantsMatch[1]);
 
+        // Priority: A- > B > A (we want A- or B, A is too expensive)
         const target = variants.find(v => (v.title || v.public_title)?.includes('A-'))
-                    || variants.find(v => (v.title || v.public_title)?.includes('状態A'))
                     || variants.find(v => (v.title || v.public_title)?.includes('B'))
+                    || variants.find(v => (v.title || v.public_title)?.includes('状態A'))
                     || variants[0];
 
         if (!target) continue;
