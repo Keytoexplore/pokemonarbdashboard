@@ -36,35 +36,45 @@ function filterQualityPrices(prices: JapanesePrice[]): JapanesePrice[] {
   return prices.filter((p) => p.source === 'japan-toreca' && normalizeQuality(p.quality) !== null);
 }
 
-function getLowestABPrice(prices: JapanesePrice[]): {
+function getBaselinePrice(prices: JapanesePrice[]): {
   price: JapanesePrice | null;
   inStock: boolean;
   lowestPriceJPY: number;
   lowestPriceUSD: number;
+  baselineQuality: JapaneseCondition | null;
 } {
   const filteredPrices = filterQualityPrices(prices);
 
   if (filteredPrices.length === 0) {
-    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0 };
+    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
   }
 
-  const inStockPrices = filteredPrices.filter((p) => p.inStock);
-  if (inStockPrices.length > 0) {
-    const lowest = inStockPrices.reduce((min, p) => (p.priceJPY < min.priceJPY ? p : min));
-    return {
-      price: lowest,
-      inStock: true,
-      lowestPriceJPY: lowest.priceJPY,
-      lowestPriceUSD: lowest.priceUSD,
-    };
+  // Prefer A- for baseline; fall back to B.
+  const aMinus = filteredPrices
+    .filter((p) => normalizeQuality(p.quality) === 'A-')
+    .sort((a, b) => a.priceJPY - b.priceJPY);
+  const b = filteredPrices
+    .filter((p) => normalizeQuality(p.quality) === 'B')
+    .sort((a, b) => a.priceJPY - b.priceJPY);
+
+  const pick = (arr: JapanesePrice[], quality: JapaneseCondition) => {
+    if (arr.length === 0) return null;
+    const inStock = arr.filter((p) => p.inStock);
+    if (inStock.length > 0) return { price: inStock[0], inStock: true, quality };
+    return { price: arr[0], inStock: false, quality };
+  };
+
+  const chosen = pick(aMinus, 'A-') || pick(b, 'B');
+  if (!chosen) {
+    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
   }
 
-  const lowest = filteredPrices.reduce((min, p) => (p.priceJPY < min.priceJPY ? p : min));
   return {
-    price: lowest,
-    inStock: false,
-    lowestPriceJPY: lowest.priceJPY,
-    lowestPriceUSD: lowest.priceUSD,
+    price: chosen.price,
+    inStock: chosen.inStock,
+    lowestPriceJPY: chosen.price.priceJPY,
+    lowestPriceUSD: chosen.price.priceUSD,
+    baselineQuality: chosen.quality,
   };
 }
 
@@ -103,7 +113,7 @@ function rarityBadgeClass(rarity: RarityCode): string {
 }
 
 type ComputedCard = ArbitrageOpportunity & {
-  lowestData: ReturnType<typeof getLowestABPrice>;
+  lowestData: ReturnType<typeof getBaselinePrice>;
   usProfitMargin: number;
 };
 
@@ -115,7 +125,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
   const cardsWithData = useMemo<ComputedCard[]>(() => {
     return initialCards.map((card) => {
-      const lowestData = getLowestABPrice(card.japanesePrices);
+      const lowestData = getBaselinePrice(card.japanesePrices);
 
       // Calculate US profit margin using lowest A-/B price (in-stock preferred)
       let usProfitMargin = 0;
@@ -350,9 +360,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                   </span>
                 </div>
 
-                {/* Lowest A-/B Price */}
+                {/* Baseline JP Price */}
                 <div className="bg-white/5 rounded-lg p-3">
-                  <p className="text-white/60 text-sm">Lowest (A- / B)</p>
+                  <p className="text-white/60 text-sm">Baseline (A- preferred, else B)</p>
                   {lowestData?.price ? (
                     <>
                       <p className="text-2xl font-bold text-emerald-400">¥{lowestData.lowestPriceJPY.toLocaleString()}</p>
@@ -360,7 +370,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                         ~${lowestData.lowestPriceUSD.toFixed(2)}
                         {!lowestData.inStock && <span className="ml-2 text-red-400 font-semibold">Out of Stock</span>}
                       </p>
-                      <p className="text-white/40 text-xs mt-1">Quality: {String(lowestData.price.quality)}</p>
+                      <p className="text-white/40 text-xs mt-1">
+                        Using: {lowestData.baselineQuality || String(lowestData.price.quality)}
+                      </p>
                     </>
                   ) : (
                     <p className="text-red-400 text-sm">No A- or B listings found</p>

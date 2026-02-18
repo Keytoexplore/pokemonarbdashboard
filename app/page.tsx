@@ -42,12 +42,15 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
-    // Determine lowest JP A-/B (prefer in-stock; everything is assumed in-stock for listing pages)
-    const lowestJPUSD = jp.length > 0 ? Math.min(...jp.map((p) => p.priceUSD)) : 0;
+    // Prefer A- as the baseline; fall back to B.
+    const aMinus = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'A-');
+    const b = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'B');
+    const baseline = (aMinus[0] || b[0]) || null;
+    const baselineUSD = baseline?.priceUSD || 0;
 
     const usMarketPrice = c.usMarket?.tcgplayer?.marketPrice ?? null;
     const usProfitMargin =
-      usMarketPrice != null && lowestJPUSD > 0 ? Math.round(((usMarketPrice - lowestJPUSD) / lowestJPUSD) * 100) : 0;
+      usMarketPrice != null && baselineUSD > 0 ? Math.round(((usMarketPrice - baselineUSD) / baselineUSD) * 100) : 0;
 
     out.push({
       id: `${c.setId}:${c.number}`,
