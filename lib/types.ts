@@ -1,8 +1,14 @@
+export type PriceSource = 'japan-toreca';
+
+export type RarityCode = 'AR' | 'SAR' | 'SR' | 'CHR' | 'UR' | 'SSR' | 'RRR';
+
+export type JapaneseCondition = 'A-' | 'B';
+
 export interface JapanesePrice {
-  source: 'japan-toreca' | 'torecacamp';
+  source: PriceSource;
   priceJPY: number;
   priceUSD: number;
-  quality?: string | null;
+  quality?: JapaneseCondition | string | null;
   inStock: boolean;
   url: string;
   isLowest: boolean;
@@ -11,10 +17,10 @@ export interface JapanesePrice {
 export interface LastKnownPrice {
   priceJPY: number;
   priceUSD: number;
-  quality: string;
+  quality: JapaneseCondition | string;
   date: string;
   inStock: boolean;
-  source: 'japan-toreca' | 'torecacamp';
+  source: PriceSource;
   url: string;
 }
 
@@ -69,14 +75,14 @@ export interface ArbitrageUSData {
   japanPriceUSD: number;
   usMarketPrice: number;
   isViable: boolean;
-  isPotential?: boolean; // True if based on last known price
+  isPotential?: boolean; // True if based on last known price (out of stock)
 }
 
 export interface ArbitrageOpportunity {
   id: string;
   name: string;
   cardNumber: string;
-  rarity: 'SR' | 'AR' | 'SAR';
+  rarity: RarityCode;
   set: string;
   tcgplayer: TCGPlayerData;
   japanesePrices: JapanesePrice[];

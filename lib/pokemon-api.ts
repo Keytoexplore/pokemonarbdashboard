@@ -77,7 +77,7 @@ function transformApiResponse(card: PokemonCardAPI): USPriceData {
  * Fetch US market price for a Pokemon card
  * Uses internal API route with caching and rate limiting
  * @param cardNumber - Card number (e.g., "082/080")
- * @param setCode - Set code (e.g., "M3")
+ * @param setCode - Set code (e.g., "S12a")
  * @returns USPriceData with market price information and image URL
  */
 export async function fetchUSCardPrice(

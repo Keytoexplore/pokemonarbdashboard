@@ -126,7 +126,7 @@ async function fetchCardPrice(setCode: string, cardNumber: string) {
 }
 
 /**
- * GET /api/prices?set=M3&number=082
+ * GET /api/prices?set=S12a&number=262
  * Fetches US price for a specific card
  */
 export async function GET(request: NextRequest) {

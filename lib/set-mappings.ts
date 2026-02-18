@@ -193,6 +193,14 @@ export const japaneseSetMappings: Record<string, SetMapping> = {
     releaseDate: '2022-10-21',
     englishEquivalent: 'Silver Tempest',
   },
+  'S12A': {
+    jpCode: 'S12a',
+    apiSetId: 's12a', // CONFIRMED: API uses 's12a'
+    englishName: 'VSTAR Universe',
+    japaneseName: 'VSTARユニバース',
+    releaseDate: '2022-12-02',
+    englishEquivalent: 'Crown Zenith',
+  },
 };
 
 /**

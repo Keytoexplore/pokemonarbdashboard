@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:s12a": "node scripts/build-s12a.js",
+    "build:s12a:force": "node scripts/build-s12a.js --force"
   },
   "dependencies": {
     "next": "16.1.6",

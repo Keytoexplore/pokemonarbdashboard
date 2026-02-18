@@ -50,7 +50,7 @@ export default async function Home() {
             Pokemon TCG Arbitrage
           </h1>
           <p className="text-purple-200">
-            Japanese M3 Set - SAR, AR & SR Price Tracker (Japan → US Market)
+            Japanese S12a (VSTAR Universe) - AR/SAR/SR/CHR/UR/SSR/RRR Price Tracker (Japan → US Market)
           </p>
           <p className="text-purple-300 text-sm mt-2">
             Last updated: {new Date(cardsData.lastUpdated).toLocaleString()}
