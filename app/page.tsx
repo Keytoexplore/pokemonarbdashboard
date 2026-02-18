@@ -13,6 +13,7 @@ export const revalidate = 259200;
  */
 function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOpportunity[] {
   const out: ArbitrageOpportunity[] = [];
+  const JPY_TO_USD = 0.0065;
 
   for (const c of builder.cards) {
     const jp: JapanesePrice[] = [];
@@ -21,7 +22,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       jp.push({
         source: 'japan-toreca',
         priceJPY: c.japanToreca.aMinus.priceJPY,
-        priceUSD: 0,
+        priceUSD: c.japanToreca.aMinus.priceJPY * JPY_TO_USD,
         quality: 'A-',
         inStock: true,
         url: c.japanToreca.aMinus.url,
@@ -33,7 +34,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       jp.push({
         source: 'japan-toreca',
         priceJPY: c.japanToreca.b.priceJPY,
-        priceUSD: 0,
+        priceUSD: c.japanToreca.b.priceJPY * JPY_TO_USD,
         quality: 'B',
         inStock: true,
         url: c.japanToreca.b.url,
@@ -41,7 +42,12 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
+    // Determine lowest JP A-/B (prefer in-stock; everything is assumed in-stock for listing pages)
+    const lowestJPUSD = jp.length > 0 ? Math.min(...jp.map((p) => p.priceUSD)) : 0;
+
     const usMarketPrice = c.usMarket?.tcgplayer?.marketPrice ?? null;
+    const usProfitMargin =
+      usMarketPrice != null && lowestJPUSD > 0 ? Math.round(((usMarketPrice - lowestJPUSD) / lowestJPUSD) * 100) : 0;
 
     out.push({
       id: `${c.setId}:${c.number}`,
@@ -54,7 +60,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
         sellerCount: c.usMarket?.tcgplayer?.sellerCount ?? 0,
       },
       japanesePrices: jp,
-      lowestJapanesePrice: 0,
+      lowestJapanesePrice: jp.length > 0 ? Math.min(...jp.map((p) => p.priceJPY)) : 0,
       usPrice:
         usMarketPrice != null
           ? {
@@ -68,10 +74,10 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
             }
           : null,
       arbitrageUS: null,
-      marginPercent: 0,
+      marginPercent: usProfitMargin,
       marginAmount: 0,
       lastUpdated: c.updatedAt,
-      isViable: false,
+      isViable: usProfitMargin > 0,
       imageUrl: c.images?.small || undefined,
       lastKnownPrice: null,
     });
