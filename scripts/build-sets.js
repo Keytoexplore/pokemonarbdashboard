@@ -301,12 +301,61 @@ function pickUsMarket(apiCard) {
   };
 }
 
+function pickCanonicalSetPrefix(apiCards, apiSetId) {
+  // The API sometimes returns multiple setName prefixes for one set code
+  // (e.g. querying "s12" returns both "S12:" and "S12a:").
+  // Also, suffix casing varies across sets (SV2D vs SV6a).
+  //
+  // Strategy: choose the most frequent setName prefix whose code part equals
+  // the requested apiSetId (case-insensitive), then filter to that.
+  const wanted = String(apiSetId || '').trim().toLowerCase();
+
+  const counts = new Map();
+
+  for (const c of apiCards) {
+    const setName = String(c?.setName || '').trim();
+    const prefix = setName.split(':')[0];
+    if (!prefix) continue;
+
+    if (prefix.toLowerCase() !== wanted) continue;
+
+    counts.set(prefix, (counts.get(prefix) || 0) + 1);
+  }
+
+  if (counts.size === 0) return null;
+
+  let best = null;
+  let bestCount = -1;
+  for (const [p, n] of counts.entries()) {
+    if (n > bestCount) {
+      best = p;
+      bestCount = n;
+    }
+  }
+
+  return best ? `${best}:` : null;
+}
+
 function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
   const jtByCard = bestJTByCard(jtListings);
 
   const outCards = [];
 
-  for (const apiCard of apiDump.data) {
+  const apiCards = Array.isArray(apiDump.data) ? apiDump.data : [];
+  const expectedPrefix = pickCanonicalSetPrefix(apiCards, apiSetId);
+
+  const filteredApiCards = expectedPrefix
+    ? apiCards.filter((c) => String(c?.setName || '').trim().startsWith(expectedPrefix))
+    : apiCards;
+
+  if (expectedPrefix && filteredApiCards.length !== apiCards.length) {
+    console.warn(
+      `⚠ Set contamination: ${displaySetCode} (set=${apiSetId}) API returned ${apiCards.length} cards, ` +
+        `but only ${filteredApiCards.length} match canonical setName prefix "${expectedPrefix}".`
+    );
+  }
+
+  for (const apiCard of filteredApiCards) {
     const rarityCode = mapApiRarityToCode(apiCard.rarity);
     if (!rarityCode || !ALLOWED_RARITIES.has(rarityCode)) continue;
 
