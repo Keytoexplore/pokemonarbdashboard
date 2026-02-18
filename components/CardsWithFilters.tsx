@@ -127,12 +127,19 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
     return initialCards.map((card) => {
       const lowestData = getBaselinePrice(card.japanesePrices);
 
-      // Calculate US profit margin using lowest A-/B price (in-stock preferred)
+      // Calculate US profit margin using WORST buy price (highest of A-/B, in-stock preferred)
+      // This is more conservative.
       let usProfitMargin = 0;
-      if (card.usPrice && lowestData.lowestPriceUSD > 0) {
-        usProfitMargin = Math.round(
-          ((card.usPrice.marketPrice - lowestData.lowestPriceUSD) / lowestData.lowestPriceUSD) * 100
-        );
+      if (card.usPrice) {
+        const jtPrices = filterQualityPrices(card.japanesePrices);
+        if (jtPrices.length > 0) {
+          const inStock = jtPrices.filter((p) => p.inStock);
+          const candidates = inStock.length > 0 ? inStock : jtPrices;
+          const worst = candidates.reduce((max, p) => (p.priceUSD > max.priceUSD ? p : max), candidates[0]);
+          if (worst && worst.priceUSD > 0) {
+            usProfitMargin = Math.round(((card.usPrice.marketPrice - worst.priceUSD) / worst.priceUSD) * 100);
+          }
+        }
       }
 
       return {
