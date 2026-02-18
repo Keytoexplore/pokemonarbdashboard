@@ -19,7 +19,7 @@
       "A-",
       "B"
     ],
-    "builtAt": "2026-02-18T13:54:46.175Z"
+    "builtAt": "2026-02-18T14:01:53.527Z"
   },
   "cards": [
     {
@@ -29,8 +29,8 @@
       "name": "Arceus VSTAR - 262/172",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571792_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571792_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -46,12 +46,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 101.81,
+          "url": "https://www.tcgplayer.com/product/571792",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -60,8 +60,8 @@
       "name": "Giratina VSTAR - 261/172",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571791_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571791_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -77,12 +77,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 147.66,
+          "url": "https://www.tcgplayer.com/product/571791",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -91,8 +91,8 @@
       "name": "Origin Forme Dialga VSTAR - 260/172",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571790_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571790_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -108,12 +108,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 64.18,
+          "url": "https://www.tcgplayer.com/product/571790",
+          "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -122,8 +122,8 @@
       "name": "Origin Forme Palkia VSTAR - 259/172",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571789_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571789_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -139,12 +139,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 56.46,
+          "url": "https://www.tcgplayer.com/product/571789",
+          "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -153,8 +153,8 @@
       "name": "Boss's Orders - 250/172",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571788_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571788_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -170,12 +170,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.31,
+          "url": "https://www.tcgplayer.com/product/571788",
+          "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -184,8 +184,8 @@
       "name": "Friends in Hisui - 249/172",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571787_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571787_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -201,12 +201,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 4.66,
+          "url": "https://www.tcgplayer.com/product/571787",
+          "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -215,8 +215,8 @@
       "name": "Professor's Research - 248/172",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571786_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571786_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -232,12 +232,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.2,
+          "url": "https://www.tcgplayer.com/product/571786",
+          "sellerCount": 45
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -246,8 +246,8 @@
       "name": "Friends in Sinnoh - 247/172",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571785_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571785_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -263,12 +263,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.97,
+          "url": "https://www.tcgplayer.com/product/571785",
+          "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -277,8 +277,8 @@
       "name": "Elesa's Sparkle - 246/172",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571784_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571784_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -294,12 +294,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 18.43,
+          "url": "https://www.tcgplayer.com/product/571784",
+          "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -308,8 +308,8 @@
       "name": "Volo",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571783_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571783_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -325,12 +325,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.3,
+          "url": "https://www.tcgplayer.com/product/571783",
+          "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -339,8 +339,8 @@
       "name": "Melony - 244/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571782_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571782_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -356,12 +356,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.31,
+          "url": "https://www.tcgplayer.com/product/571782",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -370,8 +370,8 @@
       "name": "Gardenia's Vigor - 243/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571781_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571781_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -387,12 +387,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.37,
+          "url": "https://www.tcgplayer.com/product/571781",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -401,8 +401,8 @@
       "name": "Roxanne - 242/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571780_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571780_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -418,12 +418,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.42,
+          "url": "https://www.tcgplayer.com/product/571780",
+          "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -432,8 +432,8 @@
       "name": "Cheren's Care - 241/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571779_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571779_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -449,12 +449,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.7,
+          "url": "https://www.tcgplayer.com/product/571779",
+          "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -463,8 +463,8 @@
       "name": "Adaman - 240/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571778_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571778_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -480,12 +480,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.27,
+          "url": "https://www.tcgplayer.com/product/571778",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -494,8 +494,8 @@
       "name": "Cynthia's Ambition - 239/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571777_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571777_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -511,12 +511,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 29.07,
+          "url": "https://www.tcgplayer.com/product/571777",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -525,8 +525,8 @@
       "name": "Grant - 238/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571776_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571776_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -542,12 +542,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.34,
+          "url": "https://www.tcgplayer.com/product/571776",
+          "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -556,8 +556,8 @@
       "name": "Raihan - 237/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571775_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571775_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -573,12 +573,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.17,
+          "url": "https://www.tcgplayer.com/product/571775",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -587,8 +587,8 @@
       "name": "Irida - 236/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571774_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571774_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -604,12 +604,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 22.22,
+          "url": "https://www.tcgplayer.com/product/571774",
+          "sellerCount": 23
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -618,8 +618,8 @@
       "name": "Colress's Experiment - 235/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571773_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571773_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -635,12 +635,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.38,
+          "url": "https://www.tcgplayer.com/product/571773",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -649,8 +649,8 @@
       "name": "Hisuian Zoroark VSTAR - 234/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571772_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571772_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -666,12 +666,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 26.99,
+          "url": "https://www.tcgplayer.com/product/571772",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -680,8 +680,8 @@
       "name": "Regigigas VSTAR - 233/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571771_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571771_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -697,12 +697,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.17,
+          "url": "https://www.tcgplayer.com/product/571771",
+          "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -711,8 +711,8 @@
       "name": "Zamazenta V - 232/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571770_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571770_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -728,12 +728,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.27,
+          "url": "https://www.tcgplayer.com/product/571770",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -742,8 +742,8 @@
       "name": "Hoopa V",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571769_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571769_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -759,12 +759,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.26,
+          "url": "https://www.tcgplayer.com/product/571769",
+          "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -773,8 +773,8 @@
       "name": "Hisuian Samurott VSTAR - 230/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571768_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571768_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -790,12 +790,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.99,
+          "url": "https://www.tcgplayer.com/product/571768",
+          "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -804,8 +804,8 @@
       "name": "Hisuian Samurott V - 229/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571767_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571767_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -821,12 +821,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.33,
+          "url": "https://www.tcgplayer.com/product/571767",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -835,8 +835,8 @@
       "name": "Darkrai VSTAR",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571766_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571766_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -852,12 +852,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 26.63,
+          "url": "https://www.tcgplayer.com/product/571766",
+          "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -866,8 +866,8 @@
       "name": "Drapion V - 227/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571765_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571765_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -883,12 +883,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.44,
+          "url": "https://www.tcgplayer.com/product/571765",
+          "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -897,8 +897,8 @@
       "name": "Lucario VSTAR",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571764_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571764_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -914,12 +914,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 11.78,
+          "url": "https://www.tcgplayer.com/product/571764",
+          "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.600Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -928,8 +928,8 @@
       "name": "Zacian V - 225/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571763_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571763_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -945,12 +945,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 12.43,
+          "url": "https://www.tcgplayer.com/product/571763",
+          "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -959,8 +959,8 @@
       "name": "Hatterene VMAX - 224/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571762_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571762_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -976,12 +976,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.48,
+          "url": "https://www.tcgplayer.com/product/571762",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -990,8 +990,8 @@
       "name": "Deoxys VSTAR",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571761_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571761_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1007,12 +1007,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 20.16,
+          "url": "https://www.tcgplayer.com/product/571761",
+          "sellerCount": 20
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1021,8 +1021,8 @@
       "name": "Deoxys VMAX",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571760_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571760_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1038,12 +1038,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 19.21,
+          "url": "https://www.tcgplayer.com/product/571760",
+          "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1052,8 +1052,8 @@
       "name": "Mewtwo VSTAR - 221/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571759_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571759_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1069,12 +1069,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 75,
+          "url": "https://www.tcgplayer.com/product/571759",
+          "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1083,8 +1083,8 @@
       "name": "Zeraora VSTAR - 220/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571758_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571758_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1100,12 +1100,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 10.42,
+          "url": "https://www.tcgplayer.com/product/571758",
+          "sellerCount": 23
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1114,8 +1114,8 @@
       "name": "Zeraora VMAX - 219/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571757_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571757_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1131,12 +1131,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 11.06,
+          "url": "https://www.tcgplayer.com/product/571757",
+          "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1145,8 +1145,8 @@
       "name": "Raikou V - 218/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571756_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571756_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1162,12 +1162,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 21,
+          "url": "https://www.tcgplayer.com/product/571756",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1176,8 +1176,8 @@
       "name": "Glaceon VSTAR",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571755_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571755_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1193,12 +1193,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 29.58,
+          "url": "https://www.tcgplayer.com/product/571755",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1207,8 +1207,8 @@
       "name": "Lumineon V - 216/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571754_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571754_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1224,12 +1224,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 11.63,
+          "url": "https://www.tcgplayer.com/product/571754",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1238,8 +1238,8 @@
       "name": "Suicune V - 215/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571753_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571753_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1255,12 +1255,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 33.27,
+          "url": "https://www.tcgplayer.com/product/571753",
+          "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1269,8 +1269,8 @@
       "name": "Simisear VSTAR - 214/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571752_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571752_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1286,12 +1286,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 19.59,
+          "url": "https://www.tcgplayer.com/product/571752",
+          "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1300,8 +1300,8 @@
       "name": "Entei V - 213/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571751_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571751_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1317,12 +1317,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 23.16,
+          "url": "https://www.tcgplayer.com/product/571751",
+          "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1331,8 +1331,8 @@
       "name": "Charizard VSTAR - 212/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571750_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571750_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1348,12 +1348,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 66.34,
+          "url": "https://www.tcgplayer.com/product/571750",
+          "sellerCount": 17
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1362,8 +1362,8 @@
       "name": "Charizard V - 211/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571749_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571749_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1379,12 +1379,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 31.01,
+          "url": "https://www.tcgplayer.com/product/571749",
+          "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1393,8 +1393,8 @@
       "name": "Leafeon VSTAR - 210/172",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571748_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571748_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1410,12 +1410,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 40.39,
+          "url": "https://www.tcgplayer.com/product/571748",
+          "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1424,8 +1424,8 @@
       "name": "Mareep - 209/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571747_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571747_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": null,
@@ -1433,12 +1433,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 13.14,
+          "url": "https://www.tcgplayer.com/product/571747",
+          "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1447,8 +1447,8 @@
       "name": "Poochyena - 208/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571746_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571746_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1464,12 +1464,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.49,
+          "url": "https://www.tcgplayer.com/product/571746",
+          "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1478,8 +1478,8 @@
       "name": "Paras - 207/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571745_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571745_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1495,12 +1495,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.04,
+          "url": "https://www.tcgplayer.com/product/571745",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1509,8 +1509,8 @@
       "name": "Turtwig - 206/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571744_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571744_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1526,12 +1526,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.21,
+          "url": "https://www.tcgplayer.com/product/571744",
+          "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1540,8 +1540,8 @@
       "name": "Pikachu",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571743_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571743_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1557,12 +1557,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 130.9,
+          "url": "https://www.tcgplayer.com/product/571743",
+          "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1571,8 +1571,8 @@
       "name": "Bidoof - 204/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571742_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571742_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1588,12 +1588,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.15,
+          "url": "https://www.tcgplayer.com/product/571742",
+          "sellerCount": 20
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1602,8 +1602,8 @@
       "name": "Duskull - 203/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571741_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571741_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1619,12 +1619,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.12,
+          "url": "https://www.tcgplayer.com/product/571741",
+          "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1633,8 +1633,8 @@
       "name": "Swablu - 202/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571740_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571740_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1650,12 +1650,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.29,
+          "url": "https://www.tcgplayer.com/product/571740",
+          "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1664,8 +1664,8 @@
       "name": "Riolu - 201/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571739_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571739_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1681,12 +1681,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 13.99,
+          "url": "https://www.tcgplayer.com/product/571739",
+          "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1695,8 +1695,8 @@
       "name": "Bibarel - 200/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571738_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571738_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1712,12 +1712,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.89,
+          "url": "https://www.tcgplayer.com/product/571738",
+          "sellerCount": 84
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1726,8 +1726,8 @@
       "name": "Miltank - 199/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571737_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571737_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1743,12 +1743,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.28,
+          "url": "https://www.tcgplayer.com/product/571737",
+          "sellerCount": 51
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1757,8 +1757,8 @@
       "name": "Dunsparce - 198/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571736_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571736_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1774,12 +1774,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.74,
+          "url": "https://www.tcgplayer.com/product/571736",
+          "sellerCount": 99
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1788,8 +1788,8 @@
       "name": "Ditto - 197/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571735_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571735_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1805,12 +1805,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.78,
+          "url": "https://www.tcgplayer.com/product/571735",
+          "sellerCount": 71
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1819,8 +1819,8 @@
       "name": "Hisuian Goodra - 196/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571734_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571734_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1836,12 +1836,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.62,
+          "url": "https://www.tcgplayer.com/product/571734",
+          "sellerCount": 97
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1850,8 +1850,8 @@
       "name": "Latias - 195/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571733_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571733_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1867,12 +1867,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.63,
+          "url": "https://www.tcgplayer.com/product/571733",
+          "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1881,8 +1881,8 @@
       "name": "Altaria - 194/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571732_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571732_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1898,12 +1898,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.65,
+          "url": "https://www.tcgplayer.com/product/571732",
+          "sellerCount": 71
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1912,8 +1912,8 @@
       "name": "Magnezone - 193/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571731_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571731_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1929,12 +1929,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.57,
+          "url": "https://www.tcgplayer.com/product/571731",
+          "sellerCount": 79
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1943,8 +1943,8 @@
       "name": "Thievul - 192/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571730_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571730_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1960,12 +1960,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.47,
+          "url": "https://www.tcgplayer.com/product/571730",
+          "sellerCount": 123
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -1974,8 +1974,8 @@
       "name": "Absol - 191/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571729_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571729_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -1991,12 +1991,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.96,
+          "url": "https://www.tcgplayer.com/product/571729",
+          "sellerCount": 53
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2005,8 +2005,8 @@
       "name": "Galarian Moltres - 190/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571728_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571728_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2022,12 +2022,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.63,
+          "url": "https://www.tcgplayer.com/product/571728",
+          "sellerCount": 61
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2036,8 +2036,8 @@
       "name": "Solrock - 189/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571727_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571727_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2053,12 +2053,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.79,
+          "url": "https://www.tcgplayer.com/product/571727",
+          "sellerCount": 80
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2067,8 +2067,8 @@
       "name": "Galarian Zapdos - 188/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571726_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571726_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2084,12 +2084,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.5,
+          "url": "https://www.tcgplayer.com/product/571726",
+          "sellerCount": 87
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2098,8 +2098,8 @@
       "name": "Comfey - 187/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571725_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571725_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2115,12 +2115,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.59,
+          "url": "https://www.tcgplayer.com/product/571725",
+          "sellerCount": 103
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2129,8 +2129,8 @@
       "name": "Diancie - 186/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571724_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571724_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2146,12 +2146,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.32,
+          "url": "https://www.tcgplayer.com/product/571724",
+          "sellerCount": 72
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2160,8 +2160,8 @@
       "name": "Deoxys - 185/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571723_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571723_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2177,12 +2177,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.06,
+          "url": "https://www.tcgplayer.com/product/571723",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2191,8 +2191,8 @@
       "name": "Lunatone - 184/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571722_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571722_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2208,12 +2208,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.66,
+          "url": "https://www.tcgplayer.com/product/571722",
+          "sellerCount": 89
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2222,8 +2222,8 @@
       "name": "Mew - 183/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571721_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571721_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2239,12 +2239,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 27.85,
+          "url": "https://www.tcgplayer.com/product/571721",
+          "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2253,8 +2253,8 @@
       "name": "Galarian Articuno - 182/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571720_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571720_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2270,12 +2270,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.28,
+          "url": "https://www.tcgplayer.com/product/571720",
+          "sellerCount": 76
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2284,8 +2284,8 @@
       "name": "Toxtricity - 181/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571719_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571719_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2301,12 +2301,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.66,
+          "url": "https://www.tcgplayer.com/product/571719",
+          "sellerCount": 98
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2315,8 +2315,8 @@
       "name": "Electivire - 180/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571718_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571718_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2332,12 +2332,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.57,
+          "url": "https://www.tcgplayer.com/product/571718",
+          "sellerCount": 75
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2346,8 +2346,8 @@
       "name": "Keldeo - 179/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571717_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571717_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2363,12 +2363,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.41,
+          "url": "https://www.tcgplayer.com/product/571717",
+          "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2377,8 +2377,8 @@
       "name": "Manaphy - 178/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571716_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571716_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2394,12 +2394,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.08,
+          "url": "https://www.tcgplayer.com/product/571716",
+          "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2408,8 +2408,8 @@
       "name": "Lapras - 177/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571715_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571715_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2425,12 +2425,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.74,
+          "url": "https://www.tcgplayer.com/product/571715",
+          "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2439,8 +2439,8 @@
       "name": "Oricorio - 176/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571714_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571714_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2456,12 +2456,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.66,
+          "url": "https://www.tcgplayer.com/product/571714",
+          "sellerCount": 95
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2470,8 +2470,8 @@
       "name": "Magmortar - 175/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571713_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571713_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2487,12 +2487,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.96,
+          "url": "https://www.tcgplayer.com/product/571713",
+          "sellerCount": 59
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2501,8 +2501,8 @@
       "name": "Kricketune - 174/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571712_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571712_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2518,12 +2518,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.95,
+          "url": "https://www.tcgplayer.com/product/571712",
+          "sellerCount": 85
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2532,8 +2532,8 @@
       "name": "Hisuian Voltorb - 173/172",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571711_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571711_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2549,12 +2549,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.38,
+          "url": "https://www.tcgplayer.com/product/571711",
+          "sellerCount": 103
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2563,8 +2563,8 @@
       "name": "Hisuian Zoroark VSTAR - 129/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571667_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571667_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2580,12 +2580,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.41,
+          "url": "https://www.tcgplayer.com/product/571667",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2594,8 +2594,8 @@
       "name": "Arceus VSTAR - 127/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571665_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571665_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2611,12 +2611,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.78,
+          "url": "https://www.tcgplayer.com/product/571665",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2625,8 +2625,8 @@
       "name": "Regigigas VSTAR - 125/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571663_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571663_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2642,12 +2642,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.47,
+          "url": "https://www.tcgplayer.com/product/571663",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2656,8 +2656,8 @@
       "name": "Giratina VSTAR - 111/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571649_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571649_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2673,12 +2673,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.73,
+          "url": "https://www.tcgplayer.com/product/571649",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2687,8 +2687,8 @@
       "name": "Rayquaza VMAX",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571646_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571646_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2704,12 +2704,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.51,
+          "url": "https://www.tcgplayer.com/product/571646",
+          "sellerCount": 23
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2718,8 +2718,8 @@
       "name": "Origin Forme Dialga VSTAR - 101/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571639_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571639_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2735,12 +2735,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.57,
+          "url": "https://www.tcgplayer.com/product/571639",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2749,8 +2749,8 @@
       "name": "Hisuian Samurott VSTAR - 087/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571625_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571625_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2766,12 +2766,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.56,
+          "url": "https://www.tcgplayer.com/product/571625",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2780,8 +2780,8 @@
       "name": "Machamp VMAX",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571610_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571610_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2797,12 +2797,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.87,
+          "url": "https://www.tcgplayer.com/product/571610",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2811,8 +2811,8 @@
       "name": "Hatterene VMAX - 066/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571604_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571604_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2828,12 +2828,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.43,
+          "url": "https://www.tcgplayer.com/product/571604",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2842,8 +2842,8 @@
       "name": "Mew VMAX",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571592_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571592_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2859,12 +2859,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.63,
+          "url": "https://www.tcgplayer.com/product/571592",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2873,8 +2873,8 @@
       "name": "Mewtwo VSTAR - 051/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571589_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571589_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2890,12 +2890,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.16,
+          "url": "https://www.tcgplayer.com/product/571589",
+          "sellerCount": 48
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2904,8 +2904,8 @@
       "name": "Zeraora VSTAR - 042/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571580_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571580_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2921,12 +2921,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.46,
+          "url": "https://www.tcgplayer.com/product/571580",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2935,8 +2935,8 @@
       "name": "Zeraora VMAX - 041/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571579_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571579_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2952,12 +2952,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.65,
+          "url": "https://www.tcgplayer.com/product/571579",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2966,8 +2966,8 @@
       "name": "Origin Forme Palkia VSTAR - 028/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571566_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571566_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -2983,12 +2983,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.56,
+          "url": "https://www.tcgplayer.com/product/571566",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -2997,8 +2997,8 @@
       "name": "Simisear VSTAR - 021/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571559_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571559_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3014,12 +3014,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.32,
+          "url": "https://www.tcgplayer.com/product/571559",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -3028,8 +3028,8 @@
       "name": "Charizard VSTAR - 014/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571552_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571552_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3045,12 +3045,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.72,
+          "url": "https://www.tcgplayer.com/product/571552",
+          "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "S12A",
@@ -3059,8 +3059,8 @@
       "name": "Leafeon VSTAR - 012/172",
       "rarity": "RRR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/571550_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/571550_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3076,12 +3076,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.77,
+          "url": "https://www.tcgplayer.com/product/571550",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.601Z"
+      "updatedAt": "2026-02-18T14:01:53.510Z"
     },
     {
       "set": "SV2A",
@@ -3090,8 +3090,8 @@
       "name": "Basic Psychic Energy",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566552_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566552_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3107,12 +3107,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.35,
+          "url": "https://www.tcgplayer.com/product/566552",
+          "sellerCount": 44
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3121,8 +3121,8 @@
       "name": "Switch",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566551_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566551_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3138,12 +3138,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 4.88,
+          "url": "https://www.tcgplayer.com/product/566551",
+          "sellerCount": 68
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3152,8 +3152,8 @@
       "name": "Mew ex - 208/165",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566550_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566550_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3169,12 +3169,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 18.63,
+          "url": "https://www.tcgplayer.com/product/566550",
+          "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3183,8 +3183,8 @@
       "name": "Giovanni's Charisma - 207/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566549_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566549_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3200,12 +3200,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 14.01,
+          "url": "https://www.tcgplayer.com/product/566549",
+          "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3214,8 +3214,8 @@
       "name": "Erika's Invitation - 206/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566548_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566548_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3231,12 +3231,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 30.66,
+          "url": "https://www.tcgplayer.com/product/566548",
+          "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3245,8 +3245,8 @@
       "name": "Mew ex - 205/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/577147_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/577147_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3262,12 +3262,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 132.11,
+          "url": "https://www.tcgplayer.com/product/577147",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3276,8 +3276,8 @@
       "name": "Zapdos ex - 204/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566547_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566547_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3293,12 +3293,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 71.5,
+          "url": "https://www.tcgplayer.com/product/566547",
+          "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3307,8 +3307,8 @@
       "name": "Alakazam ex - 203/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566546_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566546_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3324,12 +3324,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 42.91,
+          "url": "https://www.tcgplayer.com/product/566546",
+          "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3338,8 +3338,8 @@
       "name": "Blastoise ex - 202/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566545_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566545_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3355,12 +3355,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 78.44,
+          "url": "https://www.tcgplayer.com/product/566545",
+          "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3369,8 +3369,8 @@
       "name": "Charizard ex - 201/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566544_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566544_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3386,12 +3386,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 249.23,
+          "url": "https://www.tcgplayer.com/product/566544",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3400,8 +3400,8 @@
       "name": "Venusaur ex - 200/165",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566543_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566543_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3417,12 +3417,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 79.82,
+          "url": "https://www.tcgplayer.com/product/566543",
+          "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3431,8 +3431,8 @@
       "name": "Bill's Transfer - 199/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566542_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566542_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3448,12 +3448,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.64,
+          "url": "https://www.tcgplayer.com/product/566542",
+          "sellerCount": 64
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3462,8 +3462,8 @@
       "name": "Daisy's Help - 198/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566541_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566541_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3479,12 +3479,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.72,
+          "url": "https://www.tcgplayer.com/product/566541",
+          "sellerCount": 72
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3493,8 +3493,8 @@
       "name": "Giovanni's Charisma - 197/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566540_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566540_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3510,12 +3510,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.68,
+          "url": "https://www.tcgplayer.com/product/566540",
+          "sellerCount": 78
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3524,8 +3524,8 @@
       "name": "Erika's Invitation - 196/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566539_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566539_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": null,
@@ -3537,12 +3537,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.54,
+          "url": "https://www.tcgplayer.com/product/566539",
+          "sellerCount": 40
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3551,8 +3551,8 @@
       "name": "Mew ex - 195/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566538_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566538_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3568,12 +3568,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 10.32,
+          "url": "https://www.tcgplayer.com/product/566538",
+          "sellerCount": 17
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3582,8 +3582,8 @@
       "name": "Zapdos ex - 194/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566537_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566537_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3599,12 +3599,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.88,
+          "url": "https://www.tcgplayer.com/product/566537",
+          "sellerCount": 66
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3613,8 +3613,8 @@
       "name": "Jynx ex - 193/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566536_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566536_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3630,12 +3630,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.45,
+          "url": "https://www.tcgplayer.com/product/566536",
+          "sellerCount": 73
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3644,8 +3644,8 @@
       "name": "Kangaskhan ex - 192/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566535_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566535_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3661,12 +3661,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.65,
+          "url": "https://www.tcgplayer.com/product/566535",
+          "sellerCount": 93
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3675,8 +3675,8 @@
       "name": "Golem ex - 191/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566534_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566534_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3692,12 +3692,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.17,
+          "url": "https://www.tcgplayer.com/product/566534",
+          "sellerCount": 86
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3706,8 +3706,8 @@
       "name": "Alakazam ex - 190/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566533_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566533_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3723,12 +3723,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.59,
+          "url": "https://www.tcgplayer.com/product/566533",
+          "sellerCount": 64
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3737,8 +3737,8 @@
       "name": "Wigglytuff ex - 189/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566532_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566532_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3754,12 +3754,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.41,
+          "url": "https://www.tcgplayer.com/product/566532",
+          "sellerCount": 62
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3768,8 +3768,8 @@
       "name": "Ninetales ex - 188/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566531_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566531_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3785,12 +3785,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.98,
+          "url": "https://www.tcgplayer.com/product/566531",
+          "sellerCount": 58
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3799,8 +3799,8 @@
       "name": "Arbok ex - 187/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566530_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566530_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3816,12 +3816,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.32,
+          "url": "https://www.tcgplayer.com/product/566530",
+          "sellerCount": 72
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3830,8 +3830,8 @@
       "name": "Blastoise ex - 186/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566529_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566529_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3847,12 +3847,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.44,
+          "url": "https://www.tcgplayer.com/product/566529",
+          "sellerCount": 65
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3861,8 +3861,8 @@
       "name": "Charizard ex - 185/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566528_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566528_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3878,12 +3878,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 16.08,
+          "url": "https://www.tcgplayer.com/product/566528",
+          "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3892,8 +3892,8 @@
       "name": "Venusaur ex - 184/165",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566527_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566527_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3909,12 +3909,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.3,
+          "url": "https://www.tcgplayer.com/product/566527",
+          "sellerCount": 76
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3923,8 +3923,8 @@
       "name": "Mewtwo - 183/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/577146_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/577146_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3940,12 +3940,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 14.78,
+          "url": "https://www.tcgplayer.com/product/577146",
+          "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3954,8 +3954,8 @@
       "name": "Dragonair - 182/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566526_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566526_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -3971,12 +3971,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.45,
+          "url": "https://www.tcgplayer.com/product/566526",
+          "sellerCount": 75
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.616Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -3985,8 +3985,8 @@
       "name": "Snorlax - 181/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/577145_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/577145_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4002,12 +4002,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.6,
+          "url": "https://www.tcgplayer.com/product/577145",
+          "sellerCount": 63
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4016,8 +4016,8 @@
       "name": "Omanyte - 180/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566525_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566525_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4033,12 +4033,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.89,
+          "url": "https://www.tcgplayer.com/product/566525",
+          "sellerCount": 148
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4047,8 +4047,8 @@
       "name": "Mr. Mime - 179/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566524_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566524_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4064,12 +4064,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.76,
+          "url": "https://www.tcgplayer.com/product/566524",
+          "sellerCount": 146
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4078,8 +4078,8 @@
       "name": "Tangela - 178/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566523_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566523_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4095,12 +4095,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.79,
+          "url": "https://www.tcgplayer.com/product/566523",
+          "sellerCount": 142
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4109,8 +4109,8 @@
       "name": "Machoke - 177/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566522_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566522_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4126,12 +4126,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.9,
+          "url": "https://www.tcgplayer.com/product/566522",
+          "sellerCount": 103
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4140,8 +4140,8 @@
       "name": "Poliwhirl - 176/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566521_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566521_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4157,12 +4157,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.02,
+          "url": "https://www.tcgplayer.com/product/566521",
+          "sellerCount": 98
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4171,8 +4171,8 @@
       "name": "Psyduck - 175/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566520_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566520_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4188,12 +4188,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 11.72,
+          "url": "https://www.tcgplayer.com/product/566520",
+          "sellerCount": 48
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4202,8 +4202,8 @@
       "name": "Nidoking - 174/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566519_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566519_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4219,12 +4219,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.81,
+          "url": "https://www.tcgplayer.com/product/566519",
+          "sellerCount": 131
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4233,8 +4233,8 @@
       "name": "Pikachu - 173/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566518_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566518_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4250,12 +4250,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 17.98,
+          "url": "https://www.tcgplayer.com/product/566518",
+          "sellerCount": 64
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4264,8 +4264,8 @@
       "name": "Caterpie - 172/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566517_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566517_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4281,12 +4281,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.5,
+          "url": "https://www.tcgplayer.com/product/566517",
+          "sellerCount": 125
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4295,8 +4295,8 @@
       "name": "Wartortle - 171/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566516_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566516_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4312,12 +4312,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.33,
+          "url": "https://www.tcgplayer.com/product/566516",
+          "sellerCount": 63
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4326,8 +4326,8 @@
       "name": "Squirtle - 170/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566515_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566515_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4343,12 +4343,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.41,
+          "url": "https://www.tcgplayer.com/product/566515",
+          "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4357,8 +4357,8 @@
       "name": "Charmeleon - 169/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566514_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566514_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4374,12 +4374,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.64,
+          "url": "https://www.tcgplayer.com/product/566514",
+          "sellerCount": 52
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4388,8 +4388,8 @@
       "name": "Charmander - 168/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566513_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566513_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4405,12 +4405,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.25,
+          "url": "https://www.tcgplayer.com/product/566513",
+          "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4419,8 +4419,8 @@
       "name": "Ivysaur - 167/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566512_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566512_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4436,12 +4436,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.05,
+          "url": "https://www.tcgplayer.com/product/566512",
+          "sellerCount": 93
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2A",
@@ -4450,8 +4450,8 @@
       "name": "Bulbasaur - 166/165",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/566511_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/566511_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4467,12 +4467,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 13.4,
+          "url": "https://www.tcgplayer.com/product/566511",
+          "sellerCount": 48
         }
       },
-      "updatedAt": "2026-02-18T13:53:23.617Z"
+      "updatedAt": "2026-02-18T14:01:53.523Z"
     },
     {
       "set": "SV2D",
@@ -4481,8 +4481,8 @@
       "name": "Grass Energy",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/577562_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/577562_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4498,12 +4498,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.84,
+          "url": "https://www.tcgplayer.com/product/577562",
+          "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4512,8 +4512,8 @@
       "name": "Superior Energy Retrieval",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565960_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565960_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4529,12 +4529,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.93,
+          "url": "https://www.tcgplayer.com/product/565960",
+          "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4543,8 +4543,8 @@
       "name": "Ting-Lu ex - 097/071",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565959_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565959_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4560,12 +4560,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 4.14,
+          "url": "https://www.tcgplayer.com/product/565959",
+          "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4574,8 +4574,8 @@
       "name": "Iono - 096/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565958_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565958_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4587,12 +4587,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 273.85,
+          "url": "https://www.tcgplayer.com/product/565958",
+          "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4601,8 +4601,8 @@
       "name": "Saguaro - 095/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565957_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565957_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4618,12 +4618,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.39,
+          "url": "https://www.tcgplayer.com/product/565957",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4632,8 +4632,8 @@
       "name": "Ting-Lu ex - 094/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565956_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565956_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4649,12 +4649,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.22,
+          "url": "https://www.tcgplayer.com/product/565956",
+          "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4663,8 +4663,8 @@
       "name": "Tinkaton ex - 093/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565955_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565955_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4680,12 +4680,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 26.45,
+          "url": "https://www.tcgplayer.com/product/565955",
+          "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4694,8 +4694,8 @@
       "name": "Chi-Yu ex - 092/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565954_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565954_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4707,12 +4707,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 28.89,
+          "url": "https://www.tcgplayer.com/product/565954",
+          "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4721,8 +4721,8 @@
       "name": "Iono - 091/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565953_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565953_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4738,12 +4738,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 21.66,
+          "url": "https://www.tcgplayer.com/product/565953",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4752,8 +4752,8 @@
       "name": "Saguaro - 090/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565952_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565952_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4769,12 +4769,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
+          "marketPrice": 0.84,
+          "url": "https://www.tcgplayer.com/product/565952",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4783,8 +4783,8 @@
       "name": "Noivern ex - 089/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565951_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565951_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4800,12 +4800,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.36,
+          "url": "https://www.tcgplayer.com/product/565951",
+          "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4814,8 +4814,8 @@
       "name": "Ting-Lu ex - 088/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565950_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565950_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4831,12 +4831,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.01,
+          "url": "https://www.tcgplayer.com/product/565950",
+          "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4845,8 +4845,8 @@
       "name": "Tinkaton ex - 087/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565949_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565949_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4862,12 +4862,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.97,
+          "url": "https://www.tcgplayer.com/product/565949",
+          "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4876,8 +4876,8 @@
       "name": "Bellibolt ex - 086/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565948_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565948_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4893,12 +4893,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.05,
+          "url": "https://www.tcgplayer.com/product/565948",
+          "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4907,8 +4907,8 @@
       "name": "Chi-Yu ex - 085/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565947_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565947_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4924,12 +4924,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.62,
+          "url": "https://www.tcgplayer.com/product/565947",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4938,8 +4938,8 @@
       "name": "Forretress ex - 084/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565946_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565946_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4955,12 +4955,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.26,
+          "url": "https://www.tcgplayer.com/product/565946",
+          "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -4969,8 +4969,8 @@
       "name": "Farigiraf - 083/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565945_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565945_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -4986,12 +4986,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.94,
+          "url": "https://www.tcgplayer.com/product/565945",
+          "sellerCount": 79
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5000,8 +5000,8 @@
       "name": "Flamigo - 082/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565944_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565944_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5017,12 +5017,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.94,
+          "url": "https://www.tcgplayer.com/product/565944",
+          "sellerCount": 55
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5031,8 +5031,8 @@
       "name": "Maushold - 081/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565943_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565943_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": null,
@@ -5040,12 +5040,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 16.34,
+          "url": "https://www.tcgplayer.com/product/565943",
+          "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5054,8 +5054,8 @@
       "name": "Grafaiai - 080/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565942_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565942_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5071,12 +5071,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.47,
+          "url": "https://www.tcgplayer.com/product/565942",
+          "sellerCount": 98
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5085,8 +5085,8 @@
       "name": "Tyranitar - 079/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565941_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565941_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5102,12 +5102,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 8.39,
+          "url": "https://www.tcgplayer.com/product/565941",
+          "sellerCount": 35
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5116,8 +5116,8 @@
       "name": "Nacli - 078/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565940_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565940_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5133,12 +5133,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.49,
+          "url": "https://www.tcgplayer.com/product/565940",
+          "sellerCount": 96
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5147,8 +5147,8 @@
       "name": "Tinkatuff - 077/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565939_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565939_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5164,12 +5164,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.43,
+          "url": "https://www.tcgplayer.com/product/565939",
+          "sellerCount": 66
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5178,8 +5178,8 @@
       "name": "Tinkatink - 076/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565938_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565938_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5195,12 +5195,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.21,
+          "url": "https://www.tcgplayer.com/product/565938",
+          "sellerCount": 55
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5209,8 +5209,8 @@
       "name": "Sandygast - 075/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565937_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565937_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5226,12 +5226,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.76,
+          "url": "https://www.tcgplayer.com/product/565937",
+          "sellerCount": 78
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5240,8 +5240,8 @@
       "name": "Raichu - 074/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565936_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565936_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5257,12 +5257,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 11.94,
+          "url": "https://www.tcgplayer.com/product/565936",
+          "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5271,8 +5271,8 @@
       "name": "Fletchinder - 073/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565935_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565935_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5288,12 +5288,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.35,
+          "url": "https://www.tcgplayer.com/product/565935",
+          "sellerCount": 64
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2D",
@@ -5302,8 +5302,8 @@
       "name": "Heracross - 072/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/565934_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/565934_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5319,12 +5319,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.67,
+          "url": "https://www.tcgplayer.com/product/565934",
+          "sellerCount": 61
         }
       },
-      "updatedAt": "2026-02-18T13:54:35.804Z"
+      "updatedAt": "2026-02-18T14:01:53.525Z"
     },
     {
       "set": "SV2P",
@@ -5333,8 +5333,8 @@
       "name": "Water Energy",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/577563_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/577563_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5350,12 +5350,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 15.72,
+          "url": "https://www.tcgplayer.com/product/577563",
+          "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5364,8 +5364,8 @@
       "name": "Super Rod - 098/071",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567855_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567855_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5381,12 +5381,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 16.95,
+          "url": "https://www.tcgplayer.com/product/567855",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5395,8 +5395,8 @@
       "name": "Chien-Pao ex - 097/071",
       "rarity": "UR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567854_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567854_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5412,12 +5412,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 17.1,
+          "url": "https://www.tcgplayer.com/product/567854",
+          "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5426,8 +5426,8 @@
       "name": "Giacomo - 096/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567853_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567853_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5443,12 +5443,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 6.82,
+          "url": "https://www.tcgplayer.com/product/567853",
+          "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5457,8 +5457,8 @@
       "name": "Grusha - 095/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567852_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567852_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5474,12 +5474,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 36.08,
+          "url": "https://www.tcgplayer.com/product/567852",
+          "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5488,8 +5488,8 @@
       "name": "Squawkabilly ex - 094/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567851_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567851_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5505,12 +5505,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 19.1,
+          "url": "https://www.tcgplayer.com/product/567851",
+          "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5519,8 +5519,8 @@
       "name": "Chien-Pao ex - 093/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567850_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567850_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5536,12 +5536,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 34.61,
+          "url": "https://www.tcgplayer.com/product/567850",
+          "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5550,8 +5550,8 @@
       "name": "Wo-Chien ex - 092/071",
       "rarity": "SAR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567849_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567849_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5567,12 +5567,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 14.81,
+          "url": "https://www.tcgplayer.com/product/567849",
+          "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5581,8 +5581,8 @@
       "name": "Giacomo - 091/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567848_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567848_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5598,12 +5598,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.06,
+          "url": "https://www.tcgplayer.com/product/567848",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5612,8 +5612,8 @@
       "name": "Grusha - 090/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567847_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567847_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5629,12 +5629,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.15,
+          "url": "https://www.tcgplayer.com/product/567847",
+          "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5643,8 +5643,8 @@
       "name": "Squawkabilly ex - 089/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567846_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567846_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5660,12 +5660,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.07,
+          "url": "https://www.tcgplayer.com/product/567846",
+          "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5674,8 +5674,8 @@
       "name": "Copperajah ex - 088/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567845_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567845_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5691,12 +5691,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 0.99,
+          "url": "https://www.tcgplayer.com/product/567845",
+          "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5705,8 +5705,8 @@
       "name": "Annihilape ex - 087/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567844_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567844_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5722,12 +5722,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.47,
+          "url": "https://www.tcgplayer.com/product/567844",
+          "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5736,8 +5736,8 @@
       "name": "Slowking ex - 086/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567843_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567843_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5753,12 +5753,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.89,
+          "url": "https://www.tcgplayer.com/product/567843",
+          "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5767,8 +5767,8 @@
       "name": "Chien-Pao ex - 085/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567842_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567842_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5784,12 +5784,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.37,
+          "url": "https://www.tcgplayer.com/product/567842",
+          "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5798,8 +5798,8 @@
       "name": "Wo-Chien ex - 084/071",
       "rarity": "SR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567841_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567841_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5815,12 +5815,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.13,
+          "url": "https://www.tcgplayer.com/product/567841",
+          "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5829,8 +5829,8 @@
       "name": "Dudunsparce - 083/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567840_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567840_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5846,12 +5846,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.76,
+          "url": "https://www.tcgplayer.com/product/567840",
+          "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5860,8 +5860,8 @@
       "name": "Rookidee - 082/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567839_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567839_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5877,12 +5877,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.85,
+          "url": "https://www.tcgplayer.com/product/567839",
+          "sellerCount": 46
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5891,8 +5891,8 @@
       "name": "Orthworm - 081/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567838_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567838_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5908,12 +5908,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.53,
+          "url": "https://www.tcgplayer.com/product/567838",
+          "sellerCount": 62
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5922,8 +5922,8 @@
       "name": "Sudowoodo - 080/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567837_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567837_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5939,12 +5939,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.35,
+          "url": "https://www.tcgplayer.com/product/567837",
+          "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5953,8 +5953,8 @@
       "name": "Rabsca - 079/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567836_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567836_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -5970,12 +5970,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 1.64,
+          "url": "https://www.tcgplayer.com/product/567836",
+          "sellerCount": 55
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -5984,8 +5984,8 @@
       "name": "Gothorita - 078/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567835_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567835_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6001,12 +6001,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.23,
+          "url": "https://www.tcgplayer.com/product/567835",
+          "sellerCount": 51
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6015,8 +6015,8 @@
       "name": "Baxcalibur - 077/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567834_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567834_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6032,12 +6032,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 7.36,
+          "url": "https://www.tcgplayer.com/product/567834",
+          "sellerCount": 43
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6046,8 +6046,8 @@
       "name": "Arctibax - 076/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567833_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567833_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6063,12 +6063,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 3.72,
+          "url": "https://www.tcgplayer.com/product/567833",
+          "sellerCount": 55
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6077,8 +6077,8 @@
       "name": "Frigibax - 075/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567832_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567832_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6094,12 +6094,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 5.73,
+          "url": "https://www.tcgplayer.com/product/567832",
+          "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6108,8 +6108,8 @@
       "name": "Eiscue - 074/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567831_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567831_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6125,12 +6125,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 4.96,
+          "url": "https://www.tcgplayer.com/product/567831",
+          "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6139,8 +6139,8 @@
       "name": "Marill - 073/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567830_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567830_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6156,12 +6156,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 9.13,
+          "url": "https://www.tcgplayer.com/product/567830",
+          "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     },
     {
       "set": "SV2P",
@@ -6170,8 +6170,8 @@
       "name": "Bramblin - 072/071",
       "rarity": "AR",
       "images": {
-        "small": null,
-        "large": null
+        "small": "https://tcgplayer-cdn.tcgplayer.com/product/567829_in_200x200.jpg",
+        "large": "https://tcgplayer-cdn.tcgplayer.com/product/567829_in_800x800.jpg"
       },
       "japanToreca": {
         "aMinus": {
@@ -6187,12 +6187,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": null,
-          "url": null,
-          "sellerCount": null
+          "marketPrice": 2.01,
+          "url": "https://www.tcgplayer.com/product/567829",
+          "sellerCount": 70
         }
       },
-      "updatedAt": "2026-02-18T13:54:46.175Z"
+      "updatedAt": "2026-02-18T14:01:53.527Z"
     }
   ]
 }

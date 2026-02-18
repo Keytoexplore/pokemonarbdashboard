@@ -285,14 +285,18 @@ function bestJTByCard(listings) {
 }
 
 function pickUsMarket(apiCard) {
-  const us = apiCard?.pricing?.tcgplayer || apiCard?.pricing?.tcgPlayer || null;
-  const market = us?.marketPrice ?? us?.market_price ?? null;
-  const url = us?.url || us?.productUrl || null;
-  const sellerCount = us?.sellerCount ?? us?.sellers ?? null;
+  // API v2 shape (as seen in cached dumps):
+  // - market price: apiCard.prices.market
+  // - url: apiCard.tcgPlayerUrl
+  // - sellers: apiCard.prices.sellers
+  const prices = apiCard?.prices || null;
+  const market = prices?.market ?? null;
+  const url = apiCard?.tcgPlayerUrl || null;
+  const sellerCount = prices?.sellers ?? null;
 
   return {
     marketPrice: market != null ? Number(market) : null,
-    url: url || null,
+    url,
     sellerCount: sellerCount != null ? Number(sellerCount) : null,
   };
 }
@@ -306,10 +310,11 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
     const rarityCode = mapApiRarityToCode(apiCard.rarity);
     if (!rarityCode || !ALLOWED_RARITIES.has(rarityCode)) continue;
 
-    const cardNumber = apiCard.number || apiCard.cardNumber || null;
+    const cardNumber = apiCard.cardNumber || apiCard.number || null;
     if (!cardNumber) continue;
 
-    const cardNumberSlash = apiCard?.cardNumberSlash || apiCard?.numberSlash || null;
+    // cardNumber already contains "262/172" style in this API
+    const cardNumberSlash = null;
 
     const us = pickUsMarket(apiCard);
 
@@ -320,17 +325,15 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
       : null;
     const jpB = jt.B ? { priceJPY: jt.B.priceJPY, url: jt.B.url, quality: 'B' } : null;
 
-    const images = apiCard.images || {};
-
     outCards.push({
       set: displaySetCode.toUpperCase(),
       setId: apiSetId,
-      number: cardNumberSlash || cardNumber,
-      name: apiCard.name || apiCard.englishName || apiCard.jpName || apiCard.nameJP || null,
+      number: cardNumber,
+      name: apiCard.name || null,
       rarity: rarityCode,
       images: {
-        small: images.small || images.thumbnail || null,
-        large: images.large || images.image || null,
+        small: apiCard.imageCdnUrl200 || apiCard.imageCdnUrl || apiCard.imageUrl || null,
+        large: apiCard.imageCdnUrl800 || apiCard.imageCdnUrl400 || apiCard.imageCdnUrl || apiCard.imageUrl || null,
       },
       japanToreca: {
         aMinus: jpAminus,
