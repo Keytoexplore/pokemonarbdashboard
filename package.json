@@ -6,8 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+
     "build:s12a": "node scripts/build-s12a.js",
-    "build:s12a:force": "node scripts/build-s12a.js --force"
+    "build:s12a:force": "node scripts/build-s12a.js --force",
+
+    "build:sets": "node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p",
+    "build:sets:force": "node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p --force"
   },
   "dependencies": {
     "next": "16.1.6",

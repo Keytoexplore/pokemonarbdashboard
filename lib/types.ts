@@ -29,6 +29,37 @@ export interface TCGPlayerData {
   sellerCount: number;
 }
 
+// New builder dataset shapes
+export interface BuilderJapanTorecaPrice {
+  priceJPY: number;
+  url: string;
+  quality: JapaneseCondition;
+}
+
+export interface BuilderOpportunity {
+  set: string;
+  setId: string;
+  number: string;
+  name: string;
+  rarity: RarityCode;
+  images?: {
+    small?: string | null;
+    large?: string | null;
+  };
+  japanToreca: {
+    aMinus: BuilderJapanTorecaPrice | null;
+    b: BuilderJapanTorecaPrice | null;
+  };
+  usMarket: {
+    tcgplayer: {
+      marketPrice: number | null;
+      url: string | null;
+      sellerCount: number | null;
+    };
+  };
+  updatedAt: string;
+}
+
 export interface USMarketData {
   marketPrice: number;
   sellerCount: number;
@@ -105,4 +136,14 @@ export interface DashboardData {
     viableOpportunities: number;
     avgMargin: number;
   };
+}
+
+export interface BuilderDashboardData {
+  meta: {
+    sets: string[];
+    rarities: RarityCode[];
+    qualities: JapaneseCondition[];
+    builtAt: string;
+  };
+  cards: BuilderOpportunity[];
 }

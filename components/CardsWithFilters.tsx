@@ -12,7 +12,7 @@ interface CardsWithFiltersProps {
   lastUpdated?: string;
 }
 
-const TRACKED_SET = 'S12a';
+const TRACKED_SET = 'S12a / SV2a / SV2d / SV2p';
 const DISPLAY_RARITIES: Array<RarityCode> = ['AR', 'SAR', 'SR', 'CHR', 'UR', 'SSR', 'RRR'];
 const DISPLAY_CONDITIONS: Array<JapaneseCondition> = ['A-', 'B'];
 
@@ -108,6 +108,7 @@ type ComputedCard = ArbitrageOpportunity & {
 };
 
 export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFiltersProps) {
+  const [filterSet, setFilterSet] = useState<string>('all');
   const [filterRarity, setFilterRarity] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [searchQuery, setSearchQuery] = useState('');
@@ -135,6 +136,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const filteredCards = useMemo<ComputedCard[]>(() => {
     let cards = [...cardsWithData];
 
+    // Filter by set
+    if (filterSet !== 'all') {
+      cards = cards.filter((c) => c.set.toLowerCase() === filterSet);
+    }
+
     // Filter by rarity
     if (filterRarity !== 'all') {
       cards = cards.filter((c) => c.rarity === filterRarity);
@@ -157,7 +163,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
     });
 
     return cards;
-  }, [cardsWithData, filterRarity, sortBy, searchQuery]);
+  }, [cardsWithData, filterSet, filterRarity, sortBy, searchQuery]);
 
   return (
     <div>
@@ -195,7 +201,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
       {/* Filters */}
       <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <label className="text-white/75 text-sm block mb-1">Search</label>
             <input
@@ -205,6 +211,26 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
             />
+          </div>
+
+          <div>
+            <label className="text-white/75 text-sm block mb-1">Set</label>
+            <select
+              value={filterSet}
+              onChange={(e) => setFilterSet(e.target.value)}
+              className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
+            >
+              <option value="all" className="bg-gray-900">
+                All Sets
+              </option>
+              {Array.from(new Set(cardsWithData.map((c) => c.set.toLowerCase())))
+                .sort()
+                .map((s) => (
+                  <option key={s} value={s} className="bg-gray-900">
+                    {s.toUpperCase()}
+                  </option>
+                ))}
+            </select>
           </div>
 
           <div>
