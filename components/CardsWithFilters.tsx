@@ -3,6 +3,15 @@
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { ArbitrageOpportunity, JapanesePrice, JapaneseCondition, RarityCode } from '@/lib/types';
+import {
+  applyFilters,
+  computeProfitMarginPercent,
+  DEFAULT_FILTERS,
+  Era,
+  FilterState,
+  MarginBucket,
+  normalizeSetCode,
+} from '@/lib/filters';
 
 interface CardsWithFiltersProps {
   initialCards: ArbitrageOpportunity[];
@@ -12,7 +21,7 @@ interface CardsWithFiltersProps {
   lastUpdated?: string;
 }
 
-const TRACKED_SET = 'S12a / SV2a / SV2d / SV2p';
+const TRACKED_SET = 'Multi-set (select sets below)';
 const DISPLAY_RARITIES: Array<RarityCode> = ['AR', 'SAR', 'SR', 'CHR', 'UR', 'SSR', 'RRR'];
 const DISPLAY_CONDITIONS: Array<JapaneseCondition> = ['A-', 'B'];
 
@@ -117,30 +126,22 @@ type ComputedCard = ArbitrageOpportunity & {
   usProfitMargin: number;
 };
 
+function toggleInList(list: string[], value: string): string[] {
+  return list.includes(value) ? list.filter((x) => x !== value) : [...list, value];
+}
+
 export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFiltersProps) {
-  const [filterSet, setFilterSet] = useState<string>('all');
-  const [filterRarity, setFilterRarity] = useState<string>('all');
+  const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
-  const [searchQuery, setSearchQuery] = useState('');
+
+  const allSets = useMemo<string[]>(() => {
+    return Array.from(new Set(initialCards.map((c) => normalizeSetCode(c.set)))).sort();
+  }, [initialCards]);
 
   const cardsWithData = useMemo<ComputedCard[]>(() => {
     return initialCards.map((card) => {
       const lowestData = getBaselinePrice(card.japanesePrices);
-
-      // Calculate US profit margin using WORST buy price (highest of A-/B, in-stock preferred)
-      // This is more conservative.
-      let usProfitMargin = 0;
-      if (card.usPrice) {
-        const jtPrices = filterQualityPrices(card.japanesePrices);
-        if (jtPrices.length > 0) {
-          const inStock = jtPrices.filter((p) => p.inStock);
-          const candidates = inStock.length > 0 ? inStock : jtPrices;
-          const worst = candidates.reduce((max, p) => (p.priceUSD > max.priceUSD ? p : max), candidates[0]);
-          if (worst && worst.priceUSD > 0) {
-            usProfitMargin = Math.round(((card.usPrice.marketPrice - worst.priceUSD) / worst.priceUSD) * 100);
-          }
-        }
-      }
+      const usProfitMargin = computeProfitMarginPercent(card);
 
       return {
         ...card,
@@ -151,26 +152,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   }, [initialCards]);
 
   const filteredCards = useMemo<ComputedCard[]>(() => {
-    let cards = [...cardsWithData];
+    // 1) Filter
+    let cards = applyFilters(cardsWithData, filters);
 
-    // Filter by set
-    if (filterSet !== 'all') {
-      cards = cards.filter((c) => c.set.toLowerCase() === filterSet);
-    }
-
-    // Filter by rarity
-    if (filterRarity !== 'all') {
-      cards = cards.filter((c) => c.rarity === filterRarity);
-    }
-
-    // Filter by search
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      cards = cards.filter((c) => c.name.toLowerCase().includes(q) || c.cardNumber.includes(searchQuery));
-    }
-
-    // Sort
-    cards.sort((a, b) => {
+    // 2) Sort
+    cards = [...cards].sort((a, b) => {
       if (sortBy === 'profit-desc') return b.usProfitMargin - a.usProfitMargin;
       if (sortBy === 'profit-asc') return a.usProfitMargin - b.usProfitMargin;
       if (sortBy === 'price-asc') return a.lowestData.lowestPriceJPY - b.lowestData.lowestPriceJPY;
@@ -180,7 +166,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
     });
 
     return cards;
-  }, [cardsWithData, filterSet, filterRarity, sortBy, searchQuery]);
+  }, [cardsWithData, filters, sortBy]);
 
   return (
     <div>
@@ -217,48 +203,50 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
       </div>
 
       {/* Filters */}
-      <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6">
+      <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <label className="text-white/75 text-sm block mb-1">Search</label>
             <input
               type="text"
               placeholder="Card name or number..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              value={filters.search}
+              onChange={(e) => setFilters((f) => ({ ...f, search: e.target.value }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
             />
           </div>
 
           <div>
-            <label className="text-white/75 text-sm block mb-1">Set</label>
+            <label className="text-white/75 text-sm block mb-1">Era</label>
             <select
-              value={filterSet}
-              onChange={(e) => setFilterSet(e.target.value)}
+              value={filters.era}
+              onChange={(e) => setFilters((f) => ({ ...f, era: e.target.value as Era }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
-              <option value="all" className="bg-gray-900">
-                All Sets
+              <option value="ALL" className="bg-gray-900">
+                All eras
               </option>
-              {Array.from(new Set(cardsWithData.map((c) => c.set.toLowerCase())))
-                .sort()
-                .map((s) => (
-                  <option key={s} value={s} className="bg-gray-900">
-                    {s.toUpperCase()}
-                  </option>
-                ))}
+              <option value="SV" className="bg-gray-900">
+                SV (Scarlet/Violet)
+              </option>
+              <option value="S" className="bg-gray-900">
+                S (Sword/Shield)
+              </option>
+              <option value="M" className="bg-gray-900">
+                M (older)
+              </option>
             </select>
           </div>
 
           <div>
             <label className="text-white/75 text-sm block mb-1">Rarity</label>
             <select
-              value={filterRarity}
-              onChange={(e) => setFilterRarity(e.target.value)}
+              value={filters.rarity}
+              onChange={(e) => setFilters((f) => ({ ...f, rarity: e.target.value }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
               <option value="all" className="bg-gray-900">
-                All Rarities
+                All rarities
               </option>
               {DISPLAY_RARITIES.map((r) => (
                 <option key={r} value={r} className="bg-gray-900">
@@ -291,6 +279,120 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 Name
               </option>
             </select>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="text-white/75 text-sm block mb-1">JP Baseline Price (JPY)</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                inputMode="numeric"
+                placeholder="Min ¥"
+                value={filters.jpPriceJPY.min ?? ''}
+                onChange={(e) =>
+                  setFilters((f) => ({
+                    ...f,
+                    jpPriceJPY: { ...f.jpPriceJPY, min: e.target.value === '' ? null : Number(e.target.value) },
+                  }))
+                }
+                className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
+              />
+              <input
+                type="number"
+                inputMode="numeric"
+                placeholder="Max ¥"
+                value={filters.jpPriceJPY.max ?? ''}
+                onChange={(e) =>
+                  setFilters((f) => ({
+                    ...f,
+                    jpPriceJPY: { ...f.jpPriceJPY, max: e.target.value === '' ? null : Number(e.target.value) },
+                  }))
+                }
+                className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
+              />
+            </div>
+            <p className="text-xs text-white/40 mt-1">Baseline = A- preferred, else B</p>
+          </div>
+
+          <div>
+            <label className="text-white/75 text-sm block mb-1">Profit Margin Buckets</label>
+            <div className="flex flex-wrap gap-2">
+              {(['0-20', '20-40', '40-60', '60+'] as MarginBucket[]).map((b) => (
+                <button
+                  key={b}
+                  onClick={() => setFilters((f) => ({ ...f, marginBuckets: toggleInList(f.marginBuckets, b) as MarginBucket[] }))}
+                  className={`px-3 py-2 rounded border text-sm transition ${
+                    filters.marginBuckets.includes(b)
+                      ? 'bg-emerald-600/30 border-emerald-500/50 text-emerald-200'
+                      : 'bg-white/10 border-white/20 text-white/70 hover:border-purple-500/50'
+                  }`}
+                  type="button"
+                >
+                  {b}%
+                </button>
+              ))}
+            </div>
+            <p className="text-xs text-white/40 mt-1">Uses conservative margin (worst A-/B buy price)</p>
+          </div>
+
+          <div>
+            <label className="text-white/75 text-sm block mb-1">Sets (Include / Exclude)</label>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <p className="text-xs text-white/50 mb-1">Include (if any selected)</p>
+                <select
+                  multiple
+                  value={filters.includeSets}
+                  onChange={(e) => {
+                    const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
+                    setFilters((f) => ({ ...f, includeSets: values }));
+                  }}
+                  className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
+                >
+                  {allSets.map((s) => (
+                    <option key={s} value={s} className="bg-gray-900">
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <p className="text-xs text-white/50 mb-1">Exclude</p>
+                <select
+                  multiple
+                  value={filters.excludeSets}
+                  onChange={(e) => {
+                    const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
+                    setFilters((f) => ({ ...f, excludeSets: values }));
+                  }}
+                  className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
+                >
+                  {allSets.map((s) => (
+                    <option key={s} value={s} className="bg-gray-900">
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className="flex gap-2 mt-2">
+              <button
+                type="button"
+                onClick={() => setFilters(DEFAULT_FILTERS)}
+                className="px-3 py-2 rounded bg-purple-600 hover:bg-purple-500 text-white text-sm"
+              >
+                Reset filters
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilters((f) => ({ ...f, includeSets: [], excludeSets: [] }))}
+                className="px-3 py-2 rounded bg-white/10 hover:bg-white/15 border border-white/20 text-white/80 text-sm"
+              >
+                Clear set selections
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -474,8 +576,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           <p className="text-xl text-white/70">No cards match your filters</p>
           <button
             onClick={() => {
-              setFilterRarity('all');
-              setSearchQuery('');
+              setFilters(DEFAULT_FILTERS);
               setSortBy('profit-desc');
             }}
             className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white transition"
