@@ -265,6 +265,117 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
   return all;
 }
 
+async function scrapeToretokuListings(apiSetId, displaySetCode) {
+  // Toretoku search results pages already contain card number / rarity / rank / price.
+  // We only scrape in-stock items.
+  ensureDir(cacheDir);
+  const cachePath = path.join(cacheDir, `toretoku-${apiSetId}-listings.json`);
+
+  if (!FORCE && fs.existsSync(cachePath)) {
+    const cached = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+    if (Array.isArray(cached) && cached.length) {
+      console.log(`📦 Using cached Toretoku listings: ${path.relative(workspaceRoot, cachePath)}`);
+      return cached;
+    }
+  }
+
+  console.log(`🛒 Scraping Toretoku listings for ${displaySetCode} (A/B only, in-stock)`);
+
+  const all = [];
+  const seen = new Set();
+
+  // Based on UI behavior: rank5[]=2 and rank5[]=3 correspond to ranks A and B.
+  // Keep query minimal and stable.
+  const baseParams = new URLSearchParams({
+    genre: '5',
+    kw: displaySetCode.toLowerCase(),
+    stock: '1',
+  });
+  baseParams.append('rank5[]', '2');
+  baseParams.append('rank5[]', '3');
+
+  for (let page = 1; page <= 50; page++) {
+    const params = new URLSearchParams(baseParams);
+    if (page > 1) params.set('page', String(page));
+
+    const url = `https://www.toretoku.jp/item?${params.toString()}`;
+    console.log(`  📄 page ${page}`);
+
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0',
+        Accept: 'text/html',
+      },
+    });
+
+    if (!res.ok) {
+      console.warn(`    ⚠ HTTP ${res.status} on ${url}`);
+      break;
+    }
+
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    const items = $('li.list');
+    if (items.length === 0) break;
+
+    let found = 0;
+
+    items.each((_, el) => {
+      const $li = $(el);
+      const href = $li.find('a[href*="/item/details/"]').first().attr('href');
+      if (!href) return;
+
+      const absUrl = href.startsWith('http') ? href : `https://www.toretoku.jp${href}`;
+      if (seen.has(absUrl)) return;
+      seen.add(absUrl);
+
+      const text = $li.text().replace(/\s+/g, ' ').trim();
+
+      // Example text:
+      // 日本語 ギラティナVSTAR UR S12a 261/172 A 27,800円 在庫数:3
+      const m = text.match(/日本語\s+(.+?)\s+(AR|SAR|SR|CHR|UR|SSR|RRR)\s+([A-Za-z0-9+]+)\s+(\d+\/\d+)\s+([ABCD])\s+([\d,]+)円/);
+      if (!m) return;
+
+      const nameJP = m[1].trim();
+      const rarity = m[2].toUpperCase();
+      const set = m[3].toUpperCase();
+      const cardNumber = m[4];
+      const rank = m[5].toUpperCase();
+      const priceJPY = parseInt(m[6].replace(/,/g, ''), 10);
+
+      if (set !== displaySetCode.toUpperCase()) return;
+      if (!ALLOWED_RARITIES.has(rarity)) return;
+      if (!(rank === 'A' || rank === 'B')) return;
+
+      const stockMatch = text.match(/在庫数\s*:\s*(\d+)/);
+      const stock = stockMatch ? parseInt(stockMatch[1], 10) : null;
+
+      all.push({
+        set: displaySetCode,
+        rarity,
+        cardNumber,
+        nameJP,
+        quality: rank === 'A' ? 'A-' : 'B',
+        priceJPY,
+        stock,
+        url: absUrl,
+      });
+
+      found += 1;
+    });
+
+    if (found === 0) break;
+
+    // gentle pace
+    await delay(550);
+  }
+
+  fs.writeFileSync(cachePath, JSON.stringify(all, null, 2));
+  console.log(`💾 Wrote Toretoku cache: ${path.relative(workspaceRoot, cachePath)} (${all.length} listings)`);
+  return all;
+}
+
 function bestJTByCard(listings) {
   /**
    * listings[] for one set; returns map cardNumber -> { 'A-': best, 'B': best }
@@ -336,8 +447,18 @@ function pickCanonicalSetPrefix(apiCards, apiSetId) {
   return best ? `${best}:` : null;
 }
 
-function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
+function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings }) {
   const jtByCard = bestJTByCard(jtListings);
+
+  const ttByCard = bestJTByCard(
+    (toretokuListings || []).map((r) => ({
+      cardNumber: r.cardNumber,
+      quality: r.quality, // already normalized to A-/B
+      priceJPY: r.priceJPY,
+      url: r.url,
+      stock: r.stock ?? null,
+    }))
+  );
 
   const outCards = [];
 
@@ -368,11 +489,15 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
     const us = pickUsMarket(apiCard);
 
     const jt = jtByCard.get(cardNumberSlash || cardNumber) || jtByCard.get(cardNumber) || { 'A-': null, B: null };
+    const tt = ttByCard.get(cardNumberSlash || cardNumber) || ttByCard.get(cardNumber) || { 'A-': null, B: null };
 
     const jpAminus = jt['A-']
       ? { priceJPY: jt['A-'].priceJPY, url: jt['A-'].url, quality: 'A-' }
       : null;
     const jpB = jt.B ? { priceJPY: jt.B.priceJPY, url: jt.B.url, quality: 'B' } : null;
+
+    const ttA = tt['A-'] ? { priceJPY: tt['A-'].priceJPY, url: tt['A-'].url, quality: 'A-' } : null;
+    const ttB = tt.B ? { priceJPY: tt.B.priceJPY, url: tt.B.url, quality: 'B' } : null;
 
     outCards.push({
       set: displaySetCode.toUpperCase(),
@@ -387,6 +512,12 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings }) {
       japanToreca: {
         aMinus: jpAminus,
         b: jpB,
+      },
+      toretoku: {
+        a: ttA,
+        b: ttB,
+        stockA: tt['A-']?.stock ?? null,
+        stockB: tt.B?.stock ?? null,
       },
       usMarket: {
         tcgplayer: {
@@ -417,7 +548,12 @@ async function main() {
     const apiDump = await fetchAllCardsFromApi(apiSetId);
     const jtListings = await scrapeJapanTorecaListings(apiSetId, displaySetCode);
 
-    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings });
+    // Toretoku is currently in "spike" mode: only scrape S12A to avoid hammering the shop and breaking the build.
+    const toretokuListings = apiSetId.toLowerCase() === 's12a'
+      ? await scrapeToretokuListings(apiSetId, displaySetCode)
+      : [];
+
+    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings });
 
     console.log(`🎯 ${displaySetCode}: kept ${setCards.length} cards (special rarities)`);
     allCards.push(...setCards);

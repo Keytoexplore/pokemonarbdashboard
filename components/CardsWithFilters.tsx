@@ -40,19 +40,19 @@ function normalizeQuality(q: unknown): JapaneseCondition | null {
   return null;
 }
 
-// Filter prices to only include Japan-Toreca A- and B
-function filterQualityPrices(prices: JapanesePrice[]): JapanesePrice[] {
-  return prices.filter((p) => p.source === 'japan-toreca' && normalizeQuality(p.quality) !== null);
+// Filter prices to only include supported sources and A-/B qualities
+function filterQualityPrices(prices: JapanesePrice[], sources: Set<string>): JapanesePrice[] {
+  return prices.filter((p) => sources.has(p.source) && normalizeQuality(p.quality) !== null);
 }
 
-function getBaselinePrice(prices: JapanesePrice[]): {
+function getBaselinePrice(prices: JapanesePrice[], sources: Set<string>): {
   price: JapanesePrice | null;
   inStock: boolean;
   lowestPriceJPY: number;
   lowestPriceUSD: number;
   baselineQuality: JapaneseCondition | null;
 } {
-  const filteredPrices = filterQualityPrices(prices);
+  const filteredPrices = filterQualityPrices(prices, sources);
 
   if (filteredPrices.length === 0) {
     return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
@@ -87,12 +87,12 @@ function getBaselinePrice(prices: JapanesePrice[]): {
   };
 }
 
-function getBestPriceForQuality(prices: JapanesePrice[], quality: JapaneseCondition): {
+function getBestPriceForQuality(prices: JapanesePrice[], quality: JapaneseCondition, sources: Set<string>): {
   price: JapanesePrice | null;
   inStock: boolean;
 } {
   const candidates = prices
-    .filter((p) => normalizeQuality(p.quality) === quality)
+    .filter((p) => sources.has(p.source) && normalizeQuality(p.quality) === quality)
     .sort((a, b) => a.priceJPY - b.priceJPY);
 
   if (candidates.length === 0) return { price: null, inStock: false };
@@ -134,6 +134,12 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const [draftFilters, setDraftFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
+  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'best'>('japan-toreca');
+
+  const jpSources = useMemo(() => {
+    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku']);
+    return new Set<string>([jpShop]);
+  }, [jpShop]);
 
   const allSets = useMemo<string[]>(() => {
     return Array.from(new Set(initialCards.map((c) => normalizeSetCode(c.set)))).sort();
@@ -141,7 +147,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
   const cardsWithData = useMemo<ComputedCard[]>(() => {
     return initialCards.map((card) => {
-      const lowestData = getBaselinePrice(card.japanesePrices);
+      const lowestData = getBaselinePrice(card.japanesePrices, jpSources);
       const usProfitMargin = computeProfitMarginPercent(card);
 
       return {
@@ -257,6 +263,19 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                   {r}
                 </option>
               ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="text-white/75 text-sm block mb-1">JP Shop</label>
+            <select
+              value={jpShop}
+              onChange={(e) => setJpShop(e.target.value as any)}
+              className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
+            >
+              <option value="japan-toreca" className="bg-gray-900">Japan-Toreca</option>
+              <option value="toretoku" className="bg-gray-900">Toretoku</option>
+              <option value="best" className="bg-gray-900">Best (both)</option>
             </select>
           </div>
 
@@ -467,8 +486,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           const { lowestData, usProfitMargin } = card;
 
           // Group Japan-Toreca prices by quality (A-/B)
-          const jtPrices = filterQualityPrices(card.japanesePrices);
-          const jtByQuality = DISPLAY_CONDITIONS.map((q) => ({ q, ...getBestPriceForQuality(jtPrices, q) }));
+          const jtPrices = filterQualityPrices(card.japanesePrices, jpSources);
+          const jtByQuality = DISPLAY_CONDITIONS.map((q) => ({ q, ...getBestPriceForQuality(jtPrices, q, jpSources) }));
 
           return (
             <div

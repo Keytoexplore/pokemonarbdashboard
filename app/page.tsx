@@ -42,6 +42,31 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
+    // Toretoku (A/B; normalize A -> A- to match baseline logic)
+    if (c.toretoku?.a) {
+      jp.push({
+        source: 'toretoku',
+        priceJPY: c.toretoku.a.priceJPY,
+        priceUSD: c.toretoku.a.priceJPY * JPY_TO_USD,
+        quality: 'A-',
+        inStock: (c.toretoku.stockA ?? 1) > 0,
+        url: c.toretoku.a.url,
+        isLowest: false,
+      });
+    }
+
+    if (c.toretoku?.b) {
+      jp.push({
+        source: 'toretoku',
+        priceJPY: c.toretoku.b.priceJPY,
+        priceUSD: c.toretoku.b.priceJPY * JPY_TO_USD,
+        quality: 'B',
+        inStock: (c.toretoku.stockB ?? 1) > 0,
+        url: c.toretoku.b.url,
+        isLowest: false,
+      });
+    }
+
     // Prefer A- as the baseline; fall back to B.
     const aMinus = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'A-');
     const b = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'B');
