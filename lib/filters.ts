@@ -1,6 +1,6 @@
 import { ArbitrageOpportunity, JapaneseCondition, JapanesePrice } from '@/lib/types';
 
-export type Era = 'ALL' | 'SV' | 'S' | 'M';
+export type Era = 'ALL' | 'SV' | 'S' | 'SM' | 'M';
 
 export type MarginBucket = '0-20' | '20-40' | '40-60' | '60+';
 
@@ -36,9 +36,11 @@ export function normalizeSetCode(s: string): string {
   return String(s || '').trim().toUpperCase();
 }
 
-export function getEra(setCode: string): 'SV' | 'S' | 'M' | 'OTHER' {
+export function getEra(setCode: string): 'SV' | 'S' | 'SM' | 'M' | 'OTHER' {
   const s = normalizeSetCode(setCode);
   if (s.startsWith('SV')) return 'SV';
+  // IMPORTANT: check SM before S so Sun & Moon doesn't get misclassified.
+  if (s.startsWith('SM')) return 'SM';
   if (s.startsWith('S')) return 'S';
   if (s.startsWith('M')) return 'M';
   return 'OTHER';

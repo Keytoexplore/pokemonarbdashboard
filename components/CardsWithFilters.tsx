@@ -233,6 +233,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
               <option value="S" className="bg-gray-900">
                 S (Sword/Shield)
               </option>
+              <option value="SM" className="bg-gray-900">
+                SM (Sun & Moon)
+              </option>
               <option value="M" className="bg-gray-900">
                 M (older)
               </option>
