@@ -342,47 +342,82 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
           <div>
             <label className="text-white/75 text-sm block mb-1">Sets (Include / Exclude)</label>
-            <div className="grid grid-cols-2 gap-2">
-              <div>
-                <p className="text-xs text-white/50 mb-1">Include (if any selected)</p>
-                <select
-                  multiple
-                  value={draftFilters.includeSets}
-                  onChange={(e) => {
-                    // Note: multi-select requires Ctrl/Cmd-click for multiple selection in most browsers.
-                    const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
-                    setDraftFilters((f) => ({ ...f, includeSets: values }));
-                  }}
-                  className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
-                >
-                  {allSets.map((s) => (
-                    <option key={s} value={s} className="bg-gray-900">
-                      {s}
-                    </option>
-                  ))}
-                </select>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {/* Include */}
+              <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-xs text-white/70 font-semibold">Include (if any ticked)</p>
+                  <button
+                    type="button"
+                    onClick={() => setDraftFilters((f) => ({ ...f, includeSets: [] }))}
+                    className="text-xs text-white/60 hover:text-white underline"
+                  >
+                    Clear
+                  </button>
+                </div>
+
+                <div className="max-h-40 overflow-auto pr-1 space-y-1">
+                  {allSets.map((s) => {
+                    const checked = draftFilters.includeSets.includes(s);
+                    return (
+                      <label key={`in-${s}`} className="flex items-center gap-2 text-white/80 text-sm">
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={() =>
+                            setDraftFilters((f) => ({
+                              ...f,
+                              includeSets: checked ? f.includeSets.filter((x) => x !== s) : [...f.includeSets, s],
+                            }))
+                          }
+                          className="accent-emerald-500"
+                        />
+                        <span className="font-mono">{s}</span>
+                      </label>
+                    );
+                  })}
+                </div>
               </div>
-              <div>
-                <p className="text-xs text-white/50 mb-1">Exclude</p>
-                <select
-                  multiple
-                  value={draftFilters.excludeSets}
-                  onChange={(e) => {
-                    // Note: multi-select requires Ctrl/Cmd-click for multiple selection in most browsers.
-                    const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
-                    setDraftFilters((f) => ({ ...f, excludeSets: values }));
-                  }}
-                  className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
-                >
-                  {allSets.map((s) => (
-                    <option key={s} value={s} className="bg-gray-900">
-                      {s}
-                    </option>
-                  ))}
-                </select>
+
+              {/* Exclude */}
+              <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-xs text-white/70 font-semibold">Exclude</p>
+                  <button
+                    type="button"
+                    onClick={() => setDraftFilters((f) => ({ ...f, excludeSets: [] }))}
+                    className="text-xs text-white/60 hover:text-white underline"
+                  >
+                    Clear
+                  </button>
+                </div>
+
+                <div className="max-h-40 overflow-auto pr-1 space-y-1">
+                  {allSets.map((s) => {
+                    const checked = draftFilters.excludeSets.includes(s);
+                    return (
+                      <label key={`ex-${s}`} className="flex items-center gap-2 text-white/80 text-sm">
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={() =>
+                            setDraftFilters((f) => ({
+                              ...f,
+                              excludeSets: checked ? f.excludeSets.filter((x) => x !== s) : [...f.excludeSets, s],
+                            }))
+                          }
+                          className="accent-purple-500"
+                        />
+                        <span className="font-mono">{s}</span>
+                      </label>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 mt-2">
+
+            <div className="flex flex-wrap gap-2 mt-3">
               <button
                 type="button"
                 onClick={() => setAppliedFilters(draftFilters)}
@@ -415,7 +450,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 Revert changes
               </button>
             </div>
-            <p className="text-xs text-white/40 mt-2">Tip: in the sets boxes, use Ctrl/Cmd-click to select multiple.</p>
+
+            <p className="text-xs text-white/40 mt-2">Note: if you tick any Include sets, only those sets will show (minus any Excluded).</p>
           </div>
         </div>
       </div>
