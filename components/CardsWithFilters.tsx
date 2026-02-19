@@ -131,7 +131,8 @@ function toggleInList(list: string[], value: string): string[] {
 }
 
 export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFiltersProps) {
-  const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
+  const [draftFilters, setDraftFilters] = useState<FilterState>(DEFAULT_FILTERS);
+  const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
 
   const allSets = useMemo<string[]>(() => {
@@ -153,7 +154,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
   const filteredCards = useMemo<ComputedCard[]>(() => {
     // 1) Filter
-    let cards = applyFilters(cardsWithData, filters);
+    let cards = applyFilters(cardsWithData, appliedFilters);
 
     // 2) Sort
     cards = [...cards].sort((a, b) => {
@@ -166,7 +167,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
     });
 
     return cards;
-  }, [cardsWithData, filters, sortBy]);
+  }, [cardsWithData, appliedFilters, sortBy]);
 
   return (
     <div>
@@ -210,8 +211,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
             <input
               type="text"
               placeholder="Card name or number..."
-              value={filters.search}
-              onChange={(e) => setFilters((f) => ({ ...f, search: e.target.value }))}
+              value={draftFilters.search}
+              onChange={(e) => setDraftFilters((f) => ({ ...f, search: e.target.value }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
             />
           </div>
@@ -219,8 +220,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           <div>
             <label className="text-white/75 text-sm block mb-1">Era</label>
             <select
-              value={filters.era}
-              onChange={(e) => setFilters((f) => ({ ...f, era: e.target.value as Era }))}
+              value={draftFilters.era}
+              onChange={(e) => setDraftFilters((f) => ({ ...f, era: e.target.value as Era }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
               <option value="ALL" className="bg-gray-900">
@@ -241,8 +242,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           <div>
             <label className="text-white/75 text-sm block mb-1">Rarity</label>
             <select
-              value={filters.rarity}
-              onChange={(e) => setFilters((f) => ({ ...f, rarity: e.target.value }))}
+              value={draftFilters.rarity}
+              onChange={(e) => setDraftFilters((f) => ({ ...f, rarity: e.target.value }))}
               className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
             >
               <option value="all" className="bg-gray-900">
@@ -290,9 +291,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 type="number"
                 inputMode="numeric"
                 placeholder="Min ¥"
-                value={filters.jpPriceJPY.min ?? ''}
+                value={draftFilters.jpPriceJPY.min ?? ''}
                 onChange={(e) =>
-                  setFilters((f) => ({
+                  setDraftFilters((f) => ({
                     ...f,
                     jpPriceJPY: { ...f.jpPriceJPY, min: e.target.value === '' ? null : Number(e.target.value) },
                   }))
@@ -303,9 +304,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 type="number"
                 inputMode="numeric"
                 placeholder="Max ¥"
-                value={filters.jpPriceJPY.max ?? ''}
+                value={draftFilters.jpPriceJPY.max ?? ''}
                 onChange={(e) =>
-                  setFilters((f) => ({
+                  setDraftFilters((f) => ({
                     ...f,
                     jpPriceJPY: { ...f.jpPriceJPY, max: e.target.value === '' ? null : Number(e.target.value) },
                   }))
@@ -322,9 +323,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
               {(['0-20', '20-40', '40-60', '60+'] as MarginBucket[]).map((b) => (
                 <button
                   key={b}
-                  onClick={() => setFilters((f) => ({ ...f, marginBuckets: toggleInList(f.marginBuckets, b) as MarginBucket[] }))}
+                  onClick={() =>
+                    setDraftFilters((f) => ({ ...f, marginBuckets: toggleInList(f.marginBuckets, b) as MarginBucket[] }))
+                  }
                   className={`px-3 py-2 rounded border text-sm transition ${
-                    filters.marginBuckets.includes(b)
+                    draftFilters.marginBuckets.includes(b)
                       ? 'bg-emerald-600/30 border-emerald-500/50 text-emerald-200'
                       : 'bg-white/10 border-white/20 text-white/70 hover:border-purple-500/50'
                   }`}
@@ -344,10 +347,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 <p className="text-xs text-white/50 mb-1">Include (if any selected)</p>
                 <select
                   multiple
-                  value={filters.includeSets}
+                  value={draftFilters.includeSets}
                   onChange={(e) => {
+                    // Note: multi-select requires Ctrl/Cmd-click for multiple selection in most browsers.
                     const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
-                    setFilters((f) => ({ ...f, includeSets: values }));
+                    setDraftFilters((f) => ({ ...f, includeSets: values }));
                   }}
                   className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
                 >
@@ -362,10 +366,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 <p className="text-xs text-white/50 mb-1">Exclude</p>
                 <select
                   multiple
-                  value={filters.excludeSets}
+                  value={draftFilters.excludeSets}
                   onChange={(e) => {
+                    // Note: multi-select requires Ctrl/Cmd-click for multiple selection in most browsers.
                     const values = Array.from(e.target.selectedOptions).map((o) => normalizeSetCode(o.value));
-                    setFilters((f) => ({ ...f, excludeSets: values }));
+                    setDraftFilters((f) => ({ ...f, excludeSets: values }));
                   }}
                   className="w-full h-28 px-3 py-2 rounded bg-white/10 border border-white/20 text-white focus:outline-none focus:border-purple-500"
                 >
@@ -377,22 +382,40 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 </select>
               </div>
             </div>
-            <div className="flex gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               <button
                 type="button"
-                onClick={() => setFilters(DEFAULT_FILTERS)}
-                className="px-3 py-2 rounded bg-purple-600 hover:bg-purple-500 text-white text-sm"
+                onClick={() => setAppliedFilters(draftFilters)}
+                className="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold"
               >
-                Reset filters
+                Apply filters
               </button>
               <button
                 type="button"
-                onClick={() => setFilters((f) => ({ ...f, includeSets: [], excludeSets: [] }))}
+                onClick={() => {
+                  setDraftFilters(DEFAULT_FILTERS);
+                  setAppliedFilters(DEFAULT_FILTERS);
+                }}
+                className="px-3 py-2 rounded bg-purple-600 hover:bg-purple-500 text-white text-sm"
+              >
+                Reset
+              </button>
+              <button
+                type="button"
+                onClick={() => setDraftFilters((f) => ({ ...f, includeSets: [], excludeSets: [] }))}
                 className="px-3 py-2 rounded bg-white/10 hover:bg-white/15 border border-white/20 text-white/80 text-sm"
               >
                 Clear set selections
               </button>
+              <button
+                type="button"
+                onClick={() => setDraftFilters(appliedFilters)}
+                className="px-3 py-2 rounded bg-white/10 hover:bg-white/15 border border-white/20 text-white/80 text-sm"
+              >
+                Revert changes
+              </button>
             </div>
+            <p className="text-xs text-white/40 mt-2">Tip: in the sets boxes, use Ctrl/Cmd-click to select multiple.</p>
           </div>
         </div>
       </div>
@@ -576,7 +599,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           <p className="text-xl text-white/70">No cards match your filters</p>
           <button
             onClick={() => {
-              setFilters(DEFAULT_FILTERS);
+              setDraftFilters(DEFAULT_FILTERS);
+              setAppliedFilters(DEFAULT_FILTERS);
               setSortBy('profit-desc');
             }}
             className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white transition"
