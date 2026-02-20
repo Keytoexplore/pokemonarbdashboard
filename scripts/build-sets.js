@@ -9,6 +9,10 @@
  * Usage:
  *   node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p
  *   node scripts/build-sets.js --sets s12a,sv2a --force
+ *   node scripts/build-sets.js --sets sv2a,sv2d --toretoku sv
+ *
+ * Options:
+ *   --toretoku <mode>   "none" | "s12a" (default) | "sv" | "all"
  */
 
 const fs = require('fs');
@@ -41,7 +45,13 @@ function getArgValue(name) {
 
 const setsArg = getArgValue('--sets');
 if (!setsArg) {
-  console.error('Usage: node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p [--force]');
+  console.error('Usage: node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p [--force] [--toretoku none|s12a|sv|all]');
+  process.exit(1);
+}
+
+const toretokuMode = (getArgValue('--toretoku') || 's12a').toLowerCase();
+if (!['none', 's12a', 'sv', 'all'].includes(toretokuMode)) {
+  console.error('Invalid --toretoku mode. Use: none | s12a | sv | all');
   process.exit(1);
 }
 
@@ -109,6 +119,57 @@ async function fetchJson(url, { rateLimitMs = 1300, maxRetries = 5 } = {}) {
     }
 
     return res.json();
+  }
+}
+
+async function fetchHtml(url, {
+  headers = {},
+  timeoutMs = 25000,
+  maxRetries = 4,
+  retryBackoffMs = 3000,
+  rateLimitMs = 650,
+} = {}) {
+  let attempt = 0;
+
+  while (true) {
+    attempt += 1;
+    await delay(rateLimitMs);
+
+    const controller = new AbortController();
+    const t = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0',
+          Accept: 'text/html',
+          ...headers,
+        },
+        signal: controller.signal,
+      });
+
+      if (!res.ok) {
+        const body = await res.text().catch(() => '');
+        // Retry transient 5xx and 429.
+        if ((res.status >= 500 || res.status === 429) && attempt <= maxRetries) {
+          const backoff = retryBackoffMs * attempt;
+          console.warn(`⚠ HTTP ${res.status} for ${url}. Retrying in ${Math.round(backoff / 1000)}s (${attempt}/${maxRetries})`);
+          await delay(backoff);
+          continue;
+        }
+        throw new Error(`HTTP ${res.status} for ${url}: ${body.slice(0, 200)}`);
+      }
+
+      return await res.text();
+    } catch (err) {
+      const isLast = attempt > maxRetries;
+      if (isLast) throw err;
+      const backoff = retryBackoffMs * attempt;
+      console.warn(`⚠ fetchHtml failed (${attempt}/${maxRetries}) for ${url}: ${err?.message || err}. Retrying in ${Math.round(backoff / 1000)}s`);
+      await delay(backoff);
+    } finally {
+      clearTimeout(t);
+    }
   }
 }
 
@@ -197,19 +258,13 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
       const url = page === 1 ? base : `${base}&page=${page}`;
       console.log(`  📄 ${rarity}: page ${page}`);
 
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0',
-          Accept: 'text/html',
-        },
-      });
-
-      if (!res.ok) {
-        console.warn(`    ⚠ HTTP ${res.status} on ${url}`);
+      let html;
+      try {
+        html = await fetchHtml(url, { rateLimitMs: 450, timeoutMs: 25000, maxRetries: 4, retryBackoffMs: 2500 });
+      } catch (err) {
+        console.warn(`    ⚠ Failed to fetch ${url}: ${err?.message || err}`);
         break;
       }
-
-      const html = await res.text();
       const $ = cheerio.load(html);
 
       const anchors = $('a[href*="/products/pokemon-"]');
@@ -265,7 +320,7 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
   return all;
 }
 
-async function scrapeToretokuListings(apiSetId, displaySetCode) {
+async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 } = {}) {
   // Toretoku search results pages already contain card number / rarity / rank / price.
   // We only scrape in-stock items.
   ensureDir(cacheDir);
@@ -294,26 +349,20 @@ async function scrapeToretokuListings(apiSetId, displaySetCode) {
   baseParams.append('rank5[]', '2');
   baseParams.append('rank5[]', '3');
 
-  for (let page = 1; page <= 50; page++) {
+  for (let page = 1; page <= maxPages; page++) {
     const params = new URLSearchParams(baseParams);
     if (page > 1) params.set('page', String(page));
 
     const url = `https://www.toretoku.jp/item?${params.toString()}`;
     console.log(`  📄 page ${page}`);
 
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0',
-        Accept: 'text/html',
-      },
-    });
-
-    if (!res.ok) {
-      console.warn(`    ⚠ HTTP ${res.status} on ${url}`);
+    let html;
+    try {
+      html = await fetchHtml(url, { rateLimitMs: 650, timeoutMs: 30000, maxRetries: 5, retryBackoffMs: 3000 });
+    } catch (err) {
+      console.warn(`    ⚠ Failed to fetch ${url}: ${err?.message || err}`);
       break;
     }
-
-    const html = await res.text();
     const $ = cheerio.load(html);
 
     const items = $('li.list');
@@ -367,8 +416,8 @@ async function scrapeToretokuListings(apiSetId, displaySetCode) {
 
     if (found === 0) break;
 
-    // gentle pace
-    await delay(550);
+    // Gentle pace (toretoku is sensitive to bursts)
+    await delay(650);
   }
 
   fs.writeFileSync(cachePath, JSON.stringify(all, null, 2));
@@ -548,9 +597,21 @@ async function main() {
     const apiDump = await fetchAllCardsFromApi(apiSetId);
     const jtListings = await scrapeJapanTorecaListings(apiSetId, displaySetCode);
 
-    // Toretoku is currently in "spike" mode: only scrape S12A to avoid hammering the shop and breaking the build.
-    const toretokuListings = apiSetId.toLowerCase() === 's12a'
-      ? await scrapeToretokuListings(apiSetId, displaySetCode)
+    // Toretoku scraping is opt-in by mode to avoid hammering the shop.
+    // Modes:
+    // - none: never scrape
+    // - s12a: only scrape S12A
+    // - sv: scrape all SV* sets + S12A
+    // - all: scrape all sets
+    const apiSetIdLc = apiSetId.toLowerCase();
+    const isSv = apiSetIdLc.startsWith('sv');
+    const shouldScrapeToretoku =
+      toretokuMode === 'all' ||
+      (toretokuMode === 'sv' && (isSv || apiSetIdLc === 's12a')) ||
+      (toretokuMode === 's12a' && apiSetIdLc === 's12a');
+
+    const toretokuListings = shouldScrapeToretoku
+      ? await scrapeToretokuListings(apiSetId, displaySetCode, { maxPages: isSv ? 35 : 50 })
       : [];
 
     const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings });
