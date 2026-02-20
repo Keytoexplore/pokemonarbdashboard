@@ -10,6 +10,9 @@ export type FilterState = {
   // JP baseline price range (JPY)
   jpPriceJPY: { min: number | null; max: number | null };
 
+  // Availability
+  inStockOnly: boolean;
+
   // Set filtering
   era: Era;
   includeSets: string[]; // if non-empty, only these sets
@@ -25,6 +28,7 @@ export type FilterState = {
 export const DEFAULT_FILTERS: FilterState = {
   search: '',
   jpPriceJPY: { min: null, max: null },
+  inStockOnly: false,
   era: 'ALL',
   includeSets: [],
   excludeSets: [],
@@ -141,7 +145,14 @@ export function applyFilters<T extends ArbitrageOpportunity>(
       if (!name.includes(search) && !num.includes(search)) return false;
     }
 
-    // price range (JPY) uses baseline (A- preferred else B)
+    // Availability filter: in-stock in at least one selected JP source (A-/B)
+    if (state.inStockOnly) {
+      const jp = filterQualityPrices(card.japanesePrices, opts?.jpSources);
+      const hasInStock = jp.some((p) => p.inStock);
+      if (!hasInStock) return false;
+    }
+
+    // price range (JPY) uses baseline (A-/B; in-stock preferred)
     const baseline = getBaselineJapanPrice(card.japanesePrices, opts?.jpSources).price;
     const jp = baseline?.priceJPY ?? null;
     if (jp == null) return false;

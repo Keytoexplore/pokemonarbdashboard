@@ -84,9 +84,9 @@ function parseMoneyJPY(text) {
 
 function parseCardInfoFromHeading(heading) {
   // Example: "【状態A-】アルセウスVSTAR UR (262/172) [S12a]"
-  const m = String(heading || '').match(/】\s*(.+?)\s+(AR|SAR|SR|CHR|UR|SSR|RRR)\s*\((\d+\/\d+)\)/i);
+  const m = String(heading || '').match(/】\s*(.+?)\s+(AR|SAR|SR|CHR|UR|SSR|RRR)\s*\((\d+\/\d+)\)\s*\[\s*([^\]]+)\s*\]/i);
   if (!m) return null;
-  return { nameJP: m[1].trim(), rarity: m[2].toUpperCase(), cardNumber: m[3] };
+  return { nameJP: m[1].trim(), rarity: m[2].toUpperCase(), cardNumber: m[3], setCode: String(m[4] || '').trim() };
 }
 
 async function fetchJson(url, { rateLimitMs = 1300, maxRetries = 5 } = {}) {
@@ -291,6 +291,7 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
         const info = parseCardInfoFromHeading(heading);
         if (!info) return;
         if (!ALLOWED_RARITIES.has(info.rarity)) return;
+        if (String(info.setCode || '').toUpperCase() !== displaySetCode.toUpperCase()) return;
 
         const absUrl = href.startsWith('http') ? href : `https://shop.japan-toreca.com${href}`;
         if (seenUrls.has(absUrl)) return;

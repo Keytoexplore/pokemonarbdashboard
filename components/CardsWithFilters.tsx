@@ -317,7 +317,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <label className="text-white/75 text-sm block mb-1">JP Baseline Price (JPY)</label>
             <div className="flex gap-2">
@@ -348,7 +348,21 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                 className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-500"
               />
             </div>
-            <p className="text-xs text-white/40 mt-1">Baseline = A- preferred, else B</p>
+            <p className="text-xs text-white/40 mt-1">Baseline prefers in-stock A-, then in-stock B</p>
+          </div>
+
+          <div>
+            <label className="text-white/75 text-sm block mb-1">In Stock</label>
+            <label className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-white/80">
+              <input
+                type="checkbox"
+                checked={draftFilters.inStockOnly}
+                onChange={(e) => setDraftFilters((f) => ({ ...f, inStockOnly: e.target.checked }))}
+                className="accent-emerald-500"
+              />
+              <span className="text-sm">Only show cards in stock (selected shop)</span>
+            </label>
+            <p className="text-xs text-white/40 mt-1">If Best (both), requires stock in at least one shop</p>
           </div>
 
           <div>
