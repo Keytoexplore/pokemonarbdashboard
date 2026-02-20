@@ -24,7 +24,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
         priceJPY: c.japanToreca.aMinus.priceJPY,
         priceUSD: c.japanToreca.aMinus.priceJPY * JPY_TO_USD,
         quality: 'A-',
-        inStock: true,
+        inStock: c.japanToreca.aMinus.inStock !== false,
         url: c.japanToreca.aMinus.url,
         isLowest: false,
       });
@@ -36,7 +36,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
         priceJPY: c.japanToreca.b.priceJPY,
         priceUSD: c.japanToreca.b.priceJPY * JPY_TO_USD,
         quality: 'B',
-        inStock: true,
+        inStock: c.japanToreca.b.inStock !== false,
         url: c.japanToreca.b.url,
         isLowest: false,
       });

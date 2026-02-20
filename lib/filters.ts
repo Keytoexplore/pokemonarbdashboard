@@ -53,15 +53,16 @@ export function normalizeQuality(q: unknown): JapaneseCondition | null {
   return null;
 }
 
-export function filterQualityPrices(prices: JapanesePrice[]): JapanesePrice[] {
-  return prices.filter((p) => p.source === 'japan-toreca' && normalizeQuality(p.quality) !== null);
+export function filterQualityPrices(prices: JapanesePrice[], sources?: Set<string>): JapanesePrice[] {
+  const allowed = sources && sources.size > 0 ? sources : new Set<string>(['japan-toreca']);
+  return prices.filter((p) => allowed.has(p.source) && normalizeQuality(p.quality) !== null);
 }
 
-export function getBaselineJapanPrice(prices: JapanesePrice[]): {
+export function getBaselineJapanPrice(prices: JapanesePrice[], sources?: Set<string>): {
   price: JapanesePrice | null;
   baselineQuality: JapaneseCondition | null;
 } {
-  const filtered = filterQualityPrices(prices);
+  const filtered = filterQualityPrices(prices, sources);
   if (filtered.length === 0) return { price: null, baselineQuality: null };
 
   const aMinus = filtered
@@ -69,20 +70,31 @@ export function getBaselineJapanPrice(prices: JapanesePrice[]): {
     .sort((a, b) => a.priceJPY - b.priceJPY);
   const b = filtered.filter((p) => normalizeQuality(p.quality) === 'B').sort((a, b) => a.priceJPY - b.priceJPY);
 
-  if (aMinus.length > 0) return { price: aMinus[0], baselineQuality: 'A-' };
-  if (b.length > 0) return { price: b[0], baselineQuality: 'B' };
-  return { price: null, baselineQuality: null };
+  const pick = (arr: JapanesePrice[], quality: JapaneseCondition, wantInStock: boolean) => {
+    const xs = wantInStock ? arr.filter((p) => p.inStock) : arr.filter((p) => !p.inStock);
+    if (xs.length === 0) return null;
+    return { price: xs[0], quality };
+  };
+
+  // in-stock B beats out-of-stock A-
+  const chosen =
+    pick(aMinus, 'A-', true) ||
+    pick(b, 'B', true) ||
+    pick(aMinus, 'A-', false) ||
+    pick(b, 'B', false);
+
+  return chosen ? { price: chosen.price, baselineQuality: chosen.quality } : { price: null, baselineQuality: null };
 }
 
-export function computeProfitMarginPercent(card: ArbitrageOpportunity): number {
+export function computeProfitMarginPercent(card: ArbitrageOpportunity, sources?: Set<string>): number {
   // Conservative: use the WORST (highest) priceUSD among A-/B (in-stock preferred) when computing margin.
   if (!card.usPrice) return 0;
 
-  const jtPrices = filterQualityPrices(card.japanesePrices);
-  if (jtPrices.length === 0) return 0;
+  const jpPrices = filterQualityPrices(card.japanesePrices, sources);
+  if (jpPrices.length === 0) return 0;
 
-  const inStock = jtPrices.filter((p) => p.inStock);
-  const candidates = inStock.length > 0 ? inStock : jtPrices;
+  const inStock = jpPrices.filter((p) => p.inStock);
+  const candidates = inStock.length > 0 ? inStock : jpPrices;
 
   const worst = candidates.reduce((max, p) => (p.priceUSD > max.priceUSD ? p : max), candidates[0]);
   if (!worst || worst.priceUSD <= 0) return 0;
@@ -97,7 +109,11 @@ export function marginBucket(m: number): MarginBucket {
   return '60+';
 }
 
-export function applyFilters<T extends ArbitrageOpportunity>(cards: T[], state: FilterState): T[] {
+export function applyFilters<T extends ArbitrageOpportunity>(
+  cards: T[],
+  state: FilterState,
+  opts?: { jpSources?: Set<string> }
+): T[] {
   const search = state.search.trim().toLowerCase();
 
   const include = new Set(state.includeSets.map(normalizeSetCode));
@@ -126,7 +142,7 @@ export function applyFilters<T extends ArbitrageOpportunity>(cards: T[], state: 
     }
 
     // price range (JPY) uses baseline (A- preferred else B)
-    const baseline = getBaselineJapanPrice(card.japanesePrices).price;
+    const baseline = getBaselineJapanPrice(card.japanesePrices, opts?.jpSources).price;
     const jp = baseline?.priceJPY ?? null;
     if (jp == null) return false;
 
@@ -135,7 +151,7 @@ export function applyFilters<T extends ArbitrageOpportunity>(cards: T[], state: 
 
     // margin buckets
     if (state.marginBuckets.length > 0) {
-      const m = computeProfitMarginPercent(card);
+      const m = computeProfitMarginPercent(card, opts?.jpSources);
       const b = marginBucket(m);
       if (!state.marginBuckets.includes(b)) return false;
     }

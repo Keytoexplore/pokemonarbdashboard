@@ -57,7 +57,12 @@ function getBaselinePrice(prices: JapanesePrice[], sources: Set<string>): {
     return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
   }
 
-  // Prefer A- for baseline; fall back to B.
+  // Prefer IN-STOCK over out-of-stock, even if that means taking B over A-.
+  // Policy:
+  // 1) in-stock A- (cheapest)
+  // 2) in-stock B  (cheapest)
+  // 3) OOS A-      (cheapest)
+  // 4) OOS B       (cheapest)
   const aMinus = filteredPrices
     .filter((p) => normalizeQuality(p.quality) === 'A-')
     .sort((a, b) => a.priceJPY - b.priceJPY);
@@ -65,14 +70,18 @@ function getBaselinePrice(prices: JapanesePrice[], sources: Set<string>): {
     .filter((p) => normalizeQuality(p.quality) === 'B')
     .sort((a, b) => a.priceJPY - b.priceJPY);
 
-  const pick = (arr: JapanesePrice[], quality: JapaneseCondition) => {
-    if (arr.length === 0) return null;
-    const inStock = arr.filter((p) => p.inStock);
-    if (inStock.length > 0) return { price: inStock[0], inStock: true, quality };
-    return { price: arr[0], inStock: false, quality };
+  const pick = (arr: JapanesePrice[], quality: JapaneseCondition, wantInStock: boolean) => {
+    const xs = wantInStock ? arr.filter((p) => p.inStock) : arr.filter((p) => !p.inStock);
+    if (xs.length === 0) return null;
+    return { price: xs[0], inStock: wantInStock, quality };
   };
 
-  const chosen = pick(aMinus, 'A-') || pick(b, 'B');
+  const chosen =
+    pick(aMinus, 'A-', true) ||
+    pick(b, 'B', true) ||
+    pick(aMinus, 'A-', false) ||
+    pick(b, 'B', false);
+
   if (!chosen) {
     return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
   }
@@ -163,7 +172,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
   const filteredCards = useMemo<ComputedCard[]>(() => {
     // 1) Filter
-    let cards = applyFilters(cardsWithData, appliedFilters);
+    let cards = applyFilters(cardsWithData, appliedFilters, { jpSources });
 
     // 2) Sort
     cards = [...cards].sort((a, b) => {

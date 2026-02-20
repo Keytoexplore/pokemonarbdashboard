@@ -34,6 +34,8 @@ export interface BuilderJapanTorecaPrice {
   priceJPY: number;
   url: string;
   quality: JapaneseCondition;
+  inStock?: boolean;
+  stock?: number | null;
 }
 
 export interface BuilderOpportunity {

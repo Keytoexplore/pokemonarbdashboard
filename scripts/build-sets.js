@@ -239,8 +239,12 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
   if (!FORCE && fs.existsSync(cacheJTPath)) {
     const cached = JSON.parse(fs.readFileSync(cacheJTPath, 'utf8'));
     if (Array.isArray(cached) && cached.length) {
-      console.log(`📦 Using cached Japan-Toreca listings: ${path.relative(workspaceRoot, cacheJTPath)}`);
-      return cached;
+      const needsUpgrade = cached.some((r) => typeof r?.inStock !== 'boolean');
+      if (!needsUpgrade) {
+        console.log(`📦 Using cached Japan-Toreca listings: ${path.relative(workspaceRoot, cacheJTPath)}`);
+        return cached;
+      }
+      console.log(`♻️  Cached Japan-Toreca listings missing inStock; re-scraping: ${path.relative(workspaceRoot, cacheJTPath)}`);
     }
   }
 
@@ -295,6 +299,13 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
         const priceJPY = parseMoneyJPY(priceText);
         if (!priceJPY) return;
 
+        const soldOutText = priceText.toLowerCase();
+        const inStock = !(
+          soldOutText.includes('sold out') ||
+          soldOutText.includes('売り切') ||
+          soldOutText.includes('在庫切')
+        );
+
         all.push({
           set: displaySetCode,
           rarity: info.rarity,
@@ -303,6 +314,7 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
           quality,
           priceJPY,
           url: absUrl,
+          inStock,
         });
 
         seenUrls.add(absUrl);
@@ -541,9 +553,21 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
     const tt = ttByCard.get(cardNumberSlash || cardNumber) || ttByCard.get(cardNumber) || { 'A-': null, B: null };
 
     const jpAminus = jt['A-']
-      ? { priceJPY: jt['A-'].priceJPY, url: jt['A-'].url, quality: 'A-' }
+      ? {
+          priceJPY: jt['A-'].priceJPY,
+          url: jt['A-'].url,
+          quality: 'A-',
+          inStock: jt['A-'].inStock !== false,
+        }
       : null;
-    const jpB = jt.B ? { priceJPY: jt.B.priceJPY, url: jt.B.url, quality: 'B' } : null;
+    const jpB = jt.B
+      ? {
+          priceJPY: jt.B.priceJPY,
+          url: jt.B.url,
+          quality: 'B',
+          inStock: jt.B.inStock !== false,
+        }
+      : null;
 
     const ttA = tt['A-'] ? { priceJPY: tt['A-'].priceJPY, url: tt['A-'].url, quality: 'A-' } : null;
     const ttB = tt.B ? { priceJPY: tt.B.priceJPY, url: tt.B.url, quality: 'B' } : null;
