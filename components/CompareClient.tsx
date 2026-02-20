@@ -4,6 +4,8 @@ import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { BuilderDashboardData, BuilderOpportunity, JapaneseCondition } from '@/lib/types';
 
+const JPY_TO_USD = 0.0065;
+
 type Mode = 'set' | 'card';
 
 type ShopKey = 'japan-toreca' | 'toretoku' | 'torecacamp';
@@ -15,6 +17,33 @@ type Offer = {
   inStock: boolean;
   url: string;
 };
+
+function profitPercent(usMarket: number | null, jpPriceJPY: number | null): number | null {
+  if (usMarket == null || jpPriceJPY == null || jpPriceJPY <= 0) return null;
+  const jpUsd = jpPriceJPY * JPY_TO_USD;
+  if (jpUsd <= 0) return null;
+  return Math.round(((usMarket - jpUsd) / jpUsd) * 100);
+}
+
+function formatUSD(n: number): string {
+  try {
+    return n.toLocaleString(undefined, { style: 'currency', currency: 'USD' });
+  } catch {
+    return `$${n.toFixed(2)}`;
+  }
+}
+
+function formatPct(n: number | null): string {
+  if (n == null) return '—';
+  return `${n > 0 ? '+' : ''}${n}%`;
+}
+
+function profitTone(n: number | null): string {
+  if (n == null) return 'text-white/50';
+  if (n >= 25) return 'text-emerald-300';
+  if (n >= 0) return 'text-emerald-200';
+  return 'text-red-300';
+}
 
 const CONDITIONS: JapaneseCondition[] = ['A-', 'B'];
 
@@ -263,13 +292,24 @@ export function CompareClient({ builder }: { builder: BuilderDashboardData | nul
   );
 }
 
-function PriceCell({ offer, isBaseline, isLowest }: { offer: Offer | null; isBaseline: boolean; isLowest: boolean }) {
+function PriceCell({
+  offer,
+  isBaseline,
+  isLowest,
+  usMarket,
+}: {
+  offer: Offer | null;
+  isBaseline: boolean;
+  isLowest: boolean;
+  usMarket: number | null;
+}) {
   if (!offer) {
     return <div className="text-white/30 text-xs">—</div>;
   }
 
   const base = offer.inStock ? 'bg-white/5 border-white/10' : 'bg-gray-700/10 border-gray-500/20 opacity-70';
   const outline = isBaseline ? 'border-emerald-500/60' : isLowest ? 'border-blue-500/50' : '';
+  const p = profitPercent(usMarket, offer.priceJPY);
 
   return (
     <a
@@ -282,6 +322,10 @@ function PriceCell({ offer, isBaseline, isLowest }: { offer: Offer | null; isBas
         <span className="text-white/80 text-sm font-semibold">{formatJPY(offer.priceJPY)}</span>
         {!offer.inStock && <span className="text-xs text-red-300">OOS</span>}
       </div>
+      <div className="flex items-center justify-between mt-1">
+        <span className="text-xs text-white/40">Profit</span>
+        <span className={`text-xs font-semibold ${p >= 50 ? 'text-emerald-300' : p >= 20 ? 'text-yellow-300' : 'text-red-300'}`}> {p >= 0 ? '+' : ''}{p}%</span>
+      </div>
       <div className="text-xs text-white/40 mt-1">Open →</div>
     </a>
   );
@@ -292,6 +336,9 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
   const baseline = pickBaseline(offers, shops);
   const lowestA = pickLowestForCondition(offers, shops, 'A-');
   const lowestB = pickLowestForCondition(offers, shops, 'B');
+
+  const usMarket = card.usMarket?.tcgplayer?.marketPrice ?? null;
+  const baselineProfit = baseline ? profitPercent(usMarket, baseline.priceJPY) : 0;
 
   const get = (shop: ShopKey, condition: JapaneseCondition) => {
     const xs = offers.filter((o) => o.shop === shop && o.condition === condition);
@@ -313,12 +360,22 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
                 <p className="text-white font-bold truncate">{card.name}</p>
                 <p className="text-purple-200 text-sm">{card.set} #{card.number}</p>
               </div>
-              {!compact && baseline && (
+              {!compact && (
                 <div className="text-right">
-                  <p className="text-xs text-white/50">Baseline</p>
-                  <p className="text-emerald-300 text-sm font-bold">
-                    {baseline.shop} {baseline.condition} {formatJPY(baseline.priceJPY)} {baseline.inStock ? '' : '(OOS)'}
+                  <p className="text-xs text-white/50">US (TCGPlayer Market)</p>
+                  <p className="text-white text-sm font-bold">
+                    {usMarket != null ? `$${Number(usMarket).toFixed(2)}` : '—'}
                   </p>
+
+                  <p className="text-xs text-white/50 mt-2">Best pick (baseline)</p>
+                  {baseline ? (
+                    <p className="text-emerald-300 text-sm font-bold">
+                      {baseline.shop} {baseline.condition} {formatJPY(baseline.priceJPY)} {baseline.inStock ? '' : '(OOS)'}
+                      <span className="ml-2 text-emerald-200/80">({baselineProfit >= 0 ? '+' : ''}{baselineProfit}%)</span>
+                    </p>
+                  ) : (
+                    <p className="text-white/40 text-sm">—</p>
+                  )}
                 </div>
               )}
             </div>
@@ -338,7 +395,7 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
                       return (
                         <div key={cond}>
                           <div className="text-xs text-white/40 mb-1">{cond}</div>
-                          <PriceCell offer={offer} isBaseline={isBaseline} isLowest={isLowest} />
+                          <PriceCell offer={offer} isBaseline={isBaseline} isLowest={isLowest} usMarket={usMarket} />
                         </div>
                       );
                     })}
