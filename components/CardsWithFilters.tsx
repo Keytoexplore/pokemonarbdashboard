@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { ArbitrageOpportunity, JapanesePrice, JapaneseCondition, RarityCode } from '@/lib/types';
 import {
   applyFilters,
-  computeProfitMarginPercent,
   DEFAULT_FILTERS,
   Era,
   FilterState,
@@ -148,7 +147,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const cardsWithData = useMemo<ComputedCard[]>(() => {
     return initialCards.map((card) => {
       const lowestData = getBaselinePrice(card.japanesePrices, jpSources);
-      const usProfitMargin = computeProfitMarginPercent(card);
+
+      const usMarket = card.usPrice?.marketPrice ?? null;
+      const baselineUSD = lowestData.lowestPriceUSD || 0;
+      const usProfitMargin =
+        usMarket != null && baselineUSD > 0 ? Math.round(((usMarket - baselineUSD) / baselineUSD) * 100) : 0;
 
       return {
         ...card,
@@ -156,7 +159,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         usProfitMargin,
       };
     });
-  }, [initialCards]);
+  }, [initialCards, jpSources]);
 
   const filteredCards = useMemo<ComputedCard[]>(() => {
     // 1) Filter
@@ -485,9 +488,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           const tcgPlayerUrl = card.usPrice?.tcgPlayerUrl;
           const { lowestData, usProfitMargin } = card;
 
-          // Group Japan-Toreca prices by quality (A-/B)
-          const jtPrices = filterQualityPrices(card.japanesePrices, jpSources);
-          const jtByQuality = DISPLAY_CONDITIONS.map((q) => ({ q, ...getBestPriceForQuality(jtPrices, q, jpSources) }));
+          // Group JP buy prices by quality (A-/B) for the selected shop(s)
+          const jpPrices = filterQualityPrices(card.japanesePrices, jpSources);
+          const jpByQuality = DISPLAY_CONDITIONS.map((q) => ({ q, ...getBestPriceForQuality(jpPrices, q, jpSources) }));
 
           return (
             <div
@@ -610,9 +613,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                   )}
 
                   <div className="bg-white/5 rounded-lg p-3 border border-blue-500/20">
-                    <p className="text-blue-300 text-sm mb-2">Japan-Toreca</p>
+                    <p className="text-blue-300 text-sm mb-2">
+                      {jpShop === 'best' ? 'JP buy prices (best of both shops)' : jpShop === 'toretoku' ? 'Toretoku' : 'Japan-Toreca'}
+                    </p>
                     <div className="space-y-2">
-                      {jtByQuality.map(({ q, price, inStock }) => {
+                      {jpByQuality.map(({ q, price, inStock }) => {
                         if (!price) {
                           return (
                             <div key={q} className="flex justify-between items-center text-white/50 text-sm">
@@ -634,7 +639,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                                 : 'bg-gray-600/20 border border-gray-500/30 opacity-70'
                             }`}
                           >
-                            <span className="text-white/80 text-sm">Condition {q}</span>
+                            <span className="text-white/80 text-sm">
+                              Condition {q}
+                              {jpShop === 'best' && <span className="ml-2 text-xs text-white/50">({price.source})</span>}
+                            </span>
                             <span className="text-white font-semibold">
                               ¥{price.priceJPY.toLocaleString()}
                               {!inStock && <span className="ml-2 text-red-400 text-xs">OOS</span>}
