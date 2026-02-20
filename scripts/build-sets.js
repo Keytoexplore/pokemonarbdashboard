@@ -12,7 +12,9 @@
  *   node scripts/build-sets.js --sets sv2a,sv2d --toretoku sv
  *
  * Options:
- *   --toretoku <mode>   "none" | "s12a" (default) | "sv" | "all"
+ *   --toretoku <mode>    "none" | "s12a" (default) | "sv" | "all" | "cache" (cache-only; never fetch)
+ *   --torecacamp <mode>  "none" | "s12a" | "all" (default)
+ *   --merge              Merge updated sets into existing data/prices.json instead of overwriting it
  */
 
 const fs = require('fs');
@@ -23,6 +25,24 @@ const ALLOWED_RARITIES = new Set(['AR', 'SAR', 'SR', 'CHR', 'UR', 'SSR', 'RRR'])
 const ALLOWED_QUALITIES = new Set(['A-', 'B']);
 
 const TORECACAMP_BASE = 'https://torecacamp-pokemon.com';
+const TORECACAMP_RATE_LIMIT_MS_SEARCH = Number(process.env.TORECACAMP_RATE_LIMIT_MS_SEARCH || 1100);
+const TORECACAMP_RATE_LIMIT_MS_PRODUCT = Number(process.env.TORECACAMP_RATE_LIMIT_MS_PRODUCT || 1100);
+const TORECACAMP_MAX_PAGES_PER_RARITY = Number(process.env.TORECACAMP_MAX_PAGES_PER_RARITY || 12);
+const TORECACAMP_MAX_HANDLES_PER_SET = Number(process.env.TORECACAMP_MAX_HANDLES_PER_SET || 1200);
+const TORECACAMP_HANDLES_TTL_HOURS = Number(process.env.TORECACAMP_HANDLES_TTL_HOURS || 12);
+const TORECACAMP_PRODUCT_TTL_HOURS = Number(process.env.TORECACAMP_PRODUCT_TTL_HOURS || 24);
+
+// Optional strict check (anti-contamination): if we know the set's total numbering, enforce it.
+// Add more as needed.
+const SET_DENOMINATORS = {
+  S12A: 172,
+  SV2A: 165,
+  SV2D: 71,
+  SV2P: 71,
+};
+
+// Memoize per-handle product.json in-process (shared across sets) to reduce requests.
+const torecacampProductMemo = new Map();
 
 const API_BASE_URL = 'https://www.pokemonpricetracker.com/api/v2';
 const API_KEY = process.env.POKEPRICE_API_KEY || process.env.POKEMONPRICETRACKER_API_KEY;
@@ -38,6 +58,7 @@ const cacheDir = path.join(workspaceRoot, 'data', 'cache');
 
 const argv = process.argv.slice(2);
 const FORCE = argv.includes('--force');
+const MERGE = argv.includes('--merge');
 
 function getArgValue(name) {
   const idx = argv.findIndex((a) => a === name);
@@ -47,13 +68,19 @@ function getArgValue(name) {
 
 const setsArg = getArgValue('--sets');
 if (!setsArg) {
-  console.error('Usage: node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p [--force] [--toretoku none|s12a|sv|all]');
+  console.error('Usage: node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p [--force] [--merge] [--toretoku none|s12a|sv|all|cache] [--torecacamp none|s12a|all]');
   process.exit(1);
 }
 
 const toretokuMode = (getArgValue('--toretoku') || 's12a').toLowerCase();
-if (!['none', 's12a', 'sv', 'all'].includes(toretokuMode)) {
-  console.error('Invalid --toretoku mode. Use: none | s12a | sv | all');
+if (!['none', 's12a', 'sv', 'all', 'cache'].includes(toretokuMode)) {
+  console.error('Invalid --toretoku mode. Use: none | s12a | sv | all | cache');
+  process.exit(1);
+}
+
+const torecacampMode = (getArgValue('--torecacamp') || 'all').toLowerCase();
+if (!['none', 's12a', 'all'].includes(torecacampMode)) {
+  console.error('Invalid --torecacamp mode. Use: none | s12a | all');
   process.exit(1);
 }
 
@@ -68,6 +95,40 @@ function ensureDir(p) {
 
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function escapeRegExp(str) {
+  return String(str || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function isFileFresh(filePath, maxAgeMs) {
+  try {
+    const st = fs.statSync(filePath);
+    const ageMs = Date.now() - st.mtimeMs;
+    return ageMs >= 0 && ageMs <= maxAgeMs;
+  } catch {
+    return false;
+  }
+}
+
+function readJsonIfFresh(filePath, maxAgeMs) {
+  if (!isFileFresh(filePath, maxAgeMs)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function safeCacheKey(s) {
+  // Shopify handles are generally safe, but belt + suspenders.
+  return String(s || '').toLowerCase().replace(/[^a-z0-9._-]+/g, '_').slice(0, 120);
+}
+
+function jitter(ms, pct = 0.15) {
+  const delta = ms * pct;
+  const j = (Math.random() * 2 - 1) * delta;
+  return Math.max(0, Math.round(ms + j));
 }
 
 function normalizeQuality(q) {
@@ -335,7 +396,7 @@ async function scrapeJapanTorecaListings(apiSetId, displaySetCode) {
   return all;
 }
 
-async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 } = {}) {
+async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35, cacheOnly = false } = {}) {
   // Toretoku search results pages already contain card number / rarity / rank / price.
   // We only scrape in-stock items.
   ensureDir(cacheDir);
@@ -343,16 +404,22 @@ async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 
 
   if (!FORCE && fs.existsSync(cachePath)) {
     const cached = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
-    if (Array.isArray(cached) && cached.length) {
-      console.log(`📦 Using cached Toretoku listings: ${path.relative(workspaceRoot, cachePath)}`);
+    if (Array.isArray(cached)) {
+      console.log(`📦 Using cached Toretoku listings: ${path.relative(workspaceRoot, cachePath)} (${cached.length} listings)`);
       return cached;
     }
+  }
+
+  if (cacheOnly) {
+    console.log(`🧊 No cached Toretoku listings for ${displaySetCode}; cache-only mode enabled (skipping live fetch)`);
+    return [];
   }
 
   console.log(`🛒 Scraping Toretoku listings for ${displaySetCode} (A/B only, in-stock)`);
 
   const all = [];
   const seen = new Set();
+  let hadFetchError = false;
 
   // Based on UI behavior: rank5[]=2 and rank5[]=3 correspond to ranks A and B.
   // Keep query minimal and stable.
@@ -375,6 +442,7 @@ async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 
     try {
       html = await fetchHtml(url, { rateLimitMs: 650, timeoutMs: 30000, maxRetries: 5, retryBackoffMs: 3000 });
     } catch (err) {
+      hadFetchError = true;
       console.warn(`    ⚠ Failed to fetch ${url}: ${err?.message || err}`);
       break;
     }
@@ -435,18 +503,35 @@ async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 
     await delay(650);
   }
 
+  if (hadFetchError && all.length === 0) {
+    console.warn(`⚠ Toretoku scrape failed for ${displaySetCode} and found 0 listings; NOT writing empty cache: ${path.relative(workspaceRoot, cachePath)}`);
+    return all;
+  }
+
   fs.writeFileSync(cachePath, JSON.stringify(all, null, 2));
   console.log(`💾 Wrote Toretoku cache: ${path.relative(workspaceRoot, cachePath)} (${all.length} listings)`);
+
+  if (hadFetchError) {
+    console.warn(`⚠ Toretoku scrape for ${displaySetCode} completed with fetch errors; cache may be partial.`);
+  }
+
   return all;
 }
 
 async function scrapeTorecacampListings(apiSetId, displaySetCode) {
   // Shopify store. We scrape by:
-  // 1) discovering product handles via search HTML
-  // 2) fetching /products/<handle>.js for structured variants (A-/B)
-  // Only enabled for S12A initially (safe test).
+  // 1) discovering product handles via search HTML (cached)
+  // 2) fetching /products/<handle>.js for structured variants (A-/B) (cached per-handle)
+  // Guardrails (anti-contamination):
+  // - title must contain the exact set code
+  // - card number must be present; if we know the set denominator, it must match
+  // - only accept allowed rarities; exclude graded/PSA items
   ensureDir(cacheDir);
+
   const cachePath = path.join(cacheDir, `torecacamp-${apiSetId}-listings.json`);
+  const handlesCachePath = path.join(cacheDir, `torecacamp-${apiSetId}-handles.json`);
+  const productsCacheDir = path.join(cacheDir, 'torecacamp-products');
+  ensureDir(productsCacheDir);
 
   if (!FORCE && fs.existsSync(cachePath)) {
     const cached = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
@@ -458,59 +543,120 @@ async function scrapeTorecacampListings(apiSetId, displaySetCode) {
 
   console.log(`🛒 Scraping Torecacamp listings for ${displaySetCode} (A-/B only)`);
 
-  // Discover handles via rarity searches
-  const handles = new Set();
-  for (const rarity of Array.from(ALLOWED_RARITIES)) {
-    const q = `${displaySetCode.toLowerCase()} ${rarity.toLowerCase()}`;
-    let page = 1;
+  const handlesTtlMs = TORECACAMP_HANDLES_TTL_HOURS * 60 * 60 * 1000;
+  const productTtlMs = TORECACAMP_PRODUCT_TTL_HOURS * 60 * 60 * 1000;
 
-    while (page <= 20) {
-      const url = `${TORECACAMP_BASE}/search?q=${encodeURIComponent(q)}&page=${page}`;
-      let html;
-      try {
-        html = await fetchHtml(url, { rateLimitMs: 1000, timeoutMs: 30000, maxRetries: 4, retryBackoffMs: 2500 });
-      } catch (err) {
-        console.warn(`    ⚠ Torecacamp search failed: ${url}: ${err?.message || err}`);
-        break;
+  let handles = [];
+
+  const cachedHandles = FORCE ? null : readJsonIfFresh(handlesCachePath, handlesTtlMs);
+  if (cachedHandles && Array.isArray(cachedHandles.handles) && cachedHandles.handles.length) {
+    handles = cachedHandles.handles;
+    console.log(
+      `📦 Using cached Torecacamp handle discovery: ${path.relative(workspaceRoot, handlesCachePath)} (${handles.length} handles)`
+    );
+  } else {
+    console.log(`🔎 Discovering Torecacamp product handles for ${displaySetCode} via search pages...`);
+
+    // Discover handles via rarity searches (bounded)
+    const handleSet = new Set();
+
+    outer: for (const rarity of Array.from(ALLOWED_RARITIES)) {
+      const q = `${displaySetCode.toLowerCase()} ${rarity.toLowerCase()}`;
+
+      for (let page = 1; page <= TORECACAMP_MAX_PAGES_PER_RARITY; page++) {
+        if (handleSet.size >= TORECACAMP_MAX_HANDLES_PER_SET) break outer;
+
+        const url = `${TORECACAMP_BASE}/search?q=${encodeURIComponent(q)}&page=${page}`;
+        let html;
+        try {
+          html = await fetchHtml(url, {
+            rateLimitMs: jitter(TORECACAMP_RATE_LIMIT_MS_SEARCH),
+            timeoutMs: 30000,
+            maxRetries: 5,
+            retryBackoffMs: 3500,
+          });
+        } catch (err) {
+          console.warn(`    ⚠ Torecacamp search failed: ${url}: ${err?.message || err}`);
+          break;
+        }
+
+        const $ = cheerio.load(html);
+        const anchors = $('a[href^="/products/"]');
+        if (anchors.length === 0) break;
+
+        let found = 0;
+        anchors.each((_, el) => {
+          const href = $(el).attr('href');
+          if (!href) return;
+          const m = href.match(/\/products\/([^\/?#]+)/);
+          if (!m) return;
+          const handle = m[1];
+          if (!handle) return;
+
+          handleSet.add(handle);
+          found += 1;
+        });
+
+        if (found === 0) break;
       }
-
-      const $ = cheerio.load(html);
-      const anchors = $('a[href^="/products/"]');
-      if (anchors.length === 0) break;
-
-      let found = 0;
-      anchors.each((_, el) => {
-        const href = $(el).attr('href');
-        if (!href) return;
-        const m = href.match(/\/products\/([^\/?#]+)/);
-        if (!m) return;
-        handles.add(m[1]);
-        found += 1;
-      });
-
-      if (found === 0) break;
-      page += 1;
     }
+
+    handles = Array.from(handleSet);
+
+    fs.writeFileSync(
+      handlesCachePath,
+      JSON.stringify({ set: displaySetCode.toUpperCase(), handles, discoveredAt: new Date().toISOString() }, null, 2)
+    );
+    console.log(`💾 Wrote Torecacamp handles cache: ${path.relative(workspaceRoot, handlesCachePath)} (${handles.length} handles)`);
   }
+
+  const expectedDenom = SET_DENOMINATORS[displaySetCode.toUpperCase()] || null;
+  const setRe = new RegExp(`(^|[^A-Z0-9])${escapeRegExp(displaySetCode)}([^A-Z0-9]|$)`, 'i');
 
   const out = [];
 
-  for (const handle of Array.from(handles)) {
-    const url = `${TORECACAMP_BASE}/products/${handle}.js`;
-    let body;
-    try {
-      body = await fetchHtml(url, { rateLimitMs: 1000, timeoutMs: 30000, maxRetries: 5, retryBackoffMs: 3000 });
-    } catch (err) {
-      console.warn(`    ⚠ Torecacamp product.js failed: ${url}: ${err?.message || err}`);
-      continue;
+  const dbg = process.env.TORECACAMP_DEBUG === '1';
+  const dbgCounts = { totalHandles: handles.length, keptSet: 0, keptNum: 0, keptDenom: 0, keptRarity: 0, keptVariants: 0, offers: 0 };
+
+  for (const handle of handles) {
+    let product = torecacampProductMemo.get(handle) || null;
+
+    const productCachePath = path.join(productsCacheDir, `product-${safeCacheKey(handle)}.json`);
+
+    if (!product && !FORCE) {
+      const cachedProduct = readJsonIfFresh(productCachePath, productTtlMs);
+      if (cachedProduct) product = cachedProduct;
     }
 
-    let product;
-    try {
-      product = JSON.parse(body);
-    } catch {
-      continue;
+    if (!product) {
+      const url = `${TORECACAMP_BASE}/products/${handle}.js`;
+      let body;
+      try {
+        body = await fetchHtml(url, {
+          headers: { Accept: 'application/json' },
+          rateLimitMs: jitter(TORECACAMP_RATE_LIMIT_MS_PRODUCT),
+          timeoutMs: 30000,
+          maxRetries: 6,
+          retryBackoffMs: 4000,
+        });
+      } catch (err) {
+        console.warn(`    ⚠ Torecacamp product.js failed: ${url}: ${err?.message || err}`);
+        continue;
+      }
+
+      try {
+        product = JSON.parse(body);
+      } catch {
+        continue;
+      }
+
+      // Best-effort write; cache is only an optimization.
+      try {
+        fs.writeFileSync(productCachePath, JSON.stringify(product, null, 2));
+      } catch {}
     }
+
+    if (product) torecacampProductMemo.set(handle, product);
 
     const title = String(product?.title || '').trim();
     const tags = product?.tags || '';
@@ -519,27 +665,49 @@ async function scrapeTorecacampListings(apiSetId, displaySetCode) {
     const tagsText = Array.isArray(tags) ? tags.join(' ') : String(tags);
     if (/\bPSA\b/i.test(title) || tagsText.includes('鑑定品')) continue;
 
-    // Set + card number + rarity parsing
-    if (!new RegExp(`\\b${displaySetCode}\\b`, 'i').test(title)) continue;
+    // Strict set check (avoid cross-set contamination from search noise)
+    if (!setRe.test(title)) continue;
+    dbgCounts.keptSet += 1;
 
-    const numMatch = title.match(/(\d{1,3}\/\d{1,3})/);
+    // Card number + denominator check
+    const numMatch = title.match(/(\d{1,3})\s*\/\s*(\d{1,3})/);
     if (!numMatch) continue;
-    const cardNumber = numMatch[1];
+    dbgCounts.keptNum += 1;
 
-    // S12A strict guard (avoid contamination)
-    if (displaySetCode.toUpperCase() === 'S12A' && !cardNumber.endsWith('/172')) continue;
+    const cardNumber = `${numMatch[1]}/${numMatch[2]}`;
+    const num = parseInt(numMatch[1], 10);
+    const denom = parseInt(numMatch[2], 10);
+
+    // Note: many JP sets have secret rares with num > denom (e.g. 171/165). Allow that.
+    if (!Number.isFinite(num) || !Number.isFinite(denom) || denom <= 0 || num <= 0) continue;
+    dbgCounts.keptDenom += 1;
+    if (expectedDenom && denom !== expectedDenom) continue;
 
     const rarityMatch = title.match(/\b(AR|SAR|SR|CHR|UR|SSR|RRR)\b/i);
     if (!rarityMatch) continue;
     const rarity = rarityMatch[1].toUpperCase();
     if (!ALLOWED_RARITIES.has(rarity)) continue;
+    dbgCounts.keptRarity += 1;
 
     const variants = Array.isArray(product?.variants) ? product.variants : [];
 
     const pickVariant = (kind) => {
       // kind: 'A-' or 'B'
-      const wanted = kind === 'A-' ? '状態A-' : '状態B';
-      const v = variants.find((x) => String(x?.public_title || x?.title || '').includes(wanted));
+      const titles = variants.map((x) => String(x?.public_title || x?.title || ''));
+
+      const findAny = (needles) => {
+        for (const n of needles) {
+          const idx = titles.findIndex((t) => t.includes(n));
+          if (idx !== -1) return variants[idx];
+        }
+        return null;
+      };
+
+      // Some shops use 状態A instead of 状態A-; normalize A -> A-
+      const v =
+        kind === 'A-'
+          ? findAny(['状態A-', '状態A'])
+          : findAny(['状態B']);
       if (!v) return null;
       const priceCents = Number(v?.price ?? 0);
       const priceJPY = Math.round(priceCents / 100);
@@ -555,8 +723,10 @@ async function scrapeTorecacampListings(apiSetId, displaySetCode) {
     const aMinus = pickVariant('A-');
     const b = pickVariant('B');
     if (!aMinus && !b) continue;
+    dbgCounts.keptVariants += 1;
 
     if (aMinus) {
+      dbgCounts.offers += 1;
       out.push({
         set: displaySetCode,
         rarity,
@@ -570,6 +740,7 @@ async function scrapeTorecacampListings(apiSetId, displaySetCode) {
     }
 
     if (b) {
+      dbgCounts.offers += 1;
       out.push({
         set: displaySetCode,
         rarity,
@@ -581,6 +752,10 @@ async function scrapeTorecacampListings(apiSetId, displaySetCode) {
         inStock: b.inStock,
       });
     }
+  }
+
+  if (dbg) {
+    console.log(`🧪 Torecacamp debug ${displaySetCode}:`, dbgCounts);
   }
 
   fs.writeFileSync(cachePath, JSON.stringify(out, null, 2));
@@ -805,7 +980,19 @@ async function main() {
     const apiDump = await fetchAllCardsFromApi(apiSetId);
     const jtListings = await scrapeJapanTorecaListings(apiSetId, displaySetCode);
 
-    const torecacampListings = apiSetId.toLowerCase() === 's12a'
+    const apiSetIdLc = apiSetId.toLowerCase();
+    const isSv = apiSetIdLc.startsWith('sv');
+
+    // Torecacamp scraping is opt-in by mode (Shopify store; keep it gentle).
+    // Modes:
+    // - none: never scrape
+    // - s12a: only scrape S12A
+    // - all: scrape all sets
+    const shouldScrapeTorecacamp =
+      torecacampMode === 'all' ||
+      (torecacampMode === 's12a' && apiSetIdLc === 's12a');
+
+    const torecacampListings = shouldScrapeTorecacamp
       ? await scrapeTorecacampListings(apiSetId, displaySetCode)
       : [];
 
@@ -815,15 +1002,15 @@ async function main() {
     // - s12a: only scrape S12A
     // - sv: scrape all SV* sets + S12A
     // - all: scrape all sets
-    const apiSetIdLc = apiSetId.toLowerCase();
-    const isSv = apiSetIdLc.startsWith('sv');
+    // - cache: use cache only; never fetch (treat empty cache as valid)
     const shouldScrapeToretoku =
+      toretokuMode === 'cache' ||
       toretokuMode === 'all' ||
       (toretokuMode === 'sv' && (isSv || apiSetIdLc === 's12a')) ||
       (toretokuMode === 's12a' && apiSetIdLc === 's12a');
 
     const toretokuListings = shouldScrapeToretoku
-      ? await scrapeToretokuListings(apiSetId, displaySetCode, { maxPages: isSv ? 35 : 50 })
+      ? await scrapeToretokuListings(apiSetId, displaySetCode, { maxPages: isSv ? 35 : 50, cacheOnly: toretokuMode === 'cache' })
       : [];
 
     const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings });
@@ -843,9 +1030,45 @@ async function main() {
   };
 
   ensureDir(path.dirname(outputPath));
-  fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
 
-  console.log(`\n✅ Wrote ${path.relative(workspaceRoot, outputPath)} with ${allCards.length} cards total`);
+  if (MERGE && fs.existsSync(outputPath)) {
+    let existing;
+    try {
+      existing = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+    } catch (err) {
+      throw new Error(`--merge enabled but failed to parse existing ${path.relative(workspaceRoot, outputPath)}: ${err?.message || err}`);
+    }
+
+    if (!existing || !Array.isArray(existing.cards)) {
+      throw new Error(`--merge enabled but existing ${path.relative(workspaceRoot, outputPath)} has unexpected structure (missing cards[])`);
+    }
+
+    const requestedSetIds = new Set(SETS.map((s) => s.toLowerCase()));
+    const keptCards = existing.cards.filter((c) => !requestedSetIds.has(String(c?.setId || '').toLowerCase()));
+    const mergedCards = [...keptCards, ...allCards];
+
+    const existingSets = Array.isArray(existing?.meta?.sets) ? existing.meta.sets.map((s) => String(s).toUpperCase()) : [];
+    const mergedSets = [...existingSets];
+    for (const s of SETS.map((x) => x.toUpperCase())) {
+      if (!mergedSets.includes(s)) mergedSets.push(s);
+    }
+
+    const mergedDataset = {
+      meta: {
+        sets: mergedSets,
+        rarities: Array.from(ALLOWED_RARITIES),
+        qualities: Array.from(ALLOWED_QUALITIES),
+        builtAt: new Date().toISOString(),
+      },
+      cards: mergedCards,
+    };
+
+    fs.writeFileSync(outputPath, JSON.stringify(mergedDataset, null, 2));
+    console.log(`\n✅ Merged into ${path.relative(workspaceRoot, outputPath)}: +${allCards.length} updated cards; total=${mergedCards.length}`);
+  } else {
+    fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
+    console.log(`\n✅ Wrote ${path.relative(workspaceRoot, outputPath)} with ${allCards.length} cards total`);
+  }
 }
 
 main().catch((err) => {

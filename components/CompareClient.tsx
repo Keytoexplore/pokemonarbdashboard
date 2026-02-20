@@ -128,12 +128,7 @@ function pickBaseline(offers: Offer[], shops: Set<ShopKey>): Offer | null {
   const pick = (condition: JapaneseCondition, wantInStock: boolean) =>
     sortByPrice(filtered.filter((o) => o.condition === condition && o.inStock === wantInStock))[0] || null;
 
-  return (
-    pick('A-', true) ||
-    pick('B', true) ||
-    pick('A-', false) ||
-    pick('B', false)
-  );
+  return pick('A-', true) || pick('B', true) || pick('A-', false) || pick('B', false);
 }
 
 function pickLowestForCondition(offers: Offer[], shops: Set<ShopKey>, condition: JapaneseCondition): Offer | null {
@@ -296,11 +291,13 @@ function PriceCell({
   offer,
   isBaseline,
   isLowest,
+  isShopBest,
   usMarket,
 }: {
   offer: Offer | null;
   isBaseline: boolean;
   isLowest: boolean;
+  isShopBest: boolean;
   usMarket: number | null;
 }) {
   if (!offer) {
@@ -308,7 +305,11 @@ function PriceCell({
   }
 
   const base = offer.inStock ? 'bg-white/5 border-white/10' : 'bg-gray-700/10 border-gray-500/20 opacity-70';
-  const outline = isBaseline ? 'border-emerald-500/60' : isLowest ? 'border-blue-500/50' : '';
+
+  // Priority: overall baseline > shop best pick > lowest per-condition
+  const outline =
+    isBaseline ? 'border-emerald-500/60' : isShopBest ? 'border-amber-400/60' : isLowest ? 'border-blue-500/50' : '';
+
   const p = profitPercent(usMarket, offer.priceJPY);
 
   return (
@@ -324,7 +325,7 @@ function PriceCell({
       </div>
       <div className="flex items-center justify-between mt-1">
         <span className="text-xs text-white/40">Profit</span>
-        <span className={`text-xs font-semibold ${p >= 50 ? 'text-emerald-300' : p >= 20 ? 'text-yellow-300' : 'text-red-300'}`}> {p >= 0 ? '+' : ''}{p}%</span>
+        <span className={`text-xs font-semibold ${profitTone(p)}`}>{formatPct(p)}</span>
       </div>
       <div className="text-xs text-white/40 mt-1">Open →</div>
     </a>
@@ -338,7 +339,10 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
   const lowestB = pickLowestForCondition(offers, shops, 'B');
 
   const usMarket = card.usMarket?.tcgplayer?.marketPrice ?? null;
-  const baselineProfit = baseline ? profitPercent(usMarket, baseline.priceJPY) : 0;
+  const usUrl = card.usMarket?.tcgplayer?.url ?? null;
+  const usSellers = card.usMarket?.tcgplayer?.sellerCount ?? null;
+
+  const baselineProfit = baseline ? profitPercent(usMarket, baseline.priceJPY) : null;
 
   const get = (shop: ShopKey, condition: JapaneseCondition) => {
     const xs = offers.filter((o) => o.shop === shop && o.condition === condition);
@@ -360,48 +364,83 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
                 <p className="text-white font-bold truncate">{card.name}</p>
                 <p className="text-purple-200 text-sm">{card.set} #{card.number}</p>
               </div>
-              {!compact && (
-                <div className="text-right">
-                  <p className="text-xs text-white/50">US (TCGPlayer Market)</p>
-                  <p className="text-white text-sm font-bold">
-                    {usMarket != null ? `$${Number(usMarket).toFixed(2)}` : '—'}
-                  </p>
-
-                  <p className="text-xs text-white/50 mt-2">Best pick (baseline)</p>
-                  {baseline ? (
-                    <p className="text-emerald-300 text-sm font-bold">
-                      {baseline.shop} {baseline.condition} {formatJPY(baseline.priceJPY)} {baseline.inStock ? '' : '(OOS)'}
-                      <span className="ml-2 text-emerald-200/80">({baselineProfit >= 0 ? '+' : ''}{baselineProfit}%)</span>
-                    </p>
+              <div className="text-right shrink-0">
+                <p className="text-xs text-white/50">US (TCGPlayer Market)</p>
+                {usMarket != null ? (
+                  usUrl ? (
+                    <a
+                      href={usUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-sm font-bold hover:underline"
+                    >
+                      {formatUSD(usMarket)}
+                    </a>
                   ) : (
-                    <p className="text-white/40 text-sm">—</p>
-                  )}
-                </div>
-              )}
+                    <p className="text-white text-sm font-bold">{formatUSD(usMarket)}</p>
+                  )
+                ) : (
+                  <p className="text-white/40 text-sm font-bold">—</p>
+                )}
+                {usMarket != null && usSellers != null && <p className="text-xs text-white/40">{usSellers} sellers</p>}
+
+                <p className="text-xs text-white/50 mt-2">Overall baseline</p>
+                {baseline ? (
+                  <p className="text-emerald-300 text-sm font-bold">
+                    {baseline.shop} {baseline.condition} {formatJPY(baseline.priceJPY)}{baseline.inStock ? '' : ' (OOS)'}
+                    <span className={`ml-2 ${profitTone(baselineProfit)} font-semibold`}>({formatPct(baselineProfit)})</span>
+                  </p>
+                ) : (
+                  <p className="text-white/40 text-sm">—</p>
+                )}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-              {(['japan-toreca', 'toretoku', 'torecacamp'] as ShopKey[]).map((shop) => (
-                <div key={shop} className="bg-white/5 rounded-lg p-3 border border-white/10">
-                  <p className="text-white/70 text-sm font-semibold mb-2">{shop}</p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {CONDITIONS.map((cond) => {
-                      const offer = get(shop, cond);
-                      const isBaseline = Boolean(baseline && offer && baseline.shop === offer.shop && baseline.condition === offer.condition && baseline.priceJPY === offer.priceJPY);
-                      const isLowest = Boolean(
-                        (cond === 'A-' && lowestA && offer && lowestA.shop === offer.shop && lowestA.priceJPY === offer.priceJPY) ||
-                        (cond === 'B' && lowestB && offer && lowestB.shop === offer.shop && lowestB.priceJPY === offer.priceJPY)
-                      );
-                      return (
-                        <div key={cond}>
-                          <div className="text-xs text-white/40 mb-1">{cond}</div>
-                          <PriceCell offer={offer} isBaseline={isBaseline} isLowest={isLowest} usMarket={usMarket} />
-                        </div>
-                      );
-                    })}
+              {(['japan-toreca', 'toretoku', 'torecacamp'] as ShopKey[]).map((shop) => {
+                const shopBest = pickBaseline(offers, new Set<ShopKey>([shop]));
+                const shopBestProfit = shopBest ? profitPercent(usMarket, shopBest.priceJPY) : null;
+
+                return (
+                  <div key={shop} className="bg-white/5 rounded-lg p-3 border border-white/10">
+                    <div className="flex items-start justify-between gap-2 mb-1">
+                      <p className="text-white/70 text-sm font-semibold">{shop}</p>
+                      <p className={`text-xs font-semibold ${profitTone(shopBestProfit)}`}>{formatPct(shopBestProfit)}</p>
+                    </div>
+                    <p className="text-xs text-white/45 mb-2">
+                      Best pick: {shopBest ? `${shopBest.condition} ${formatJPY(shopBest.priceJPY)}${shopBest.inStock ? '' : ' (OOS)'}` : '—'}
+                    </p>
+
+                    <div className="grid grid-cols-2 gap-2">
+                      {CONDITIONS.map((cond) => {
+                        const offer = get(shop, cond);
+                        const isBaseline = Boolean(
+                          baseline && offer && baseline.shop === offer.shop && baseline.condition === offer.condition && baseline.priceJPY === offer.priceJPY
+                        );
+                        const isLowest = Boolean(
+                          (cond === 'A-' && lowestA && offer && lowestA.shop === offer.shop && lowestA.priceJPY === offer.priceJPY) ||
+                            (cond === 'B' && lowestB && offer && lowestB.shop === offer.shop && lowestB.priceJPY === offer.priceJPY)
+                        );
+                        const isShopBest = Boolean(
+                          shopBest && offer && shopBest.shop === offer.shop && shopBest.condition === offer.condition && shopBest.priceJPY === offer.priceJPY
+                        );
+                        return (
+                          <div key={cond}>
+                            <div className="text-xs text-white/40 mb-1">{cond}</div>
+                            <PriceCell
+                              offer={offer}
+                              isBaseline={isBaseline}
+                              isLowest={isLowest}
+                              isShopBest={isShopBest}
+                              usMarket={usMarket}
+                            />
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
