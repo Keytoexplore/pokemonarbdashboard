@@ -67,6 +67,31 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
+    // Torecacamp (Shopify) A-/B
+    if (c.torecacamp?.aMinus) {
+      jp.push({
+        source: 'torecacamp',
+        priceJPY: c.torecacamp.aMinus.priceJPY,
+        priceUSD: c.torecacamp.aMinus.priceJPY * JPY_TO_USD,
+        quality: 'A-',
+        inStock: c.torecacamp.aMinus.inStock !== false,
+        url: c.torecacamp.aMinus.url,
+        isLowest: false,
+      });
+    }
+
+    if (c.torecacamp?.b) {
+      jp.push({
+        source: 'torecacamp',
+        priceJPY: c.torecacamp.b.priceJPY,
+        priceUSD: c.torecacamp.b.priceJPY * JPY_TO_USD,
+        quality: 'B',
+        inStock: c.torecacamp.b.inStock !== false,
+        url: c.torecacamp.b.url,
+        isLowest: false,
+      });
+    }
+
     // Prefer A- as the baseline; fall back to B.
     const aMinus = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'A-');
     const b = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'B');

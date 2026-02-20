@@ -1,4 +1,4 @@
-export type PriceSource = 'japan-toreca' | 'toretoku';
+export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp';
 
 export type RarityCode = 'AR' | 'SAR' | 'SR' | 'CHR' | 'UR' | 'SSR' | 'RRR';
 
@@ -52,12 +52,16 @@ export interface BuilderOpportunity {
     aMinus: BuilderJapanTorecaPrice | null;
     b: BuilderJapanTorecaPrice | null;
   };
-  // New optional JP shop source (S12a+ test)
+  // New optional JP shop sources
   toretoku?: {
     a: BuilderJapanTorecaPrice | null;
     b: BuilderJapanTorecaPrice | null;
     stockA?: number | null;
     stockB?: number | null;
+  };
+  torecacamp?: {
+    aMinus: BuilderJapanTorecaPrice | null;
+    b: BuilderJapanTorecaPrice | null;
   };
   usMarket: {
     tcgplayer: {

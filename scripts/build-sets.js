@@ -22,6 +22,8 @@ const cheerio = require('cheerio');
 const ALLOWED_RARITIES = new Set(['AR', 'SAR', 'SR', 'CHR', 'UR', 'SSR', 'RRR']);
 const ALLOWED_QUALITIES = new Set(['A-', 'B']);
 
+const TORECACAMP_BASE = 'https://torecacamp-pokemon.com';
+
 const API_BASE_URL = 'https://www.pokemonpricetracker.com/api/v2';
 const API_KEY = process.env.POKEPRICE_API_KEY || process.env.POKEMONPRICETRACKER_API_KEY;
 
@@ -438,6 +440,154 @@ async function scrapeToretokuListings(apiSetId, displaySetCode, { maxPages = 35 
   return all;
 }
 
+async function scrapeTorecacampListings(apiSetId, displaySetCode) {
+  // Shopify store. We scrape by:
+  // 1) discovering product handles via search HTML
+  // 2) fetching /products/<handle>.js for structured variants (A-/B)
+  // Only enabled for S12A initially (safe test).
+  ensureDir(cacheDir);
+  const cachePath = path.join(cacheDir, `torecacamp-${apiSetId}-listings.json`);
+
+  if (!FORCE && fs.existsSync(cachePath)) {
+    const cached = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+    if (Array.isArray(cached)) {
+      console.log(`📦 Using cached Torecacamp listings: ${path.relative(workspaceRoot, cachePath)}`);
+      return cached;
+    }
+  }
+
+  console.log(`🛒 Scraping Torecacamp listings for ${displaySetCode} (A-/B only)`);
+
+  // Discover handles via rarity searches
+  const handles = new Set();
+  for (const rarity of Array.from(ALLOWED_RARITIES)) {
+    const q = `${displaySetCode.toLowerCase()} ${rarity.toLowerCase()}`;
+    let page = 1;
+
+    while (page <= 20) {
+      const url = `${TORECACAMP_BASE}/search?q=${encodeURIComponent(q)}&page=${page}`;
+      let html;
+      try {
+        html = await fetchHtml(url, { rateLimitMs: 1000, timeoutMs: 30000, maxRetries: 4, retryBackoffMs: 2500 });
+      } catch (err) {
+        console.warn(`    ⚠ Torecacamp search failed: ${url}: ${err?.message || err}`);
+        break;
+      }
+
+      const $ = cheerio.load(html);
+      const anchors = $('a[href^="/products/"]');
+      if (anchors.length === 0) break;
+
+      let found = 0;
+      anchors.each((_, el) => {
+        const href = $(el).attr('href');
+        if (!href) return;
+        const m = href.match(/\/products\/([^\/?#]+)/);
+        if (!m) return;
+        handles.add(m[1]);
+        found += 1;
+      });
+
+      if (found === 0) break;
+      page += 1;
+    }
+  }
+
+  const out = [];
+
+  for (const handle of Array.from(handles)) {
+    const url = `${TORECACAMP_BASE}/products/${handle}.js`;
+    let body;
+    try {
+      body = await fetchHtml(url, { rateLimitMs: 1000, timeoutMs: 30000, maxRetries: 5, retryBackoffMs: 3000 });
+    } catch (err) {
+      console.warn(`    ⚠ Torecacamp product.js failed: ${url}: ${err?.message || err}`);
+      continue;
+    }
+
+    let product;
+    try {
+      product = JSON.parse(body);
+    } catch {
+      continue;
+    }
+
+    const title = String(product?.title || '').trim();
+    const tags = product?.tags || '';
+
+    // Exclude graded/PSA
+    const tagsText = Array.isArray(tags) ? tags.join(' ') : String(tags);
+    if (/\bPSA\b/i.test(title) || tagsText.includes('鑑定品')) continue;
+
+    // Set + card number + rarity parsing
+    if (!new RegExp(`\\b${displaySetCode}\\b`, 'i').test(title)) continue;
+
+    const numMatch = title.match(/(\d{1,3}\/\d{1,3})/);
+    if (!numMatch) continue;
+    const cardNumber = numMatch[1];
+
+    // S12A strict guard (avoid contamination)
+    if (displaySetCode.toUpperCase() === 'S12A' && !cardNumber.endsWith('/172')) continue;
+
+    const rarityMatch = title.match(/\b(AR|SAR|SR|CHR|UR|SSR|RRR)\b/i);
+    if (!rarityMatch) continue;
+    const rarity = rarityMatch[1].toUpperCase();
+    if (!ALLOWED_RARITIES.has(rarity)) continue;
+
+    const variants = Array.isArray(product?.variants) ? product.variants : [];
+
+    const pickVariant = (kind) => {
+      // kind: 'A-' or 'B'
+      const wanted = kind === 'A-' ? '状態A-' : '状態B';
+      const v = variants.find((x) => String(x?.public_title || x?.title || '').includes(wanted));
+      if (!v) return null;
+      const priceCents = Number(v?.price ?? 0);
+      const priceJPY = Math.round(priceCents / 100);
+      if (!priceJPY) return null;
+      return {
+        priceJPY,
+        url: `${TORECACAMP_BASE}/products/${handle}`,
+        quality: kind,
+        inStock: Boolean(v?.available),
+      };
+    };
+
+    const aMinus = pickVariant('A-');
+    const b = pickVariant('B');
+    if (!aMinus && !b) continue;
+
+    if (aMinus) {
+      out.push({
+        set: displaySetCode,
+        rarity,
+        cardNumber,
+        nameJP: title,
+        quality: 'A-',
+        priceJPY: aMinus.priceJPY,
+        url: aMinus.url,
+        inStock: aMinus.inStock,
+      });
+    }
+
+    if (b) {
+      out.push({
+        set: displaySetCode,
+        rarity,
+        cardNumber,
+        nameJP: title,
+        quality: 'B',
+        priceJPY: b.priceJPY,
+        url: b.url,
+        inStock: b.inStock,
+      });
+    }
+  }
+
+  fs.writeFileSync(cachePath, JSON.stringify(out, null, 2));
+  console.log(`💾 Wrote Torecacamp cache: ${path.relative(workspaceRoot, cachePath)} (${out.length} offers)`);
+  return out;
+}
+
 function bestJTByCard(listings) {
   /**
    * listings[] for one set; returns map cardNumber -> { 'A-': best, 'B': best }
@@ -509,7 +659,7 @@ function pickCanonicalSetPrefix(apiCards, apiSetId) {
   return best ? `${best}:` : null;
 }
 
-function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings }) {
+function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings }) {
   const jtByCard = bestJTByCard(jtListings);
 
   const ttByCard = bestJTByCard(
@@ -519,6 +669,17 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
       priceJPY: r.priceJPY,
       url: r.url,
       stock: r.stock ?? null,
+      inStock: true,
+    }))
+  );
+
+  const tcByCard = bestJTByCard(
+    (torecacampListings || []).map((r) => ({
+      cardNumber: r.cardNumber,
+      quality: r.quality,
+      priceJPY: r.priceJPY,
+      url: r.url,
+      inStock: r.inStock !== false,
     }))
   );
 
@@ -552,6 +713,7 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
 
     const jt = jtByCard.get(cardNumberSlash || cardNumber) || jtByCard.get(cardNumber) || { 'A-': null, B: null };
     const tt = ttByCard.get(cardNumberSlash || cardNumber) || ttByCard.get(cardNumber) || { 'A-': null, B: null };
+    const tc = tcByCard.get(cardNumberSlash || cardNumber) || tcByCard.get(cardNumber) || { 'A-': null, B: null };
 
     const jpAminus = jt['A-']
       ? {
@@ -573,6 +735,23 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
     const ttA = tt['A-'] ? { priceJPY: tt['A-'].priceJPY, url: tt['A-'].url, quality: 'A-' } : null;
     const ttB = tt.B ? { priceJPY: tt.B.priceJPY, url: tt.B.url, quality: 'B' } : null;
 
+    const tcAminus = tc['A-']
+      ? {
+          priceJPY: tc['A-'].priceJPY,
+          url: tc['A-'].url,
+          quality: 'A-',
+          inStock: tc['A-'].inStock !== false,
+        }
+      : null;
+    const tcB = tc.B
+      ? {
+          priceJPY: tc.B.priceJPY,
+          url: tc.B.url,
+          quality: 'B',
+          inStock: tc.B.inStock !== false,
+        }
+      : null;
+
     outCards.push({
       set: displaySetCode.toUpperCase(),
       setId: apiSetId,
@@ -592,6 +771,10 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
         b: ttB,
         stockA: tt['A-']?.stock ?? null,
         stockB: tt.B?.stock ?? null,
+      },
+      torecacamp: {
+        aMinus: tcAminus,
+        b: tcB,
       },
       usMarket: {
         tcgplayer: {
@@ -622,6 +805,10 @@ async function main() {
     const apiDump = await fetchAllCardsFromApi(apiSetId);
     const jtListings = await scrapeJapanTorecaListings(apiSetId, displaySetCode);
 
+    const torecacampListings = apiSetId.toLowerCase() === 's12a'
+      ? await scrapeTorecacampListings(apiSetId, displaySetCode)
+      : [];
+
     // Toretoku scraping is opt-in by mode to avoid hammering the shop.
     // Modes:
     // - none: never scrape
@@ -639,7 +826,7 @@ async function main() {
       ? await scrapeToretokuListings(apiSetId, displaySetCode, { maxPages: isSv ? 35 : 50 })
       : [];
 
-    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings });
+    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings });
 
     console.log(`🎯 ${displaySetCode}: kept ${setCards.length} cards (special rarities)`);
     allCards.push(...setCards);

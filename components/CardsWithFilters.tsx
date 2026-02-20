@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
-import { ArbitrageOpportunity, JapanesePrice, JapaneseCondition, RarityCode } from '@/lib/types';
+import { ArbitrageOpportunity, JapaneseCondition, RarityCode } from '@/lib/types';
 import {
   applyFilters,
   DEFAULT_FILTERS,
@@ -11,6 +11,7 @@ import {
   MarginBucket,
   normalizeSetCode,
 } from '@/lib/filters';
+import { filterQualityPrices, getBaselinePrice, getBestPriceForQuality } from '@/lib/jp-pricing';
 
 interface CardsWithFiltersProps {
   initialCards: ArbitrageOpportunity[];
@@ -32,83 +33,6 @@ function getCardImageUrl(card: ArbitrageOpportunity): string {
   return `https://images.pokemontcg.io/${card.set.toLowerCase()}/${card.cardNumber.split('/')[0]}_hires.png`;
 }
 
-function normalizeQuality(q: unknown): JapaneseCondition | null {
-  const quality = String(q || '').toUpperCase().replace('－', '-');
-  if (quality === 'A-') return 'A-';
-  if (quality === 'B') return 'B';
-  return null;
-}
-
-// Filter prices to only include supported sources and A-/B qualities
-function filterQualityPrices(prices: JapanesePrice[], sources: Set<string>): JapanesePrice[] {
-  return prices.filter((p) => sources.has(p.source) && normalizeQuality(p.quality) !== null);
-}
-
-function getBaselinePrice(prices: JapanesePrice[], sources: Set<string>): {
-  price: JapanesePrice | null;
-  inStock: boolean;
-  lowestPriceJPY: number;
-  lowestPriceUSD: number;
-  baselineQuality: JapaneseCondition | null;
-} {
-  const filteredPrices = filterQualityPrices(prices, sources);
-
-  if (filteredPrices.length === 0) {
-    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
-  }
-
-  // Prefer IN-STOCK over out-of-stock, even if that means taking B over A-.
-  // Policy:
-  // 1) in-stock A- (cheapest)
-  // 2) in-stock B  (cheapest)
-  // 3) OOS A-      (cheapest)
-  // 4) OOS B       (cheapest)
-  const aMinus = filteredPrices
-    .filter((p) => normalizeQuality(p.quality) === 'A-')
-    .sort((a, b) => a.priceJPY - b.priceJPY);
-  const b = filteredPrices
-    .filter((p) => normalizeQuality(p.quality) === 'B')
-    .sort((a, b) => a.priceJPY - b.priceJPY);
-
-  const pick = (arr: JapanesePrice[], quality: JapaneseCondition, wantInStock: boolean) => {
-    const xs = wantInStock ? arr.filter((p) => p.inStock) : arr.filter((p) => !p.inStock);
-    if (xs.length === 0) return null;
-    return { price: xs[0], inStock: wantInStock, quality };
-  };
-
-  const chosen =
-    pick(aMinus, 'A-', true) ||
-    pick(b, 'B', true) ||
-    pick(aMinus, 'A-', false) ||
-    pick(b, 'B', false);
-
-  if (!chosen) {
-    return { price: null, inStock: false, lowestPriceJPY: 0, lowestPriceUSD: 0, baselineQuality: null };
-  }
-
-  return {
-    price: chosen.price,
-    inStock: chosen.inStock,
-    lowestPriceJPY: chosen.price.priceJPY,
-    lowestPriceUSD: chosen.price.priceUSD,
-    baselineQuality: chosen.quality,
-  };
-}
-
-function getBestPriceForQuality(prices: JapanesePrice[], quality: JapaneseCondition, sources: Set<string>): {
-  price: JapanesePrice | null;
-  inStock: boolean;
-} {
-  const candidates = prices
-    .filter((p) => sources.has(p.source) && normalizeQuality(p.quality) === quality)
-    .sort((a, b) => a.priceJPY - b.priceJPY);
-
-  if (candidates.length === 0) return { price: null, inStock: false };
-
-  const inStock = candidates.filter((p) => p.inStock);
-  if (inStock.length > 0) return { price: inStock[0], inStock: true };
-  return { price: candidates[0], inStock: false };
-}
 
 function rarityBadgeClass(rarity: RarityCode): string {
   switch (rarity) {
@@ -142,10 +66,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const [draftFilters, setDraftFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
-  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'best'>('japan-toreca');
+  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'best'>('japan-toreca');
 
   const jpSources = useMemo(() => {
-    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku']);
+    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp']);
     return new Set<string>([jpShop]);
   }, [jpShop]);
 
@@ -287,7 +211,8 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
             >
               <option value="japan-toreca" className="bg-gray-900">Japan-Toreca</option>
               <option value="toretoku" className="bg-gray-900">Toretoku</option>
-              <option value="best" className="bg-gray-900">Best (both)</option>
+              <option value="torecacamp" className="bg-gray-900">Torecacamp</option>
+              <option value="best" className="bg-gray-900">Best (all)</option>
             </select>
           </div>
 
@@ -637,7 +562,13 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
                   <div className="bg-white/5 rounded-lg p-3 border border-blue-500/20">
                     <p className="text-blue-300 text-sm mb-2">
-                      {jpShop === 'best' ? 'JP buy prices (best of both shops)' : jpShop === 'toretoku' ? 'Toretoku' : 'Japan-Toreca'}
+                      {jpShop === 'best'
+                        ? 'JP buy prices (best of all shops)'
+                        : jpShop === 'toretoku'
+                          ? 'Toretoku'
+                          : jpShop === 'torecacamp'
+                            ? 'Torecacamp'
+                            : 'Japan-Toreca'}
                     </p>
                     <div className="space-y-2">
                       {jpByQuality.map(({ q, price, inStock }) => {
