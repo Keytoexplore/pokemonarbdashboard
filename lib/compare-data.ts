@@ -5,8 +5,15 @@
 
 import { prisma } from '@/lib/prisma';
 import { BuilderDashboardData, BuilderOpportunity, RarityCode } from '@/lib/types';
+import type { Prisma } from '@prisma/client';
 
 const JPY_TO_USD = 0.0065;
+type CardWithRelations = Prisma.CardGetPayload<{
+  include: {
+    japanOffers: true;
+    usMarket: true;
+  };
+}>;
 
 /**
  * Fetch all cards with their Japanese shop prices for comparison
@@ -15,7 +22,7 @@ const JPY_TO_USD = 0.0065;
 export async function getCompareData(): Promise<BuilderDashboardData> {
   try {
     // Query all cards with their offers from the database
-    const cards = await prisma.card.findMany({
+    const cards: CardWithRelations[] = await prisma.card.findMany({
       include: {
         japanOffers: true,  // All 9 Japanese shops
         usMarket: true,     // TCGPlayer data
